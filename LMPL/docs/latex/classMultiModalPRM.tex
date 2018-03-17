@@ -1,0 +1,113 @@
+\section{Multi\+Modal\+P\+RM Class Reference}
+\label{classMultiModalPRM}\index{Multi\+Modal\+P\+RM@{Multi\+Modal\+P\+RM}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf Mode\+Info}
+\item 
+struct {\bf Transition\+Index}
+\item 
+struct {\bf Transition\+Info}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Graph\+::\+Undirected\+Graph$<$ {\bf Mode\+Info}, {\bf Transition\+Info} $>$ {\bfseries Planning\+Graph}\label{classMultiModalPRM_ab20dcf0c96259018f5140f9aaf90af40}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Multi\+Modal\+P\+RM} ({\bf Multi\+Modal\+C\+Space}$<$ int $>$ $\ast$cspace)\label{classMultiModalPRM_ad7c8af1d3a9b140e536c86a8bd890ce2}
+
+\item 
+void {\bfseries Initialize\+Explicit} ({\bf Explicit\+M\+M\+C\+Space} $\ast$cspace)\label{classMultiModalPRM_af232aa301b1553ac5d55d45a8fa53cdd}
+
+\item 
+void {\bfseries Set\+Start} (const Config \&q, int mode)\label{classMultiModalPRM_ae917615f8db03b36ff0ddaf0f964f166}
+
+\item 
+void {\bfseries Set\+Goal} (const Config \&q, int mode)\label{classMultiModalPRM_ae7ffa283baaf65dfeb2c16303d88bd49}
+
+\item 
+void {\bfseries Set\+Start\+Mode} (int mode)\label{classMultiModalPRM_aa2ac38f9a24e2a4ea73a72ff5124c368}
+
+\item 
+void {\bfseries Set\+Goal\+Mode} (int mode)\label{classMultiModalPRM_ac6e6ccf39c5a65bd00bfe326afe6257e}
+
+\item 
+void {\bfseries Expand\+All} ()\label{classMultiModalPRM_a36eb6616c195ad84cad95156971dd545}
+
+\item 
+void {\bfseries Expand\+Mode} (int mode, int num\+Samples=-\/1)\label{classMultiModalPRM_aedba8361116eef62b1b290cda6d65449}
+
+\item 
+void {\bfseries Expand\+Trans} (int m1, int m2, int num\+Samples=-\/1)\label{classMultiModalPRM_a005a73658d3376717d7a6b8f00206753}
+
+\item 
+void {\bfseries Add\+Transition} (int m1, int m2, const Config \&q)\label{classMultiModalPRM_a2a76e8aeedd93c71123d3ea0724712e4}
+
+\item 
+bool {\bfseries Is\+Start\+And\+Goal\+Connected} () const \label{classMultiModalPRM_ad41e4fa835cf73a304d67229594566ac}
+
+\item 
+{\bf Transition\+Index} {\bfseries Node\+To\+Transition\+Index} (int mode, int roadmap\+Index) const \label{classMultiModalPRM_a1d3f9cf5ea83f42f99b5bac2e8167739}
+
+\item 
+void {\bfseries Connect\+Transitions} (int mode, int t1, int t2)\label{classMultiModalPRM_a6893a8da2b46d5f5ec39bdece0c85f1c}
+
+\item 
+void {\bfseries Connect\+Transitions} (const {\bf Transition\+Index} \&t1, const {\bf Transition\+Index} \&t2)\label{classMultiModalPRM_aa7a9de1acd05cc017c38ad944ecafe17}
+
+\item 
+void {\bfseries Get\+Transition\+Nodes} (int mode, vector$<$ {\bf Transition\+Index} $>$ \&transitions, vector$<$ int $>$ \&roadmap\+Indices) const \label{classMultiModalPRM_ad8d72c9a63b95146d9319f900e02675b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Multi\+Modal\+C\+Space}$<$ int $>$ $\ast$ {\bfseries space}\label{classMultiModalPRM_a8bb45b62a40d65d52b11af7b50725fee}
+
+\item 
+Planning\+Graph {\bfseries planning\+Graph}\label{classMultiModalPRM_a596e8de91e43ce2dddeb832702adb25e}
+
+\item 
+int {\bfseries start\+Mode}\label{classMultiModalPRM_abd565117f0ab56def1adbc0d0b0b7364}
+
+\item 
+int {\bfseries start\+Roadmap\+Index}\label{classMultiModalPRM_aec65614f66a1bdf20a375611d9894fed}
+
+\item 
+int {\bfseries goal\+Mode}\label{classMultiModalPRM_ae82bc5ee4f4cd22ac7884d03cc763b24}
+
+\item 
+int {\bfseries goal\+Roadmap\+Index}\label{classMultiModalPRM_ac4edcaeb7b9f831fb8fb80a7a7d5dc0e}
+
+\item 
+int {\bfseries num\+Expand\+Mode\+Samples}\label{classMultiModalPRM_aafcc7e72a29414eccc1a363a39a6df74}
+
+\item 
+int {\bfseries num\+Expand\+Trans\+Samples}\label{classMultiModalPRM_a124090370e3e8b159d11683a1ef3e183}
+
+\item 
+{\bf Motion\+Planner\+Factory} {\bfseries planner\+Factory}\label{classMultiModalPRM_ac235efba7a0f24aac67c600ffcc6f0db}
+
+\item 
+std\+::map$<$ {\bf Transition\+Index}, int $>$ {\bfseries cc\+Index}\label{classMultiModalPRM_a9c3bc4d44c76226d486bafd2f42ce2b8}
+
+\item 
+Graph\+::\+Connected\+Components {\bfseries ccs}\label{classMultiModalPRM_a48a2376a9dfcbf9501a7abe54f9e8f58}
+
+\item 
+int {\bfseries mode\+Sample\+Count}\label{classMultiModalPRM_ae0d5c25df1c5abe5604e2f67668d9a0d}
+
+\item 
+int {\bfseries trans\+Sample\+Count}\label{classMultiModalPRM_ac0f6973bad3547267b393bdacf1a0836}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Multi\+Modal\+Planner.\+h\item 
+Multi\+Modal\+Planner.\+cpp\end{DoxyCompactItemize}

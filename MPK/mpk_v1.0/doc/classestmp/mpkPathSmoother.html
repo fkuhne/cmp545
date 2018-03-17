@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  mpkPathSmoother</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">mpkPathSmoother</A></H2></TD></H2></TD></TR></TABLE>
+<BLOCKQUOTE>Simple path smoother that iteratively picks a random pair of points on the path and then tries to shortcut the section between the two points by a straight line segment.  If compiled with <B>ADAPT_COLLCHECKER</B> defined, it uses <!1><A HREF="mpkAdaptSegmentChecker.html">mpkAdaptSegmentChecker</A> and otherwise it uses <!1><A HREF="mpkSimpleSegmentChecker.html">mpkSimpleSegmentChecker</A>.</BLOCKQUOTE>
+<HR>
+
+<DL>
+<P><TABLE>
+<DT><H3>Public Methods</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.16.1"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>mpkPathSmoother</B> (const vector&lt;<!1><A HREF="mpkConfig.html">mpkConfig</A>&gt;&amp; path, const vector&lt;<!1><A HREF="mpkCollPair.html">mpkCollPair</A>&gt;* <!1><A HREF="mpkCollPairSet.html#DOC.6.3">test_pairs</A>, <!1><A HREF="mpkRobotCollection.html">mpkRobotCollection</A>* <!1><A HREF="mpkTraceVis.html#DOC.20.10">robots</A>, double min_shortcut_len=1e-3, double epsilon=0)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.16.2"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>smoothe</B> (int nsteps=10)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.16.3"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>num_segs</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.16.4"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>double </TD><TD><B>length</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.16.5"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>get_path</B> (vector&lt;<!1><A HREF="mpkConfig.html">mpkConfig</A>&gt;&amp; smoothed_path)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.16.6"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>get_path</B> (list&lt;<!1><A HREF="mpkConfig.html">mpkConfig</A>&gt;&amp; smoothed_path)<BR>
+<I></I>
+</TD></TR></TABLE></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>Simple path smoother that iteratively picks a random pair of points on the path and then tries to shortcut the section between the two points by a straight line segment.  If compiled with <B>ADAPT_COLLCHECKER</B> defined, it uses <!1><A HREF="mpkAdaptSegmentChecker.html">mpkAdaptSegmentChecker</A> and otherwise it uses <!1><A HREF="mpkSimpleSegmentChecker.html">mpkSimpleSegmentChecker</A>.</BLOCKQUOTE>
+<DL>
+
+<A NAME="mpkPathSmoother"></A>
+<A NAME="DOC.16.1"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> mpkPathSmoother(const vector&lt;<!1><A HREF="mpkConfig.html">mpkConfig</A>&gt;&amp; path, const vector&lt;<!1><A HREF="mpkCollPair.html">mpkCollPair</A>&gt;* <!1><A HREF="mpkCollPairSet.html#DOC.6.3">test_pairs</A>, <!1><A HREF="mpkRobotCollection.html">mpkRobotCollection</A>* <!1><A HREF="mpkTraceVis.html#DOC.20.10">robots</A>, double min_shortcut_len=1e-3, double epsilon=0)</B></TT>
+<DD>Takes a path (to be shortened) and an array of pairs to test
+for collisions.  The parameter <B>min_shortcut_len</B> is the minimum
+length (relative to the length of {\bv path}) of a shortcut to be
+accepted (can be used to avoid too fine approximations).  It further
+requires a pointer <B>robots</B> to the corresponding robot
+collection.  The c-space resolution <B>epsilon</B> is only used if
+compiled for the simple segment checker. 
+<DL><DT><DD></DL><P>
+<A NAME="smoothe"></A>
+<A NAME="DOC.16.2"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void smoothe(int nsteps=10)</B></TT>
+<DD>Perform nsteps of smoothing
+<DL><DT><DD></DL><P>
+<A NAME="num_segs"></A>
+<A NAME="DOC.16.3"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int num_segs()</B></TT>
+<DD>Returns the number of segments in current internal copy of the path
+<DL><DT><DD></DL><P>
+<A NAME="length"></A>
+<A NAME="DOC.16.4"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>double length()</B></TT>
+<DD>Returns length of current internal copy of the path
+<DL><DT><DD></DL><P>
+<A NAME="get_path"></A>
+<A NAME="DOC.16.5"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void get_path(vector&lt;<!1><A HREF="mpkConfig.html">mpkConfig</A>&gt;&amp; smoothed_path)</B></TT>
+<DD>To get a copy of the internal path
+<DL><DT><DD></DL><P>
+<A NAME="get_path"></A>
+<A NAME="DOC.16.6"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void get_path(list&lt;<!1><A HREF="mpkConfig.html">mpkConfig</A>&gt;&amp; smoothed_path)</B></TT>
+<DD>To get a copy of the internal path
+<DL><DT><DD></DL><P></DL>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

@@ -1,0 +1,59 @@
+\section{S\+B\+L\+Planner\+With\+Grid Class Reference}
+\label{classSBLPlannerWithGrid}\index{S\+B\+L\+Planner\+With\+Grid@{S\+B\+L\+Planner\+With\+Grid}}
+
+
+An S\+BL planner whose trees use grids for point location.  
+
+
+
+
+{\ttfamily \#include $<$S\+B\+L.\+h$>$}
+
+Inheritance diagram for S\+B\+L\+Planner\+With\+Grid\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSBLPlannerWithGrid}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries S\+B\+L\+Planner\+With\+Grid} ({\bf C\+Space} $\ast$)\label{classSBLPlannerWithGrid_ab190515375538d65152fb87a377957e8}
+
+\item 
+virtual void {\bfseries Cleanup} ()\label{classSBLPlannerWithGrid_aae4120821b162b089edb3f3e192b3805}
+
+\item 
+virtual void {\bfseries Init} (const Config \&q\+Start, const Config \&q\+Goal)\label{classSBLPlannerWithGrid_a877d3616dbe353e4005d712fe203368c}
+
+\item 
+virtual bool {\bfseries Extend} ()\label{classSBLPlannerWithGrid_a15fceeb69521215cfb55d7a90f4098a3}
+
+\item 
+virtual Node $\ast$ {\bfseries Pick\+Connection} ({\bf S\+B\+L\+Tree} $\ast$t, const Config \&x)\label{classSBLPlannerWithGrid_a1a6adeae4cf85b853a525c8bb9d5b0b2}
+
+\item 
+void {\bfseries Randomize\+Subset} ()\label{classSBLPlannerWithGrid_a7d702a676538d8c9ed892dcb4380d8c9}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries num\+Iters\+Per\+Randomize}\label{classSBLPlannerWithGrid_a224e9dc7e6f695172ea59dc4a3a040c0}
+
+\item 
+double {\bfseries grid\+Division}\label{classSBLPlannerWithGrid_a87e6c4778cde4b92f658bf4b091658d0}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+An S\+BL planner whose trees use grids for point location. 
+
+Every num\+Iters\+Per\+Randomize Extend() iterations, the grid dimensions are randomized. They use a 3-\/d grid with division grid\+Division. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+B\+L.\+h\item 
+S\+B\+L.\+cpp\end{DoxyCompactItemize}

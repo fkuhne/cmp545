@@ -1,0 +1,68 @@
+\section{Explicit\+C\+Space Class Reference}
+\label{classExplicitCSpace}\index{Explicit\+C\+Space@{Explicit\+C\+Space}}
+
+
+Configuration space that exposes N obstacle checks. This functionality can be used in a motion planner to speed up planning by delaying certain expensive obstacle checks, or to provide reasons for infeasibility.  
+
+
+
+
+{\ttfamily \#include $<$Explicit\+C\+Space.\+h$>$}
+
+Inheritance diagram for Explicit\+C\+Space\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classExplicitCSpace}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool {\bf Is\+Feasible} (const Config \&, int obstacle)=0\label{classExplicitCSpace_ae1a5a6527f51540d0915c55070e63b43}
+
+\begin{DoxyCompactList}\small\item\em Implement this\+: single-\/obstacle feasibility check. \end{DoxyCompactList}\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bf Local\+Planner} (const Config \&a, const Config \&b)\label{classExplicitCSpace_a4fea2d3da0e4125319ab4a5db16f2f77}
+
+\begin{DoxyCompactList}\small\item\em Implement this (optional)\+: all obstacle local planner. \end{DoxyCompactList}\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bf Local\+Planner} (const Config \&a, const Config \&b, int obstacle)=0\label{classExplicitCSpace_a2ae0ef15db0721388b3919807e79b5ee}
+
+\begin{DoxyCompactList}\small\item\em Implement this\+: single-\/obstacle local planner. \end{DoxyCompactList}\item 
+virtual int {\bf Num\+Obstacles} ()=0\label{classExplicitCSpace_a900a2f27b3916706e45df799dc99c16e}
+
+\begin{DoxyCompactList}\small\item\em Implement this\+: returns the number of obstacles. \end{DoxyCompactList}\item 
+virtual std\+::string {\bf Obstacle\+Name} (int obstacle)\label{classExplicitCSpace_a9674c8231f71787a758f43761c0f86ec}
+
+\begin{DoxyCompactList}\small\item\em Implement this\+: returns the name of obstacle. \end{DoxyCompactList}\item 
+virtual double {\bf Obstacle\+Distance} (const Config \&a, int obstacle)\label{classExplicitCSpace_a27934dc5bd43781295e2302e56e8e71b}
+
+\begin{DoxyCompactList}\small\item\em Optional\+: for local planners using obstacle distance. \end{DoxyCompactList}\item 
+virtual bool {\bf Is\+Feasible} (const Config \&)
+\item 
+virtual void {\bf Check\+Obstacles} (const Config \&, std\+::vector$<$ bool $>$ \&infeasible)\label{classExplicitCSpace_acee7a0d28f2f4f2b696a197d594f0101}
+
+\begin{DoxyCompactList}\small\item\em Returns a vector indicating which obstacles are violated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Configuration space that exposes N obstacle checks. This functionality can be used in a motion planner to speed up planning by delaying certain expensive obstacle checks, or to provide reasons for infeasibility. 
+
+Subclasses must implement \doxyref{Num\+Obstacles()}{p.}{classExplicitCSpace_a900a2f27b3916706e45df799dc99c16e}, Is\+Feasible(q,i), and Local\+Planner(a,b,i) at a minimum. Many planners will also expect subclasses to implement Local\+Planner(a,b) to return a subclass of \doxyref{Explicit\+Edge\+Planner}{p.}{classExplicitEdgePlanner}. The default implementation of \doxyref{Explicit\+Edge\+Planner}{p.}{classExplicitEdgePlanner} should suffice as long as the obstacle-\/specific Local\+Planner(a,b,i) is implemented. In other words, \char`\"{}return new Explicit\+Edge\+Planner(this,a,b);\char`\"{} 
+
+\subsection{Member Function Documentation}
+\index{Explicit\+C\+Space@{Explicit\+C\+Space}!Is\+Feasible@{Is\+Feasible}}
+\index{Is\+Feasible@{Is\+Feasible}!Explicit\+C\+Space@{Explicit\+C\+Space}}
+\subsubsection[{Is\+Feasible(const Config \&)}]{\setlength{\rightskip}{0pt plus 5cm}bool Explicit\+C\+Space\+::\+Is\+Feasible (
+\begin{DoxyParamCaption}
+\item[{const Config \&}]{q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classExplicitCSpace_a82537edf516ece36a5326a949ba90a37}
+Default implementation runs Is\+Feasible(q,index) in order until one is found false 
+
+Implements {\bf C\+Space} \doxyref{}{p.}{classCSpace}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Explicit\+C\+Space.\+h\item 
+Explicit\+C\+Space.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,19 @@
+#Inventor V2.0 ascii
+
+Separator {
+  Transform {
+    translation 0 -0.01 0
+  }
+#  BaseColor {rgb 0.5 0.5 0.5 }
+#  DEF WHITE_METAL Material {
+#    diffuseColor    0.3 0.3 0.4
+#  }
+  DEF floor mpkObstacle {
+    BaseColor {rgb 0.5 0.5 0.5 }
+    DEF __triangulate__ Cube {
+      height 0.01
+      width 1
+      depth 1
+    }
+  }
+}

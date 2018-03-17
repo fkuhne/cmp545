@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  mpkDemoRobot</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">mpkDemoRobot</A></H2></TD></H2></TD></TR></TABLE>
+<HR>
+
+<H2>Inheritance:</H2>
+<APPLET CODE="ClassGraph.class" WIDTH=600 HEIGHT=65>
+<param name=classes value="CmpkBaseRobot,MmpkBaseRobot.html,CmpkDemoRobot,MmpkDemoRobot.html">
+<param name=before value="M,M">
+<param name=after value="Md_,M">
+<param name=indent value="0,1">
+<param name=arrowdir value="up">
+</APPLET>
+<HR><H3>Inherited from <A HREF="mpkBaseRobot.html">mpkBaseRobot</A>:</H3>
+<DL>
+<P><DL>
+<DT><H3>Public Fields</H3><DD><DT>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="mpkBaseRobot.html#DOC.2.2">Joint</A>* <B>joints</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>num_joints</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>double* <B>params</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>num_params</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="mpkBaseRobot.html#DOC.2.21">param_info</A>* <B>param_opts</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>double <B>scale_factor</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>vector&lt;<!1><A HREF="mpkBaseRobot.html#DOC.2.24">selfcoll_pair</A>&gt;  <B>selfcoll_info</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>SoSeparator* <B>iv_graph</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>tracepoint_joint_idx</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="mpkTransform.html">mpkTransform</A> <B>base_T</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>SoTransform* <B>iv_base_T</B>
+</DL></P>
+
+<P><DL>
+<DT><H3>Public Methods</H3><DD><DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>compute_forward_kinematics</B>()
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>compute_forward_kinematics</B>(int joint_idx)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>compute_forward_kinematics</B>(int joint_idx, unsigned <!1><A HREF="sblMilestone.html#DOC.32.23">t</A>, <!1><A HREF="mpkTransformCache.html">mpkTransformCache</A>* cache)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>update_iv_transf</B>()
+<DT>
+<IMG ALT="o" SRC=icon2.gif>bool <B>collision</B>(int <!1><A HREF="sblMilestone.html#DOC.32.21">i</A>, int j, int model_id=0)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>bool <B>collision</B>(int <!1><A HREF="sblMilestone.html#DOC.32.21">i</A>, double <!1><A HREF="mpkTransform.html#DOC.22.18">R</A>[3][3], double <!1><A HREF="mpkTransform.html#DOC.22.19">T</A>[3], PQP_Model* obstacle, int model_id=0)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>double <B>distance</B>(int <!1><A HREF="sblMilestone.html#DOC.32.21">i</A>, int j, double rel_err=0, int model_id=0)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>double <B>distance</B>(int <!1><A HREF="sblMilestone.html#DOC.32.21">i</A>, double <!1><A HREF="mpkTransform.html#DOC.22.18">R</A>[3][3], double <!1><A HREF="mpkTransform.html#DOC.22.19">T</A>[3], PQP_Model* obstacle, double rel_err=0, int model_id=0)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>bool <B>closer_than_thres</B>(int <!1><A HREF="sblMilestone.html#DOC.32.21">i</A>, int j, double thres=0, int model_id=0)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>bool <B>closer_than_thres</B>(int <!1><A HREF="sblMilestone.html#DOC.32.21">i</A>, double <!1><A HREF="mpkTransform.html#DOC.22.18">R</A>[3][3], double <!1><A HREF="mpkTransform.html#DOC.22.19">T</A>[3], PQP_Model* obstacle, double thres=0, int model_id=0 )
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>translate_base</B>(double dx, double dy, double dz)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>const char* <B>get_name</B>()
+<DT>
+<IMG ALT="o" SRC=icon2.gif>virtual   double <B>pathlen_upbound</B>(const <!1><A HREF="mpkConfig.html">mpkConfig</A>&amp; q0, const <!1><A HREF="mpkConfig.html">mpkConfig</A>&amp; q1, int <!1><A HREF="mpkRobotCollection.html#DOC.17.5">first_param_idx</A>, int joint_idx, int root_idx=-1)
+</DL></P>
+
+<P><DL>
+<DT><H3>Public Members</H3><DD><DT>
+<IMG ALT="o" SRC=icon2.gif>struct  <B>JointDef</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>struct  <B>Joint</B>: <!1><A HREF="mpkBaseRobot.html#DOC.2.1">JointDef</A>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>struct  <B>param_info</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>struct  <B>selfcoll_pair</B>
+</DL></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

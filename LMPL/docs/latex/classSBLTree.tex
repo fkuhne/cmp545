@@ -1,0 +1,88 @@
+\section{S\+B\+L\+Tree Class Reference}
+\label{classSBLTree}\index{S\+B\+L\+Tree@{S\+B\+L\+Tree}}
+
+
+A tree of configurations to be used in the S\+BL motion planner.  
+
+
+
+
+{\ttfamily \#include $<$S\+B\+L\+Tree.\+h$>$}
+
+Inheritance diagram for S\+B\+L\+Tree\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSBLTree}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf Edge\+Info}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Graph\+::\+Tree\+Node$<$ Config, Smart\+Pointer$<$ {\bf Edge\+Planner} $>$ $>$ {\bfseries Node}\label{classSBLTree_a91f69b90c6e2fc372a31c97a87d3aa15}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries S\+B\+L\+Tree} ({\bf C\+Space} $\ast$)\label{classSBLTree_a367a93a43d7cb01c34136b77b555ca49}
+
+\item 
+virtual void {\bfseries Cleanup} ()\label{classSBLTree_ac075223ea0a5f0a01c9df668ead2ecae}
+
+\item 
+virtual void {\bfseries Init} (const Config \&q\+Start)\label{classSBLTree_ae14637d72a51bb5fe7e4c98b819cbf90}
+
+\item 
+virtual Node $\ast$ {\bfseries Extend} (double max\+Distance, int max\+Iters)\label{classSBLTree_a015ba93ecff317cb1d72eb596e63fe1e}
+
+\item 
+virtual void {\bfseries Add\+Milestone} (Node $\ast$n)\label{classSBLTree_a31c4852082df50820fe30c590173b96c}
+
+\item 
+virtual void {\bfseries Remove\+Milestone} (Node $\ast$n)\label{classSBLTree_ab58366d9da8aa521389fc2db6a4175ac}
+
+\item 
+virtual Node $\ast$ {\bfseries Pick\+Expand} ()\label{classSBLTree_a87a32676fd734538b699b13c9c37b4cf}
+
+\item 
+Node $\ast$ {\bfseries Add\+Milestone} (const Config \&q)\label{classSBLTree_a1061a3c9ead4d26572d858c40b3f0ed9}
+
+\item 
+bool {\bfseries Has\+Node} (Node $\ast$n) const \label{classSBLTree_aa00f8a31a0590bdb7885693d1f4e7f2b}
+
+\item 
+Node $\ast$ {\bfseries Add\+Child} (Node $\ast$n, const Config \&x)\label{classSBLTree_a1699cb550b424bc24e50d6b478fbeca0}
+
+\item 
+Node $\ast$ {\bfseries Find\+Closest} (const Config \&x)\label{classSBLTree_a6346a7340ab1316894ef0de334cf2581}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool {\bfseries Check\+Path} ({\bf S\+B\+L\+Tree} $\ast$ts, Node $\ast$ns, {\bf S\+B\+L\+Tree} $\ast$tg, Node $\ast$ng, std\+::list$<$ {\bf Edge\+Info} $>$ \&output\+Path)\label{classSBLTree_ad12520b6429ecf48a836123af2d4f59e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf C\+Space} $\ast$ {\bfseries space}\label{classSBLTree_abca592f0e583e6ddc032c8dc65ba0663}
+
+\item 
+Node $\ast$ {\bfseries root}\label{classSBLTree_a5a3bfe68e29b679b01266c523f1fcded}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A tree of configurations to be used in the S\+BL motion planner. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+B\+L\+Tree.\+h\item 
+S\+B\+L\+Tree.\+cpp\end{DoxyCompactItemize}

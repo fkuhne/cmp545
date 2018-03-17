@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  sblPlanner</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">sblPlanner</A></H2></TD></H2></TD></TR></TABLE>
+<BLOCKQUOTE>This contains the implementation of the basic sblPlanner. The current planner uses a simple segment checker (class <!1><A HREF="mpkSimpleSegmentChecker.html">mpkSimpleSegmentChecker</A>) for the collision tests. </BLOCKQUOTE>
+<HR>
+
+<DL>
+<P><TABLE>
+<DT><H3>Public Methods</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.34.1"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>sblPlanner</B> (<!1><A HREF="mpkRobotCollection.html">mpkRobotCollection</A>* <!1><A HREF="mpkTraceVis.html#DOC.20.10">robots</A>, vector&lt;<!1><A HREF="mpkCollPair.html">mpkCollPair</A>&gt;* <!1><A HREF="mpkCollPairSet.html#DOC.6.3">test_pairs</A>, double epsilon=0.012 )<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.34.2"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>bool </TD><TD><B>Query</B> ( const <!1><A HREF="mpkConfig.html">mpkConfig</A>&amp; q0, const <!1><A HREF="mpkConfig.html">mpkConfig</A>&amp; q1, list&lt;<!1><A HREF="mpkConfig.html">mpkConfig</A>&gt; &amp;genPath, double rho=0.15, int max_it=100000)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.34.3"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>printStats</B> (struct _timeb <!1><A HREF="mpkGUI.html#DOC.11.5">start</A>, struct _timeb end, list&lt;<!1><A HREF="mpkConfig.html">mpkConfig</A>&gt; &amp;genPath)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.34.4"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>printStats</B> (struct tms <!1><A HREF="mpkGUI.html#DOC.11.5">start</A>, struct tms end, list&lt;<!1><A HREF="mpkConfig.html">mpkConfig</A>&gt; &amp;genPath)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.34.5"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>writePath</B> (const list&lt;<!1><A HREF="mpkConfig.html">mpkConfig</A>&gt;&amp;, char* file_name)<BR>
+<I></I>
+</TD></TR></TABLE></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>This contains the implementation of the basic sblPlanner. The current planner uses a simple segment checker (class <!1><A HREF="mpkSimpleSegmentChecker.html">mpkSimpleSegmentChecker</A>) for the collision tests. </BLOCKQUOTE>
+<DL>
+
+<A NAME="sblPlanner"></A>
+<A NAME="DOC.34.1"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> sblPlanner(<!1><A HREF="mpkRobotCollection.html">mpkRobotCollection</A>* <!1><A HREF="mpkTraceVis.html#DOC.20.10">robots</A>, vector&lt;<!1><A HREF="mpkCollPair.html">mpkCollPair</A>&gt;* <!1><A HREF="mpkCollPairSet.html#DOC.6.3">test_pairs</A>, double epsilon=0.012 )</B></TT>
+<DD>Takes a pointer <B>robots</B> to the robot collection, a set
+of collision test pairs (see
+<!1><A HREF="mpkCollPairSet.html">mpkCollPairSet</A>)
+and a c-space resolution for the
+<!1><A HREF="mpkSimpleSegmentChecker.html">mpkSimpleSegmentChecker</A>.
+<DL><DT><DD></DL><P>
+<A NAME="Query"></A>
+<A NAME="DOC.34.2"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>bool Query( const <!1><A HREF="mpkConfig.html">mpkConfig</A>&amp; q0, const <!1><A HREF="mpkConfig.html">mpkConfig</A>&amp; q1, list&lt;<!1><A HREF="mpkConfig.html">mpkConfig</A>&gt; &amp;genPath, double rho=0.15, int max_it=100000)</B></TT>
+<DD>This function is used to invoke the planner.  <B>rho</B> is
+the initial neighborhood size for sampling around a milestone and
+<B>max_it</B> is the maximum number of iterations.  If no path is
+found within this number of iterations, false is returned. 
+<DL><DT><DD></DL><P>
+<A NAME="printStats"></A>
+<A NAME="DOC.34.3"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void printStats(struct _timeb <!1><A HREF="mpkGUI.html#DOC.11.5">start</A>, struct _timeb end, list&lt;<!1><A HREF="mpkConfig.html">mpkConfig</A>&gt; &amp;genPath)</B></TT>
+<DD>Evaluates the planner time and outputs final Path (WIN32) 
+<DL><DT><DD></DL><P>
+<A NAME="printStats"></A>
+<A NAME="DOC.34.4"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void printStats(struct tms <!1><A HREF="mpkGUI.html#DOC.11.5">start</A>, struct tms end, list&lt;<!1><A HREF="mpkConfig.html">mpkConfig</A>&gt; &amp;genPath)</B></TT>
+<DD>Evaluates the planner time and outputs final Path (Unix) 
+<DL><DT><DD></DL><P>
+<A NAME="writePath"></A>
+<A NAME="DOC.34.5"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void writePath(const list&lt;<!1><A HREF="mpkConfig.html">mpkConfig</A>&gt;&amp;, char* file_name)</B></TT>
+<DD>Writes the final path to a file 
+<DL><DT><DD></DL><P></DL>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DT><B>See Also:</B><DD><!1><A HREF="mpkSimpleSegmentChecker.html">mpkSimpleSegmentChecker</A><BR><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

@@ -1,0 +1,80 @@
+\section{Subset\+Explicit\+C\+Space Class Reference}
+\label{classSubsetExplicitCSpace}\index{Subset\+Explicit\+C\+Space@{Subset\+Explicit\+C\+Space}}
+
+
+Extracts a subset of obstacles from an \doxyref{Explicit\+C\+Space}{p.}{classExplicitCSpace}.  
+
+
+
+
+{\ttfamily \#include $<$Explicit\+C\+Space.\+h$>$}
+
+Inheritance diagram for Subset\+Explicit\+C\+Space\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classSubsetExplicitCSpace}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Subset\+Explicit\+C\+Space} ({\bf Explicit\+C\+Space} $\ast$base\+Space)\label{classSubsetExplicitCSpace_a1d6500746f092bced9ca8c08439adc0e}
+
+\item 
+{\bfseries Subset\+Explicit\+C\+Space} ({\bf Explicit\+C\+Space} $\ast$base\+Space, int obstacle)\label{classSubsetExplicitCSpace_a2bcd5da2d02b66e190885eb49f92dd39}
+
+\item 
+void {\bf Enable\+All} ()\label{classSubsetExplicitCSpace_af15f473eeadbba58f60d23cf9884e922}
+
+\begin{DoxyCompactList}\small\item\em Turn on all constraints. \end{DoxyCompactList}\item 
+void {\bf Enable\+None} ()\label{classSubsetExplicitCSpace_ae7aa34760cdc52f9a1a21c86f5a92f13}
+
+\begin{DoxyCompactList}\small\item\em Turn off all constraints. \end{DoxyCompactList}\item 
+virtual bool {\bf Is\+Feasible} (const Config \&, int obstacle)\label{classSubsetExplicitCSpace_a773a6d83691675466d07923bc82d14ad}
+
+\begin{DoxyCompactList}\small\item\em Implement this\+: single-\/obstacle feasibility check. \end{DoxyCompactList}\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bf Local\+Planner} (const Config \&a, const Config \&b)\label{classSubsetExplicitCSpace_a99a68df6f72256d5f7a01de8a681a6b9}
+
+\begin{DoxyCompactList}\small\item\em Implement this (optional)\+: all obstacle local planner. \end{DoxyCompactList}\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bf Local\+Planner} (const Config \&a, const Config \&b, int obstacle)\label{classSubsetExplicitCSpace_a00ba1b23d12b9bf27dc3aebf450a4cc7}
+
+\begin{DoxyCompactList}\small\item\em Implement this\+: single-\/obstacle local planner. \end{DoxyCompactList}\item 
+virtual int {\bf Num\+Obstacles} ()\label{classSubsetExplicitCSpace_ac3fd1ee0bdec0cfa4ac11af50402a9e7}
+
+\begin{DoxyCompactList}\small\item\em Implement this\+: returns the number of obstacles. \end{DoxyCompactList}\item 
+virtual std\+::string {\bf Obstacle\+Name} (int obstacle)\label{classSubsetExplicitCSpace_a41a2cdc371563e8eacc99633cf93bcff}
+
+\begin{DoxyCompactList}\small\item\em Implement this\+: returns the name of obstacle. \end{DoxyCompactList}\item 
+virtual double {\bf Obstacle\+Distance} (const Config \&a, int obstacle)\label{classSubsetExplicitCSpace_aa3f5f8f05dba341b271fd8e3fd658534}
+
+\begin{DoxyCompactList}\small\item\em Optional\+: for local planners using obstacle distance. \end{DoxyCompactList}\item 
+virtual void {\bfseries Sample} (Config \&x)\label{classSubsetExplicitCSpace_a1deddd28c38fa0ee57b203bff432f1de}
+
+\item 
+virtual void {\bfseries Sample\+Neighborhood} (const Config \&c, double r, Config \&x)\label{classSubsetExplicitCSpace_a94946b5d48b2bde4b0c9f04f00f0d1ce}
+
+\item 
+virtual double {\bf Distance} (const Config \&x, const Config \&y)\label{classSubsetExplicitCSpace_ac1a148c184aecec1276bee91657cd5a7}
+
+\begin{DoxyCompactList}\small\item\em optionally overrideable (default uses euclidean space) \end{DoxyCompactList}\item 
+virtual void {\bfseries Interpolate} (const Config \&x, const Config \&y, double u, Config \&out)\label{classSubsetExplicitCSpace_a0130ea98f0de04e60e7fb23be40af612}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Explicit\+C\+Space} $\ast$ {\bfseries base\+Space}\label{classSubsetExplicitCSpace_adbc066ce0eab6e79ae1adbaa9c0b689e}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries active\+Subset}\label{classSubsetExplicitCSpace_a6e18e789f9a904f8186d63dddfab8fdc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Extracts a subset of obstacles from an \doxyref{Explicit\+C\+Space}{p.}{classExplicitCSpace}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Explicit\+C\+Space.\+h\item 
+Explicit\+C\+Space.\+cpp\end{DoxyCompactItemize}

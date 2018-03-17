@@ -1,0 +1,80 @@
+\section{Straight\+Line\+Epsilon\+Planner Class Reference}
+\label{classStraightLineEpsilonPlanner}\index{Straight\+Line\+Epsilon\+Planner@{Straight\+Line\+Epsilon\+Planner}}
+
+
+Straight-\/line edge planner that divides the segment until epsilon is reached.  
+
+
+
+
+{\ttfamily \#include $<$Edge\+Planner.\+h$>$}
+
+Inheritance diagram for Straight\+Line\+Epsilon\+Planner\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classStraightLineEpsilonPlanner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Straight\+Line\+Epsilon\+Planner} (const Config \&a, const Config \&b, {\bf C\+Space} $\ast$space, double epsilon)\label{classStraightLineEpsilonPlanner_ac641c0b7e08bba510366e6c9a5ad3cfb}
+
+\item 
+virtual bool {\bfseries Is\+Visible} ()\label{classStraightLineEpsilonPlanner_ae65de367b00380d4ac1b0b665bf3ec14}
+
+\item 
+virtual void {\bfseries Eval} (double u, Config \&x) const \label{classStraightLineEpsilonPlanner_acd8e8bbe6a515c94e63495f4c783ab20}
+
+\item 
+virtual const Config \& {\bfseries Start} () const \label{classStraightLineEpsilonPlanner_a35ad51c5701b7bbd22ec8cf0823fffa3}
+
+\item 
+virtual const Config \& {\bfseries Goal} () const \label{classStraightLineEpsilonPlanner_a36d9fd400faea7cc76924a97b61f2989}
+
+\item 
+virtual {\bf C\+Space} $\ast$ {\bfseries Space} () const \label{classStraightLineEpsilonPlanner_ad8151ca526cb6306df5cc4369820b81a}
+
+\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bfseries Copy} () const \label{classStraightLineEpsilonPlanner_a297ae899e2a35268317bf3b49d74abde}
+
+\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bfseries Reverse\+Copy} () const \label{classStraightLineEpsilonPlanner_ae1dd836c26ce2c8efdd37007563a37dd}
+
+\item 
+virtual double {\bfseries Priority} () const \label{classStraightLineEpsilonPlanner_afed110be4d704e15845a8f8b6534f320}
+
+\item 
+virtual bool {\bfseries Plan} ()\label{classStraightLineEpsilonPlanner_ac5ed85b1b379500fbf3e28e1cf10b0ed}
+
+\item 
+virtual bool {\bfseries Done} () const \label{classStraightLineEpsilonPlanner_a1edaa4b0182c5bd299bc298ea1fca986}
+
+\item 
+virtual bool {\bfseries Failed} () const \label{classStraightLineEpsilonPlanner_ac991b0a81c5fa084ded9291d03c8a4a4}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Config {\bfseries a}\label{classStraightLineEpsilonPlanner_a283302b601941f0570e007e2ea601eb6}
+
+\item 
+Config {\bfseries b}\label{classStraightLineEpsilonPlanner_aa5b324ce8a64dfd718464cbd4cfc7f97}
+
+\item 
+{\bf C\+Space} $\ast$ {\bfseries space}\label{classStraightLineEpsilonPlanner_af53624bcda4e4449667b70142bde4dc5}
+
+\item 
+double {\bfseries epsilon}\label{classStraightLineEpsilonPlanner_a1d69f13d62136ef826b90847c9f2e243}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Straight-\/line edge planner that divides the segment until epsilon is reached. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Edge\+Planner.\+h\item 
+Edge\+Planner.\+cpp\end{DoxyCompactItemize}

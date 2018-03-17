@@ -1,0 +1,67 @@
+\section{Edge\+Planner Class Reference}
+\label{classEdgePlanner}\index{Edge\+Planner@{Edge\+Planner}}
+
+
+Abstract base class for an edge planner.  
+
+
+
+
+{\ttfamily \#include $<$Edge\+Planner.\+h$>$}
+
+Inheritance diagram for Edge\+Planner\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.043478cm]{classEdgePlanner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool {\bfseries Is\+Visible} ()=0\label{classEdgePlanner_a36811a10f49a2b007cae12af1bf39a4d}
+
+\item 
+virtual void {\bfseries Eval} (double u, Config \&x) const =0\label{classEdgePlanner_ad866977a4bb25c1453578b7796e99866}
+
+\item 
+virtual const Config \& {\bfseries Start} () const =0\label{classEdgePlanner_a8aa4b92bababf31603d57dddfed13737}
+
+\item 
+virtual const Config \& {\bfseries Goal} () const =0\label{classEdgePlanner_ae49f00e96cc3fdd2720d4d8df1141130}
+
+\item 
+virtual {\bf C\+Space} $\ast$ {\bfseries Space} () const =0\label{classEdgePlanner_a023245383ad18f2a7c61ea6f7ceb8876}
+
+\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bfseries Copy} () const =0\label{classEdgePlanner_afe4085b769bffa8cb9a926ffb99d60f4}
+
+\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bfseries Reverse\+Copy} () const =0\label{classEdgePlanner_ab105b939eb2920016c5d2e674b77cd58}
+
+\item 
+virtual double {\bfseries Priority} () const \label{classEdgePlanner_a77773f4d61e2c7f6a17ef03642707e07}
+
+\item 
+virtual bool {\bfseries Plan} ()\label{classEdgePlanner_a5d84b9e80743bf3a3006af65ce75edee}
+
+\item 
+virtual bool {\bfseries Done} () const \label{classEdgePlanner_a9e9d54be1a275f31a930457e57e4cbcc}
+
+\item 
+virtual bool {\bfseries Failed} () const \label{classEdgePlanner_a0779bdf39860d9819162172279b7bb83}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract base class for an edge planner. 
+
+N\+O\+TE\+: the only thing allowed to be referenced is the workspace!
+
+Is\+Visible performs the planning process Eval returns the path p(u) with u from 0-\/$>$1. p(0)=a, p(1)=b Start returns p(0) Goal returns p(1) Space() returns the workspace in which this lives Copy returns a copy Reverse\+Copy returns the reverse edge planner
+
+For incremental planners\+: Priority returns some priority measure (such as distance btwn configs) Plan performs one step of the planning process, returns true to continue, false on failure Done returns true if the planning\textquotesingle{}s done 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Edge\+Planner.\+h\end{DoxyCompactItemize}

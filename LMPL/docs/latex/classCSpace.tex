@@ -1,0 +1,58 @@
+\section{C\+Space Class Reference}
+\label{classCSpace}\index{C\+Space@{C\+Space}}
+
+
+Motion planning configuration space base class.  
+
+
+
+
+{\ttfamily \#include $<$C\+Space.\+h$>$}
+
+Inheritance diagram for C\+Space\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCSpace}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries Sample} (Config \&x)=0\label{classCSpace_a2bac5dcec67c7062d97715f95fd1f858}
+
+\item 
+virtual void {\bfseries Sample\+Neighborhood} (const Config \&c, double r, Config \&x)\label{classCSpace_a847aa27ba5a93df085dc1e18faea7981}
+
+\item 
+virtual bool {\bfseries Is\+Feasible} (const Config \&)=0\label{classCSpace_a6d207d56ae81349bfb29be035ebc5f4d}
+
+\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bfseries Local\+Planner} (const Config \&a, const Config \&b)=0\label{classCSpace_ae36cd1851a14ceebb89f7974f0e0051f}
+
+\item 
+virtual double {\bf Distance} (const Config \&x, const Config \&y)\label{classCSpace_a8705829b41ebd6d749a2db6f8404029a}
+
+\begin{DoxyCompactList}\small\item\em optionally overrideable (default uses euclidean space) \end{DoxyCompactList}\item 
+virtual void {\bfseries Interpolate} (const Config \&x, const Config \&y, double u, Config \&out)\label{classCSpace_aa87c5b4fd55ba180ebe4072e29b4d1d2}
+
+\item 
+virtual double {\bf Obstacle\+Distance} (const Config \&a)\label{classCSpace_a364b5b0ebcc258c39a263914ad3a0a89}
+
+\begin{DoxyCompactList}\small\item\em for local planners using obstacle distance \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Motion planning configuration space base class. 
+
+An abstract base class defining the C-\/space interfaces needed for motion planning. The methods represent a configuration as a vector$<$double$>$, but the space may be noneuclidean or not even the same dimensionality as the \# of entries in the configuration.
+
+The Sample, Is\+Feasible, and Local\+Planner methods must be overridden by the subclass. They implicitly define the C-\/space and free space. Sample M\+U\+ST have a nonzero chance of succeeding for any of the motion planning algorithms to work. Local\+Planner will return a new instance of an \doxyref{Edge\+Planner}{p.}{classEdgePlanner} (see \doxyref{Edge\+Planner.\+h}{p.}{EdgePlanner_8h_source}) depending on the desired type of local planner.
+
+The Distance, Interpolate, and Sample\+Neighborhood methods are optionally overrideable; the default implementations assume a Euclidean space. They must be overridden to implement a C-\/space with a noneuclidean topology.
+
+The Obstacle\+Distance method can be overridden to use the \doxyref{Straight\+Line\+Obstacle\+Distance\+Planner}{p.}{classStraightLineObstacleDistancePlanner} local planner (note that this has not been thoroughly tested). 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+Space.\+h\item 
+C\+Space.\+cpp\end{DoxyCompactItemize}

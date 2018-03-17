@@ -1,0 +1,285 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002 (1.62) JA patch-1.4
+patched version by:  Kenshi Muto, Debian Project.
+LaTeX2HTML 2002 (1.62),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>General keyboard commands</TITLE>
+<META NAME="description" CONTENT="General keyboard commands">
+<META NAME="keywords" CONTENT="fmstudio">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="fmstudio.css">
+
+<LINK REL="next" HREF="node6.html">
+<LINK REL="previous" HREF="node4.html">
+<LINK REL="up" HREF="node4.html">
+<LINK REL="next" HREF="node6.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html65"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html63"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html57"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html66"
+  HREF="node6.html">Configuration database and task</A>
+<B> Up:</B> <A NAME="tex2html64"
+  HREF="node4.html">Keyboard commands and mouse</A>
+<B> Previous:</B> <A NAME="tex2html58"
+  HREF="node4.html">Keyboard commands and mouse</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00041000000000000000"></A>
+<A NAME="sec:general_commands"></A>
+<BR>
+General keyboard commands
+</H2>
+
+<P>
+Most commands are given by pressing a single key on the keyboard while
+the mouse pointer is inside the graphics window.  Make sure that the
+graphics window is in input/selection mode.  (If keyboard commands
+seem not to work, either click on the arrow in the top right corner of
+the graphics window or press ESC while the mouse pointer is in the
+graphics window.)  For some commands below, the key to be pressed is
+in parentheses.
+
+<P>
+<DL>
+<DT><STRONG>ESC</STRONG></DT>
+<DD>Switch between camera control (examination mode) and
+  keyboard/mouse control (input/selection mode).  In examination mode,
+  the mouse can be used to rotate/move/zoom the entire scene.
+  Keyboard/mouse mode is necessary to invoke all other commands below.
+
+<P>
+</DD>
+<DT><STRONG>F1</STRONG></DT>
+<DD>Toggle parameter/Cartesian/target mode (see
+  <A HREF="node7.html#sec:mouse"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="file:/usr/share/latex2html/icons/crossref.png"></A>).
+
+<P>
+</DD>
+<DT><STRONG>F2</STRONG></DT>
+<DD>Invokes the planner on all successive pairs of key
+  configurations in the 'Plan config' list (see
+  <A HREF="node6.html#sec:database_commands"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="file:/usr/share/latex2html/icons/crossref.png"></A>).  Upon success, the planner inserts
+  additional, non-key configurations into the 'Plan config' list to
+  make it a collision-free path.
+
+<P>
+</DD>
+<DT><STRONG>F3</STRONG></DT>
+<DD>Smoothes the path in 'Plan config'.  The smoother does not
+  remove key configurations.
+
+<P>
+</DD>
+<DT><STRONG>F4</STRONG></DT>
+<DD>Plan + smoothe (equals pressing F2 and then F3)
+
+<P>
+</DD>
+<DT><STRONG>F5</STRONG></DT>
+<DD>Start/stop animation of the path in 'Plan config'.
+
+<P>
+</DD>
+<DT><STRONG>F6</STRONG></DT>
+<DD>Reset animation (move to first configuration in 'Plan config')
+
+<P>
+</DD>
+<DT><STRONG>F11</STRONG></DT>
+<DD>Freeze/unfreeze current link.  This affects the currently
+  selected (picked) joint (see <A HREF="node7.html#sec:mouse"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="file:/usr/share/latex2html/icons/crossref.png"></A>).
+
+<P>
+</DD>
+<DT><STRONG>F12</STRONG></DT>
+<DD>Freeze/unfreeze currently selected (picked) robot (see
+  <A HREF="node7.html#sec:mouse"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="file:/usr/share/latex2html/icons/crossref.png"></A>).
+
+<P>
+</DD>
+<DT><STRONG>SPACE</STRONG></DT>
+<DD>Change the value of the control step size.  This value
+  affects the robot's position control.  Pressing SPACE iterates
+  through a set of possible values, in powers of 10.
+
+<P>
+</DD>
+<DT><STRONG>NUM5</STRONG></DT>
+<DD>Identical to SPACE.
+
+<P>
+</DD>
+<DT><STRONG>(D)elta</STRONG></DT>
+<DD>Change the collision checker delta-value.  This is a
+  minimum workspace clearance required to bound the running time of
+  the adaptive collision checker.  Also, if compiled with
+  DO_TOLERANCE_TEST, this value is used in the tolerance test of the
+  simple (constant epsilon) segment checker.  After pressing 'D', move
+  the mouse pointer to the shell window and enter a new value.
+
+<P>
+</DD>
+<DT><STRONG>(E)psilon</STRONG></DT>
+<DD>(may not appear if compiled with ADAPT_COLLCHECKER).
+  Change the segment collision checker epsilon value.  This is the
+  (constant) c-space resolution for the simple segment checker.  After
+  pressing E, move the mouse pointer to the shell window and enter a
+  new value.
+
+<P>
+</DD>
+<DT><STRONG>(R)ho</STRONG></DT>
+<DD>Change sampling window size of the planner.  This is the
+  size of the window (for each DOF) within which the local neighbors
+  of a milestone are sampled.  After pressing 'R', move the mouse
+  pointer to the shell window and enter a new value.
+
+<P>
+</DD>
+<DT><STRONG>(M)ax. planner iter.</STRONG></DT>
+<DD>Change the maximum number of planner
+  iterations.  When reaching this number without having found a path,
+  the planner gives up.  To change the value, press 'M', move the mouse
+  pointer to the shell window and enter a new value.  The default
+  value works for many simple planning problems.  For difficult
+  planning problems, one may need to increase this parameter to a
+  higher value.
+
+<P>
+</DD>
+<DT><STRONG>Sm(O)othe steps</STRONG></DT>
+<DD>Change the number of attempted shortcut steps
+  performed by the path smoother.  This parameter does only affect the
+  smoother.  After pressing 'O', move the mouse pointer to the shell
+  window and enter a new value.
+
+<P>
+</DD>
+<DT><STRONG>(A)nimsteps (max.)</STRONG></DT>
+<DD>Change the animation speed (higher values
+  result in slower animation).  After pressing 'A', move the mouse
+  pointer to the shell window and enter a new value.
+
+<P>
+</DD>
+<DT><STRONG>Sample (F)ree random config</STRONG></DT>
+<DD>Sample a random free configuration
+  for the current configuration shown in the graphics window.  Note:
+  this changes the configuration that is displayed in the graphics
+  window but does not affect the 'Plan config' and 'Database config'
+  lists.
+
+<P>
+</DD>
+<DT><STRONG>(B)ounding boxes (OBB/RSS/off)</STRONG></DT>
+<DD>Toggle the displayed bounding
+  volumes.  By default, the top-level bounding volumes of all
+  robots/obstacles are shown only.  Use the '-b' option (see
+  <A HREF="node3.html#sec:command_line_options"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="file:/usr/share/latex2html/icons/crossref.png"></A>) to show BVs of a different level
+  instead.  Note that RSSs are not shown as RSSs.  Instead, their
+  smallest enclosing OBBs are shown.  Pressing 'B' repeatedly several
+  times shows OBBs, then slightly bigger OBBs (those enclosing the
+  RSSs), next no BVs, then again OBBs and so on.
+
+<P>
+</DD>
+<DT><STRONG>(T)raced end-effector path on/off</STRONG></DT>
+<DD>Show/hide the paths traced by
+  all robots' trace points (see documentation on how to create new
+  robots in doc/mpk_new/index.html).
+
+<P>
+</DD>
+<DT><STRONG>(I)mage snapshot...</STRONG></DT>
+<DD>Save a snapshot of the current scene (Unix
+  version only).  This requires the ImageMagick program 'convert' be
+  installed.  After pressing 'I', move the mouse pointer to the shell
+  window and enter a file name, e.g., 'test.jpg'.
+
+<P>
+</DD>
+<DT><STRONG>(V)ideo file name</STRONG></DT>
+<DD>Use this command to enter a file name (e.g.,
+  'test.jpg') if you would like to create a sequence of snapshots
+  during animation (useful for creating videos).  Sequential numbers
+  will be added to distinguish the files.  Set the file name to '-' to
+  disable dumping video frames.  Note: like the 'Image snapshot'
+  option above, this option requires the 'convert' program.
+  Furthermore, it will slow down the animation considerably (for each
+  frame, an image file will be saved).  To enter the video file name,
+  press 'V' and then move the mouse pointer inside the shell window.
+
+<P>
+</DD>
+<DT><STRONG>(Q)uit</STRONG></DT>
+<DD>Exits the program.  The current configuration database
+  'Database config' is saved in a file.  By default, this file has
+  the same name base as the scene file plus a '.conf' extension.  An
+  alternative name can be specified using the '-db' option.
+
+<P>
+</DD>
+</DL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html65"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html63"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html57"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html66"
+  HREF="node6.html">Configuration database and task</A>
+<B> Up:</B> <A NAME="tex2html64"
+  HREF="node4.html">Keyboard commands and mouse</A>
+<B> Previous:</B> <A NAME="tex2html58"
+  HREF="node4.html">Keyboard commands and mouse</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Mitul Saha
+2003-03-10
+</ADDRESS>
+</BODY>
+</HTML>

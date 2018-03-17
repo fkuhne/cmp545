@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002 (1.62) JA patch-1.4
+patched version by:  Kenshi Muto, Debian Project.
+LaTeX2HTML 2002 (1.62),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Collision sets</TITLE>
+<META NAME="description" CONTENT="Collision sets">
+<META NAME="keywords" CONTENT="fmstudio">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="fmstudio.css">
+
+<LINK REL="next" HREF="node9.html">
+<LINK REL="previous" HREF="node4.html">
+<LINK REL="up" HREF="fmstudio.html">
+<LINK REL="next" HREF="node9.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html93"
+  HREF="node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html91"
+  HREF="fmstudio.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html85"
+  HREF="node7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html94"
+  HREF="node9.html">Further information</A>
+<B> Up:</B> <A NAME="tex2html92"
+  HREF="fmstudio.html">FMSTUDIO User Manual</A>
+<B> Previous:</B> <A NAME="tex2html86"
+  HREF="node7.html">Mouse interface</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00050000000000000000">
+Collision sets</A>
+</H1>
+
+<P>
+The status output in the shell window tells how many pairs of rigid
+objects are considered for the collision test and if the displayed
+configuration contains a collision:
+
+<P>
+<PRE>
+  Colliding pair: &lt;collpair&gt;
+  Collision set size: &lt;collset-sz&gt; (&lt;num-pruned&gt; pairs pruned)
+</PRE>
+
+<P>
+The collision checker is always active to tell if the configuration in
+the graphics window is in collision or not (see output 'Colliding
+pair: ...').  If there are collisions of more than a single pair of
+objects, an arbitrary colliding pair is reported in the status output
+in the shell window.  If the minimum workspace clearance delta is set
+to a value &gt;0, collisions may be reported although there are no real
+intersections.  The output 'Collision set size: ...' tells how many
+pairs of rigid bodies are actually checked for intersection
+('collset-sz'), and how many pairs of objects were not included in the
+collision set because they cannot possibly collide ('num-pruned').
+
+<P>
+<BR><HR>
+<ADDRESS>
+Mitul Saha
+2003-03-10
+</ADDRESS>
+</BODY>
+</HTML>

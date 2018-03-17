@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  mpkRot1</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">mpkRot1</A></H2></TD></H2></TD></TR></TABLE>
+<HR>
+
+<H2>Inheritance:</H2>
+<APPLET CODE="ClassGraph.class" WIDTH=600 HEIGHT=65>
+<param name=classes value="CmpkTransform,MmpkTransform.html,CmpkRot1,MmpkRot1.html">
+<param name=before value="M,M">
+<param name=after value="Md_,M">
+<param name=indent value="0,1">
+<param name=arrowdir value="up">
+</APPLET>
+<HR><H3>Inherited from <A HREF="mpkTransform.html">mpkTransform</A>:</H3>
+<DL>
+<P><DL>
+<DT><H3>Public Fields</H3><DD><DT>
+<IMG ALT="o" SRC=icon2.gif>double <B>R</B>[3][3]
+<DT>
+<IMG ALT="o" SRC=icon2.gif>double <B>T</B>[3]
+</DL></P>
+
+<P><DL>
+<DT><H3>Public Methods</H3><DD><DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>bind</B>(const double* param_ptr)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>rescale</B>(double scalef)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>double <B>get_scale</B>()
+<DT>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="mpkTransform.html#DOC.22.1">TYPE</A> <B>get_type</B>()
+<DT>
+<IMG ALT="o" SRC=icon2.gif>const double* <B>get_axis</B>()
+<DT>
+<IMG ALT="o" SRC=icon2.gif>bool <B>update</B>()
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>set_product</B>(const <!1><A HREF="mpkTransform.html">mpkTransform</A>&amp; X, const <!1><A HREF="mpkTransform.html">mpkTransform</A>&amp; Y)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>append</B>(const <!1><A HREF="mpkTransform.html">mpkTransform</A>&amp; X)
+<DT>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="mpkTransform.html">mpkTransform</A>&amp; <B>operator*</B>(const <!1><A HREF="mpkTransform.html">mpkTransform</A>&amp; X)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>set_identity</B>()
+<DT>
+<IMG ALT="o" SRC=icon2.gif>bool <B>is_identity</B>() const 
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>apply</B>(double out[3], const double in[3]) const 
+<DT>
+<IMG ALT="o" SRC=icon2.gif>static   void <B>apply</B>(double out[3], const double <!1><A HREF="mpkTransform.html#DOC.22.18">R</A>[3][3], const double <!1><A HREF="mpkTransform.html#DOC.22.19">T</A>[3], const double in[3])
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>apply_inv</B>(double out[3], const double in[3]) const 
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>print</B>(ostream&amp; f=cout) const 
+<DT>
+<IMG ALT="o" SRC=icon2.gif> <B>operator SbMatrix</B>() const 
+</DL></P>
+
+<P><DL>
+<DT><H3>Public Members</H3><DD><DT>
+<IMG ALT="o" SRC=icon2.gif>enum  <B>TYPE</B>
+</DL></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

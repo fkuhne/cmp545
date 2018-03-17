@@ -1,0 +1,184 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: fmstudio - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\MITULS~1\LOCALS~1\Temp\RSP3E7.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /I "C:\Coin3D\include" /I "C:\PQP_v1.3\src" /I "..\..\basic" /I "..\..\gui" /I "..\..\robots" /I "..\..\sbl" /I "..\..\devel" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /D "ROBOT_BASE_MOVABLE" /D "NO_TRANSFORM_CACHE" /D "SAVE_MEMORY" /D "COIN_NOT_DLL" /D "SOWIN_NOT_DLL" /Fp"Release/fmstudio.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkAdaptSegmentChecker.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkCollDistAlgo.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkCollPair.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkConfigChecker.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkIncludeFile.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkObstacle.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkObstacleCollection.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkPathSmoother.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkRobot.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkRobotCollection.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkSimpleSegmentChecker.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\gui\mpk_opt.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\gui\mpkBVControl.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\gui\mpkGUI.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\gui\mpkMouseControl.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\gui\mpkTraceVis.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\robots\mpkDemoRobot.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\robots\mpkFreeFlyingObject.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\sbl\sblPlanner.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\sbl\sblRandVal.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\sbl\sblRn.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\sbl\sblTree.cpp"
+"C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\prog\fmstudio.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\MITULS~1\LOCALS~1\Temp\RSP3E7.tmp" 
+Creating temporary file "C:\DOCUME~1\MITULS~1\LOCALS~1\Temp\RSP3E8.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib coin1.lib sowin0.lib PQP.lib /nologo /subsystem:console /incremental:no /pdb:"Release/fmstudio.pdb" /machine:I386 /out:"Release/fmstudio.exe" /libpath:"C:\PQP_v1.3\lib" /libpath:"C:\Coin3D\lib" 
+".\Release\mpkAdaptSegmentChecker.obj"
+".\Release\mpkBaseRobot.obj"
+".\Release\mpkCollDistAlgo.obj"
+".\Release\mpkCollPair.obj"
+".\Release\mpkConfigChecker.obj"
+".\Release\mpkIncludeFile.obj"
+".\Release\mpkObstacle.obj"
+".\Release\mpkObstacleCollection.obj"
+".\Release\mpkPathSmoother.obj"
+".\Release\mpkRobot.obj"
+".\Release\mpkRobotCollection.obj"
+".\Release\mpkSimpleSegmentChecker.obj"
+".\Release\mpk_opt.obj"
+".\Release\mpkBVControl.obj"
+".\Release\mpkGUI.obj"
+".\Release\mpkMouseControl.obj"
+".\Release\mpkTraceVis.obj"
+".\Release\mpkDemoRobot.obj"
+".\Release\mpkFreeFlyingObject.obj"
+".\Release\sblPlanner.obj"
+".\Release\sblRandVal.obj"
+".\Release\sblRn.obj"
+".\Release\sblTree.obj"
+".\Release\fmstudio.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\MITULS~1\LOCALS~1\Temp\RSP3E8.tmp"
+<h3>Output Window</h3>
+Compiling...
+mpkAdaptSegmentChecker.cpp
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(332) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(348) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(408) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(426) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+mpkBaseRobot.cpp
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(332) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(348) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(408) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(426) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+mpkCollDistAlgo.cpp
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkCollDistAlgo.cpp(29) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkCollDistAlgo.cpp(264) : warning C4101: 'Ttemp' : unreferenced local variable
+mpkCollPair.cpp
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(332) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(348) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(408) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(426) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+mpkConfigChecker.cpp
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(332) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(348) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(408) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(426) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+mpkIncludeFile.cpp
+mpkObstacle.cpp
+mpkObstacleCollection.cpp
+mpkPathSmoother.cpp
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(332) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(348) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(408) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(426) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+mpkRobot.cpp
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(332) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(348) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(408) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(426) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+mpkRobotCollection.cpp
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(332) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(348) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(408) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(426) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+mpkSimpleSegmentChecker.cpp
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(332) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(348) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(408) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\basic\mpkBaseRobot.H(426) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+mpk_opt.cpp
+mpkBVControl.cpp
+..\..\basic\mpkBaseRobot.H(332) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(348) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(408) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(426) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+mpkGUI.cpp
+..\..\basic\mpkBaseRobot.H(332) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(348) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(408) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(426) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\gui\mpkGUI.cpp(102) : warning C4305: 'argument' : truncation from 'const double' to 'const float'
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\gui\mpkGUI.cpp(102) : warning C4305: 'argument' : truncation from 'const double' to 'const float'
+mpkMouseControl.cpp
+..\..\basic\mpkBaseRobot.H(332) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(348) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(408) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(426) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+mpkTraceVis.cpp
+..\..\basic\mpkBaseRobot.H(332) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(348) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(408) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(426) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\gui\mpkTraceVis.cpp(105) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\gui\mpkTraceVis.cpp(106) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Documents and Settings\Mitul Saha\Desktop\mpk\www\mpk_v1.0\gui\mpkTraceVis.cpp(107) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+mpkDemoRobot.cpp
+..\..\basic\mpkBaseRobot.H(332) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(348) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(408) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(426) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+mpkFreeFlyingObject.cpp
+..\..\basic\mpkBaseRobot.H(332) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(348) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(408) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(426) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+sblPlanner.cpp
+..\..\basic\mpkBaseRobot.H(332) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(348) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(408) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(426) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+sblRandVal.cpp
+sblRn.cpp
+sblTree.cpp
+..\..\basic\mpkBaseRobot.H(332) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(348) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(408) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(426) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+fmstudio.cpp
+..\..\basic\mpkBaseRobot.H(332) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(348) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(408) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+..\..\basic\mpkBaseRobot.H(426) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+Linking...
+Creating temporary file "C:\DOCUME~1\MITULS~1\LOCALS~1\Temp\RSP3EA.bat" with contents
+[
+@echo off
+copy Release\fmstudio.exe ..\..\prog\fmstudio.exe
+]
+Creating command line "C:\DOCUME~1\MITULS~1\LOCALS~1\Temp\RSP3EA.bat"
+
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+fmstudio.exe - 0 error(s), 75 warning(s)
+</pre>
+</body>
+</html>

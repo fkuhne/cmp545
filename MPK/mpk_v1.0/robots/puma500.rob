@@ -1,0 +1,58 @@
+#MPK v1.0 robot
+
+selfcoll {
+  ForeArm Base
+}
+
+joint Base {
+  model0 "Puma500/puma_0.iv"
+}
+
+joint Shoulder {
+  parent Base
+  ConstTransl_Rot1 0 0.6604 0 0 -1 0 -2.79 2.79
+  param 0
+  model0 "Puma500/puma_1.iv"
+}
+
+joint UpperArm {
+  parent Shoulder
+  ConstTransl_Rot1 0 0 0.2435 0 0 -1 -3.142 3.142
+  param 1
+  model0 "Puma500/puma_2.iv"
+}
+
+joint ForeArm {
+  parent UpperArm
+  ConstTransl_Rot1 0.4318 0 -0.0934 0 0 -1 -0.785 3.925
+  param 2
+  model0 "Puma500/puma_3.iv"
+}
+
+joint Wrist1 {
+  parent ForeArm
+  ConstTransl_Rot1 -0.02032 0.43307 0 0 -1 0 -2.61 2.61
+  param 3
+  model0 "Puma500/puma_4.iv"
+}
+
+joint Wrist2 {
+  parent Wrist1
+  Rot1 0 0 -1 -1.57 1.57
+  param 4
+  model0 "Puma500/puma_5.iv"
+}
+
+joint Wrist3 {
+  parent Wrist2
+  Rot1 0 -1 0 -2.61 2.61
+  param 5
+  model0 "Puma500/puma_6.iv"
+}
+
+joint TracePoint {
+  parent Wrist3
+  ConstTransl 0 0.09 0
+  tracePoint
+  coll FALSE
+}

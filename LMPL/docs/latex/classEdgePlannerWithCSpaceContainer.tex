@@ -1,0 +1,46 @@
+\section{Edge\+Planner\+With\+C\+Space\+Container Class Reference}
+\label{classEdgePlannerWithCSpaceContainer}\index{Edge\+Planner\+With\+C\+Space\+Container@{Edge\+Planner\+With\+C\+Space\+Container}}
+
+
+Convenience class for edge planner that holds a smart pointer to a \doxyref{C\+Space}{p.}{classCSpace}. Typically used for single-\/obstacle edge checkers as follows\+:  
+
+
+
+
+{\ttfamily \#include $<$Explicit\+C\+Space.\+h$>$}
+
+Inheritance diagram for Edge\+Planner\+With\+C\+Space\+Container\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classEdgePlannerWithCSpaceContainer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Edge\+Planner\+With\+C\+Space\+Container} (Smart\+Pointer$<$ {\bf C\+Space} $>$ space, const Smart\+Pointer$<$ {\bf Edge\+Planner} $>$ \&e)\label{classEdgePlannerWithCSpaceContainer_a4768a0a3bc98310e72a2501b70386538}
+
+\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bfseries Copy} () const \label{classEdgePlannerWithCSpaceContainer_a2c013c6157b0ef6afda4787c1ffba843}
+
+\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bfseries Reverse\+Copy} () const \label{classEdgePlannerWithCSpaceContainer_a5b26a24a02e7c82fd3d2b1eccc6a3001}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Smart\+Pointer$<$ {\bf C\+Space} $>$ {\bfseries space\+Ptr}\label{classEdgePlannerWithCSpaceContainer_a3297a3f03ef89978e2a60845504620e7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Convenience class for edge planner that holds a smart pointer to a \doxyref{C\+Space}{p.}{classCSpace}. Typically used for single-\/obstacle edge checkers as follows\+: 
+
+Single\+Obstacle\+C\+Space$\ast$ ospace = new \doxyref{Single\+Obstacle\+C\+Space(this,obstacle)}{p.}{classSingleObstacleCSpace} return new \doxyref{Edge\+Planner\+With\+C\+Space\+Container(ospace,new X\+Edge\+Planner(ospace,a,b))}{p.}{classEdgePlannerWithCSpaceContainer} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Explicit\+C\+Space.\+h\item 
+Explicit\+C\+Space.\+cpp\end{DoxyCompactItemize}

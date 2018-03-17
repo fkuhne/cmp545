@@ -1,0 +1,68 @@
+\section{Straight\+Line\+Obstacle\+Distance\+Planner Class Reference}
+\label{classStraightLineObstacleDistancePlanner}\index{Straight\+Line\+Obstacle\+Distance\+Planner@{Straight\+Line\+Obstacle\+Distance\+Planner}}
+
+
+Straight-\/line edge planner that divides the segment until the segment distance is below \doxyref{C\+Space.\+Obstacle\+Distance()}{p.}{classCSpace_a364b5b0ebcc258c39a263914ad3a0a89}  
+
+
+
+
+{\ttfamily \#include $<$Edge\+Planner.\+h$>$}
+
+Inheritance diagram for Straight\+Line\+Obstacle\+Distance\+Planner\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classStraightLineObstacleDistancePlanner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Straight\+Line\+Obstacle\+Distance\+Planner} (const Config \&a, const Config \&b, {\bf C\+Space} $\ast$space)\label{classStraightLineObstacleDistancePlanner_a0644aa15e66d750a77e484438c05b9cf}
+
+\item 
+virtual bool {\bfseries Is\+Visible} ()\label{classStraightLineObstacleDistancePlanner_ad09c3a05037f9060cfcc317beec45736}
+
+\item 
+virtual void {\bfseries Eval} (double u, Config \&x) const \label{classStraightLineObstacleDistancePlanner_a28b92e7fae2f95ff5bee9cc2b1fb9ebd}
+
+\item 
+virtual const Config \& {\bfseries Start} () const \label{classStraightLineObstacleDistancePlanner_a8de1c8630d826dce8a13fccf90dfa90a}
+
+\item 
+virtual const Config \& {\bfseries Goal} () const \label{classStraightLineObstacleDistancePlanner_a46a2246ea836ecc225dc303375791801}
+
+\item 
+virtual {\bf C\+Space} $\ast$ {\bfseries Space} () const \label{classStraightLineObstacleDistancePlanner_ab1da0d157cd71a019d35d96a51760135}
+
+\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bfseries Copy} () const \label{classStraightLineObstacleDistancePlanner_a6337ab3766a3ce8d9c6df93ec18d62d0}
+
+\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bfseries Reverse\+Copy} () const \label{classStraightLineObstacleDistancePlanner_a31a5950fa1b1e51a16f6f7376e5f7463}
+
+\item 
+bool {\bfseries Check\+Visibility} (const Config \&a, const Config \&b, double da, double db)\label{classStraightLineObstacleDistancePlanner_a8d31bf14300e7e8904d4023d69476d8e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Config {\bfseries a}\label{classStraightLineObstacleDistancePlanner_ac5ea07072ed4422427e6582884e424aa}
+
+\item 
+Config {\bfseries b}\label{classStraightLineObstacleDistancePlanner_afd8bc0a84dbb1d0b074e004179bd57ed}
+
+\item 
+{\bf C\+Space} $\ast$ {\bfseries space}\label{classStraightLineObstacleDistancePlanner_a42ed439f4ecc85365f43ef38d78ff714}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Straight-\/line edge planner that divides the segment until the segment distance is below \doxyref{C\+Space.\+Obstacle\+Distance()}{p.}{classCSpace_a364b5b0ebcc258c39a263914ad3a0a89} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Edge\+Planner.\+h\item 
+Edge\+Planner.\+cpp\end{DoxyCompactItemize}

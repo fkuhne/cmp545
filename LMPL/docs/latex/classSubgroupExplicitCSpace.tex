@@ -1,0 +1,80 @@
+\section{Subgroup\+Explicit\+C\+Space Class Reference}
+\label{classSubgroupExplicitCSpace}\index{Subgroup\+Explicit\+C\+Space@{Subgroup\+Explicit\+C\+Space}}
+
+
+Groups together multiple obstacles from an \doxyref{Explicit\+C\+Space}{p.}{classExplicitCSpace}.  
+
+
+
+
+{\ttfamily \#include $<$Explicit\+C\+Space.\+h$>$}
+
+Inheritance diagram for Subgroup\+Explicit\+C\+Space\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classSubgroupExplicitCSpace}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Subgroup\+Explicit\+C\+Space} ({\bf Explicit\+C\+Space} $\ast$base\+Space)\label{classSubgroupExplicitCSpace_ac9d56ea52e49d82d4ab6d071e69f3e47}
+
+\item 
+void {\bfseries Ungroup} ()\label{classSubgroupExplicitCSpace_a9ac979d67effb2366d8309b871220de4}
+
+\item 
+void {\bfseries Group} (int i, int j)\label{classSubgroupExplicitCSpace_a31f72d26ed662eeae70317afc234f524}
+
+\item 
+virtual bool {\bf Is\+Feasible} (const Config \&, int obstacle)\label{classSubgroupExplicitCSpace_a4550de0947de8d0ad4a496422af659de}
+
+\begin{DoxyCompactList}\small\item\em Implement this\+: single-\/obstacle feasibility check. \end{DoxyCompactList}\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bf Local\+Planner} (const Config \&a, const Config \&b)\label{classSubgroupExplicitCSpace_a0e313f00a5c123d54e8dcd3a06762ba0}
+
+\begin{DoxyCompactList}\small\item\em Implement this (optional)\+: all obstacle local planner. \end{DoxyCompactList}\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bf Local\+Planner} (const Config \&a, const Config \&b, int obstacle)\label{classSubgroupExplicitCSpace_afb82f0fb666da7a091ee81a4c156785a}
+
+\begin{DoxyCompactList}\small\item\em Implement this\+: single-\/obstacle local planner. \end{DoxyCompactList}\item 
+virtual int {\bf Num\+Obstacles} ()\label{classSubgroupExplicitCSpace_af8b539a67a294af256ad05b7a7a44abe}
+
+\begin{DoxyCompactList}\small\item\em Implement this\+: returns the number of obstacles. \end{DoxyCompactList}\item 
+virtual std\+::string {\bf Obstacle\+Name} (int obstacle)\label{classSubgroupExplicitCSpace_ad45cb9cfbcced138256ad15108b62311}
+
+\begin{DoxyCompactList}\small\item\em Implement this\+: returns the name of obstacle. \end{DoxyCompactList}\item 
+virtual double {\bf Obstacle\+Distance} (const Config \&a, int obstacle)\label{classSubgroupExplicitCSpace_a459cc5f61c7fc4c2179ff278ac3aff35}
+
+\begin{DoxyCompactList}\small\item\em Optional\+: for local planners using obstacle distance. \end{DoxyCompactList}\item 
+virtual void {\bfseries Sample} (Config \&x)\label{classSubgroupExplicitCSpace_a49896bdaa737630c1644aa470d4171b7}
+
+\item 
+virtual void {\bfseries Sample\+Neighborhood} (const Config \&c, double r, Config \&x)\label{classSubgroupExplicitCSpace_a814c6460c9dc4aeb1cb08f59a2a1b14d}
+
+\item 
+virtual double {\bf Distance} (const Config \&x, const Config \&y)\label{classSubgroupExplicitCSpace_aa19a708cadc862d2ce5eac6611bd0558}
+
+\begin{DoxyCompactList}\small\item\em optionally overrideable (default uses euclidean space) \end{DoxyCompactList}\item 
+virtual void {\bfseries Interpolate} (const Config \&x, const Config \&y, double u, Config \&out)\label{classSubgroupExplicitCSpace_af2b628a0c95c04e2e91b748bdc27b518}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Explicit\+C\+Space} $\ast$ {\bfseries base\+Space}\label{classSubgroupExplicitCSpace_a41381e04f4949194420d8967c27cbeba}
+
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ {\bfseries groups}\label{classSubgroupExplicitCSpace_aa0ec0a8aa2ddd9aa4cc26d0aeb79f318}
+
+\item 
+std\+::vector$<$ std\+::string $>$ {\bfseries group\+Names}\label{classSubgroupExplicitCSpace_aa579937f512b522cdaca424bdf93a441}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Groups together multiple obstacles from an \doxyref{Explicit\+C\+Space}{p.}{classExplicitCSpace}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Explicit\+C\+Space.\+h\item 
+Explicit\+C\+Space.\+cpp\end{DoxyCompactItemize}

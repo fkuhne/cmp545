@@ -1,0 +1,58 @@
+\section{Perturbation\+Tree\+Planner Class Reference}
+\label{classPerturbationTreePlanner}\index{Perturbation\+Tree\+Planner@{Perturbation\+Tree\+Planner}}
+
+
+A tree-\/based randomized planner that extends the roadmap by sampling the neighborhood of existing samples.  
+
+
+
+
+{\ttfamily \#include $<$Motion\+Planner.\+h$>$}
+
+Inheritance diagram for Perturbation\+Tree\+Planner\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPerturbationTreePlanner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Perturbation\+Tree\+Planner} ({\bf C\+Space} $\ast$s)\label{classPerturbationTreePlanner_a099fa6cd4b3ba628254cf6e078d08dc2}
+
+\item 
+virtual void {\bfseries Generate\+Config} (Config \&x)\label{classPerturbationTreePlanner_a61284d3fb56cd90321747a2930bf9805}
+
+\item 
+virtual Node $\ast$ {\bfseries Add\+Feasible\+Milestone} (const Config \&x)\label{classPerturbationTreePlanner_adf7f83d9404e5558d479c80cf5270d63}
+
+\item 
+virtual void {\bfseries Cleanup} ()\label{classPerturbationTreePlanner_a0d39b8652c4a87cd8a6d93956f292378}
+
+\item 
+virtual Node $\ast$ {\bfseries Select\+Milestone} (const std\+::vector$<$ Node $\ast$ $>$ \&milestones)\label{classPerturbationTreePlanner_aaede55096272a619a11a0de1e175e496}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double {\bf delta}\label{classPerturbationTreePlanner_a515688424c6bf53a9f5a77952091c326}
+
+\begin{DoxyCompactList}\small\item\em Neighborhood distance. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ {\bf weights}\label{classPerturbationTreePlanner_abfe29d343ea150e30a3d28218b542391}
+
+\begin{DoxyCompactList}\small\item\em Node selection weights. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A tree-\/based randomized planner that extends the roadmap by sampling the neighborhood of existing samples. 
+
+The existing sample picked is selected with probability proportional to its value in the weight vector. By default, a new node is given weight 1.
+
+The E\+ST planner can be implemented on top of this planner by setting appropriate weights. This functionality is not yet implemented. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Motion\+Planner.\+h\item 
+Motion\+Planner.\+cpp\end{DoxyCompactItemize}

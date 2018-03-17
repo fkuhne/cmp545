@@ -1,0 +1,75 @@
+\section{Motion\+Planner\+Factory Class Reference}
+\label{classMotionPlannerFactory}\index{Motion\+Planner\+Factory@{Motion\+Planner\+Factory}}
+
+
+A factory that assists with comparing the motion planners implemented in L\+M\+PL.  
+
+
+
+
+{\ttfamily \#include $<$Any\+Motion\+Planner.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Type} \{ \\*
+{\bfseries P\+RM}, 
+{\bfseries Lazy\+P\+RM}, 
+{\bfseries Perturbation\+Tree}, 
+{\bfseries E\+ST}, 
+\\*
+{\bfseries R\+RT}, 
+{\bfseries S\+BL}, 
+{\bfseries S\+B\+L\+P\+RT}
+ \}\label{classMotionPlannerFactory_aace934d88895485fcb7a336aca080aa0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bf Motion\+Planner\+Interface} $\ast$ {\bfseries Create} ({\bf C\+Space} $\ast$space)\label{classMotionPlannerFactory_af0812b0ea851a8e211db5d8e42162322}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Type {\bfseries type}\label{classMotionPlannerFactory_a6ad307019267f032624f0513b2a6f1c6}
+
+\item 
+int {\bfseries knn}\label{classMotionPlannerFactory_ad7e7376320a3c0709428f424bb0e09b9}
+
+\item 
+double {\bfseries connection\+Threshold}\label{classMotionPlannerFactory_acf69d190d60771443dc34f444d97e343}
+
+\item 
+double {\bfseries perturbation\+Radius}\label{classMotionPlannerFactory_aff88ad25ae3d77288e54d476f8191a0d}
+
+\item 
+int {\bfseries perturbation\+Iters}\label{classMotionPlannerFactory_a5cdbd7157b821acf5d4929547ee26c25}
+
+\item 
+bool {\bfseries bidirectional}\label{classMotionPlannerFactory_ab0b99e97d45a0f36fe14e6397edecd06}
+
+\item 
+bool {\bfseries use\+Grid}\label{classMotionPlannerFactory_a2c31746c308b317ceceee1efa712c761}
+
+\item 
+double {\bfseries grid\+Resolution}\label{classMotionPlannerFactory_a67a88644f3a4275d3e47ec5eeaefb6b3}
+
+\item 
+int {\bfseries randomize\+Frequency}\label{classMotionPlannerFactory_aead599a7bb7a86231e68d2bd94ce54a7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A factory that assists with comparing the motion planners implemented in L\+M\+PL. 
+
+So far, only P\+RM, S\+BL, and \doxyref{S\+B\+L\+P\+RT}{p.}{classSBLPRT} are functional. More will come over time.
+
+Planner settings can be tweaked by changing the members of this class from their default settings. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Any\+Motion\+Planner.\+h\item 
+Any\+Motion\+Planner.\+cpp\end{DoxyCompactItemize}

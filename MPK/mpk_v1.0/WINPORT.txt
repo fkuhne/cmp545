@@ -1,0 +1,49 @@
+This file describes how to compile and link MPK and its demo programs
+under Windows.  Normally, the information in README.txt should be
+sufficient.  Consider the hints below only if you encounter any
+problems with the procedure described in README.txt.
+
+---------
+Compiling
+---------
+
+- We recommend that you install Coin3D/SoWin from:
+  http://robotics.stanford.edu/~mitul/mpk/coin3d.zip
+  as the latest version of the Coin3D from the official Coin3D
+  site may not be compatible.
+
+- If the Visual Studio 6.0 project dosn't compile then most probably
+  your Visual Studio 6.0 is not up to date. Update it using the Visual
+  Studio service pack available at:
+  http://msdn.microsoft.com/vstudio/downloads/updates/sp/vs6/sp5/
+  (If this site has expired then type "Visual Studio 6.0 service pack" on google)
+
+-------
+Linking
+-------
+
+- Use SOWIN_NOT_DLL and COIN_NOT_DLL as preprocessor directives in
+Properties-C/C++-Preprocessor
+
+- Link to libraries: coin1.lib, sowin0.lib
+
+- Put coin1.dll and sowin0.dll in $SYSTEM32 directory
+(C:\Windows\System32)
+
+- Add library directories to linker additional directories in
+Properties-Linker-General-Additional Library Directories C:\Coin3D\lib
+
+- Set additional include directories such as (you may have to specify
+different root directories depending on where you copied the
+packages):
+
+C:\mpk_v1.0\basic;
+C:\mpk_v1.0\gui;
+C:\mpk_v1.0\prog;
+C:\mpk_v1.0\robots;
+C:\mpk_v1.0\sbl;
+C:\PQP_v1.3\src;
+C:\OpenInventor\install\include\Inventor;
+C:\OpenInventor\install\include;
+C:\Coin3D\include;
+C:\Program Files\Microsoft Visual Studio .NET\Vc7\include;

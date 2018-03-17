@@ -1,0 +1,781 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="struct">
+    <name>AddPointCallback</name>
+    <filename>structAddPointCallback.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>BidirectionalRRTPlanner</name>
+    <filename>classBidirectionalRRTPlanner.html</filename>
+    <base>RRTPlanner</base>
+    <member kind="function">
+      <type>void</type>
+      <name>Init</name>
+      <anchorfile>classBidirectionalRRTPlanner.html</anchorfile>
+      <anchor>ad87d74d50c4cd273c1ce0ae929412a52</anchor>
+      <arglist>(const Config &amp;start, const Config &amp;goal)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>Plan</name>
+      <anchorfile>classBidirectionalRRTPlanner.html</anchorfile>
+      <anchor>a78df1be8d25e961f78b39b1e992e07c3</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>CreatePath</name>
+      <anchorfile>classBidirectionalRRTPlanner.html</anchorfile>
+      <anchor>a53fbe655860bff1fc9174cedc361c58a</anchor>
+      <arglist>(MilestonePath &amp;) const </arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BisectionEpsilonEdgePlanner</name>
+    <filename>classBisectionEpsilonEdgePlanner.html</filename>
+    <base>EdgePlanner</base>
+    <class kind="struct">BisectionEpsilonEdgePlanner::Segment</class>
+  </compound>
+  <compound kind="class">
+    <name>BisectionEpsilonExplicitEdgePlanner</name>
+    <filename>classBisectionEpsilonExplicitEdgePlanner.html</filename>
+    <base>ExplicitEdgePlanner</base>
+  </compound>
+  <compound kind="struct">
+    <name>ChangeTreeCallback</name>
+    <filename>structChangeTreeCallback.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>ClosestMilestoneCallback</name>
+    <filename>structClosestMilestoneCallback.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>ConnectedSeedCallback</name>
+    <filename>structConnectedSeedCallback.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>CoverageLimitedPathCallback</name>
+    <filename>structCoverageLimitedPathCallback.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>CSpace</name>
+    <filename>classCSpace.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>Distance</name>
+      <anchorfile>classCSpace.html</anchorfile>
+      <anchor>a8705829b41ebd6d749a2db6f8404029a</anchor>
+      <arglist>(const Config &amp;x, const Config &amp;y)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>ObstacleDistance</name>
+      <anchorfile>classCSpace.html</anchorfile>
+      <anchor>a364b5b0ebcc258c39a263914ad3a0a89</anchor>
+      <arglist>(const Config &amp;a)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ErrorExplainingPlanner::Edge</name>
+    <filename>structErrorExplainingPlanner_1_1Edge.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>SBLTree::EdgeInfo</name>
+    <filename>structSBLTree_1_1EdgeInfo.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>EdgeLengthFunction</name>
+    <filename>structEdgeLengthFunction.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>EdgePlanner</name>
+    <filename>classEdgePlanner.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>EdgePlannerWithCSpaceContainer</name>
+    <filename>classEdgePlannerWithCSpaceContainer.html</filename>
+    <base>PiggybackEdgePlanner</base>
+  </compound>
+  <compound kind="class">
+    <name>ErrorExplainingPlanner</name>
+    <filename>classErrorExplainingPlanner.html</filename>
+    <class kind="struct">ErrorExplainingPlanner::Edge</class>
+    <class kind="struct">ErrorExplainingPlanner::Milestone</class>
+    <class kind="struct">ErrorExplainingPlanner::Mode</class>
+    <class kind="struct">ErrorExplainingPlanner::Transition</class>
+    <member kind="function">
+      <type>void</type>
+      <name>Expand</name>
+      <anchorfile>classErrorExplainingPlanner.html</anchorfile>
+      <anchor>af90a5f10d6c872f90f3e0c3506275e5f</anchor>
+      <arglist>(double maxExplanationCost, vector&lt; int &gt; &amp;newNodes)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Plan</name>
+      <anchorfile>classErrorExplainingPlanner.html</anchorfile>
+      <anchor>ac54a2340ac78338394e94b19e2204868</anchor>
+      <arglist>(int initialLimit, const vector&lt; int &gt; &amp;expansionSchedule, vector&lt; int &gt; &amp;bestPath, Subset &amp;cover)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>BuildRoadmap</name>
+      <anchorfile>classErrorExplainingPlanner.html</anchorfile>
+      <anchor>aa9271ec1fd80dfdce0890e6422bef5d6</anchor>
+      <arglist>(double maxExplanationCost, RoadmapPlanner &amp;prm)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>BuildCCGraph</name>
+      <anchorfile>classErrorExplainingPlanner.html</anchorfile>
+      <anchor>aca8246e074c382a5536cdbf74fa327cb</anchor>
+      <arglist>(Graph::UndirectedGraph&lt; Subset, int &gt; &amp;G)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>CoveragePath</name>
+      <anchorfile>classErrorExplainingPlanner.html</anchorfile>
+      <anchor>a86a3cbc2b423a0ddf4149a443fa4260c</anchor>
+      <arglist>(int s, int t, const Subset &amp;cover, std::vector&lt; int &gt; &amp;path, Subset &amp;pathCover)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>GreedyPath</name>
+      <anchorfile>classErrorExplainingPlanner.html</anchorfile>
+      <anchor>af66cfd5b8c6694077e7342c83e2e6391</anchor>
+      <arglist>(int s, int t, std::vector&lt; int &gt; &amp;path, Subset &amp;pathCover)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>OptimalPath</name>
+      <anchorfile>classErrorExplainingPlanner.html</anchorfile>
+      <anchor>a7de2fe0b0046e2cd48d3dc87aed72980</anchor>
+      <arglist>(int s, int t, std::vector&lt; int &gt; &amp;path, Subset &amp;pathCover)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Completion</name>
+      <anchorfile>classErrorExplainingPlanner.html</anchorfile>
+      <anchor>a17cb8b7a0a5306e39b2cd8de8cb4f46d</anchor>
+      <arglist>(int s, int node, int t, Subset &amp;pathCover)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>GetCover</name>
+      <anchorfile>classErrorExplainingPlanner.html</anchorfile>
+      <anchor>a57481d8a20c85f7a0038f4edd476ce99</anchor>
+      <arglist>(const std::vector&lt; int &gt; &amp;path, Subset &amp;cover) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>GetLength</name>
+      <anchorfile>classErrorExplainingPlanner.html</anchorfile>
+      <anchor>aff9ce6e86add017d92f682279a3aedd9</anchor>
+      <arglist>(const std::vector&lt; int &gt; &amp;path) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>GetMilestonePath</name>
+      <anchorfile>classErrorExplainingPlanner.html</anchorfile>
+      <anchor>a40339c8dc31a885219cedbe7ad7436ea</anchor>
+      <arglist>(const std::vector&lt; int &gt; &amp;path, MilestonePath &amp;mpath) const </arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>updatePathsComplete</name>
+      <anchorfile>classErrorExplainingPlanner.html</anchorfile>
+      <anchor>a6d2910d5ce604fcedf63cccfe3d738bb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>updatePathsDynamic</name>
+      <anchorfile>classErrorExplainingPlanner.html</anchorfile>
+      <anchor>a1b15bc2f0799c23537650c53e1ad0b99</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>updatePathsMax</name>
+      <anchorfile>classErrorExplainingPlanner.html</anchorfile>
+      <anchor>a0345a79ae72d35d183aa8e7205d9f172</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>ExplicitCSpace</name>
+    <filename>classExplicitCSpace.html</filename>
+    <base>CSpace</base>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>IsFeasible</name>
+      <anchorfile>classExplicitCSpace.html</anchorfile>
+      <anchor>ae1a5a6527f51540d0915c55070e63b43</anchor>
+      <arglist>(const Config &amp;, int obstacle)=0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual EdgePlanner *</type>
+      <name>LocalPlanner</name>
+      <anchorfile>classExplicitCSpace.html</anchorfile>
+      <anchor>a4fea2d3da0e4125319ab4a5db16f2f77</anchor>
+      <arglist>(const Config &amp;a, const Config &amp;b)</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual EdgePlanner *</type>
+      <name>LocalPlanner</name>
+      <anchorfile>classExplicitCSpace.html</anchorfile>
+      <anchor>a2ae0ef15db0721388b3919807e79b5ee</anchor>
+      <arglist>(const Config &amp;a, const Config &amp;b, int obstacle)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>NumObstacles</name>
+      <anchorfile>classExplicitCSpace.html</anchorfile>
+      <anchor>a900a2f27b3916706e45df799dc99c16e</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual std::string</type>
+      <name>ObstacleName</name>
+      <anchorfile>classExplicitCSpace.html</anchorfile>
+      <anchor>a9674c8231f71787a758f43761c0f86ec</anchor>
+      <arglist>(int obstacle)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>ObstacleDistance</name>
+      <anchorfile>classExplicitCSpace.html</anchorfile>
+      <anchor>a27934dc5bd43781295e2302e56e8e71b</anchor>
+      <arglist>(const Config &amp;a, int obstacle)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>IsFeasible</name>
+      <anchorfile>classExplicitCSpace.html</anchorfile>
+      <anchor>a82537edf516ece36a5326a949ba90a37</anchor>
+      <arglist>(const Config &amp;)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>CheckObstacles</name>
+      <anchorfile>classExplicitCSpace.html</anchorfile>
+      <anchor>acee7a0d28f2f4f2b696a197d594f0101</anchor>
+      <arglist>(const Config &amp;, std::vector&lt; bool &gt; &amp;infeasible)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>ExplicitEdgePlanner</name>
+    <filename>classExplicitEdgePlanner.html</filename>
+    <base>EdgePlanner</base>
+  </compound>
+  <compound kind="class">
+    <name>ExplicitMMCSpace</name>
+    <filename>classExplicitMMCSpace.html</filename>
+    <base>MultiModalCSpace&lt; int &gt;</base>
+  </compound>
+  <compound kind="class">
+    <name>FalseEdgePlanner</name>
+    <filename>classFalseEdgePlanner.html</filename>
+    <base>EdgePlanner</base>
+  </compound>
+  <compound kind="struct">
+    <name>GreedySubsetAStar</name>
+    <filename>structGreedySubsetAStar.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IncrementalMMPRM_Explicit</name>
+    <filename>classIncrementalMMPRM__Explicit.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>IncrementalMMPRM_Search</name>
+    <filename>classIncrementalMMPRM__Search.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>UpdateEdgeLength</name>
+      <anchorfile>classIncrementalMMPRM__Search.html</anchorfile>
+      <anchor>adec0489f45770b6ee3155e711eb8965d</anchor>
+      <arglist>(int s, int t)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>UpdatePriority</name>
+      <anchorfile>classIncrementalMMPRM__Search.html</anchorfile>
+      <anchor>a1a13ee20f33d3c63599ee215ab08ccb7</anchor>
+      <arglist>(int n)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>IntTriple</name>
+    <filename>structIntTriple.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>LessEdgePriority</name>
+    <filename>structLessEdgePriority.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>TreeRoadmapPlanner::Milestone</name>
+    <filename>structTreeRoadmapPlanner_1_1Milestone.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>ErrorExplainingPlanner::Milestone</name>
+    <filename>structErrorExplainingPlanner_1_1Milestone.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>MilestonePath</name>
+    <filename>classMilestonePath.html</filename>
+    <member kind="function">
+      <type>bool</type>
+      <name>CheckSetMilestone</name>
+      <anchorfile>classMilestonePath.html</anchorfile>
+      <anchor>a958207b9f98d6264a918d26470d9ee7c</anchor>
+      <arglist>(int milestone, const Config &amp;x)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>Length</name>
+      <anchorfile>classMilestonePath.html</anchorfile>
+      <anchor>a469bcb59f6ea1ad6c5c722120d4f03fa</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Concat</name>
+      <anchorfile>classMilestonePath.html</anchorfile>
+      <anchor>aa435533ef62a6cec973489a64e338b4c</anchor>
+      <arglist>(const MilestonePath &amp;path)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>CreateEdgesFromMilestones</name>
+      <anchorfile>classMilestonePath.html</anchorfile>
+      <anchor>a81b465171be6e10c9c97031e92915593</anchor>
+      <arglist>(CSpace *space, const vector&lt; Config &gt; &amp;milestones)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>InitializeEdgePlans</name>
+      <anchorfile>classMilestonePath.html</anchorfile>
+      <anchor>a1f3189d474fa330a99a7f3d4a616c04d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>IsFeasible</name>
+      <anchorfile>classMilestonePath.html</anchorfile>
+      <anchor>a5c05a9bcc0ded11cbefc52f6da31cd05</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>Eval</name>
+      <anchorfile>classMilestonePath.html</anchorfile>
+      <anchor>ab0ad404882d4ba13a773f1c57e25c953</anchor>
+      <arglist>(double t, Config &amp;c) const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>Shortcut</name>
+      <anchorfile>classMilestonePath.html</anchorfile>
+      <anchor>abdf192c22970e91d33e8e25459062aba</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>Reduce</name>
+      <anchorfile>classMilestonePath.html</anchorfile>
+      <anchor>a4894ebfe3f9a6242f08e149dd0dbbcd9</anchor>
+      <arglist>(int numIters)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Splice</name>
+      <anchorfile>classMilestonePath.html</anchorfile>
+      <anchor>aee525a5c149c3fae7a749565a0f2ff74</anchor>
+      <arglist>(int start, int goal, const MilestonePath &amp;path)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Discretize</name>
+      <anchorfile>classMilestonePath.html</anchorfile>
+      <anchor>a41823ef8cbc7abaf9272f591ec1c959c</anchor>
+      <arglist>(double h)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>DiscretizeEdge</name>
+      <anchorfile>classMilestonePath.html</anchorfile>
+      <anchor>aaa257fd37945a9d2d51c82453137ae6e</anchor>
+      <arglist>(int e, double h)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>DiscretizeEdge</name>
+      <anchorfile>classMilestonePath.html</anchorfile>
+      <anchor>a4b06ba022f6f48d8b418d0318f3c8282</anchor>
+      <arglist>(int e, const vector&lt; double &gt; &amp;u)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>Load</name>
+      <anchorfile>classMilestonePath.html</anchorfile>
+      <anchor>a1b9c83a24c2ca6454e16c97ae62016de</anchor>
+      <arglist>(istream &amp;in, CSpace *space)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>Save</name>
+      <anchorfile>classMilestonePath.html</anchorfile>
+      <anchor>ac65606d8d23d4be900f26cf7e9d7023e</anchor>
+      <arglist>(ostream &amp;out)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ErrorExplainingPlanner::Mode</name>
+    <filename>structErrorExplainingPlanner_1_1Mode.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>MultiModalPRM::ModeInfo</name>
+    <filename>structMultiModalPRM_1_1ModeInfo.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>MotionPlannerFactory</name>
+    <filename>classMotionPlannerFactory.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>MotionPlannerInterface</name>
+    <filename>classMotionPlannerInterface.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>MultiModalCSpace</name>
+    <filename>classMultiModalCSpace.html</filename>
+    <templarg>Mode</templarg>
+  </compound>
+  <compound kind="class">
+    <name>MultiModalCSpace&lt; int &gt;</name>
+    <filename>classMultiModalCSpace.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>MultiModalPRM</name>
+    <filename>classMultiModalPRM.html</filename>
+    <class kind="struct">MultiModalPRM::ModeInfo</class>
+    <class kind="struct">MultiModalPRM::TransitionIndex</class>
+    <class kind="struct">MultiModalPRM::TransitionInfo</class>
+  </compound>
+  <compound kind="struct">
+    <name>OptimalSubsetAStar</name>
+    <filename>structOptimalSubsetAStar.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>PathInfo</name>
+    <filename>structPathInfo.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>PerturbationTreePlanner</name>
+    <filename>classPerturbationTreePlanner.html</filename>
+    <base>TreeRoadmapPlanner</base>
+    <member kind="variable">
+      <type>double</type>
+      <name>delta</name>
+      <anchorfile>classPerturbationTreePlanner.html</anchorfile>
+      <anchor>a515688424c6bf53a9f5a77952091c326</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::vector&lt; double &gt;</type>
+      <name>weights</name>
+      <anchorfile>classPerturbationTreePlanner.html</anchorfile>
+      <anchor>abfe29d343ea150e30a3d28218b542391</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>PickCallback</name>
+    <filename>structPickCallback.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>PiggybackEdgePlanner</name>
+    <filename>classPiggybackEdgePlanner.html</filename>
+    <base>EdgePlanner</base>
+  </compound>
+  <compound kind="class">
+    <name>RoadmapPlanner</name>
+    <filename>classRoadmapPlanner.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>RoadmapPlannerInterface</name>
+    <filename>classRoadmapPlannerInterface.html</filename>
+    <base>MotionPlannerInterface</base>
+  </compound>
+  <compound kind="class">
+    <name>RRTPlanner</name>
+    <filename>classRRTPlanner.html</filename>
+    <base>TreeRoadmapPlanner</base>
+  </compound>
+  <compound kind="class">
+    <name>SBLInterface</name>
+    <filename>classSBLInterface.html</filename>
+    <base>MotionPlannerInterface</base>
+  </compound>
+  <compound kind="class">
+    <name>SBLPlanner</name>
+    <filename>classSBLPlanner.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>SBLPlannerWithGrid</name>
+    <filename>classSBLPlannerWithGrid.html</filename>
+    <base>SBLPlanner</base>
+  </compound>
+  <compound kind="class">
+    <name>SBLPRT</name>
+    <filename>classSBLPRT.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>SBLPRTInterface</name>
+    <filename>classSBLPRTInterface.html</filename>
+    <base>MotionPlannerInterface</base>
+  </compound>
+  <compound kind="class">
+    <name>SBLSubdivision</name>
+    <filename>classSBLSubdivision.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>SBLTree</name>
+    <filename>classSBLTree.html</filename>
+    <class kind="struct">SBLTree::EdgeInfo</class>
+  </compound>
+  <compound kind="class">
+    <name>SBLTreeWithGrid</name>
+    <filename>classSBLTreeWithGrid.html</filename>
+    <base>SBLTree</base>
+    <member kind="function">
+      <type>void</type>
+      <name>InitDefaultGrid</name>
+      <anchorfile>classSBLTreeWithGrid.html</anchorfile>
+      <anchor>a650330cfd33c0e2010a894321c918ee1</anchor>
+      <arglist>(int numDims, double h)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>RandomizeSubset</name>
+      <anchorfile>classSBLTreeWithGrid.html</anchorfile>
+      <anchor>a92883bf5d7b2644b11ce4284c6686613</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>SBLTreeWithIndex</name>
+    <filename>classSBLTreeWithIndex.html</filename>
+    <base>SBLTree</base>
+  </compound>
+  <compound kind="struct">
+    <name>BisectionEpsilonEdgePlanner::Segment</name>
+    <filename>structBisectionEpsilonEdgePlanner_1_1Segment.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>SetComponentCallback</name>
+    <filename>structSetComponentCallback.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>SingleObstacleCSpace</name>
+    <filename>classSingleObstacleCSpace.html</filename>
+    <base>CSpace</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>Distance</name>
+      <anchorfile>classSingleObstacleCSpace.html</anchorfile>
+      <anchor>aa66fd6cdcddbe8fece308ce13bb0a582</anchor>
+      <arglist>(const Config &amp;x, const Config &amp;y)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>StraightLineEpsilonPlanner</name>
+    <filename>classStraightLineEpsilonPlanner.html</filename>
+    <base>EdgePlanner</base>
+  </compound>
+  <compound kind="class">
+    <name>StraightLineObstacleDistancePlanner</name>
+    <filename>classStraightLineObstacleDistancePlanner.html</filename>
+    <base>EdgePlanner</base>
+  </compound>
+  <compound kind="class">
+    <name>SubgroupExplicitCSpace</name>
+    <filename>classSubgroupExplicitCSpace.html</filename>
+    <base>ExplicitCSpace</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>IsFeasible</name>
+      <anchorfile>classSubgroupExplicitCSpace.html</anchorfile>
+      <anchor>a4550de0947de8d0ad4a496422af659de</anchor>
+      <arglist>(const Config &amp;, int obstacle)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual EdgePlanner *</type>
+      <name>LocalPlanner</name>
+      <anchorfile>classSubgroupExplicitCSpace.html</anchorfile>
+      <anchor>a0e313f00a5c123d54e8dcd3a06762ba0</anchor>
+      <arglist>(const Config &amp;a, const Config &amp;b)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual EdgePlanner *</type>
+      <name>LocalPlanner</name>
+      <anchorfile>classSubgroupExplicitCSpace.html</anchorfile>
+      <anchor>afb82f0fb666da7a091ee81a4c156785a</anchor>
+      <arglist>(const Config &amp;a, const Config &amp;b, int obstacle)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>NumObstacles</name>
+      <anchorfile>classSubgroupExplicitCSpace.html</anchorfile>
+      <anchor>af8b539a67a294af256ad05b7a7a44abe</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual std::string</type>
+      <name>ObstacleName</name>
+      <anchorfile>classSubgroupExplicitCSpace.html</anchorfile>
+      <anchor>ad45cb9cfbcced138256ad15108b62311</anchor>
+      <arglist>(int obstacle)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>ObstacleDistance</name>
+      <anchorfile>classSubgroupExplicitCSpace.html</anchorfile>
+      <anchor>a459cc5f61c7fc4c2179ff278ac3aff35</anchor>
+      <arglist>(const Config &amp;a, int obstacle)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>Distance</name>
+      <anchorfile>classSubgroupExplicitCSpace.html</anchorfile>
+      <anchor>aa19a708cadc862d2ce5eac6611bd0558</anchor>
+      <arglist>(const Config &amp;x, const Config &amp;y)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>Subset</name>
+    <filename>structSubset.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>SubsetCost</name>
+    <filename>structSubsetCost.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>SubsetExplicitCSpace</name>
+    <filename>classSubsetExplicitCSpace.html</filename>
+    <base>ExplicitCSpace</base>
+    <member kind="function">
+      <type>void</type>
+      <name>EnableAll</name>
+      <anchorfile>classSubsetExplicitCSpace.html</anchorfile>
+      <anchor>af15f473eeadbba58f60d23cf9884e922</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>EnableNone</name>
+      <anchorfile>classSubsetExplicitCSpace.html</anchorfile>
+      <anchor>ae7aa34760cdc52f9a1a21c86f5a92f13</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>IsFeasible</name>
+      <anchorfile>classSubsetExplicitCSpace.html</anchorfile>
+      <anchor>a773a6d83691675466d07923bc82d14ad</anchor>
+      <arglist>(const Config &amp;, int obstacle)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual EdgePlanner *</type>
+      <name>LocalPlanner</name>
+      <anchorfile>classSubsetExplicitCSpace.html</anchorfile>
+      <anchor>a99a68df6f72256d5f7a01de8a681a6b9</anchor>
+      <arglist>(const Config &amp;a, const Config &amp;b)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual EdgePlanner *</type>
+      <name>LocalPlanner</name>
+      <anchorfile>classSubsetExplicitCSpace.html</anchorfile>
+      <anchor>a00ba1b23d12b9bf27dc3aebf450a4cc7</anchor>
+      <arglist>(const Config &amp;a, const Config &amp;b, int obstacle)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>NumObstacles</name>
+      <anchorfile>classSubsetExplicitCSpace.html</anchorfile>
+      <anchor>ac3fd1ee0bdec0cfa4ac11af50402a9e7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual std::string</type>
+      <name>ObstacleName</name>
+      <anchorfile>classSubsetExplicitCSpace.html</anchorfile>
+      <anchor>a41a2cdc371563e8eacc99633cf93bcff</anchor>
+      <arglist>(int obstacle)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>ObstacleDistance</name>
+      <anchorfile>classSubsetExplicitCSpace.html</anchorfile>
+      <anchor>aa3f5f8f05dba341b271fd8e3fd658534</anchor>
+      <arglist>(const Config &amp;a, int obstacle)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>Distance</name>
+      <anchorfile>classSubsetExplicitCSpace.html</anchorfile>
+      <anchor>ac1a148c184aecec1276bee91657cd5a7</anchor>
+      <arglist>(const Config &amp;x, const Config &amp;y)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ErrorExplainingPlanner::Transition</name>
+    <filename>structErrorExplainingPlanner_1_1Transition.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>MultiModalPRM::TransitionIndex</name>
+    <filename>structMultiModalPRM_1_1TransitionIndex.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>MultiModalPRM::TransitionInfo</name>
+    <filename>structMultiModalPRM_1_1TransitionInfo.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>TreeRoadmapPlanner</name>
+    <filename>classTreeRoadmapPlanner.html</filename>
+    <class kind="struct">TreeRoadmapPlanner::Milestone</class>
+  </compound>
+  <compound kind="class">
+    <name>TrueEdgePlanner</name>
+    <filename>classTrueEdgePlanner.html</filename>
+    <base>EdgePlanner</base>
+  </compound>
+  <compound kind="struct">
+    <name>UpdatePrioritySPP</name>
+    <filename>structUpdatePrioritySPP.html</filename>
+  </compound>
+  <compound kind="group">
+    <name>MotionPlanning</name>
+    <title>MotionPlanning</title>
+    <filename>group__MotionPlanning.html</filename>
+    <class kind="class">MotionPlannerInterface</class>
+    <class kind="class">MotionPlannerFactory</class>
+    <class kind="class">CSpace</class>
+    <class kind="class">EdgePlanner</class>
+    <class kind="class">StraightLineEpsilonPlanner</class>
+    <class kind="class">StraightLineObstacleDistancePlanner</class>
+    <class kind="class">BisectionEpsilonEdgePlanner</class>
+    <class kind="class">ExplicitCSpace</class>
+    <class kind="class">MilestonePath</class>
+    <class kind="class">RoadmapPlanner</class>
+    <class kind="class">TreeRoadmapPlanner</class>
+    <class kind="class">PerturbationTreePlanner</class>
+    <class kind="class">RRTPlanner</class>
+    <class kind="class">BidirectionalRRTPlanner</class>
+    <class kind="class">MultiModalCSpace</class>
+    <class kind="class">SBLPlanner</class>
+    <class kind="class">SBLTree</class>
+    <class kind="class">SBLTreeWithIndex</class>
+    <class kind="class">SBLSubdivision</class>
+    <class kind="class">SBLTreeWithGrid</class>
+  </compound>
+</tagfile>

@@ -1,0 +1,71 @@
+#MPK v1.0 robot
+
+joint Link0 {
+  model0 "HyperBot/link1.iv"
+}
+joint Link1 {
+  parent Link0
+  ConstTransl_Rot1 0 3 0 0 -1 0  -3.142  3.142
+  param 0
+  model0 "HyperBot/link2.iv"
+}
+joint Link2 {
+  parent Link1
+  ConstTransl_Rot1 0 0 1 0 0 1  -3.142  3.142
+  param 1 
+  model0 "HyperBot/link1.iv"
+}
+joint Link3 {
+  parent Link2
+  ConstTransl_Rot1 0 3 0 0 -1 0  -3.142  3.142
+  param 2 
+  model0 "HyperBot/link2.iv"
+}
+joint Link4 {
+  parent Link3
+  ConstTransl_Rot1 0 0 -1 0 0 1  -3.142  3.142
+  param 3 
+  model0 "HyperBot/link1.iv"
+}
+joint Link5 {
+  parent Link4
+  ConstTransl_Rot1 0 3 0 0 -1 0  -3.142  3.142
+  param 4 
+  model0 "HyperBot/link2.iv"
+}
+joint Link6 {
+  parent Link5
+  ConstTransl_Rot1 0 0 1 0 0 1  -3.142  3.142
+  param 5 
+  model0 "HyperBot/link1.iv"
+}
+joint Link7 {
+  parent Link6
+  ConstTransl_Rot1 0 3 0 0 -1 0  -3.142  3.142
+  param 6 
+  model0 "HyperBot/link2.iv"
+}
+joint Link8 {
+  parent Link7
+  ConstTransl_Rot1 0 0 -1 0 0 1  -3.142  3.142
+  param 7 
+  model0 "HyperBot/link1.iv"
+}
+joint Link9 {
+  parent Link8
+  ConstTransl_Rot1 0 3 0 0 -1 0  -3.142  3.142
+  param 8 
+  model0 "HyperBot/link2.iv"
+}
+joint Link10 {
+  parent Link9
+  ConstTransl_Rot1 0 0 1 0 0 1  -3.142  3.142
+  param 9 
+  model0 "HyperBot/link1.iv"
+}
+joint TracePoint {
+  parent Link10
+  ConstTransl 0 2.5 0
+  tracePoint
+}
+

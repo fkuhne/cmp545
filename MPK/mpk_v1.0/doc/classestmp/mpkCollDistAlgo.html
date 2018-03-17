@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  mpkCollDistAlgo</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">mpkCollDistAlgo</A></H2></TD></H2></TD></TR></TABLE>
+<BLOCKQUOTE>Collision and distance computation algorithms.</BLOCKQUOTE>
+<HR>
+
+<DL>
+<P><TABLE>
+<DT><H3>Public Methods</H3><DD><TR>
+<TD VALIGN=TOP>
+<A NAME="Collision"></A>
+<A NAME="DOC.4.1"></A>
+<IMG ALT="o" SRC=icon2.gif>static   bool </TD><TD><B>Collision</B> (double R1[3][3], double T1[3], PQP_Model* <!1><A HREF="mpkCollPair.html#DOC.5.5">o1</A>, double R2[3][3], double T2[3], PQP_Model* <!1><A HREF="mpkCollPair.html#DOC.5.6">o2</A>)<BR>
+<I>Determines whether two models are colliding.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="GreedyDistance"></A>
+<A NAME="DOC.4.2"></A>
+<IMG ALT="o" SRC=icon2.gif>static   double </TD><TD><B>GreedyDistance</B> (double R1[3][3], double T1[3], PQP_Model* <!1><A HREF="mpkCollPair.html#DOC.5.5">o1</A>, double R2[3][3], double T2[3], PQP_Model* <!1><A HREF="mpkCollPair.html#DOC.5.6">o2</A>, double <!1><A HREF="mpkCollPair.html#DOC.5.7">delta</A>)<BR>
+<I>Computes a simple but fast lower bound on the distance between two models.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="GreedyDistance"></A>
+<A NAME="DOC.4.3"></A>
+<IMG ALT="o" SRC=icon2.gif>static   double </TD><TD><B>GreedyDistance</B> (double center[3], double radius, double R2[3][3], double T2[3], PQP_Model* <!1><A HREF="mpkCollPair.html#DOC.5.6">o2</A>, double <!1><A HREF="mpkCollPair.html#DOC.5.7">delta</A>)<BR>
+<I>Computes a simple but fast lower bound on the distance between a sphere and a model.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="Distance"></A>
+<A NAME="DOC.4.4"></A>
+<IMG ALT="o" SRC=icon2.gif>static   double </TD><TD><B>Distance</B> (double R1[3][3], double T1[3], PQP_Model* <!1><A HREF="mpkCollPair.html#DOC.5.5">o1</A>, double R2[3][3], double T2[3], PQP_Model* <!1><A HREF="mpkCollPair.html#DOC.5.6">o2</A>, double rel_err=0.0, double abs_err=0.0)<BR>
+<I>Returns the (approximate) distance between two models. Note that the original version of PQP returns an upper bound on the distance when a bounded error is allowed.  However, in our adaptive segment checker, we need a lower bound.  In principle, PQP's approximate distance algorithm can be modified to return a lower bound, too.  Still, approximate distance computation has been found to be slower than greedy distance computation.</I>
+</TD></TR></TABLE></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>Collision and distance computation algorithms.</BLOCKQUOTE>
+<DL>
+</DL>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

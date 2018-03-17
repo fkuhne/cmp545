@@ -1,0 +1,41 @@
+#Inventor V2.0 ascii
+
+DEF robot mpkRobot {
+  fileName "hyperbot.rob"
+  scaleFactor 0.2
+  translation 0 0.1 0
+}
+
+Separator {
+  Transform {
+    translation 0 -0.01 0
+    scaleFactor 6 6 6
+  }
+  BaseColor { rgb 1 0 0 }
+  DEF obstacle1 mpkIncludeFile {
+    name "floor.iv"
+  }
+}
+
+Separator {
+  Material {
+    transparency 0.5
+  }
+  BaseColor { rgb 1 0 0 }
+  Transform {
+    translation 0 1 0
+    scaleFactor 0.25 0.1 0.25
+  }
+  DEF obstacle2 mpkIncludeFile {
+    name "wall.iv"
+  }
+  Transform {
+    translation 0 20 0
+  }
+  DEF obstacle3 mpkIncludeFile {
+    name "wall.iv"
+  }
+}
+
+
+

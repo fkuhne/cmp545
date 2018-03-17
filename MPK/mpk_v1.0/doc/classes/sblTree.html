@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  sblTree</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">sblTree</A></H2></TD></H2></TD></TR></TABLE>
+<BLOCKQUOTE>Defines the tree structure for the sblPlanner roadmaps.  This class is responsible of maintain the record of all nodes added so far as well as to keep a representation of the sampled C-space in order to choose a node to expand according to the density of nodes.</BLOCKQUOTE>
+<HR>
+
+<DL>
+<P><TABLE>
+<DT><H3>Public Methods</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.37.1"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>sblTree</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.37.2"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>setGridSize</B> (int a=10, int b=10)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.37.3"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>setDOFS</B> (int dof0=0, int dof1=1)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.37.4"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>getNodeToExpand</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.37.5"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>addTosblBins</B> (const <!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; m)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.37.6"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>delFromsblBins</B> (const <!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; m)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.37.7"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>choosesblBin</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.37.8"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>bool </TD><TD><B>hasNodesIn</B> (int bin)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.37.9"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>getNodeFromsblBin</B> (int bin)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.37.10"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>double </TD><TD><B>getRatio</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.37.11"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>getClosestNode</B> (const <!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; m, const vector&lt;<!1><A HREF="sblMilestone.html">sblMilestone</A>&gt;&amp; <!1><A HREF="mpkTraceVis.html#DOC.20.6.1">x</A>)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.37.12"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>getsblBinIndex</B> (const <!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; m)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.37.13"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>getSize</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.37.14"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>printsblBins</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.37.15"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>double </TD><TD><B>getDelta</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.37.16"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>getDIVS</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.37.17"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>rebuildTree</B> (<!1><A HREF="sblTree.html">sblTree</A>&amp; <!1><A HREF="sblMilestone.html#DOC.32.23">t</A>, const vector&lt;<!1><A HREF="sblMilestone.html">sblMilestone</A>&gt;&amp; theNodes)<BR>
+<I></I>
+</TD></TR></TABLE></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>Defines the tree structure for the sblPlanner roadmaps.  This class is responsible of maintain the record of all nodes added so far as well as to keep a representation of the sampled C-space in order to choose a node to expand according to the density of nodes.</BLOCKQUOTE>
+<DL>
+
+<A NAME="sblTree"></A>
+<A NAME="DOC.37.1"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> sblTree()</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="setGridSize"></A>
+<A NAME="DOC.37.2"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void setGridSize(int a=10, int b=10)</B></TT>
+<DD>Sets the Grid size to which the tree nodes are to hashed
+<DL><DT><DD></DL><P>
+<A NAME="setDOFS"></A>
+<A NAME="DOC.37.3"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void setDOFS(int dof0=0, int dof1=1)</B></TT>
+<DD>Sets the 2 DOF's for sblBin Construction 
+<DL><DT><DD></DL><P>
+<A NAME="getNodeToExpand"></A>
+<A NAME="DOC.37.4"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int getNodeToExpand()</B></TT>
+<DD>Probabilistically chooses a node to expand from the Tree 
+<DL><DT><DD></DL><P>
+<A NAME="addTosblBins"></A>
+<A NAME="DOC.37.5"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void addTosblBins(const <!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; m)</B></TT>
+<DD>Adds a tree node to a Tree sblBin 
+<DL><DT><DD></DL><P>
+<A NAME="delFromsblBins"></A>
+<A NAME="DOC.37.6"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void delFromsblBins(const <!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; m)</B></TT>
+<DD>Delete a tree node from the tree sblBins 
+<DL><DT><DD></DL><P>
+<A NAME="choosesblBin"></A>
+<A NAME="DOC.37.7"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int choosesblBin()</B></TT>
+<DD>Picks a sblBin 
+<DL><DT><DD></DL><P>
+<A NAME="hasNodesIn"></A>
+<A NAME="DOC.37.8"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>bool hasNodesIn(int bin)</B></TT>
+<DD>Checks if a node is in a particular sblBin or not 
+<DL><DT><DD></DL><P>
+<A NAME="getNodeFromsblBin"></A>
+<A NAME="DOC.37.9"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int getNodeFromsblBin(int bin)</B></TT>
+<DD>Picks a Node from a bin randomly 
+<DL><DT><DD></DL><P>
+<A NAME="getRatio"></A>
+<A NAME="DOC.37.10"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>double getRatio()</B></TT>
+<DD>Returns the ratio of number of sblBins to the number of nodes in tree 
+<DL><DT><DD></DL><P>
+<A NAME="getClosestNode"></A>
+<A NAME="DOC.37.11"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int getClosestNode(const <!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; m, const vector&lt;<!1><A HREF="sblMilestone.html">sblMilestone</A>&gt;&amp; <!1><A HREF="mpkTraceVis.html#DOC.20.6.1">x</A>)</B></TT>
+<DD>Finds the closest node in a sblBin to a sblMilestone 
+<DL><DT><DD></DL><P>
+<A NAME="getsblBinIndex"></A>
+<A NAME="DOC.37.12"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int getsblBinIndex(const <!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; m)</B></TT>
+<DD>Gets the sblBin id for a sblMilestone to which it would be hashed
+<DL><DT><DD></DL><P>
+<A NAME="getSize"></A>
+<A NAME="DOC.37.13"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int getSize()</B></TT>
+<DD>Returns Tree size
+<DL><DT><DD></DL><P>
+<A NAME="printsblBins"></A>
+<A NAME="DOC.37.14"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void printsblBins()</B></TT>
+<DD>Prints the sizes of all the sblBins 
+<DL><DT><DD></DL><P>
+<A NAME="getDelta"></A>
+<A NAME="DOC.37.15"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>double getDelta()</B></TT>
+<DD>Returns DELTA: grid precision 
+<DL><DT><DD></DL><P>
+<A NAME="getDIVS"></A>
+<A NAME="DOC.37.16"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int getDIVS()</B></TT>
+<DD>Returns DIVS: number of grid divisions 
+<DL><DT><DD></DL><P>
+<A NAME="rebuildTree"></A>
+<A NAME="DOC.37.17"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void rebuildTree(<!1><A HREF="sblTree.html">sblTree</A>&amp; <!1><A HREF="sblMilestone.html#DOC.32.23">t</A>, const vector&lt;<!1><A HREF="sblMilestone.html">sblMilestone</A>&gt;&amp; theNodes)</B></TT>
+<DD>Rebuilds a tree as per new grid parameters 
+<DL><DT><DD></DL><P></DL>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

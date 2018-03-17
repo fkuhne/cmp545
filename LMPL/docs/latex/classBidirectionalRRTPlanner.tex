@@ -1,0 +1,46 @@
+\section{Bidirectional\+R\+R\+T\+Planner Class Reference}
+\label{classBidirectionalRRTPlanner}\index{Bidirectional\+R\+R\+T\+Planner@{Bidirectional\+R\+R\+T\+Planner}}
+
+
+A single-\/query R\+RT (Rapidly-\/\+Exploring Random Tree) planner.  
+
+
+
+
+{\ttfamily \#include $<$Motion\+Planner.\+h$>$}
+
+Inheritance diagram for Bidirectional\+R\+R\+T\+Planner\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classBidirectionalRRTPlanner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Bidirectional\+R\+R\+T\+Planner} ({\bf C\+Space} $\ast$s)\label{classBidirectionalRRTPlanner_a11d8c99aa3c9e93cae5f03a1f566c654}
+
+\item 
+void {\bf Init} (const Config \&start, const Config \&goal)\label{classBidirectionalRRTPlanner_ad87d74d50c4cd273c1ce0ae929412a52}
+
+\begin{DoxyCompactList}\small\item\em Clears the trees, then initializes the start/goal configs. \end{DoxyCompactList}\item 
+bool {\bf Plan} ()\label{classBidirectionalRRTPlanner_a78df1be8d25e961f78b39b1e992e07c3}
+
+\begin{DoxyCompactList}\small\item\em Performs 1 step of planning, returns true on success. \end{DoxyCompactList}\item 
+void {\bf Create\+Path} ({\bf Milestone\+Path} \&) const \label{classBidirectionalRRTPlanner_a53fbe655860bff1fc9174cedc361c58a}
+
+\begin{DoxyCompactList}\small\item\em Returns the planned path, if successful. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A single-\/query R\+RT (Rapidly-\/\+Exploring Random Tree) planner. 
+
+Consists of two trees, one from the start, the other from the goal. Tries to connect the two when an extended config is within connection\+Threshold of the other tree.
+
+The start and goal configs are stored in milestones 0 and 1, resp. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Motion\+Planner.\+h\item 
+Motion\+Planner.\+cpp\end{DoxyCompactItemize}

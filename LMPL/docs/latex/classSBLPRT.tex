@@ -1,0 +1,112 @@
+\section{S\+B\+L\+P\+RT Class Reference}
+\label{classSBLPRT}\index{S\+B\+L\+P\+RT@{S\+B\+L\+P\+RT}}
+
+
+A probabilistic roadmap of trees, where S\+BL is used for local planning.  
+
+
+
+
+{\ttfamily \#include $<$S\+B\+L.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef S\+B\+L\+Tree\+::\+Node {\bfseries Node}\label{classSBLPRT_a8c9c3931b90604b1ef785369a2ca0560}
+
+\item 
+typedef {\bf S\+B\+L\+Tree\+::\+Edge\+Info} {\bfseries Edge\+Info}\label{classSBLPRT_a963e472e4836d7f38bfe4e4234e68310}
+
+\item 
+typedef Graph\+::\+Undirected\+Graph$<$ {\bf S\+B\+L\+Tree} $\ast$, {\bf Milestone\+Path} $>$ {\bfseries Roadmap}\label{classSBLPRT_ae1fb7f3c065af93b4f1b1d4e8ef0876a}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries S\+B\+L\+P\+RT} ({\bf C\+Space} $\ast$s)\label{classSBLPRT_ae9452ac5e184677d048cee75bb290c79}
+
+\item 
+virtual void {\bfseries Cleanup} ()\label{classSBLPRT_a7bd6839a7f47b2b13c09a0de6a8c4f73}
+
+\item 
+int {\bfseries Add\+Seed} (const Config \&q)\label{classSBLPRT_a2ff67972faaf1e02b84a7838ed8fef34}
+
+\item 
+pair$<$ int, int $>$ {\bfseries Expand} ()\label{classSBLPRT_a92cc85ba0385617c7157ff30221d9a5c}
+
+\item 
+int {\bfseries Expand\+Tree} (int t)\label{classSBLPRT_a57fb164bb322f0fe9459d0f56e00c328}
+
+\item 
+void {\bfseries Add\+Roadmap\+Edges\+If\+Below\+Threshold} (double distance\+Threshold)\label{classSBLPRT_adf926ead4cb1e8a2b0c8fe953aae475f}
+
+\item 
+void {\bfseries Add\+Roadmap\+Edge} (int i, int j)\label{classSBLPRT_a380279cce525c5892b39a43c0f27b3f6}
+
+\item 
+bool {\bfseries Is\+Edge\+Connected} (int i, int j) const \label{classSBLPRT_a28e8316b833653e0eedeee3fee914d88}
+
+\item 
+bool {\bfseries Is\+Seed\+Fully\+Connected} (int i) const \label{classSBLPRT_a7490ea756ebbd3fe8d8e6d4a62eefda5}
+
+\item 
+bool {\bfseries Are\+Seeds\+Connected} (int i, int j) const \label{classSBLPRT_a1f3442d07ea2f9d1636aa7d03f074c67}
+
+\item 
+void {\bfseries Create\+Path} (int i, int j, {\bf Milestone\+Path} \&path)\label{classSBLPRT_afd15fb5bcf265fe81c8e9c69fd3d1de6}
+
+\item 
+virtual pair$<$ int, Node $\ast$ $>$ {\bfseries Pick\+Connection} (int t, Node $\ast$n)\label{classSBLPRT_a893cb4b0edad55c26b2c39f6469c37e2}
+
+\item 
+int {\bfseries Pick\+Random\+Adjacent\+Tree} (int t)\label{classSBLPRT_aaf3da20a02334ca511b15266baabab15}
+
+\item 
+int {\bfseries Pick\+Closest\+Adjacent\+Tree} (int t, const Config \&x)\label{classSBLPRT_afcf10b24a3cbd317e91628e808244dcb}
+
+\item 
+Node $\ast$ {\bfseries Get\+Closest\+Node} (int t, const Config \&x)\label{classSBLPRT_aa37e6a476c614d0e1abb2b46b18d8179}
+
+\item 
+Node $\ast$ {\bfseries Pick\+Node} (int t)\label{classSBLPRT_a94bf663371d2d9a3a2c79d522cf661d7}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf C\+Space} $\ast$ {\bfseries space}\label{classSBLPRT_a3a44566bfa70d68401d977805a3616bf}
+
+\item 
+double {\bfseries max\+Extend\+Distance}\label{classSBLPRT_a29b6b5107aa07ef314157a309621ed00}
+
+\item 
+int {\bfseries max\+Extend\+Iters}\label{classSBLPRT_a77dfdd94494e772c22ec865f16f8d06a}
+
+\item 
+double {\bfseries default\+P\+Pick\+Closest\+Tree}\label{classSBLPRT_a4cc930706229025c08249e1db9eb2b65}
+
+\item 
+double {\bfseries default\+P\+Pick\+Closest\+Node}\label{classSBLPRT_aa53e115e8f35da2cc241bef584a5c17f}
+
+\item 
+int {\bfseries num\+Iters}\label{classSBLPRT_ae81b491304d06e4bd47faab688e0bedb}
+
+\item 
+Roadmap {\bfseries roadmap}\label{classSBLPRT_ab868467342df45aba0efbde15464294f}
+
+\item 
+Graph\+::\+Connected\+Components {\bfseries ccs}\label{classSBLPRT_ad6ea8152160bd6227541b68cde7dfe63}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A probabilistic roadmap of trees, where S\+BL is used for local planning. 
+
+Permitted connections are represented by edges in an undirected graph. Plans are attempted only along these edges. An edge has a corresponding \doxyref{Milestone\+Path}{p.}{classMilestonePath} which will contain the path between the seeds once planning is complete. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+B\+L.\+h\item 
+S\+B\+L.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,59 @@
+\section{Single\+Obstacle\+C\+Space Class Reference}
+\label{classSingleObstacleCSpace}\index{Single\+Obstacle\+C\+Space@{Single\+Obstacle\+C\+Space}}
+
+
+Converges an \doxyref{Explicit\+C\+Space}{p.}{classExplicitCSpace} to a regular \doxyref{C\+Space}{p.}{classCSpace} based on one selected obstacle.  
+
+
+
+
+{\ttfamily \#include $<$Explicit\+C\+Space.\+h$>$}
+
+Inheritance diagram for Single\+Obstacle\+C\+Space\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSingleObstacleCSpace}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Single\+Obstacle\+C\+Space} ({\bf Explicit\+C\+Space} $\ast$base\+Space, int obstacle)\label{classSingleObstacleCSpace_a7685a3cf6d8fca975314b2d2ee9162d4}
+
+\item 
+virtual bool {\bfseries Is\+Feasible} (const Config \&q)\label{classSingleObstacleCSpace_abf56f707f0030f9cb48082532eafb38c}
+
+\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bfseries Local\+Planner} (const Config \&a, const Config \&b)\label{classSingleObstacleCSpace_adb1b4d2e9517f3e3f29019e7d36392b3}
+
+\item 
+virtual void {\bfseries Sample} (Config \&x)\label{classSingleObstacleCSpace_abe017ce5327656b119a526a88bea80a1}
+
+\item 
+virtual void {\bfseries Sample\+Neighborhood} (const Config \&c, double r, Config \&x)\label{classSingleObstacleCSpace_af97efa4198eee01044f0351b5205faae}
+
+\item 
+virtual double {\bf Distance} (const Config \&x, const Config \&y)\label{classSingleObstacleCSpace_aa66fd6cdcddbe8fece308ce13bb0a582}
+
+\begin{DoxyCompactList}\small\item\em optionally overrideable (default uses euclidean space) \end{DoxyCompactList}\item 
+virtual void {\bfseries Interpolate} (const Config \&x, const Config \&y, double u, Config \&out)\label{classSingleObstacleCSpace_a9361e0f3fff0bd54ae6ba7d3da81d422}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Explicit\+C\+Space} $\ast$ {\bfseries base\+Space}\label{classSingleObstacleCSpace_a0f7f64d27ec08c09d46af530919a66bf}
+
+\item 
+int {\bfseries obstacle}\label{classSingleObstacleCSpace_a51cd1bb5b5ea66af8639f67c493b817b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Converges an \doxyref{Explicit\+C\+Space}{p.}{classExplicitCSpace} to a regular \doxyref{C\+Space}{p.}{classCSpace} based on one selected obstacle. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Explicit\+C\+Space.\+h\item 
+Explicit\+C\+Space.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  mpkCollPair</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">mpkCollPair</A></H2></TD></H2></TD></TR></TABLE>
+<BLOCKQUOTE>Represents a candidate pair of rigid objects to be tested for collisions or for which a minimum workspace clearance is desired. A list or vector of all pairs that could potentially collide defines the necessary collision checks for the entire scenario (see mpkCollPairSet). </BLOCKQUOTE>
+<HR>
+
+<DL>
+<P><TABLE>
+<DT><H3>Public Fields</H3><DD><TR>
+<TD VALIGN=TOP>
+<A NAME="o1"></A>
+<A NAME="DOC.5.5"></A>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="mpkCollPair.html#DOC.5.4">coll_obj</A> </TD><TD><B>o1</B> <BR>
+<I>Information about the first candidate object of the pair.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="o2"></A>
+<A NAME="DOC.5.6"></A>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="mpkCollPair.html#DOC.5.4">coll_obj</A> </TD><TD><B>o2</B> <BR>
+<I>Information about the other candidate object of the pair.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="delta"></A>
+<A NAME="DOC.5.7"></A>
+<IMG ALT="o" SRC=icon2.gif>double </TD><TD><B>delta</B> <BR>
+<I>Minimum workspace clearance (delta) for this pair.</I>
+</TD></TR></TABLE></P>
+
+<P><TABLE>
+<DT><H3>Public Methods</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.5.1"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>mpkCollPair</B> (<!1><A HREF="mpkBaseRobot.html">mpkBaseRobot</A>* rob1, int first_param_idx1, int joint_idx1, PQP_Model* obst_pqp, <!1><A HREF="mpkTransform.html">mpkTransform</A>* obst_transf, const char obst_name[], double <!1><A HREF="mpkCollPair.html#DOC.5.7">delta</A> = 1e-3)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.5.2"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>mpkCollPair</B> (<!1><A HREF="mpkBaseRobot.html">mpkBaseRobot</A>* rob1, int first_param_idx1, int joint_idx1, <!1><A HREF="mpkBaseRobot.html">mpkBaseRobot</A>* rob2, int first_param_idx2, int joint_idx2, double <!1><A HREF="mpkCollPair.html#DOC.5.7">delta</A> = 1e-3)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.5.3"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>compute_transf</B> (const <!1><A HREF="mpkConfig.html">mpkConfig</A>&amp; <!1><A HREF="sblMilestone.html#DOC.32.22">q</A>) const <BR>
+<I></I>
+</TD></TR></TABLE></P>
+
+<P><TABLE>
+<DT><H3>Public Members</H3><DD><TR>
+<TD VALIGN=TOP>
+<A NAME="coll_obj"></A>
+<A NAME="DOC.5.4"></A>
+<IMG ALT="o" SRC=icon2.gif>struct  </TD><TD><B>coll_obj</B> <BR>
+<I>Structure storing information about a single collision candidate object (rigid body).</I>
+</TD></TR></TABLE></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>To distinguish robot links in a scenario with multiple
+identical robots, the object identifiers (names) created by this
+class concatenate the robot name and the link name to get a unique
+name for each link.
+
+<P></BLOCKQUOTE>
+<DL>
+
+<A NAME="mpkCollPair"></A>
+<A NAME="DOC.5.1"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> mpkCollPair(<!1><A HREF="mpkBaseRobot.html">mpkBaseRobot</A>* rob1, int first_param_idx1, int joint_idx1, PQP_Model* obst_pqp, <!1><A HREF="mpkTransform.html">mpkTransform</A>* obst_transf, const char obst_name[], double <!1><A HREF="mpkCollPair.html#DOC.5.7">delta</A> = 1e-3)</B></TT>
+<DD>Creates a collision test pair (robot link, obstacle).  The
+robot and obstacle information can be taken from mpkRobotCollection
+and mpkObstacleCollection, respectively.
+
+<DL><DT><DT><B>Parameters:</B><DD><B>rob1</B> -  pointer to <!1><A HREF="mpkRobot.html#DOC.18.9">robot</A>
+<BR><B>first_param_idx1</B> -  position of first parameter of <!1><A HREF="mpkRobotCollection.html#DOC.17.10">rob</A> in the
+c-space (see <!1><A HREF="mpkRobotCollection.html#DOC.17.5">first_param_idx</A> in
+<!1><A HREF="mpkRobotCollection.html">mpkRobotCollection</A>).
+Equals 0 if only one robot.
+<BR><B>joint_idx1</B> -  index of the joint with which the candidate link
+is associated
+<BR><B>obst_pqp</B> -  PQP model of the obstacle
+<BR><B>obst_transf</B> -  <!1><A HREF="mpkTransform.html">mpkTransform</A> of the obstacle
+<BR><B>obst_name</B> -  Name of the obstacle
+<BR><B></B> - <!1><A HREF="mpkCollPair.html#DOC.5.7">delta</A> Minimum workspace <!1><A HREF="mpkConfigChecker.html#DOC.7.3">clearance</A>
+<BR><DT><B>See Also:</B><DD><!1><A HREF="mpkRobotCollection.html">mpkRobotCollection</A>
+<BR><!1><A HREF="mpkObstacleCollection.html">mpkObstacleCollection</A><BR><DD></DL><P>
+<A NAME="mpkCollPair"></A>
+<A NAME="DOC.5.2"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> mpkCollPair(<!1><A HREF="mpkBaseRobot.html">mpkBaseRobot</A>* rob1, int first_param_idx1, int joint_idx1, <!1><A HREF="mpkBaseRobot.html">mpkBaseRobot</A>* rob2, int first_param_idx2, int joint_idx2, double <!1><A HREF="mpkCollPair.html#DOC.5.7">delta</A> = 1e-3)</B></TT>
+<DD>Creates a collision test pair (robot link, robot link) from
+one or two different robots.  For notes on parameters, see above
+constructor for pair (robot link, obstacle).
+<DL><DT><DD></DL><P>
+<A NAME="compute_transf"></A>
+<A NAME="DOC.5.3"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void compute_transf(const <!1><A HREF="mpkConfig.html">mpkConfig</A>&amp; <!1><A HREF="sblMilestone.html#DOC.32.22">q</A>) const </B></TT>
+<DD>Computes the transforms for both objects (or for the first
+object only if the second object is a fixed obstacle).  Note that
+this modifies the robot transforms in the robot(s) that were
+passed in the constructor.
+<DL><DT><DD></DL><P></DL>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DT><B>See Also:</B><DD><!1><A HREF="mpkCollPairSet.html">mpkCollPairSet</A><BR><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

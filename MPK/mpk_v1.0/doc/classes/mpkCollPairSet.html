@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  mpkCollPairSet</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">mpkCollPairSet</A></H2></TD></H2></TD></TR></TABLE>
+<BLOCKQUOTE>Represents a collection of candidate rigid body pairs (robot link, obstacle) and (robot link, robot link) that can be passed to a collision checker class.  In particular, the public member <B>test_pairs</B> can be passed to <A HREF=SimplePointChecker.html>SimplePointChecker</A>, <A HREF=AdaptPointChecker.html>SimplePointChecker</A> or <A HREF=mpkSimpleSegmentChecker.html>SimplePointChecker</A>.  mpkRobot links that do not move, because they have no parameter dependencies, are not paired with any (static) obstacles. </BLOCKQUOTE>
+<HR>
+
+<DL>
+<P><TABLE>
+<DT><H3>Public Fields</H3><DD><TR>
+<TD VALIGN=TOP>
+<A NAME="test_pairs"></A>
+<A NAME="DOC.6.3"></A>
+<IMG ALT="o" SRC=icon2.gif>vector&lt;<!1><A HREF="mpkCollPair.html">mpkCollPair</A>&gt;  </TD><TD><B>test_pairs</B> <BR>
+<I>The vector of collision candidate pairs constructed by this class.</I>
+</TD></TR></TABLE></P>
+
+<P><TABLE>
+<DT><H3>Public Methods</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.6.1"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>mpkCollPairSet</B> (<!1><A HREF="mpkRobotCollection.html">mpkRobotCollection</A>* <!1><A HREF="mpkTraceVis.html#DOC.20.10">robots</A>, <!1><A HREF="mpkObstacleCollection.html">mpkObstacleCollection</A>* <!1><A HREF="mpkMouseControl.html#DOC.13.21">obstacles</A>, double <!1><A HREF="mpkCollPair.html#DOC.5.7">delta</A>=0)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.6.2"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>print</B> (ostream* f=&amp;cout)<BR>
+<I></I>
+</TD></TR></TABLE></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>Represents a collection of candidate rigid body pairs (robot link, obstacle) and (robot link, robot link) that can be passed to a collision checker class.  In particular, the public member <B>test_pairs</B> can be passed to <A HREF=SimplePointChecker.html>SimplePointChecker</A>, <A HREF=AdaptPointChecker.html>SimplePointChecker</A> or <A HREF=mpkSimpleSegmentChecker.html>SimplePointChecker</A>.  mpkRobot links that do not move, because they have no parameter dependencies, are not paired with any (static) obstacles. </BLOCKQUOTE>
+<DL>
+
+<A NAME="mpkCollPairSet"></A>
+<A NAME="DOC.6.1"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> mpkCollPairSet(<!1><A HREF="mpkRobotCollection.html">mpkRobotCollection</A>* <!1><A HREF="mpkTraceVis.html#DOC.20.10">robots</A>, <!1><A HREF="mpkObstacleCollection.html">mpkObstacleCollection</A>* <!1><A HREF="mpkMouseControl.html#DOC.13.21">obstacles</A>, double <!1><A HREF="mpkCollPair.html#DOC.5.7">delta</A>=0)</B></TT>
+<DL><DT><DT><B>Parameters:</B><DD><B>1</B> -  <B><!1><A HREF="mpkTraceVis.html#DOC.20.10">robots</A></B> must point to a properly
+initialized <!1><A HREF="mpkRobot.html#DOC.18.9">robot</A> collection.
+<BR><B>2</B> -  <B><!1><A HREF="mpkMouseControl.html#DOC.13.21">obstacles</A></B> similar to robots.
+<BR><B>3</B> -  <B><!1><A HREF="mpkCollPair.html#DOC.5.7">delta</A></B> is the minimum workspace <!1><A HREF="mpkConfigChecker.html#DOC.7.3">clearance</A> (the
+same for all pairs of objects).
+<BR><DT><B>See Also:</B><DD><!1><A HREF="mpkCollPair.html">mpkCollPair</A><BR><DD></DL><P>
+<A NAME="print"></A>
+<A NAME="DOC.6.2"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void print(ostream* f=&amp;cout)</B></TT>
+<DD>Outputs the candidate rigid object pairs to f (cout by default).
+<DL><DT><DD></DL><P></DL>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DT><B>See Also:</B><DD>SimplePointChecker
+<BR>AdaptPointChecker
+<BR><!1><A HREF="mpkAdaptSegmentChecker.html">mpkAdaptSegmentChecker</A><BR><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

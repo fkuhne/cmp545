@@ -1,0 +1,864 @@
+warning: source Misc is not a readable file or directory... skipping.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:30: warning: missing title after \defgroup MotionPlanning
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1516: warning: Compound CoverageLimitedPathCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1612: warning: Compound GreedySubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:55: warning: Compound ErrorExplainingPlanner::Milestone is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.cpp:260: warning: Compound ConnectedSeedCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.cpp:489: warning: Compound EdgeLengthFunction is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.cpp:75: warning: Compound ChangeTreeCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:28: warning: Compound MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:59: warning: Compound ErrorExplainingPlanner::Edge is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.cpp:30: warning: Compound SetComponentCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.cpp:60: warning: Compound PickCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:65: warning: Compound ErrorExplainingPlanner::Mode is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.cpp:147: warning: Compound LessEdgePriority is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.cpp:799: warning: Compound IntTriple is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:149: warning: Compound SBLPRTInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:49: warning: Compound MultiModalPRM::TransitionInfo is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:81: warning: Compound TreeRoadmapPlanner::Milestone is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:11: warning: Compound Subset is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:147: warning: Compound IncrementalMMPRM_Explicit is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.cpp:288: warning: Compound PathInfo is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:161: warning: Compound BisectionEpsilonExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.cpp:53: warning: Compound AddPointCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:84: warning: Compound ExplicitMMCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1668: warning: Compound OptimalSubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.cpp:35: warning: Compound ClosestMilestoneCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.cpp:38: warning: Compound ClosestMilestoneCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:24: warning: Compound RoadmapPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:43: warning: Compound MultiModalPRM::ModeInfo is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:97: warning: Compound UpdatePrioritySPP is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:214: warning: Compound BisectionEpsilonEdgePlanner::Segment is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:59: warning: Compound MultiModalPRM::TransitionIndex is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:35: warning: Compound SBLTree::EdgeInfo is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:71: warning: Compound ErrorExplainingPlanner::Transition is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:106: warning: Compound IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:77: warning: Compound SBLInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:18: warning: no matching class member found for 
+  Subset::Subset(const vector< bool > &bits)
+Possible candidates:
+  Subset::Subset(int maxItem=0)
+  Subset::Subset(const Subset &s)
+  Subset::Subset(const std::vector< bool > &bits)
+
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.cpp:54: warning: Member AddPointCallback(SBLSubdivision &_s) (function) of class AddPointCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.cpp:55: warning: Member Visit(Node *n) (function) of class AddPointCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.cpp:56: warning: Member s (variable) of class AddPointCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:174: warning: Member BidirectionalRRTPlanner(CSpace *s) (function) of class BidirectionalRRTPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:156: warning: Member RRTPlanner(CSpace *s) (function) of class RRTPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:157: warning: Member Extend() (function) of class RRTPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:88: warning: Member TreeRoadmapPlanner(CSpace *) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:91: warning: Member GenerateConfig(Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:92: warning: Member AddMilestone(const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:93: warning: Member AddFeasibleMilestone(const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:94: warning: Member AddInfeasibleMilestone(const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:96: warning: Member Cleanup() (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:97: warning: Member ConnectToNeighbors(Node *) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:98: warning: Member TryConnect(Node *, Node *) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:101: warning: Member ClosestMilestone(const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:102: warning: Member ClosestMilestoneInComponent(int component, const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:103: warning: Member ClosestMilestoneInSubtree(Node *node, const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:104: warning: Member TryExtend(Node *n, const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:105: warning: Member AttachChild(Node *p, Node *c, EdgePlanner *e) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:106: warning: Member CreatePath(Node *a, Node *b, MilestonePath &path) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:86: warning: Member Node (typedef) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:159: warning: Member delta (variable) of class RRTPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:108: warning: Member space (variable) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:109: warning: Member connectedComponents (variable) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:110: warning: Member connectionThreshold (variable) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:113: warning: Member milestones (variable) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:114: warning: Member x (variable) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:187: warning: Member BisectionEpsilonEdgePlanner(const Config &a, const Config &b, CSpace *space, double epsilon) (function) of class BisectionEpsilonEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:189: warning: Member IsVisible() (function) of class BisectionEpsilonEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:190: warning: Member Eval(double u, Config &x) const  (function) of class BisectionEpsilonEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:191: warning: Member Start() const  (function) of class BisectionEpsilonEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:192: warning: Member Goal() const  (function) of class BisectionEpsilonEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:193: warning: Member Space() const  (function) of class BisectionEpsilonEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:194: warning: Member Copy() const  (function) of class BisectionEpsilonEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:195: warning: Member ReverseCopy() const  (function) of class BisectionEpsilonEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:196: warning: Member Priority() const  (function) of class BisectionEpsilonEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:197: warning: Member Plan() (function) of class BisectionEpsilonEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:198: warning: Member Done() const  (function) of class BisectionEpsilonEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:199: warning: Member Failed() const  (function) of class BisectionEpsilonEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:201: warning: Member Plan(Config *&pre, Config *&post) (function) of class BisectionEpsilonEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:203: warning: Member GetPath() const  (function) of class BisectionEpsilonEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:204: warning: Member InfeasibleConfig() const  (function) of class BisectionEpsilonEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:207: warning: Member BisectionEpsilonEdgePlanner(CSpace *space, double epsilon) (function) of class BisectionEpsilonEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:209: warning: Member path (variable) of class BisectionEpsilonEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:210: warning: Member space (variable) of class BisectionEpsilonEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:211: warning: Member epsilon (variable) of class BisectionEpsilonEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:221: warning: Member q (variable) of class BisectionEpsilonEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:222: warning: Member x (variable) of class BisectionEpsilonEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:215: warning: Member operator<(const Segment &s) const  (function) of class BisectionEpsilonEdgePlanner::Segment is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:217: warning: Member prev (variable) of class BisectionEpsilonEdgePlanner::Segment is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:218: warning: Member length (variable) of class BisectionEpsilonEdgePlanner::Segment is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:163: warning: Member BisectionEpsilonExplicitEdgePlanner(ExplicitCSpace *space, const Config &a, const Config &b, double eps) (function) of class BisectionEpsilonExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:165: warning: Member IsVisible() (function) of class BisectionEpsilonExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:166: warning: Member IsVisible(int i) (function) of class BisectionEpsilonExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:167: warning: Member CheckVisible(std::vector< bool > &visible) (function) of class BisectionEpsilonExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:168: warning: Member Copy() const  (function) of class BisectionEpsilonExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:169: warning: Member ReverseCopy() const  (function) of class BisectionEpsilonExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:171: warning: Member PlanAll() (function) of class BisectionEpsilonExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:172: warning: Member Priority() const  (function) of class BisectionEpsilonExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:173: warning: Member Plan() (function) of class BisectionEpsilonExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:174: warning: Member Done() const  (function) of class BisectionEpsilonExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:175: warning: Member Failed() const  (function) of class BisectionEpsilonExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:176: warning: Member Priority(int i) const  (function) of class BisectionEpsilonExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:177: warning: Member Plan(int i) (function) of class BisectionEpsilonExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:178: warning: Member Done(int i) const  (function) of class BisectionEpsilonExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:179: warning: Member Failed(int i) const  (function) of class BisectionEpsilonExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:132: warning: Member ExplicitEdgePlanner(ExplicitCSpace *space, const Config &a, const Config &b, bool init=true) (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:137: warning: Member Eval(double u, Config &x) const  (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:138: warning: Member Start() const  (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:139: warning: Member Goal() const  (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:140: warning: Member Space() const  (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:145: warning: Member PlanAll() (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:155: warning: Member space (variable) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:156: warning: Member a (variable) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:156: warning: Member b (variable) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:157: warning: Member obsPlanners (variable) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.cpp:76: warning: Member ChangeTreeCallback(SBLTree *_a, SBLTree *_b) (function) of class ChangeTreeCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.cpp:79: warning: Member Visit(Node *n) (function) of class ChangeTreeCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.cpp:84: warning: Member a (variable) of class ChangeTreeCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.cpp:84: warning: Member b (variable) of class ChangeTreeCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.cpp:39: warning: Member ClosestMilestoneCallback(CSpace *s, const Config &_x) (function) of class ClosestMilestoneCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.cpp:42: warning: Member Visit(Node *n) (function) of class ClosestMilestoneCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.cpp:36: warning: Member ClosestMilestoneCallback(CSpace *s, const Config &_x) (function) of class ClosestMilestoneCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.cpp:39: warning: Member Visit(Node *n) (function) of class ClosestMilestoneCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.cpp:49: warning: Member space (variable) of class ClosestMilestoneCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.cpp:50: warning: Member closestDistance (variable) of class ClosestMilestoneCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.cpp:51: warning: Member x (variable) of class ClosestMilestoneCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.cpp:52: warning: Member closestMilestone (variable) of class ClosestMilestoneCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.cpp:263: warning: Member ConnectedSeedCallback(SBLPRT *_prt, int seeknode) (function) of class ConnectedSeedCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.cpp:264: warning: Member ForwardEdge(int i, int j) (function) of class ConnectedSeedCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.cpp:261: warning: Member prt (variable) of class ConnectedSeedCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1520: warning: Member CoverageLimitedPathCallback(ErrorExplainingPlanner *_planner, const Subset &_cover, int _target=-1) (function) of class CoverageLimitedPathCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1524: warning: Member ForwardEdge(int i, int j) (function) of class CoverageLimitedPathCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1517: warning: Member planner (variable) of class CoverageLimitedPathCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1518: warning: Member cover (variable) of class CoverageLimitedPathCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/CSpace.h:55: warning: Member Sample(Config &x)=0 (function) of class CSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/CSpace.h:56: warning: Member SampleNeighborhood(const Config &c, double r, Config &x) (function) of class CSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/CSpace.h:57: warning: Member IsFeasible(const Config &)=0 (function) of class CSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/CSpace.h:58: warning: Member LocalPlanner(const Config &a, const Config &b)=0 (function) of class CSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/CSpace.h:62: warning: Member Interpolate(const Config &x, const Config &y, double u, Config &out) (function) of class CSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.cpp:490: warning: Member EdgeLengthFunction(IncrementalMMPRM_Search *_g) (function) of class EdgeLengthFunction is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.cpp:491: warning: Member operator()(MultiModalPRM::TransitionInfo *e, int s, int t) const  (function) of class EdgeLengthFunction is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.cpp:493: warning: Member operator()(int s, int t) const  (function) of class EdgeLengthFunction is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.cpp:495: warning: Member g (variable) of class EdgeLengthFunction is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:51: warning: Member IsVisible()=0 (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:52: warning: Member Eval(double u, Config &x) const =0 (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:53: warning: Member Start() const =0 (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:54: warning: Member Goal() const =0 (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:55: warning: Member Space() const =0 (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:56: warning: Member Copy() const =0 (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:57: warning: Member ReverseCopy() const =0 (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:60: warning: Member Priority() const  (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:61: warning: Member Plan() (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:62: warning: Member Done() const  (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:63: warning: Member Failed() const  (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:206: warning: Member EdgePlannerWithCSpaceContainer(SmartPointer< CSpace > space, const SmartPointer< EdgePlanner > &e) (function) of class EdgePlannerWithCSpaceContainer is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:208: warning: Member Copy() const  (function) of class EdgePlannerWithCSpaceContainer is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:209: warning: Member ReverseCopy() const  (function) of class EdgePlannerWithCSpaceContainer is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:105: warning: Member PiggybackEdgePlanner(CSpace *space, const Config &a, const Config &b, const SmartPointer< EdgePlanner > &e) (function) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:106: warning: Member IsVisible() (function) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:107: warning: Member Eval(double u, Config &x) const  (function) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:108: warning: Member Start() const  (function) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:109: warning: Member Goal() const  (function) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:110: warning: Member Space() const  (function) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:114: warning: Member Priority() const  (function) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:115: warning: Member Plan() (function) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:116: warning: Member Done() const  (function) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:117: warning: Member Failed() const  (function) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:211: warning: Member spacePtr (variable) of class EdgePlannerWithCSpaceContainer is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:119: warning: Member a (variable) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:119: warning: Member b (variable) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:120: warning: Member space (variable) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:121: warning: Member e (variable) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:63: warning: Member Roadmap (typedef) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:74: warning: Member ModeGraph (typedef) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:76: warning: Member ErrorExplainingPlanner(ExplicitCSpace *space) (function) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:77: warning: Member Init(const Config &start, const Config &goal) (function) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:80: warning: Member Expand2(double maxExplanationCost, vector< int > &newNodes) (function) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:100: warning: Member AddNode(const Config &q, int parent=-1) (function) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:101: warning: Member AddNode(const Config &q, const Subset &subset, int parent=-1) (function) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:102: warning: Member AddEdge(int i, int j, int depth=0) (function) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:103: warning: Member AddEdge(int i, const Config &q, double maxExplanationCost) (function) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:104: warning: Member AddEdgeRaw(int i, int j) (function) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:105: warning: Member ExtendToward(int i, const Config &qdest, double maxExplanationCost) (function) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:106: warning: Member KNN(const Config &q, int k, vector< int > &neighbors, vector< double > &distances) (function) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:107: warning: Member KNN(const Config &q, double maxExplanationCost, int k, vector< int > &neighbors, vector< double > &distances) (function) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:108: warning: Member UpdatePathsGreedy() (function) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:109: warning: Member UpdatePathsComplete() (function) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:110: warning: Member UpdatePathsGreedy2(int nstart=-1) (function) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:111: warning: Member UpdatePathsComplete2(int nstart=-1) (function) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:114: warning: Member CanImproveConnectivity(const Mode &ma, const Mode &mb, double maxExplanationCost) (function) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:116: warning: Member UpdateMinCost(Mode &m) (function) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:119: warning: Member ExceedsCostLimit(const Config &q, double limit, Subset &violations) (function) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:122: warning: Member ExceedsCostLimit(const Config &a, const Config &b, double limit, Subset &violations) (function) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:131: warning: Member start (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:131: warning: Member goal (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:132: warning: Member space (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:135: warning: Member obstacleWeights (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:138: warning: Member numConnections (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:139: warning: Member connectThreshold (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:139: warning: Member expandDistance (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:139: warning: Member goalConnectThreshold (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:140: warning: Member goalBiasProbability (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:141: warning: Member bidirectional (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:153: warning: Member roadmap (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:154: warning: Member modeGraph (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:157: warning: Member numExpands (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:157: warning: Member numRefinementAttempts (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:157: warning: Member numRefinementSuccesses (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:157: warning: Member numExplorationAttempts (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:158: warning: Member numEdgeChecks (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:158: warning: Member numConfigChecks (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:159: warning: Member numUpdatePaths (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:159: warning: Member numUpdatePathsIterations (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:160: warning: Member timeNearestNeighbors (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:160: warning: Member timeRefine (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:160: warning: Member timeExplore (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:160: warning: Member timeUpdatePaths (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:160: warning: Member timeOverhead (variable) of class ErrorExplainingPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:60: warning: Member e (variable) of class ErrorExplainingPlanner::Edge is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:61: warning: Member mode (variable) of class ErrorExplainingPlanner::Edge is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:56: warning: Member q (variable) of class ErrorExplainingPlanner::Milestone is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:57: warning: Member mode (variable) of class ErrorExplainingPlanner::Milestone is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:66: warning: Member subset (variable) of class ErrorExplainingPlanner::Mode is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:67: warning: Member roadmapNodes (variable) of class ErrorExplainingPlanner::Mode is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:68: warning: Member pathCovers (variable) of class ErrorExplainingPlanner::Mode is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:69: warning: Member minCost (variable) of class ErrorExplainingPlanner::Mode is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:72: warning: Member connections (variable) of class ErrorExplainingPlanner::Transition is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/CSpace.h:55: warning: Member Sample(Config &x)=0 (function) of class CSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/CSpace.h:56: warning: Member SampleNeighborhood(const Config &c, double r, Config &x) (function) of class CSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/CSpace.h:62: warning: Member Interpolate(const Config &x, const Config &y, double u, Config &out) (function) of class CSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:132: warning: Member ExplicitEdgePlanner(ExplicitCSpace *space, const Config &a, const Config &b, bool init=true) (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:134: warning: Member IsVisible() (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:135: warning: Member IsVisible(int i) (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:136: warning: Member CheckVisible(std::vector< bool > &visible) (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:137: warning: Member Eval(double u, Config &x) const  (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:138: warning: Member Start() const  (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:139: warning: Member Goal() const  (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:140: warning: Member Space() const  (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:141: warning: Member Copy() const  (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:142: warning: Member ReverseCopy() const  (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:145: warning: Member PlanAll() (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:146: warning: Member Priority() const  (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:147: warning: Member Plan() (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:148: warning: Member Done() const  (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:149: warning: Member Failed() const  (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:150: warning: Member Priority(int i) const  (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:151: warning: Member Plan(int i) (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:152: warning: Member Done(int i) const  (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:153: warning: Member Failed(int i) const  (function) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:155: warning: Member space (variable) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:156: warning: Member a (variable) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:156: warning: Member b (variable) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:157: warning: Member obsPlanners (variable) of class ExplicitEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:86: warning: Member Mode (typedef) of class ExplicitMMCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:87: warning: Member ModeGraph (typedef) of class ExplicitMMCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:90: warning: Member DeleteAll() (function) of class ExplicitMMCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:93: warning: Member IsValid(const Mode &m) (function) of class ExplicitMMCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:94: warning: Member GetModeCSpace(const Mode &m) (function) of class ExplicitMMCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:95: warning: Member GetTransitionCSpace(const Mode &m1, const Mode &m2) (function) of class ExplicitMMCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:98: warning: Member CanEnum() const  (function) of class ExplicitMMCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:99: warning: Member CanSample() const  (function) of class ExplicitMMCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:100: warning: Member Enum(std::vector< Mode > &modes) (function) of class ExplicitMMCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:101: warning: Member Sample(std::vector< Mode > &modes) (function) of class ExplicitMMCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:104: warning: Member CanEnumAdjacent() const  (function) of class ExplicitMMCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:105: warning: Member CanSampleAdjacent() const  (function) of class ExplicitMMCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:106: warning: Member CanTestAdjacent() const  (function) of class ExplicitMMCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:107: warning: Member EnumAdjacent(const Mode &m, std::vector< Mode > &modes) (function) of class ExplicitMMCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:112: warning: Member SampleAdjacent(const Mode &m, std::vector< Mode > &adj) (function) of class ExplicitMMCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:113: warning: Member TestAdjacent(const Mode &m1, const Mode &m2) (function) of class ExplicitMMCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:116: warning: Member modeGraph (variable) of class ExplicitMMCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:87: warning: Member FalseEdgePlanner(CSpace *space, const Config &x, const Config &y) (function) of class FalseEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:88: warning: Member IsVisible() (function) of class FalseEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:89: warning: Member Eval(double u, Config &x) const  (function) of class FalseEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:90: warning: Member Start() const  (function) of class FalseEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:91: warning: Member Goal() const  (function) of class FalseEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:92: warning: Member Space() const  (function) of class FalseEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:93: warning: Member Copy() const  (function) of class FalseEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:94: warning: Member ReverseCopy() const  (function) of class FalseEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:60: warning: Member Priority() const  (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:61: warning: Member Plan() (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:62: warning: Member Done() const  (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:63: warning: Member Failed() const  (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:96: warning: Member a (variable) of class FalseEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:96: warning: Member b (variable) of class FalseEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:97: warning: Member space (variable) of class FalseEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1613: warning: Member Node (typedef) of class GreedySubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1618: warning: Member GreedySubsetAStar(ErrorExplainingPlanner *_planner, int _start, int _target) (function) of class GreedySubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1626: warning: Member IsGoal(const int &s) (function) of class GreedySubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1628: warning: Member Successors(const int &s, vector< int > &successors, vector< SubsetCost > &cost) (function) of class GreedySubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1649: warning: Member ClearVisited() (function) of class GreedySubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1655: warning: Member Visit(const int &s, Node *n) (function) of class GreedySubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1660: warning: Member VisitedStateNode(const int &s) (function) of class GreedySubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1614: warning: Member planner (variable) of class GreedySubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1615: warning: Member startNode (variable) of class GreedySubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1615: warning: Member targetNode (variable) of class GreedySubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1616: warning: Member visited (variable) of class GreedySubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:149: warning: Member IncrementalMMPRM_Explicit(ExplicitMMCSpace *space) (function) of class IncrementalMMPRM_Explicit is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:151: warning: Member Init() (function) of class IncrementalMMPRM_Explicit is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:152: warning: Member PlanMore() (function) of class IncrementalMMPRM_Explicit is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:153: warning: Member Done() const  (function) of class IncrementalMMPRM_Explicit is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:154: warning: Member ExpandMore() (function) of class IncrementalMMPRM_Explicit is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:155: warning: Member RefineMore() (function) of class IncrementalMMPRM_Explicit is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:156: warning: Member PickRefineCount() (function) of class IncrementalMMPRM_Explicit is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:158: warning: Member space (variable) of class IncrementalMMPRM_Explicit is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:159: warning: Member mmprm (variable) of class IncrementalMMPRM_Explicit is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:160: warning: Member search (variable) of class IncrementalMMPRM_Explicit is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:161: warning: Member numRefineSamplesPerMode (variable) of class IncrementalMMPRM_Explicit is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:162: warning: Member numRefineSamplesPerOldMode (variable) of class IncrementalMMPRM_Explicit is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:163: warning: Member numRefineSamplesConstant (variable) of class IncrementalMMPRM_Explicit is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:164: warning: Member evenRefinement (variable) of class IncrementalMMPRM_Explicit is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:167: warning: Member lastRefineSet (variable) of class IncrementalMMPRM_Explicit is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:168: warning: Member remainingRefineSamples (variable) of class IncrementalMMPRM_Explicit is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:169: warning: Member expandPhaseCount (variable) of class IncrementalMMPRM_Explicit is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:169: warning: Member expandStepCount (variable) of class IncrementalMMPRM_Explicit is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:170: warning: Member refinePhaseCount (variable) of class IncrementalMMPRM_Explicit is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:170: warning: Member refineStepCount (variable) of class IncrementalMMPRM_Explicit is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:134: warning: Member SearchGraph (typedef) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:135: warning: Member Fringe (typedef) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:136: warning: Member ShortestPathProblem (typedef) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:108: warning: Member EdgeLength(int s, int t) (function) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:109: warning: Member EdgeLength(MultiModalPRM::TransitionInfo *trans, int s, int t) (function) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:110: warning: Member Heuristic(int mode) (function) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:112: warning: Member IncrementalMMPRM_Search(MultiModalPRM &mmprm) (function) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:114: warning: Member Init() (function) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:115: warning: Member ExpandMore() (function) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:117: warning: Member SampleMore(int n) (function) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:118: warning: Member ExpandAdjacent(int n) (function) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:119: warning: Member AddEdge(int s, int t, MultiModalPRM::TransitionInfo *e) (function) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:120: warning: Member PushFringe(int i) (function) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:121: warning: Member UpdateFringe(int i) (function) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:122: warning: Member PopFringe() (function) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:123: warning: Member RefreshFringe() (function) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:124: warning: Member Priority(int n) (function) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:125: warning: Member GoalConnected() const  (function) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:126: warning: Member PathDistance(int n) const  (function) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:133: warning: Member mmprm (variable) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:137: warning: Member fringe (variable) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:138: warning: Member spp (variable) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:139: warning: Member searchGraph (variable) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:140: warning: Member reachedModes (variable) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:141: warning: Member outputModes (variable) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:143: warning: Member transSampleWeight (variable) of class IncrementalMMPRM_Search is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.cpp:800: warning: Member operator<(const IntTriple &t) const  (function) of class IntTriple is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.cpp:808: warning: Member a (variable) of class IntTriple is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.cpp:808: warning: Member b (variable) of class IntTriple is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.cpp:808: warning: Member c (variable) of class IntTriple is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.cpp:148: warning: Member EdgeInfo (typedef) of class LessEdgePriority is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.cpp:149: warning: Member operator()(EdgeInfo &a, EdgeInfo &b) const  (function) of class LessEdgePriority is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MilestonePath.h:37: warning: Member GetMilestone(int milestone) const  (function) of class MilestonePath is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MilestonePath.h:38: warning: Member SetMilestone(int milestone, const Config &x) (function) of class MilestonePath is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MilestonePath.h:39: warning: Member Start() const  (function) of class MilestonePath is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MilestonePath.h:40: warning: Member End() const  (function) of class MilestonePath is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MilestonePath.h:44: warning: Member Space(int i=0) const  (function) of class MilestonePath is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MilestonePath.h:45: warning: Member NumMilestones() const  (function) of class MilestonePath is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MilestonePath.h:46: warning: Member NumEdges() const  (function) of class MilestonePath is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MilestonePath.h:47: warning: Member IsValid() (function) of class MilestonePath is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MilestonePath.h:84: warning: Member edges (variable) of class MilestonePath is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:62: warning: Member Type (enumeration) of class MotionPlannerFactory is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:66: warning: Member Create(CSpace *space) (function) of class MotionPlannerFactory is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:68: warning: Member type (variable) of class MotionPlannerFactory is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:69: warning: Member knn (variable) of class MotionPlannerFactory is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:70: warning: Member connectionThreshold (variable) of class MotionPlannerFactory is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:71: warning: Member perturbationRadius (variable) of class MotionPlannerFactory is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:72: warning: Member perturbationIters (variable) of class MotionPlannerFactory is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:73: warning: Member bidirectional (variable) of class MotionPlannerFactory is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:74: warning: Member useGrid (variable) of class MotionPlannerFactory is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:75: warning: Member gridResolution (variable) of class MotionPlannerFactory is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:76: warning: Member randomizeFrequency (variable) of class MotionPlannerFactory is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:31: warning: Member PlanMore()=0 (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:32: warning: Member PlanMore(int numIters) (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:33: warning: Member NumIterations() const =0 (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:34: warning: Member NumMilestones() const =0 (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:35: warning: Member NumComponents() const =0 (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:36: warning: Member CanAddMilestone() const  (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:37: warning: Member AddMilestone(const Config &q)=0 (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:38: warning: Member GetMilestone(int, Config &q)=0 (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:39: warning: Member ConnectHint(int m) (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:40: warning: Member ConnectHint(int ma, int mb) (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:41: warning: Member IsConnected(int ma, int mb) const =0 (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:42: warning: Member IsLazy() const  (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:43: warning: Member CheckPath(int ma, int mb) (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:44: warning: Member IsLazyConnected(int ma, int mb) const  (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:45: warning: Member GetPath(int ma, int mb, MilestonePath &path)=0 (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:46: warning: Member GetRoadmap(RoadmapPlanner &roadmap) (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:64: warning: Member IsValid(const Mode &m) (function) of class MultiModalCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:65: warning: Member GetModeCSpace(const Mode &m) (function) of class MultiModalCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:66: warning: Member GetTransitionCSpace(const Mode &m1, const Mode &m2) (function) of class MultiModalCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:69: warning: Member CanEnum() const  (function) of class MultiModalCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:70: warning: Member CanSample() const  (function) of class MultiModalCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:71: warning: Member Enum(std::vector< Mode > &modes) (function) of class MultiModalCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:72: warning: Member Sample(std::vector< Mode > &modes) (function) of class MultiModalCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:75: warning: Member CanEnumAdjacent() const  (function) of class MultiModalCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:76: warning: Member CanSampleAdjacent() const  (function) of class MultiModalCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:77: warning: Member CanTestAdjacent() const  (function) of class MultiModalCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:78: warning: Member EnumAdjacent(const Mode &m, std::vector< Mode > &modes) (function) of class MultiModalCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:79: warning: Member SampleAdjacent(const Mode &m, std::vector< Mode > &adj) (function) of class MultiModalCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalCSpace.h:80: warning: Member TestAdjacent(const Mode &m1, const Mode &m2) (function) of class MultiModalCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:77: warning: Member PlanningGraph (typedef) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:30: warning: Member MultiModalPRM(MultiModalCSpace< int > *cspace) (function) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:31: warning: Member InitializeExplicit(ExplicitMMCSpace *cspace) (function) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:32: warning: Member SetStart(const Config &q, int mode) (function) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:33: warning: Member SetGoal(const Config &q, int mode) (function) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:34: warning: Member SetStartMode(int mode) (function) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:35: warning: Member SetGoalMode(int mode) (function) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:36: warning: Member ExpandAll() (function) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:37: warning: Member ExpandMode(int mode, int numSamples=-1) (function) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:38: warning: Member ExpandTrans(int m1, int m2, int numSamples=-1) (function) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:39: warning: Member AddTransition(int m1, int m2, const Config &q) (function) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:40: warning: Member IsStartAndGoalConnected() const  (function) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:72: warning: Member NodeToTransitionIndex(int mode, int roadmapIndex) const  (function) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:73: warning: Member ConnectTransitions(int mode, int t1, int t2) (function) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:74: warning: Member ConnectTransitions(const TransitionIndex &t1, const TransitionIndex &t2) (function) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:75: warning: Member GetTransitionNodes(int mode, vector< TransitionIndex > &transitions, vector< int > &roadmapIndices) const  (function) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:78: warning: Member space (variable) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:79: warning: Member planningGraph (variable) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:80: warning: Member startMode (variable) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:80: warning: Member startRoadmapIndex (variable) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:81: warning: Member goalMode (variable) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:81: warning: Member goalRoadmapIndex (variable) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:82: warning: Member numExpandModeSamples (variable) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:82: warning: Member numExpandTransSamples (variable) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:83: warning: Member plannerFactory (variable) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:88: warning: Member ccIndex (variable) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:89: warning: Member ccs (variable) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:90: warning: Member modeSampleCount (variable) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:91: warning: Member transSampleCount (variable) of class MultiModalPRM is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:44: warning: Member planner (variable) of class MultiModalPRM::ModeInfo is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:45: warning: Member sampleCount (variable) of class MultiModalPRM::ModeInfo is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:60: warning: Member operator<(const TransitionIndex &t) const  (function) of class MultiModalPRM::TransitionIndex is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:67: warning: Member m1 (variable) of class MultiModalPRM::TransitionIndex is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:67: warning: Member m2 (variable) of class MultiModalPRM::TransitionIndex is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:68: warning: Member count (variable) of class MultiModalPRM::TransitionIndex is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:50: warning: Member sampleCount (variable) of class MultiModalPRM::TransitionInfo is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:51: warning: Member transitions (variable) of class MultiModalPRM::TransitionInfo is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:53: warning: Member prevRoadmapIndices (variable) of class MultiModalPRM::TransitionInfo is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:55: warning: Member nextRoadmapIndices (variable) of class MultiModalPRM::TransitionInfo is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1669: warning: Member State (typedef) of class OptimalSubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1670: warning: Member Node (typedef) of class OptimalSubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1675: warning: Member OptimalSubsetAStar(ErrorExplainingPlanner *_planner, int _start, int _target) (function) of class OptimalSubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1684: warning: Member IsGoal(const State &s) (function) of class OptimalSubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1686: warning: Member Successors(const State &s, vector< State > &successors, vector< SubsetCost > &cost) (function) of class OptimalSubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1707: warning: Member ClearVisited() (function) of class OptimalSubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1713: warning: Member Visit(const State &s, Node *n) (function) of class OptimalSubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1718: warning: Member VisitedStateNode(const State &s) (function) of class OptimalSubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1671: warning: Member planner (variable) of class OptimalSubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1672: warning: Member startNode (variable) of class OptimalSubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1672: warning: Member targetNode (variable) of class OptimalSubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1673: warning: Member visited (variable) of class OptimalSubsetAStar is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.cpp:289: warning: Member tstart (variable) of class PathInfo is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.cpp:289: warning: Member tgoal (variable) of class PathInfo is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.cpp:290: warning: Member path (variable) of class PathInfo is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:132: warning: Member PerturbationTreePlanner(CSpace *s) (function) of class PerturbationTreePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:133: warning: Member GenerateConfig(Config &x) (function) of class PerturbationTreePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:134: warning: Member AddFeasibleMilestone(const Config &x) (function) of class PerturbationTreePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:135: warning: Member Cleanup() (function) of class PerturbationTreePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:138: warning: Member SelectMilestone(const std::vector< Node * > &milestones) (function) of class PerturbationTreePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:88: warning: Member TreeRoadmapPlanner(CSpace *) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:92: warning: Member AddMilestone(const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:94: warning: Member AddInfeasibleMilestone(const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:95: warning: Member Extend() (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:97: warning: Member ConnectToNeighbors(Node *) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:98: warning: Member TryConnect(Node *, Node *) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:101: warning: Member ClosestMilestone(const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:102: warning: Member ClosestMilestoneInComponent(int component, const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:103: warning: Member ClosestMilestoneInSubtree(Node *node, const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:104: warning: Member TryExtend(Node *n, const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:105: warning: Member AttachChild(Node *p, Node *c, EdgePlanner *e) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:106: warning: Member CreatePath(Node *a, Node *b, MilestonePath &path) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:108: warning: Member space (variable) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:109: warning: Member connectedComponents (variable) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:110: warning: Member connectionThreshold (variable) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:113: warning: Member milestones (variable) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:114: warning: Member x (variable) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:86: warning: Member Node (typedef) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.cpp:61: warning: Member PickCallback(int _k) (function) of class PickCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.cpp:62: warning: Member Visit(Node *n) (function) of class PickCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.cpp:66: warning: Member Stop() (function) of class PickCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.cpp:68: warning: Member i (variable) of class PickCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.cpp:69: warning: Member k (variable) of class PickCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.cpp:70: warning: Member res (variable) of class PickCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:105: warning: Member PiggybackEdgePlanner(CSpace *space, const Config &a, const Config &b, const SmartPointer< EdgePlanner > &e) (function) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:106: warning: Member IsVisible() (function) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:107: warning: Member Eval(double u, Config &x) const  (function) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:108: warning: Member Start() const  (function) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:109: warning: Member Goal() const  (function) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:110: warning: Member Space() const  (function) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:111: warning: Member Copy() const  (function) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:112: warning: Member ReverseCopy() const  (function) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:114: warning: Member Priority() const  (function) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:115: warning: Member Plan() (function) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:116: warning: Member Done() const  (function) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:117: warning: Member Failed() const  (function) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:119: warning: Member a (variable) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:119: warning: Member b (variable) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:120: warning: Member space (variable) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:121: warning: Member e (variable) of class PiggybackEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:43: warning: Member Roadmap (typedef) of class RoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:45: warning: Member RoadmapPlanner(CSpace *) (function) of class RoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:48: warning: Member Cleanup() (function) of class RoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:49: warning: Member GenerateConfig(Config &x) (function) of class RoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:50: warning: Member AddMilestone(const Config &x) (function) of class RoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:51: warning: Member TestAndAddMilestone(const Config &x) (function) of class RoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:52: warning: Member ConnectEdge(int i, int j, const SmartPointer< EdgePlanner > &e) (function) of class RoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:53: warning: Member TestAndConnectEdge(int i, int j) (function) of class RoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:54: warning: Member HasEdge(int i, int j) (function) of class RoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:55: warning: Member GetEdge(int i, int j) (function) of class RoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:56: warning: Member AreConnected(int i, int j) (function) of class RoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:57: warning: Member AreConnected(int i, int j) const  (function) of class RoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:58: warning: Member ConnectToNeighbors(int i, double connectionThresholdg) (function) of class RoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:59: warning: Member ConnectToNearestNeighbors(int i, int k) (function) of class RoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:60: warning: Member Generate(int numSamples, double connectionThreshold) (function) of class RoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:61: warning: Member CreatePath(int i, int j, MilestonePath &path) (function) of class RoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:63: warning: Member space (variable) of class RoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:64: warning: Member roadmap (variable) of class RoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:65: warning: Member ccs (variable) of class RoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:26: warning: Member RoadmapPlannerInterface(CSpace *space) (function) of class RoadmapPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:30: warning: Member CanAddMilestone() const  (function) of class RoadmapPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:31: warning: Member AddMilestone(const Config &q) (function) of class RoadmapPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:32: warning: Member GetMilestone(int i, Config &q) (function) of class RoadmapPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:33: warning: Member ConnectHint(int n) (function) of class RoadmapPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:39: warning: Member ConnectHint(int i, int j) (function) of class RoadmapPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:40: warning: Member PlanMore() (function) of class RoadmapPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:50: warning: Member NumIterations() const  (function) of class RoadmapPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:51: warning: Member NumMilestones() const  (function) of class RoadmapPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:52: warning: Member NumComponents() const  (function) of class RoadmapPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:53: warning: Member IsConnected(int ma, int mb) const  (function) of class RoadmapPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:54: warning: Member GetPath(int ma, int mb, MilestonePath &path) (function) of class RoadmapPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:55: warning: Member GetRoadmap(RoadmapPlanner &roadmap) (function) of class RoadmapPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:32: warning: Member PlanMore(int numIters) (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:42: warning: Member IsLazy() const  (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:43: warning: Member CheckPath(int ma, int mb) (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:44: warning: Member IsLazyConnected(int ma, int mb) const  (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:57: warning: Member prm (variable) of class RoadmapPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:58: warning: Member knn (variable) of class RoadmapPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:59: warning: Member connectionThreshold (variable) of class RoadmapPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:60: warning: Member numIters (variable) of class RoadmapPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:156: warning: Member RRTPlanner(CSpace *s) (function) of class RRTPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:157: warning: Member Extend() (function) of class RRTPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:88: warning: Member TreeRoadmapPlanner(CSpace *) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:91: warning: Member GenerateConfig(Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:92: warning: Member AddMilestone(const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:93: warning: Member AddFeasibleMilestone(const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:94: warning: Member AddInfeasibleMilestone(const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:96: warning: Member Cleanup() (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:97: warning: Member ConnectToNeighbors(Node *) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:98: warning: Member TryConnect(Node *, Node *) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:101: warning: Member ClosestMilestone(const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:102: warning: Member ClosestMilestoneInComponent(int component, const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:103: warning: Member ClosestMilestoneInSubtree(Node *node, const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:104: warning: Member TryExtend(Node *n, const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:105: warning: Member AttachChild(Node *p, Node *c, EdgePlanner *e) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:106: warning: Member CreatePath(Node *a, Node *b, MilestonePath &path) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:159: warning: Member delta (variable) of class RRTPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:108: warning: Member space (variable) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:109: warning: Member connectedComponents (variable) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:110: warning: Member connectionThreshold (variable) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:113: warning: Member milestones (variable) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:114: warning: Member x (variable) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:86: warning: Member Node (typedef) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:79: warning: Member SBLInterface(CSpace *space) (function) of class SBLInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:82: warning: Member SBLInterface(CSpace *space, bool grid, double gridDivs, int randomizeFrequency) (function) of class SBLInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:93: warning: Member Init(const Config &qStart, const Config &qGoal) (function) of class SBLInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:96: warning: Member CanAddMilestone() const  (function) of class SBLInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:97: warning: Member AddMilestone(const Config &q) (function) of class SBLInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:109: warning: Member GetMilestone(int i, Config &q) (function) of class SBLInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:110: warning: Member PlanMore() (function) of class SBLInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:114: warning: Member NumIterations() const  (function) of class SBLInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:115: warning: Member NumMilestones() const  (function) of class SBLInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:121: warning: Member NumComponents() const  (function) of class SBLInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:122: warning: Member IsConnected(int ma, int mb) const  (function) of class SBLInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:123: warning: Member GetPath(int ma, int mb, MilestonePath &path) (function) of class SBLInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:125: warning: Member Enumerate(SBLTree::Node *node, int index, RoadmapPlanner &roadmap) (function) of class SBLInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:137: warning: Member GetRoadmap(RoadmapPlanner &roadmap) (function) of class SBLInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:32: warning: Member PlanMore(int numIters) (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:39: warning: Member ConnectHint(int m) (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:40: warning: Member ConnectHint(int ma, int mb) (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:42: warning: Member IsLazy() const  (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:43: warning: Member CheckPath(int ma, int mb) (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:44: warning: Member IsLazyConnected(int ma, int mb) const  (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:144: warning: Member sbl (variable) of class SBLInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:145: warning: Member qStart (variable) of class SBLInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:145: warning: Member qGoal (variable) of class SBLInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:42: warning: Member Node (typedef) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:43: warning: Member EdgeInfo (typedef) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:45: warning: Member SBLPlanner(CSpace *) (function) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:47: warning: Member Cleanup() (function) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:48: warning: Member Init(const Config &qStart, const Config &qGoal) (function) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:49: warning: Member Extend() (function) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:50: warning: Member PickConnection(SBLTree *t, const Config &x) (function) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:52: warning: Member IsDone() const  (function) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:53: warning: Member CreatePath(MilestonePath &path) const  (function) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:56: warning: Member CheckPath(Node *nStart, Node *nGoal) (function) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:58: warning: Member space (variable) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:59: warning: Member maxExtendDistance (variable) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:60: warning: Member maxExtendIters (variable) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:61: warning: Member edgeConnectionThreshold (variable) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:63: warning: Member numIters (variable) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:64: warning: Member tStart (variable) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:64: warning: Member tGoal (variable) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:65: warning: Member outputPath (variable) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:76: warning: Member SBLPlannerWithGrid(CSpace *) (function) of class SBLPlannerWithGrid is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:77: warning: Member Cleanup() (function) of class SBLPlannerWithGrid is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:78: warning: Member Init(const Config &qStart, const Config &qGoal) (function) of class SBLPlannerWithGrid is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:79: warning: Member Extend() (function) of class SBLPlannerWithGrid is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:80: warning: Member PickConnection(SBLTree *t, const Config &x) (function) of class SBLPlannerWithGrid is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:81: warning: Member RandomizeSubset() (function) of class SBLPlannerWithGrid is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:45: warning: Member SBLPlanner(CSpace *) (function) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:52: warning: Member IsDone() const  (function) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:53: warning: Member CreatePath(MilestonePath &path) const  (function) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:56: warning: Member CheckPath(Node *nStart, Node *nGoal) (function) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:83: warning: Member numItersPerRandomize (variable) of class SBLPlannerWithGrid is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:84: warning: Member gridDivision (variable) of class SBLPlannerWithGrid is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:58: warning: Member space (variable) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:59: warning: Member maxExtendDistance (variable) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:60: warning: Member maxExtendIters (variable) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:61: warning: Member edgeConnectionThreshold (variable) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:63: warning: Member numIters (variable) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:64: warning: Member tStart (variable) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:64: warning: Member tGoal (variable) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:65: warning: Member outputPath (variable) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:42: warning: Member Node (typedef) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:43: warning: Member EdgeInfo (typedef) of class SBLPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:98: warning: Member Node (typedef) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:99: warning: Member EdgeInfo (typedef) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:100: warning: Member Roadmap (typedef) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:102: warning: Member SBLPRT(CSpace *s) (function) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:104: warning: Member Cleanup() (function) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:105: warning: Member AddSeed(const Config &q) (function) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:106: warning: Member Expand() (function) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:107: warning: Member ExpandTree(int t) (function) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:109: warning: Member AddRoadmapEdgesIfBelowThreshold(double distanceThreshold) (function) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:110: warning: Member AddRoadmapEdge(int i, int j) (function) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:111: warning: Member IsEdgeConnected(int i, int j) const  (function) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:112: warning: Member IsSeedFullyConnected(int i) const  (function) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:113: warning: Member AreSeedsConnected(int i, int j) const  (function) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:114: warning: Member CreatePath(int i, int j, MilestonePath &path) (function) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:116: warning: Member PickConnection(int t, Node *n) (function) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:118: warning: Member PickRandomAdjacentTree(int t) (function) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:119: warning: Member PickClosestAdjacentTree(int t, const Config &x) (function) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:120: warning: Member GetClosestNode(int t, const Config &x) (function) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:121: warning: Member PickNode(int t) (function) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:123: warning: Member space (variable) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:124: warning: Member maxExtendDistance (variable) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:125: warning: Member maxExtendIters (variable) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:126: warning: Member defaultPPickClosestTree (variable) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:126: warning: Member defaultPPickClosestNode (variable) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:128: warning: Member numIters (variable) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:129: warning: Member roadmap (variable) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBL.h:130: warning: Member ccs (variable) of class SBLPRT is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:151: warning: Member SBLPRTInterface(CSpace *space) (function) of class SBLPRTInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:155: warning: Member CanAddMilestone() const  (function) of class SBLPRTInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:156: warning: Member AddMilestone(const Config &q) (function) of class SBLPRTInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:157: warning: Member GetMilestone(int i, Config &q) (function) of class SBLPRTInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:158: warning: Member ConnectHint(int i) (function) of class SBLPRTInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:162: warning: Member ConnectHint(int i, int j) (function) of class SBLPRTInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:163: warning: Member PlanMore() (function) of class SBLPRTInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:167: warning: Member NumIterations() const  (function) of class SBLPRTInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:168: warning: Member NumMilestones() const  (function) of class SBLPRTInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:177: warning: Member NumComponents() const  (function) of class SBLPRTInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:178: warning: Member IsConnected(int ma, int mb) const  (function) of class SBLPRTInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:179: warning: Member GetPath(int ma, int mb, MilestonePath &path) (function) of class SBLPRTInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:32: warning: Member PlanMore(int numIters) (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:42: warning: Member IsLazy() const  (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:43: warning: Member CheckPath(int ma, int mb) (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:44: warning: Member IsLazyConnected(int ma, int mb) const  (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.h:46: warning: Member GetRoadmap(RoadmapPlanner &roadmap) (function) of class MotionPlannerInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/AnyMotionPlanner.cpp:181: warning: Member sblprt (variable) of class SBLPRTInterface is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:96: warning: Member Node (typedef) of class SBLSubdivision is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:98: warning: Member SBLSubdivision(int mappedDims) (function) of class SBLSubdivision is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:99: warning: Member Clear() (function) of class SBLSubdivision is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:100: warning: Member RandomizeSubset() (function) of class SBLSubdivision is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:101: warning: Member AddPoint(Node *) (function) of class SBLSubdivision is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:102: warning: Member RemovePoint(Node *) (function) of class SBLSubdivision is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:103: warning: Member PickPoint(const Config &x) (function) of class SBLSubdivision is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:104: warning: Member PickRandom() (function) of class SBLSubdivision is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:106: warning: Member h (variable) of class SBLSubdivision is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:107: warning: Member subset (variable) of class SBLSubdivision is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:108: warning: Member subdiv (variable) of class SBLSubdivision is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:111: warning: Member temp (variable) of class SBLSubdivision is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:33: warning: Member Node (typedef) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:41: warning: Member SBLTree(CSpace *) (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:43: warning: Member Cleanup() (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:44: warning: Member Init(const Config &qStart) (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:45: warning: Member Extend(double maxDistance, int maxIters) (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:47: warning: Member AddMilestone(Node *n) (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:48: warning: Member RemoveMilestone(Node *n) (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:49: warning: Member PickExpand() (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:52: warning: Member AddMilestone(const Config &q) (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:53: warning: Member HasNode(Node *n) const  (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:54: warning: Member AddChild(Node *n, const Config &x) (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:55: warning: Member FindClosest(const Config &x) (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:58: warning: Member CheckPath(SBLTree *ts, Node *ns, SBLTree *tg, Node *ng, std::list< EdgeInfo > &outputPath) (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:60: warning: Member space (variable) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:61: warning: Member root (variable) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:36: warning: Member s (variable) of class SBLTree::EdgeInfo is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:36: warning: Member t (variable) of class SBLTree::EdgeInfo is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:37: warning: Member e (variable) of class SBLTree::EdgeInfo is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:38: warning: Member reversed (variable) of class SBLTree::EdgeInfo is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:121: warning: Member SBLTreeWithGrid(CSpace *) (function) of class SBLTreeWithGrid is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:122: warning: Member Init(const Config &qStart) (function) of class SBLTreeWithGrid is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:123: warning: Member Cleanup() (function) of class SBLTreeWithGrid is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:130: warning: Member AddMilestone(Node *n) (function) of class SBLTreeWithGrid is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:131: warning: Member RemoveMilestone(Node *n) (function) of class SBLTreeWithGrid is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:132: warning: Member PickExpand() (function) of class SBLTreeWithGrid is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:134: warning: Member FindNearby(const Config &x) (function) of class SBLTreeWithGrid is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:41: warning: Member SBLTree(CSpace *) (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:45: warning: Member Extend(double maxDistance, int maxIters) (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:52: warning: Member AddMilestone(const Config &q) (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:53: warning: Member HasNode(Node *n) const  (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:54: warning: Member AddChild(Node *n, const Config &x) (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:55: warning: Member FindClosest(const Config &x) (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:136: warning: Member A (variable) of class SBLTreeWithGrid is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:60: warning: Member space (variable) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:61: warning: Member root (variable) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:33: warning: Member Node (typedef) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:58: warning: Member CheckPath(SBLTree *ts, Node *ns, SBLTree *tg, Node *ng, std::list< EdgeInfo > &outputPath) (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:70: warning: Member SBLTreeWithIndex(CSpace *) (function) of class SBLTreeWithIndex is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:71: warning: Member Cleanup() (function) of class SBLTreeWithIndex is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:72: warning: Member AddMilestone(Node *n) (function) of class SBLTreeWithIndex is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:73: warning: Member RemoveMilestone(Node *n) (function) of class SBLTreeWithIndex is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:74: warning: Member PickExpand() (function) of class SBLTreeWithIndex is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:75: warning: Member PickRandom() const  (function) of class SBLTreeWithIndex is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:41: warning: Member SBLTree(CSpace *) (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:44: warning: Member Init(const Config &qStart) (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:45: warning: Member Extend(double maxDistance, int maxIters) (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:52: warning: Member AddMilestone(const Config &q) (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:53: warning: Member HasNode(Node *n) const  (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:54: warning: Member AddChild(Node *n, const Config &x) (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:55: warning: Member FindClosest(const Config &x) (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:77: warning: Member index (variable) of class SBLTreeWithIndex is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:60: warning: Member space (variable) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:61: warning: Member root (variable) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:33: warning: Member Node (typedef) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/SBLTree.h:58: warning: Member CheckPath(SBLTree *ts, Node *ns, SBLTree *tg, Node *ng, std::list< EdgeInfo > &outputPath) (function) of class SBLTree is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.cpp:31: warning: Member SetComponentCallback(int c) (function) of class SetComponentCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.cpp:32: warning: Member Visit(Node *n) (function) of class SetComponentCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.cpp:33: warning: Member component (variable) of class SetComponentCallback is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:55: warning: Member SingleObstacleCSpace(ExplicitCSpace *baseSpace, int obstacle) (function) of class SingleObstacleCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:58: warning: Member IsFeasible(const Config &q) (function) of class SingleObstacleCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:59: warning: Member LocalPlanner(const Config &a, const Config &b) (function) of class SingleObstacleCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:60: warning: Member Sample(Config &x) (function) of class SingleObstacleCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:61: warning: Member SampleNeighborhood(const Config &c, double r, Config &x) (function) of class SingleObstacleCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:63: warning: Member Interpolate(const Config &x, const Config &y, double u, Config &out) (function) of class SingleObstacleCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:65: warning: Member baseSpace (variable) of class SingleObstacleCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:66: warning: Member obstacle (variable) of class SingleObstacleCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:131: warning: Member StraightLineEpsilonPlanner(const Config &a, const Config &b, CSpace *space, double epsilon) (function) of class StraightLineEpsilonPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:132: warning: Member IsVisible() (function) of class StraightLineEpsilonPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:133: warning: Member Eval(double u, Config &x) const  (function) of class StraightLineEpsilonPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:134: warning: Member Start() const  (function) of class StraightLineEpsilonPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:135: warning: Member Goal() const  (function) of class StraightLineEpsilonPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:136: warning: Member Space() const  (function) of class StraightLineEpsilonPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:137: warning: Member Copy() const  (function) of class StraightLineEpsilonPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:138: warning: Member ReverseCopy() const  (function) of class StraightLineEpsilonPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:139: warning: Member Priority() const  (function) of class StraightLineEpsilonPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:140: warning: Member Plan() (function) of class StraightLineEpsilonPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:141: warning: Member Done() const  (function) of class StraightLineEpsilonPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:142: warning: Member Failed() const  (function) of class StraightLineEpsilonPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:144: warning: Member a (variable) of class StraightLineEpsilonPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:144: warning: Member b (variable) of class StraightLineEpsilonPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:145: warning: Member space (variable) of class StraightLineEpsilonPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:146: warning: Member epsilon (variable) of class StraightLineEpsilonPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:162: warning: Member StraightLineObstacleDistancePlanner(const Config &a, const Config &b, CSpace *space) (function) of class StraightLineObstacleDistancePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:163: warning: Member IsVisible() (function) of class StraightLineObstacleDistancePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:164: warning: Member Eval(double u, Config &x) const  (function) of class StraightLineObstacleDistancePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:165: warning: Member Start() const  (function) of class StraightLineObstacleDistancePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:166: warning: Member Goal() const  (function) of class StraightLineObstacleDistancePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:167: warning: Member Space() const  (function) of class StraightLineObstacleDistancePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:168: warning: Member Copy() const  (function) of class StraightLineObstacleDistancePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:169: warning: Member ReverseCopy() const  (function) of class StraightLineObstacleDistancePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:171: warning: Member CheckVisibility(const Config &a, const Config &b, double da, double db) (function) of class StraightLineObstacleDistancePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:60: warning: Member Priority() const  (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:61: warning: Member Plan() (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:62: warning: Member Done() const  (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:63: warning: Member Failed() const  (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:173: warning: Member a (variable) of class StraightLineObstacleDistancePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:173: warning: Member b (variable) of class StraightLineObstacleDistancePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:174: warning: Member space (variable) of class StraightLineObstacleDistancePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:103: warning: Member SubgroupExplicitCSpace(ExplicitCSpace *baseSpace) (function) of class SubgroupExplicitCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:105: warning: Member Ungroup() (function) of class SubgroupExplicitCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:106: warning: Member Group(int i, int j) (function) of class SubgroupExplicitCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:115: warning: Member Sample(Config &x) (function) of class SubgroupExplicitCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:116: warning: Member SampleNeighborhood(const Config &c, double r, Config &x) (function) of class SubgroupExplicitCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:118: warning: Member Interpolate(const Config &x, const Config &y, double u, Config &out) (function) of class SubgroupExplicitCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:120: warning: Member baseSpace (variable) of class SubgroupExplicitCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:121: warning: Member groups (variable) of class SubgroupExplicitCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:122: warning: Member groupNames (variable) of class SubgroupExplicitCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:12: warning: Member Subset(int maxItem=0) (function) of class Subset is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:13: warning: Member Subset(const Subset &s) (function) of class Subset is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:14: warning: Member Subset(const std::vector< bool > &bits) (function) of class Subset is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:15: warning: Member operator<(const Subset &s) const  (function) of class Subset is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:16: warning: Member operator>(const Subset &s) const  (function) of class Subset is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:17: warning: Member operator==(const Subset &s) const  (function) of class Subset is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:18: warning: Member operator!=(const Subset &s) const  (function) of class Subset is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:19: warning: Member operator+(const Subset &s) const  (function) of class Subset is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:20: warning: Member operator-() const  (function) of class Subset is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:21: warning: Member count() const  (function) of class Subset is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:22: warning: Member cost(const std::vector< double > &weights) const  (function) of class Subset is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:23: warning: Member is_subset(const Subset &s) const  (function) of class Subset is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:25: warning: Member maxItem (variable) of class Subset is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.h:26: warning: Member items (variable) of class Subset is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1554: warning: Member SubsetCost(int maxItem=0, double cost=0, vector< double > *_weights=NULL) (function) of class SubsetCost is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1558: warning: Member SubsetCost(const Subset &s, double cost=0, vector< double > *_weights=NULL) (function) of class SubsetCost is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1562: warning: Member SubsetCost(const SubsetCost &s) (function) of class SubsetCost is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1566: warning: Member operator<(const SubsetCost &s) const  (function) of class SubsetCost is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1581: warning: Member operator>(const SubsetCost &s) const  (function) of class SubsetCost is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1586: warning: Member operator==(const SubsetCost &s) const  (function) of class SubsetCost is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1594: warning: Member operator!=(const SubsetCost &s) const  (function) of class SubsetCost is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1599: warning: Member operator+(const SubsetCost &s) const  (function) of class SubsetCost is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1604: warning: Member operator-() const  (function) of class SubsetCost is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1550: warning: Member subset (variable) of class SubsetCost is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1551: warning: Member pathCost (variable) of class SubsetCost is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplainingPlanner.cpp:1552: warning: Member weights (variable) of class SubsetCost is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:74: warning: Member SubsetExplicitCSpace(ExplicitCSpace *baseSpace) (function) of class SubsetExplicitCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:75: warning: Member SubsetExplicitCSpace(ExplicitCSpace *baseSpace, int obstacle) (function) of class SubsetExplicitCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:89: warning: Member Sample(Config &x) (function) of class SubsetExplicitCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:90: warning: Member SampleNeighborhood(const Config &c, double r, Config &x) (function) of class SubsetExplicitCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:92: warning: Member Interpolate(const Config &x, const Config &y, double u, Config &out) (function) of class SubsetExplicitCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:94: warning: Member baseSpace (variable) of class SubsetExplicitCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/ExplicitCSpace.h:95: warning: Member activeSubset (variable) of class SubsetExplicitCSpace is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:86: warning: Member Node (typedef) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:88: warning: Member TreeRoadmapPlanner(CSpace *) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:91: warning: Member GenerateConfig(Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:92: warning: Member AddMilestone(const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:93: warning: Member AddFeasibleMilestone(const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:94: warning: Member AddInfeasibleMilestone(const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:95: warning: Member Extend() (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:96: warning: Member Cleanup() (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:97: warning: Member ConnectToNeighbors(Node *) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:98: warning: Member TryConnect(Node *, Node *) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:101: warning: Member ClosestMilestone(const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:102: warning: Member ClosestMilestoneInComponent(int component, const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:103: warning: Member ClosestMilestoneInSubtree(Node *node, const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:104: warning: Member TryExtend(Node *n, const Config &x) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:105: warning: Member AttachChild(Node *p, Node *c, EdgePlanner *e) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:106: warning: Member CreatePath(Node *a, Node *b, MilestonePath &path) (function) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:108: warning: Member space (variable) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:109: warning: Member connectedComponents (variable) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:110: warning: Member connectionThreshold (variable) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:113: warning: Member milestones (variable) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:114: warning: Member x (variable) of class TreeRoadmapPlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:82: warning: Member x (variable) of class TreeRoadmapPlanner::Milestone is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MotionPlanner.h:83: warning: Member connectedComponent (variable) of class TreeRoadmapPlanner::Milestone is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:70: warning: Member TrueEdgePlanner(CSpace *space, const Config &x, const Config &y) (function) of class TrueEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:71: warning: Member IsVisible() (function) of class TrueEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:72: warning: Member Eval(double u, Config &x) const  (function) of class TrueEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:73: warning: Member Start() const  (function) of class TrueEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:74: warning: Member Goal() const  (function) of class TrueEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:75: warning: Member Space() const  (function) of class TrueEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:76: warning: Member Copy() const  (function) of class TrueEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:77: warning: Member ReverseCopy() const  (function) of class TrueEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:60: warning: Member Priority() const  (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:61: warning: Member Plan() (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:62: warning: Member Done() const  (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:63: warning: Member Failed() const  (function) of class EdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:79: warning: Member a (variable) of class TrueEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:79: warning: Member b (variable) of class TrueEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/EdgePlanner.h:80: warning: Member space (variable) of class TrueEdgePlanner is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:98: warning: Member UpdatePrioritySPP(IncrementalMMPRM_Search &_g) (function) of class UpdatePrioritySPP is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:99: warning: Member OnDistanceUpdate(int n) (function) of class UpdatePrioritySPP is not documented.
+/home/osboxes/Documents/UFRGS/CMP545/LMPL/MotionPlanning/MultiModalPlanner.h:101: warning: Member g (variable) of class UpdatePrioritySPP is not documented.

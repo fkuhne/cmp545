@@ -1,0 +1,246 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  mpkBaseRobot</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">mpkBaseRobot</A></H2></TD></H2></TD></TR></TABLE>
+<BLOCKQUOTE>The base class for all robots.  It can represent arbitrary kinematic trees, free-flying objects and objects moving along complex constrained trajectories. </BLOCKQUOTE>
+<HR>
+
+<H2>Inheritance:</H2>
+<APPLET CODE="ClassGraph.class" WIDTH=600 HEIGHT=95>
+<param name=classes value="CmpkBaseRobot,MmpkBaseRobot.html,CmpkFreeFlyingObject,MmpkFreeFlyingObject.html,CmpkDemoRobot,MmpkDemoRobot.html">
+<param name=before value="M,M|_,Mr_">
+<param name=after value="M,M,M">
+<param name=indent value="0,0,0">
+<param name=arrowdir value="up">
+</APPLET>
+<HR>
+
+<DL>
+<P><TABLE>
+<DT><H3>Public Fields</H3><DD><TR>
+<TD VALIGN=TOP>
+<A NAME="joints"></A>
+<A NAME="DOC.2.17"></A>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="mpkBaseRobot.html#DOC.2.2">Joint</A>* </TD><TD><B>joints</B> <BR>
+<I>Array of joints (created from jointdefs by constructor).</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="num_joints"></A>
+<A NAME="DOC.2.18"></A>
+<IMG ALT="o" SRC=icon2.gif>int </TD><TD><B>num_joints</B> <BR>
+<I>Number of entries in joints.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="params"></A>
+<A NAME="DOC.2.19"></A>
+<IMG ALT="o" SRC=icon2.gif>double* </TD><TD><B>params</B> <BR>
+<I>The vector of normalized parameters [0,1) of the robot (its DOFs).</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="num_params"></A>
+<A NAME="DOC.2.20"></A>
+<IMG ALT="o" SRC=icon2.gif>int </TD><TD><B>num_params</B> <BR>
+<I>Number of DOFs (entries in params, param_frozen and param_passive).</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="param_opts"></A>
+<A NAME="DOC.2.22"></A>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="mpkBaseRobot.html#DOC.2.21">param_info</A>* </TD><TD><B>param_opts</B> <BR>
+<I>Attributes for the parameters</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="scale_factor"></A>
+<A NAME="DOC.2.23"></A>
+<IMG ALT="o" SRC=icon2.gif>double </TD><TD><B>scale_factor</B> <BR>
+<I>The scale factor of the robot (each instantiated robot can have a different scale factor).</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="selfcoll_info"></A>
+<A NAME="DOC.2.25"></A>
+<IMG ALT="o" SRC=icon2.gif>vector&lt;<!1><A HREF="mpkBaseRobot.html#DOC.2.24">selfcoll_pair</A>&gt;  </TD><TD><B>selfcoll_info</B> <BR>
+<I>Pairs of joints whose links should be checked for collisions (can be set individually by the derived class).</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="iv_graph"></A>
+<A NAME="DOC.2.26"></A>
+<IMG ALT="o" SRC=icon2.gif>SoSeparator* </TD><TD><B>iv_graph</B> <BR>
+<I>Inventor scene graph for robot (note: must be updated explicitly using <!1><A HREF="mpkBaseRobot.html#DOC.2.8">update_iv_transf()</A>).</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="tracepoint_joint_idx"></A>
+<A NAME="DOC.2.27"></A>
+<IMG ALT="o" SRC=icon2.gif>int </TD><TD><B>tracepoint_joint_idx</B> <BR>
+<I>Index of joint for which the traced path in workspace will be visualized by the class TraceVis (typically the end-effector tip but can be an arbitrary point).</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="base_T"></A>
+<A NAME="DOC.2.29"></A>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="mpkTransform.html">mpkTransform</A> </TD><TD><B>base_T</B> <BR>
+<I>Movable base transform for collision model of robot.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="iv_base_T"></A>
+<A NAME="DOC.2.30"></A>
+<IMG ALT="o" SRC=icon2.gif>SoTransform* </TD><TD><B>iv_base_T</B> <BR>
+<I>Movable base transform for scene graph of robot.</I>
+</TD></TR></TABLE></P>
+
+<P><TABLE>
+<DT><H3>Public Methods</H3><DD><TR>
+<TD VALIGN=TOP>
+<A NAME="mpkBaseRobot"></A>
+<A NAME="DOC.2.3"></A>
+<IMG ALT="o" SRC=icon2.gif> </TD><TD><B>mpkBaseRobot</B> (const char* <!1><A HREF="mpkIncludeFile.html#DOC.12.1">name</A>, const char* rob_file_name, const <!1><A HREF="mpkTransform.html">mpkTransform</A>&amp; base_transf, double scalef=1.0)<BR>
+<I>Constructs a robot with the given name from a file in .rob format.  The robot can be placed at any place in the world coordinate frame using base_transf and it can be rescaled using scalef.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="mpkBaseRobot"></A>
+<A NAME="DOC.2.4"></A>
+<IMG ALT="o" SRC=icon2.gif> </TD><TD><B>mpkBaseRobot</B> (const char* <!1><A HREF="mpkIncludeFile.html#DOC.12.1">name</A>, int <!1><A HREF="mpkBaseRobot.html#DOC.2.18">num_joints</A>, <!1><A HREF="mpkBaseRobot.html#DOC.2.1">JointDef</A>* jointdefs, const <!1><A HREF="mpkTransform.html">mpkTransform</A>&amp; base_transf, double scalef=1.0)<BR>
+<I>Constructs a robot with the given name from a 'hardcoded' description given by jointdefs.  num_joints is the number of entries in jointdefs.  The robot can be placed at any place in the world coordinate frame using base_transf and it can be rescaled using scalef.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="compute_forward_kinematics"></A>
+<A NAME="DOC.2.5"></A>
+<IMG ALT="o" SRC=icon2.gif>void </TD><TD><B>compute_forward_kinematics</B> ()<BR>
+<I>Compute transforms (Taccu) for all joints.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="compute_forward_kinematics"></A>
+<A NAME="DOC.2.6"></A>
+<IMG ALT="o" SRC=icon2.gif>void </TD><TD><B>compute_forward_kinematics</B> (int joint_idx)<BR>
+<I>Compute transforms (Taccu) for path along kinematic chain from joint_idx to root of kinematic tree.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="compute_forward_kinematics"></A>
+<A NAME="DOC.2.7"></A>
+<IMG ALT="o" SRC=icon2.gif>void </TD><TD><B>compute_forward_kinematics</B> (int joint_idx, unsigned <!1><A HREF="sblMilestone.html#DOC.32.23">t</A>, <!1><A HREF="mpkTransformCache.html">mpkTransformCache</A>* cache)<BR>
+<I>Compute transforms (Taccu) for path along kinematic chain from joint_idx to root of kinematic tree.  This version takes advantage of the kinematics cache.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="update_iv_transf"></A>
+<A NAME="DOC.2.8"></A>
+<IMG ALT="o" SRC=icon2.gif>void </TD><TD><B>update_iv_transf</B> ()<BR>
+<I>Updates the transformations of the robot model in the scene graph.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="collision"></A>
+<A NAME="DOC.2.9"></A>
+<IMG ALT="o" SRC=icon2.gif>bool </TD><TD><B>collision</B> (int <!1><A HREF="sblMilestone.html#DOC.32.21">i</A>, int j, int model_id=0)<BR>
+<I>Checks links <B>i</B> and <B>j</B> for collision.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="collision"></A>
+<A NAME="DOC.2.10"></A>
+<IMG ALT="o" SRC=icon2.gif>bool </TD><TD><B>collision</B> (int <!1><A HREF="sblMilestone.html#DOC.32.21">i</A>, double <!1><A HREF="mpkTransform.html#DOC.22.18">R</A>[3][3], double <!1><A HREF="mpkTransform.html#DOC.22.19">T</A>[3], PQP_Model* obstacle, int model_id=0)<BR>
+<I>Checks link <B>i</B> and the given PQP model <B>obstacle</B> at pose <B>(R,T)</B> for collision.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="distance"></A>
+<A NAME="DOC.2.11"></A>
+<IMG ALT="o" SRC=icon2.gif>double </TD><TD><B>distance</B> (int <!1><A HREF="sblMilestone.html#DOC.32.21">i</A>, int j, double rel_err=0, int model_id=0)<BR>
+<I>Returns the exact distance between the links <B>i</B> and <B>j</B>.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="distance"></A>
+<A NAME="DOC.2.12"></A>
+<IMG ALT="o" SRC=icon2.gif>double </TD><TD><B>distance</B> (int <!1><A HREF="sblMilestone.html#DOC.32.21">i</A>, double <!1><A HREF="mpkTransform.html#DOC.22.18">R</A>[3][3], double <!1><A HREF="mpkTransform.html#DOC.22.19">T</A>[3], PQP_Model* obstacle, double rel_err=0, int model_id=0)<BR>
+<I>Returns the exact distance between link <B>i</B> and the given PQP model <B>obstacle</B> at pose <B>(R,T)</B>.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="closer_than_thres"></A>
+<A NAME="DOC.2.13"></A>
+<IMG ALT="o" SRC=icon2.gif>bool </TD><TD><B>closer_than_thres</B> (int <!1><A HREF="sblMilestone.html#DOC.32.21">i</A>, int j, double thres=0, int model_id=0)<BR>
+<I>Determines if the exact distance between links <B>i</B> and <B>j</B> is smaller than <B>thres</B>.  Note that this is much faster than exact distance computation.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="closer_than_thres"></A>
+<A NAME="DOC.2.14"></A>
+<IMG ALT="o" SRC=icon2.gif>bool </TD><TD><B>closer_than_thres</B> (int <!1><A HREF="sblMilestone.html#DOC.32.21">i</A>, double <!1><A HREF="mpkTransform.html#DOC.22.18">R</A>[3][3], double <!1><A HREF="mpkTransform.html#DOC.22.19">T</A>[3], PQP_Model* obstacle, double thres=0, int model_id=0 )<BR>
+<I>Determines if the exact distance between link <B>i</B> the given PQP model <B>obstacle</B> at pose <B>(R,T)</B> is smaller than <B>thres</B>.  Note that this is much faster than exact distance computation.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="translate_base"></A>
+<A NAME="DOC.2.15"></A>
+<IMG ALT="o" SRC=icon2.gif>void </TD><TD><B>translate_base</B> (double dx, double dy, double dz)<BR>
+<I>Translate kinematic tree by <B>(dx,dy,dz)</B> (moves entire robot).</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="get_name"></A>
+<A NAME="DOC.2.16"></A>
+<IMG ALT="o" SRC=icon2.gif>const char* </TD><TD><B>get_name</B> ()<BR>
+<I>Returns the name of the robot as given in the scene file.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="pathlen_upbound"></A>
+<A NAME="DOC.2.28"></A>
+<IMG ALT="o" SRC=icon2.gif>virtual   double </TD><TD><B>pathlen_upbound</B> (const <!1><A HREF="mpkConfig.html">mpkConfig</A>&amp; q0, const <!1><A HREF="mpkConfig.html">mpkConfig</A>&amp; q1, int <!1><A HREF="mpkRobotCollection.html#DOC.17.5">first_param_idx</A>, int joint_idx, int root_idx=-1)<BR>
+<I>Function that returns an upper bound on the motion of all points of the link model in the joint at joint_idx during a motion from q0 to q1.  first_param_idx must tell the robot where its parameters start in the configuration vectors (which may contain multi-robot params).  If root_idx &gt;= 0, then the computation is w.r.t. the frame of joint root_idx (used for self-collision bounds of two links on the same kinematic chain).</I>
+</TD></TR></TABLE></P>
+
+<P><TABLE>
+<DT><H3>Public Members</H3><DD><TR>
+<TD VALIGN=TOP>
+<A NAME="JointDef"></A>
+<A NAME="DOC.2.1"></A>
+<IMG ALT="o" SRC=icon2.gif>struct  </TD><TD><B>JointDef</B> <BR>
+<I>Structure to define a joint.  Each joint contains information about its parent joint, spatial transforms and an optional attached triangulated link model.  This information is necessary to define a robot.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="Joint"></A>
+<A NAME="DOC.2.2"></A>
+<IMG ALT="o" SRC=icon2.gif>struct  </TD><TD><B>Joint</B> : <!1><A HREF="mpkBaseRobot.html#DOC.2.1">JointDef</A><BR>
+<I>Structure to represent a joint (adds some working data to JointDef).  The fields not present in JointDef are derived automatically from those in JointDef.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="param_info"></A>
+<A NAME="DOC.2.21"></A>
+<IMG ALT="o" SRC=icon2.gif>struct  </TD><TD><B>param_info</B> <BR>
+<I>Structure to bundle attributes of a single parameter</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="selfcoll_pair"></A>
+<A NAME="DOC.2.24"></A>
+<IMG ALT="o" SRC=icon2.gif>struct  </TD><TD><B>selfcoll_pair</B> <BR>
+<I>Self-collision pair structure (simply a pair of indices into <!1><A HREF="mpkBaseRobot.html#DOC.2.17">joints</A>).</I>
+</TD></TR></TABLE></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>The constructor either reads the kinematics from a .rob file
+or takes the description directly as a pointer to an array
+(jointdefs).  It creates a collision model of the robot and an
+inventor scene graph (for displaying only).  Note that the scene
+graph is only loosely coupled to the collision model: an explicit
+call to <!1><A HREF="mpkBaseRobot.html#DOC.2.8">update_iv_transf()</A> is required to
+synchronize the inventor model with the collision model.  This
+allows for more efficient computations during planning where
+displayed model should not move around.  The array {@link params
+params} of size <!1><A HREF="mpkBaseRobot.html#DOC.2.20">num_params</A> contains all
+parameters of the robot.  After changing an entry in this array,
+one of the functions {@link compute_forward_kinematics
+compute_forward_kinematics()} must be called to update the
+collision model.</BLOCKQUOTE>
+<DL>
+</DL>
+<HR>
+<DL><DT><B>Direct child classes:
+</B><DD><A HREF="mpkFreeFlyingObject.html">mpkFreeFlyingObject</A><BR>
+<A HREF="mpkDemoRobot.html">mpkDemoRobot</A><BR>
+</DL>
+
+<DL><DT><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

@@ -1,0 +1,251 @@
+\section{Error\+Explaining\+Planner Class Reference}
+\label{classErrorExplainingPlanner}\index{Error\+Explaining\+Planner@{Error\+Explaining\+Planner}}
+
+
+A planner that minimizes the the number of violated constraints using a R\+R\+T-\/like strategy.  
+
+
+
+
+{\ttfamily \#include $<$Explaining\+Planner.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf Edge}
+\item 
+struct {\bf Milestone}
+\item 
+struct {\bf Mode}
+\item 
+struct {\bf Transition}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Graph\+::\+Undirected\+Graph$<$ {\bf Milestone}, {\bf Edge} $>$ {\bfseries Roadmap}\label{classErrorExplainingPlanner_a56a91197e0aeeacb930c863d24d8417c}
+
+\item 
+typedef Graph\+::\+Undirected\+Graph$<$ {\bf Mode}, {\bf Transition} $>$ {\bfseries Mode\+Graph}\label{classErrorExplainingPlanner_a19438e7fd028014fb5987103bac79dc7}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Error\+Explaining\+Planner} ({\bf Explicit\+C\+Space} $\ast$space)\label{classErrorExplainingPlanner_a963e2f23107efb7f09bac091cc94fcd6}
+
+\item 
+void {\bfseries Init} (const Config \&start, const Config \&goal)\label{classErrorExplainingPlanner_a9b143608845d8b292fbb52adb34ed559}
+
+\item 
+void {\bf Expand} (double max\+Explanation\+Cost, vector$<$ int $>$ \&new\+Nodes)\label{classErrorExplainingPlanner_af90a5f10d6c872f90f3e0c3506275e5f}
+
+\begin{DoxyCompactList}\small\item\em Performs one iteration of planning given a limit on the explanation size. \end{DoxyCompactList}\item 
+void {\bfseries Expand2} (double max\+Explanation\+Cost, vector$<$ int $>$ \&new\+Nodes)\label{classErrorExplainingPlanner_ab5a73133273b1bd5be3de9f458e7e4f6}
+
+\item 
+void {\bf Plan} (int initial\+Limit, const vector$<$ int $>$ \&expansion\+Schedule, vector$<$ int $>$ \&best\+Path, {\bf Subset} \&cover)\label{classErrorExplainingPlanner_ac54a2340ac78338394e94b19e2204868}
+
+\begin{DoxyCompactList}\small\item\em Performs bottom-\/up planning according to a given limit expansion schedule. \end{DoxyCompactList}\item 
+void {\bf Build\+Roadmap} (double max\+Explanation\+Cost, {\bf Roadmap\+Planner} \&prm)\label{classErrorExplainingPlanner_aa9271ec1fd80dfdce0890e6422bef5d6}
+
+\begin{DoxyCompactList}\small\item\em Outputs the graph with the given explanation limit. \end{DoxyCompactList}\item 
+void {\bf Build\+C\+C\+Graph} (Graph\+::\+Undirected\+Graph$<$ {\bf Subset}, int $>$ \&G)
+\item 
+bool {\bf Coverage\+Path} (int s, int t, const {\bf Subset} \&cover, std\+::vector$<$ int $>$ \&path, {\bf Subset} \&path\+Cover)\label{classErrorExplainingPlanner_a86a3cbc2b423a0ddf4149a443fa4260c}
+
+\begin{DoxyCompactList}\small\item\em A search that finds a path subject to a coverage constraint. \end{DoxyCompactList}\item 
+bool {\bf Greedy\+Path} (int s, int t, std\+::vector$<$ int $>$ \&path, {\bf Subset} \&path\+Cover)\label{classErrorExplainingPlanner_af66cfd5b8c6694077e7342c83e2e6391}
+
+\begin{DoxyCompactList}\small\item\em A greedy heuristic that performs smallest cover given predecessor. \end{DoxyCompactList}\item 
+bool {\bf Optimal\+Path} (int s, int t, std\+::vector$<$ int $>$ \&path, {\bf Subset} \&path\+Cover)\label{classErrorExplainingPlanner_a7de2fe0b0046e2cd48d3dc87aed72980}
+
+\begin{DoxyCompactList}\small\item\em An optimal search. \end{DoxyCompactList}\item 
+void {\bf Completion} (int s, int node, int t, {\bf Subset} \&path\+Cover)
+\item 
+int {\bfseries Add\+Node} (const Config \&q, int parent=-\/1)\label{classErrorExplainingPlanner_aa72cf7cb49296db4e7a7107c861e0d26}
+
+\item 
+int {\bfseries Add\+Node} (const Config \&q, const {\bf Subset} \&subset, int parent=-\/1)\label{classErrorExplainingPlanner_a56b0332f92d518ada526b4053e4f1208}
+
+\item 
+bool {\bfseries Add\+Edge} (int i, int j, int depth=0)\label{classErrorExplainingPlanner_a84089ded0070b0af47102054673896b7}
+
+\item 
+int {\bfseries Add\+Edge} (int i, const Config \&q, double max\+Explanation\+Cost)\label{classErrorExplainingPlanner_abc71458821dbee70b01b439ad4fe7b65}
+
+\item 
+void {\bfseries Add\+Edge\+Raw} (int i, int j)\label{classErrorExplainingPlanner_abf85b58236537b30264bedb67a7bcc5e}
+
+\item 
+int {\bfseries Extend\+Toward} (int i, const Config \&qdest, double max\+Explanation\+Cost)\label{classErrorExplainingPlanner_af464c89593cd365067fb153cd7933c2d}
+
+\item 
+void {\bfseries K\+NN} (const Config \&q, int k, vector$<$ int $>$ \&neighbors, vector$<$ double $>$ \&distances)\label{classErrorExplainingPlanner_a9a6d147d6c7db3e1c35595e61c9c0292}
+
+\item 
+void {\bfseries K\+NN} (const Config \&q, double max\+Explanation\+Cost, int k, vector$<$ int $>$ \&neighbors, vector$<$ double $>$ \&distances)\label{classErrorExplainingPlanner_a01f0d948471c9dafede5242ff38b55af}
+
+\item 
+void {\bfseries Update\+Paths\+Greedy} ()\label{classErrorExplainingPlanner_aec5d15d7817421b6828f7c80a296cfac}
+
+\item 
+void {\bfseries Update\+Paths\+Complete} ()\label{classErrorExplainingPlanner_ad6162b4799cb486683768ad91a8bc4e1}
+
+\item 
+void {\bfseries Update\+Paths\+Greedy2} (int nstart=-\/1)\label{classErrorExplainingPlanner_a0177c9d7ecbd1208a57c4c2dd359f90e}
+
+\item 
+void {\bfseries Update\+Paths\+Complete2} (int nstart=-\/1)\label{classErrorExplainingPlanner_af022570650fb2c25b481b6cc6d837d77}
+
+\item 
+bool {\bfseries Can\+Improve\+Connectivity} (const {\bf Mode} \&ma, const {\bf Mode} \&mb, double max\+Explanation\+Cost)\label{classErrorExplainingPlanner_a1f139b5e9ce26df3aaea9854ef9b5729}
+
+\item 
+void {\bfseries Update\+Min\+Cost} ({\bf Mode} \&m)\label{classErrorExplainingPlanner_a0a75036676a2d69da2c4c868c0ae0ae3}
+
+\item 
+bool {\bfseries Exceeds\+Cost\+Limit} (const Config \&q, double limit, {\bf Subset} \&violations)\label{classErrorExplainingPlanner_a0b4cfea304bd3d342a20a22633d715f2}
+
+\item 
+bool {\bfseries Exceeds\+Cost\+Limit} (const Config \&a, const Config \&b, double limit, {\bf Subset} \&violations)\label{classErrorExplainingPlanner_a0666ee1b80dbe225c444effddab9b27c}
+
+\item 
+void {\bf Get\+Cover} (const std\+::vector$<$ int $>$ \&path, {\bf Subset} \&cover) const \label{classErrorExplainingPlanner_a57481d8a20c85f7a0038f4edd476ce99}
+
+\begin{DoxyCompactList}\small\item\em Computes the cover of the path. \end{DoxyCompactList}\item 
+double {\bf Get\+Length} (const std\+::vector$<$ int $>$ \&path) const \label{classErrorExplainingPlanner_aff9ce6e86add017d92f682279a3aedd9}
+
+\begin{DoxyCompactList}\small\item\em Computes the length of the path. \end{DoxyCompactList}\item 
+void {\bf Get\+Milestone\+Path} (const std\+::vector$<$ int $>$ \&path, {\bf Milestone\+Path} \&mpath) const \label{classErrorExplainingPlanner_a40339c8dc31a885219cedbe7ad7436ea}
+
+\begin{DoxyCompactList}\small\item\em Returns the \doxyref{Milestone\+Path}{p.}{classMilestonePath}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Config {\bfseries start}\label{classErrorExplainingPlanner_a36710bec79a3c173e00251824b95e308}
+
+\item 
+Config {\bfseries goal}\label{classErrorExplainingPlanner_a0f1ee95b083257d4796d521d774fa51d}
+
+\item 
+{\bf Explicit\+C\+Space} $\ast$ {\bfseries space}\label{classErrorExplainingPlanner_a75c47d130fc3bc512d8b283d0912613a}
+
+\item 
+vector$<$ double $>$ {\bfseries obstacle\+Weights}\label{classErrorExplainingPlanner_a0250afa4a9a2c93141b2fd1c6b28fb01}
+
+\item 
+int {\bfseries num\+Connections}\label{classErrorExplainingPlanner_a6e555e21c3c00c384424048c8f8c52ac}
+
+\item 
+double {\bfseries connect\+Threshold}\label{classErrorExplainingPlanner_a21d7c5839299d301a174724b64024c14}
+
+\item 
+double {\bfseries expand\+Distance}\label{classErrorExplainingPlanner_a17c0f6473443542ffadf27086be7185a}
+
+\item 
+double {\bfseries goal\+Connect\+Threshold}\label{classErrorExplainingPlanner_a9f6484c6c8869f583adf274b8fdaf776}
+
+\item 
+double {\bfseries goal\+Bias\+Probability}\label{classErrorExplainingPlanner_a72c15b68e2c34a603d45ecf9bfaf07cb}
+
+\item 
+bool {\bfseries bidirectional}\label{classErrorExplainingPlanner_a0e7f0e4e2c7011a2d0aa5a0bcaf2b2c5}
+
+\item 
+bool {\bf update\+Paths\+Complete}
+\item 
+bool {\bf update\+Paths\+Dynamic}
+\item 
+int {\bf update\+Paths\+Max}\label{classErrorExplainingPlanner_a0345a79ae72d35d183aa8e7205d9f172}
+
+\begin{DoxyCompactList}\small\item\em For complete planning, keep at most this number of covers. \end{DoxyCompactList}\item 
+Roadmap {\bfseries roadmap}\label{classErrorExplainingPlanner_a612495ad8eb97c5c2f605364951bf6c3}
+
+\item 
+Mode\+Graph {\bfseries mode\+Graph}\label{classErrorExplainingPlanner_ae74e086d9592dbfe5d0ffed9c82ab523}
+
+\item 
+int {\bfseries num\+Expands}\label{classErrorExplainingPlanner_a8699e7193a8ed126daf4db6ee4f1db60}
+
+\item 
+int {\bfseries num\+Refinement\+Attempts}\label{classErrorExplainingPlanner_ac5fa50b3c9cd6bb0dbe8955d5878f71d}
+
+\item 
+int {\bfseries num\+Refinement\+Successes}\label{classErrorExplainingPlanner_ad013d6c851e96bbdd54c66e344705d34}
+
+\item 
+int {\bfseries num\+Exploration\+Attempts}\label{classErrorExplainingPlanner_a136fc358adae45ee520c909473e2577e}
+
+\item 
+int {\bfseries num\+Edge\+Checks}\label{classErrorExplainingPlanner_a583ba35f3678a68f441cb65f098f2e52}
+
+\item 
+int {\bfseries num\+Config\+Checks}\label{classErrorExplainingPlanner_aac3671d266092f7ae843c0ece1044155}
+
+\item 
+int {\bfseries num\+Update\+Paths}\label{classErrorExplainingPlanner_a3a09aed18aed703e30c74730d2433d56}
+
+\item 
+int {\bfseries num\+Update\+Paths\+Iterations}\label{classErrorExplainingPlanner_a32008e0f8ecbec0fa4227084b51a1ec2}
+
+\item 
+double {\bfseries time\+Nearest\+Neighbors}\label{classErrorExplainingPlanner_a26946eda4d7386ece2e9b9007d3618fc}
+
+\item 
+double {\bfseries time\+Refine}\label{classErrorExplainingPlanner_abffa295cf9c8f021899b90d1492fcdb5}
+
+\item 
+double {\bfseries time\+Explore}\label{classErrorExplainingPlanner_a094f5c7bb8a4712dd75fa2b31333c11a}
+
+\item 
+double {\bfseries time\+Update\+Paths}\label{classErrorExplainingPlanner_ae2670819406a22ea3676ba10e6e02fb9}
+
+\item 
+double {\bfseries time\+Overhead}\label{classErrorExplainingPlanner_aba2c294091721d4524f3c918028b2400}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A planner that minimizes the the number of violated constraints using a R\+R\+T-\/like strategy. 
+
+Usage\+: //first, set up \doxyref{Explicit\+C\+Space}{p.}{classExplicitCSpace} cspace. \doxyref{Error\+Explaining\+Planner}{p.}{classErrorExplainingPlanner} planner(\&cspace); planner.\+Init(start,goal);
+
+//do planning with a given expansion schedule vector$<$int$>$ schedule; schedule.\+push\+\_\+back(limit1); ... schedule.\+push\+\_\+back(limit\+N); \doxyref{Subset}{p.}{structSubset} cover; vector$<$int$>$ best\+Plan; planner.\+Plan(0,schedule,best\+Plan,cover);
+
+//output best path \doxyref{Milestone\+Path}{p.}{classMilestonePath} path; planner.\+Get\+Milestone\+Path(best\+Plan,path); 
+
+\subsection{Member Function Documentation}
+\index{Error\+Explaining\+Planner@{Error\+Explaining\+Planner}!Build\+C\+C\+Graph@{Build\+C\+C\+Graph}}
+\index{Build\+C\+C\+Graph@{Build\+C\+C\+Graph}!Error\+Explaining\+Planner@{Error\+Explaining\+Planner}}
+\subsubsection[{Build\+C\+C\+Graph(\+Graph\+::\+Undirected\+Graph$<$ Subset, int $>$ \&\+G)}]{\setlength{\rightskip}{0pt plus 5cm}void Error\+Explaining\+Planner\+::\+Build\+C\+C\+Graph (
+\begin{DoxyParamCaption}
+\item[{Graph\+::\+Undirected\+Graph$<$ {\bf Subset}, int $>$ \&}]{G}
+\end{DoxyParamCaption}
+)}\label{classErrorExplainingPlanner_aca8246e074c382a5536cdbf74fa327cb}
+Outputs the CC graph. Each node is a connected component of the roadmap within the same subset. \index{Error\+Explaining\+Planner@{Error\+Explaining\+Planner}!Completion@{Completion}}
+\index{Completion@{Completion}!Error\+Explaining\+Planner@{Error\+Explaining\+Planner}}
+\subsubsection[{Completion(int s, int node, int t, Subset \&path\+Cover)}]{\setlength{\rightskip}{0pt plus 5cm}void Error\+Explaining\+Planner\+::\+Completion (
+\begin{DoxyParamCaption}
+\item[{int}]{s, }
+\item[{int}]{node, }
+\item[{int}]{t, }
+\item[{{\bf Subset} \&}]{path\+Cover}
+\end{DoxyParamCaption}
+)}\label{classErrorExplainingPlanner_a17cb8b7a0a5306e39b2cd8de8cb4f46d}
+Returns the cover of the path from s-\/$>$node + completion(node,goal) where the path cover is determined using the greedy heuristic 
+
+\subsection{Member Data Documentation}
+\index{Error\+Explaining\+Planner@{Error\+Explaining\+Planner}!update\+Paths\+Complete@{update\+Paths\+Complete}}
+\index{update\+Paths\+Complete@{update\+Paths\+Complete}!Error\+Explaining\+Planner@{Error\+Explaining\+Planner}}
+\subsubsection[{update\+Paths\+Complete}]{\setlength{\rightskip}{0pt plus 5cm}bool Error\+Explaining\+Planner\+::update\+Paths\+Complete}\label{classErrorExplainingPlanner_a6d2910d5ce604fcedf63cccfe3d738bb}
+If true\+: use the slower complete, exact cover update. If false\+: use the faster greedy one. \index{Error\+Explaining\+Planner@{Error\+Explaining\+Planner}!update\+Paths\+Dynamic@{update\+Paths\+Dynamic}}
+\index{update\+Paths\+Dynamic@{update\+Paths\+Dynamic}!Error\+Explaining\+Planner@{Error\+Explaining\+Planner}}
+\subsubsection[{update\+Paths\+Dynamic}]{\setlength{\rightskip}{0pt plus 5cm}bool Error\+Explaining\+Planner\+::update\+Paths\+Dynamic}\label{classErrorExplainingPlanner_a1b15bc2f0799c23537650c53e1ad0b99}
+If true\+: do dynamic shortest paths update If false\+: do batch updates when needed 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Explaining\+Planner.\+h\item 
+Explaining\+Planner.\+cpp\end{DoxyCompactItemize}

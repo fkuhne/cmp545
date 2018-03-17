@@ -1,0 +1,29 @@
+#Inventor V2.0 ascii
+
+Separator {
+
+  BaseColor { rgb 1 0 0 }
+
+  DEF front mpkObstacle {
+    DEF __triangulate__ File { name "Cage/cageFRONT.ivfix" }
+  }
+  DEF back mpkObstacle {
+    DEF __triangulate__ File { name "Cage/cageBACK.ivfix" }
+  }
+
+  DEF left mpkObstacle {
+    DEF __triangulate__ File { name "Cage/cageLEFT.ivfix" }
+  }
+  DEF right mpkObstacle {
+    DEF __triangulate__ File { name "Cage/cageRIGHT.ivfix" }
+  }
+
+  DEF bottom mpkObstacle {
+    DEF __triangulate__ File { name "Cage/cageBOT.ivfix" }
+  }
+  DEF top mpkObstacle {
+    DEF __triangulate__ File { name "Cage/cageTOP.ivfix" }
+  }
+
+
+}

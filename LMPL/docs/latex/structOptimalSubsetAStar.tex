@@ -1,0 +1,58 @@
+\section{Optimal\+Subset\+A\+Star Struct Reference}
+\label{structOptimalSubsetAStar}\index{Optimal\+Subset\+A\+Star@{Optimal\+Subset\+A\+Star}}
+Inheritance diagram for Optimal\+Subset\+A\+Star\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structOptimalSubsetAStar}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef pair$<$ int, {\bf Subset} $>$ {\bfseries State}\label{structOptimalSubsetAStar_a5e7da724c886144bbf47e2870eb42dff}
+
+\item 
+typedef Generalized\+A\+Star$<$ State, {\bf Subset\+Cost} $>$\+::Node {\bfseries Node}\label{structOptimalSubsetAStar_a796b87b95ae65f83786e494d189d217d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Optimal\+Subset\+A\+Star} ({\bf Error\+Explaining\+Planner} $\ast$\+\_\+planner, int \+\_\+start, int \+\_\+target)\label{structOptimalSubsetAStar_afd6df9310a118c2fcb90b58a53fc1f9f}
+
+\item 
+virtual bool {\bfseries Is\+Goal} (const State \&s)\label{structOptimalSubsetAStar_a8b6a6fb65356d468293218231bb97c26}
+
+\item 
+virtual void {\bfseries Successors} (const State \&s, vector$<$ State $>$ \&successors, vector$<$ {\bf Subset\+Cost} $>$ \&cost)\label{structOptimalSubsetAStar_a4538406b36aaa88f5263d659aa8ee293}
+
+\item 
+virtual void {\bfseries Clear\+Visited} ()\label{structOptimalSubsetAStar_a680ff03bd25a991834a44ca301045305}
+
+\item 
+virtual void {\bfseries Visit} (const State \&s, Node $\ast$n)\label{structOptimalSubsetAStar_a724d3445f40d0a6e1986137b4bc2ca51}
+
+\item 
+virtual Node $\ast$ {\bfseries Visited\+State\+Node} (const State \&s)\label{structOptimalSubsetAStar_a9f526192902fd48d57c0de1662727116}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Error\+Explaining\+Planner} $\ast$ {\bfseries planner}\label{structOptimalSubsetAStar_a5bb51a35a94f0af9c266139c687fdf4e}
+
+\item 
+int {\bfseries start\+Node}\label{structOptimalSubsetAStar_ac7871f90cd6594a08b7667a1579b2908}
+
+\item 
+int {\bfseries target\+Node}\label{structOptimalSubsetAStar_a36443ceb5144056c4dacbc7bb4f6eb46}
+
+\item 
+vector$<$ vector$<$ pair$<$ {\bf Subset}, Node $\ast$ $>$ $>$ $>$ {\bfseries visited}\label{structOptimalSubsetAStar_a1558e620e3187a163f2389684efafa81}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Explaining\+Planner.\+cpp\end{DoxyCompactItemize}

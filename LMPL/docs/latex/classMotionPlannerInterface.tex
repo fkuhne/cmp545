@@ -1,0 +1,76 @@
+\section{Motion\+Planner\+Interface Class Reference}
+\label{classMotionPlannerInterface}\index{Motion\+Planner\+Interface@{Motion\+Planner\+Interface}}
+
+
+A base class for a generic motion planner, which can be used to compare multiple planning algorithms under a common interface.  
+
+
+
+
+{\ttfamily \#include $<$Any\+Motion\+Planner.\+h$>$}
+
+Inheritance diagram for Motion\+Planner\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMotionPlannerInterface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int {\bfseries Plan\+More} ()=0\label{classMotionPlannerInterface_a81be8094ff8ecc8f070178b0ab13943a}
+
+\item 
+virtual void {\bfseries Plan\+More} (int num\+Iters)\label{classMotionPlannerInterface_ab15dedf8e15dd82eed4c185067f3d453}
+
+\item 
+virtual int {\bfseries Num\+Iterations} () const =0\label{classMotionPlannerInterface_a299bde5aa905aeea95aa34f6210571ae}
+
+\item 
+virtual int {\bfseries Num\+Milestones} () const =0\label{classMotionPlannerInterface_a6836d6cb657f841131727780fc0a96b8}
+
+\item 
+virtual int {\bfseries Num\+Components} () const =0\label{classMotionPlannerInterface_afb78c259e3402dfb61db41f519f2c7db}
+
+\item 
+virtual bool {\bfseries Can\+Add\+Milestone} () const \label{classMotionPlannerInterface_afd0a92e08a1c3832e0d9cf2757d097f2}
+
+\item 
+virtual int {\bfseries Add\+Milestone} (const Config \&q)=0\label{classMotionPlannerInterface_a9507063decfc0ea0b89a8f42f562cf0f}
+
+\item 
+virtual void {\bfseries Get\+Milestone} (int, Config \&q)=0\label{classMotionPlannerInterface_a4e397f7d21cd7435e1feefa4934c05e4}
+
+\item 
+virtual void {\bfseries Connect\+Hint} (int m)\label{classMotionPlannerInterface_a18aea6c99e377f4e7e0dc408e3a6f6d7}
+
+\item 
+virtual bool {\bfseries Connect\+Hint} (int ma, int mb)\label{classMotionPlannerInterface_a74fc89bf89add178023d5356bcc68a7f}
+
+\item 
+virtual bool {\bfseries Is\+Connected} (int ma, int mb) const =0\label{classMotionPlannerInterface_ab868c9e00e603327d4d64ea52ab66162}
+
+\item 
+virtual bool {\bfseries Is\+Lazy} () const \label{classMotionPlannerInterface_ab9642dbf258c803357705592a74e1682}
+
+\item 
+virtual bool {\bfseries Check\+Path} (int ma, int mb)\label{classMotionPlannerInterface_a0b41ad29de6a0b40cc7366debad6033b}
+
+\item 
+virtual bool {\bfseries Is\+Lazy\+Connected} (int ma, int mb) const \label{classMotionPlannerInterface_abc2b3eef0c54453efcce0772b3dbae2e}
+
+\item 
+virtual void {\bfseries Get\+Path} (int ma, int mb, {\bf Milestone\+Path} \&path)=0\label{classMotionPlannerInterface_a4a56cbf7b39e78efaac721d042771d22}
+
+\item 
+virtual void {\bfseries Get\+Roadmap} ({\bf Roadmap\+Planner} \&roadmap)\label{classMotionPlannerInterface_adf19b2ff0687d9c3cb00938506ad54e5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A base class for a generic motion planner, which can be used to compare multiple planning algorithms under a common interface. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Any\+Motion\+Planner.\+h\end{DoxyCompactItemize}

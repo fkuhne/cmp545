@@ -1,0 +1,110 @@
+\section{Incremental\+M\+M\+P\+R\+M\+\_\+\+Search Class Reference}
+\label{classIncrementalMMPRM__Search}\index{Incremental\+M\+M\+P\+R\+M\+\_\+\+Search@{Incremental\+M\+M\+P\+R\+M\+\_\+\+Search}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Graph\+::\+Undirected\+Graph$<$ int, {\bf Multi\+Modal\+P\+R\+M\+::\+Transition\+Info} $\ast$ $>$ {\bfseries Search\+Graph}\label{classIncrementalMMPRM__Search_a6c843752db20b17e9f7b32f2040c0421}
+
+\item 
+typedef Indexed\+Priority\+Queue$<$ int, double $>$ {\bfseries Fringe}\label{classIncrementalMMPRM__Search_a6603b26978f18e2ebf37d040eac284de}
+
+\item 
+typedef {\bf Update\+Priority\+S\+PP} {\bfseries Shortest\+Path\+Problem}\label{classIncrementalMMPRM__Search_a86e61c688846150ffcb21408a4201a9a}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual double {\bfseries Edge\+Length} (int s, int t)\label{classIncrementalMMPRM__Search_a2b1b3c0b95f180c4933a46a9416cc6aa}
+
+\item 
+virtual double {\bfseries Edge\+Length} ({\bf Multi\+Modal\+P\+R\+M\+::\+Transition\+Info} $\ast$trans, int s, int t)\label{classIncrementalMMPRM__Search_af60d305062ed653ca312702a15d2cdb2}
+
+\item 
+virtual double {\bfseries Heuristic} (int mode)\label{classIncrementalMMPRM__Search_ae27d32ac05bc4dc3b9b6e510be5dcdc3}
+
+\item 
+{\bfseries Incremental\+M\+M\+P\+R\+M\+\_\+\+Search} ({\bf Multi\+Modal\+P\+RM} \&mmprm)\label{classIncrementalMMPRM__Search_ad2ab253f2d3002422af5e3187ba4822f}
+
+\item 
+void {\bfseries Init} ()\label{classIncrementalMMPRM__Search_ad7d2e7b4b9170945c740c246803918fa}
+
+\item 
+bool {\bfseries Expand\+More} ()\label{classIncrementalMMPRM__Search_a9e902b8077113d8255ec54be30492d46}
+
+\item 
+void {\bfseries Sample\+More} (int n)\label{classIncrementalMMPRM__Search_a65924b1da473cddf709676687d6499c9}
+
+\item 
+void {\bfseries Expand\+Adjacent} (int n)\label{classIncrementalMMPRM__Search_a750b3b2a518bc9f0046c2709a6ff227b}
+
+\item 
+void {\bfseries Add\+Edge} (int s, int t, {\bf Multi\+Modal\+P\+R\+M\+::\+Transition\+Info} $\ast$e)\label{classIncrementalMMPRM__Search_a7837e08979f6e1f7e287470f3adebce7}
+
+\item 
+void {\bfseries Push\+Fringe} (int i)\label{classIncrementalMMPRM__Search_aaaa2cc88ea58e2a53e109dfd251e2264}
+
+\item 
+void {\bfseries Update\+Fringe} (int i)\label{classIncrementalMMPRM__Search_a32686f9ea35015d5e4c4f2b39c3a45d6}
+
+\item 
+int {\bfseries Pop\+Fringe} ()\label{classIncrementalMMPRM__Search_a94ef3b155d1542003605d718ed2f447e}
+
+\item 
+void {\bfseries Refresh\+Fringe} ()\label{classIncrementalMMPRM__Search_ae11eaf5319351ef6ebaf28e748df234a}
+
+\item 
+double {\bfseries Priority} (int n)\label{classIncrementalMMPRM__Search_acfeca387d59f1171f7827022ded4a5ad}
+
+\item 
+bool {\bfseries Goal\+Connected} () const \label{classIncrementalMMPRM__Search_a6628b83e7d292c55e816b0a7631cb3dd}
+
+\item 
+double {\bfseries Path\+Distance} (int n) const \label{classIncrementalMMPRM__Search_a4d32439292429d217fd1bbf5cf2b63f9}
+
+\item 
+void {\bf Update\+Edge\+Length} (int s, int t)\label{classIncrementalMMPRM__Search_adec0489f45770b6ee3155e711eb8965d}
+
+\begin{DoxyCompactList}\small\item\em This must be called when an edge length changes. \end{DoxyCompactList}\item 
+void {\bf Update\+Priority} (int n)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Multi\+Modal\+P\+RM} \& {\bfseries mmprm}\label{classIncrementalMMPRM__Search_ad4cf73a918dc8c182cb06e09a3787e6e}
+
+\item 
+Fringe {\bfseries fringe}\label{classIncrementalMMPRM__Search_afa84f941db578af60730106e137fc0b7}
+
+\item 
+{\bf Shortest\+Path\+Problem} {\bfseries spp}\label{classIncrementalMMPRM__Search_a9509786a6874901faacc867513fb5893}
+
+\item 
+Search\+Graph {\bfseries search\+Graph}\label{classIncrementalMMPRM__Search_aacf0e12da58b95c61c95414f5c9d225f}
+
+\item 
+vector$<$ bool $>$ {\bfseries reached\+Modes}\label{classIncrementalMMPRM__Search_aef3902048d8c2aefa6dc8d3cd1fda20b}
+
+\item 
+vector$<$ bool $>$ {\bfseries output\+Modes}\label{classIncrementalMMPRM__Search_adb79539a31e6805a8549ae299e6118c7}
+
+\item 
+double {\bfseries trans\+Sample\+Weight}\label{classIncrementalMMPRM__Search_a65b3f5f62c062b8742bc5d9dcb39e567}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Incremental\+M\+M\+P\+R\+M\+\_\+\+Search@{Incremental\+M\+M\+P\+R\+M\+\_\+\+Search}!Update\+Priority@{Update\+Priority}}
+\index{Update\+Priority@{Update\+Priority}!Incremental\+M\+M\+P\+R\+M\+\_\+\+Search@{Incremental\+M\+M\+P\+R\+M\+\_\+\+Search}}
+\subsubsection[{Update\+Priority(int n)}]{\setlength{\rightskip}{0pt plus 5cm}void Incremental\+M\+M\+P\+R\+M\+\_\+\+Search\+::\+Update\+Priority (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\label{classIncrementalMMPRM__Search_a1a13ee20f33d3c63599ee215ab08ccb7}
+This must be called when a heuristic value changes. Called internally in Update\+Edge\+Length. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Multi\+Modal\+Planner.\+h\item 
+Multi\+Modal\+Planner.\+cpp\end{DoxyCompactItemize}

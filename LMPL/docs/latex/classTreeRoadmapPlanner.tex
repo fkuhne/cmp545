@@ -1,0 +1,105 @@
+\section{Tree\+Roadmap\+Planner Class Reference}
+\label{classTreeRoadmapPlanner}\index{Tree\+Roadmap\+Planner@{Tree\+Roadmap\+Planner}}
+
+
+A base class to be used for tree-\/based roadmap planners.  
+
+
+
+
+{\ttfamily \#include $<$Motion\+Planner.\+h$>$}
+
+Inheritance diagram for Tree\+Roadmap\+Planner\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classTreeRoadmapPlanner}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf Milestone}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Graph\+::\+Tree\+Node$<$ {\bf Milestone}, Smart\+Pointer$<$ {\bf Edge\+Planner} $>$ $>$ {\bfseries Node}\label{classTreeRoadmapPlanner_a15e4ae956786e808f8fba50959ebf6cd}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Tree\+Roadmap\+Planner} ({\bf C\+Space} $\ast$)\label{classTreeRoadmapPlanner_a4a224cbd46b967627bf79020a8689ac1}
+
+\item 
+virtual void {\bfseries Generate\+Config} (Config \&x)\label{classTreeRoadmapPlanner_a0faebeade2d119af8cde3043283d375c}
+
+\item 
+virtual Node $\ast$ {\bfseries Add\+Milestone} (const Config \&x)\label{classTreeRoadmapPlanner_a7109b4f5ccba01f740a7f0e6ee8e3649}
+
+\item 
+virtual Node $\ast$ {\bfseries Add\+Feasible\+Milestone} (const Config \&x)\label{classTreeRoadmapPlanner_a8fa85aa4a97d7737a907870def10b767}
+
+\item 
+virtual Node $\ast$ {\bfseries Add\+Infeasible\+Milestone} (const Config \&x)\label{classTreeRoadmapPlanner_a25261ff00047ff40a9c80f74e2d877e7}
+
+\item 
+virtual Node $\ast$ {\bfseries Extend} ()\label{classTreeRoadmapPlanner_ad9c3c6d1d0767096a966ea3dac8bbbac}
+
+\item 
+virtual void {\bfseries Cleanup} ()\label{classTreeRoadmapPlanner_af3d85fd871852d0f5f0c08ff33d23f9c}
+
+\item 
+virtual void {\bfseries Connect\+To\+Neighbors} (Node $\ast$)\label{classTreeRoadmapPlanner_ade53159d1bd7e9625e55c723eeb74a5e}
+
+\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bfseries Try\+Connect} (Node $\ast$, Node $\ast$)\label{classTreeRoadmapPlanner_a2d751322db677629e241652c54354bfa}
+
+\item 
+virtual Node $\ast$ {\bfseries Closest\+Milestone} (const Config \&x)\label{classTreeRoadmapPlanner_a674d861ad4b93a79ee78cb89fb45cf64}
+
+\item 
+virtual Node $\ast$ {\bfseries Closest\+Milestone\+In\+Component} (int component, const Config \&x)\label{classTreeRoadmapPlanner_a423c21dd97c0ef8bd3f63f18e1e65ab0}
+
+\item 
+virtual Node $\ast$ {\bfseries Closest\+Milestone\+In\+Subtree} (Node $\ast$node, const Config \&x)\label{classTreeRoadmapPlanner_a0bd96cb7b494dcb7ec59d88d43afcd49}
+
+\item 
+Node $\ast$ {\bfseries Try\+Extend} (Node $\ast$n, const Config \&x)\label{classTreeRoadmapPlanner_a1c400fc81cf394c6c4064aae09c64726}
+
+\item 
+void {\bfseries Attach\+Child} (Node $\ast$p, Node $\ast$c, {\bf Edge\+Planner} $\ast$e)\label{classTreeRoadmapPlanner_a81b930e7911f3854e86af44614a2cc43}
+
+\item 
+void {\bfseries Create\+Path} (Node $\ast$a, Node $\ast$b, {\bf Milestone\+Path} \&path)\label{classTreeRoadmapPlanner_a13204609fccf6991d0185a44a78669fe}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf C\+Space} $\ast$ {\bfseries space}\label{classTreeRoadmapPlanner_ac52ea753c027983d2240063878087a12}
+
+\item 
+std\+::vector$<$ Node $\ast$ $>$ {\bfseries connected\+Components}\label{classTreeRoadmapPlanner_af2e35ac540027c714769f6d43029d3f0}
+
+\item 
+double {\bfseries connection\+Threshold}\label{classTreeRoadmapPlanner_affbc62cb9c116b1a8553ae0145a18151}
+
+\item 
+std\+::vector$<$ Node $\ast$ $>$ {\bfseries milestones}\label{classTreeRoadmapPlanner_a6422c51272728af9ee68a77378489415}
+
+\item 
+Config {\bfseries x}\label{classTreeRoadmapPlanner_a2fe75f4a282c83c50592d5302b7296a8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A base class to be used for tree-\/based roadmap planners. 
+
+connection\+Threshold is the minimum distance two nodes must be before a connection may be made between them. This is infinity by default. If it is infinity, connections are attempted to the closest node in a different component. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Motion\+Planner.\+h\item 
+Motion\+Planner.\+cpp\end{DoxyCompactItemize}

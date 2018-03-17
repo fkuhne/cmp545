@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  sblEdge</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">sblEdge</A></H2></TD></H2></TD></TR></TABLE>
+<BLOCKQUOTE>Defines and implements the connection between two milestones on the tree. It is composed by information on both nodes (their indexes), the distance between them and the status on collision checking for the straight-line segment that joins both milestones on the C-space.  </BLOCKQUOTE>
+<HR>
+
+<DL>
+<P><TABLE>
+<DT><H3>Public Fields</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.30.17"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A><!1><A HREF="mpkAdaptSegmentChecker.html">mpkAdaptSegmentChecker</A>* </TD><TD><B>seg_checker</B> <BR>
+<I></I>
+</TD></TR></TABLE></P>
+
+<P><TABLE>
+<DT><H3>Public Methods</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.30.1"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>sblEdge</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.30.2"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>sblEdge</B> (int f, int <!1><A HREF="sblMilestone.html#DOC.32.23">t</A>)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.30.3"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>sblEdge</B> (int f, int <!1><A HREF="sblMilestone.html#DOC.32.23">t</A>, double d)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.30.4"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>sblEdge</B> (const <!1><A HREF="sblEdge.html#DOC.30.4">sblEdge</A>&amp; e)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.30.5"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A><!1><A HREF="sblEdge.html">sblEdge</A>&amp; </TD><TD><B>operator=</B> (const <!1><A HREF="sblEdge.html">sblEdge</A>&amp; e)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.30.6"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>setFrom</B> (int f)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.30.7"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>setTo</B> (int <!1><A HREF="sblMilestone.html#DOC.32.23">t</A>)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.30.8"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>setDist</B> (double d)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.30.9"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>markSafe</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.30.10"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>markBad</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.30.11"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>setsblEdge</B> (int f, int <!1><A HREF="sblMilestone.html#DOC.32.23">t</A>, double d=0)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.30.12"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>getFrom</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.30.13"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>getTo</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.30.14"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>double </TD><TD><B>getDist</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.30.15"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>bool </TD><TD><B>isSafe</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.30.16"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>print</B> ()<BR>
+<I></I>
+</TD></TR></TABLE></P>
+
+<P><TABLE>
+<DT><H3>Protected Fields</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.30.18"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>from</B> <BR>
+<I>Reference of the node where the link starts </I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.30.19"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>double </TD><TD><B>lambda</B> <BR>
+<I>distance between the two milestones </I>
+</TD></TR></TABLE></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>Defines and implements the connection between two milestones on the tree. It is composed by information on both nodes (their indexes), the distance between them and the status on collision checking for the straight-line segment that joins both milestones on the C-space.  </BLOCKQUOTE>
+<DL>
+
+<A NAME="sblEdge"></A>
+<A NAME="DOC.30.1"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> sblEdge()</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="sblEdge"></A>
+<A NAME="DOC.30.2"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> sblEdge(int f, int <!1><A HREF="sblMilestone.html#DOC.32.23">t</A>)</B></TT>
+<DD>Constructor that recieves 2 ends of the sblEdge 
+<DL><DT><DD></DL><P>
+<A NAME="sblEdge"></A>
+<A NAME="DOC.30.3"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> sblEdge(int f, int <!1><A HREF="sblMilestone.html#DOC.32.23">t</A>, double d)</B></TT>
+<DD>Constructor that recieves 2 ends of the sblEdge and extent of
+edge partition 
+<DL><DT><DD></DL><P>
+<A NAME="sblEdge"></A>
+<A NAME="DOC.30.4"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> sblEdge(const <!1><A HREF="sblEdge.html#DOC.30.4">sblEdge</A>&amp; e)</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="operator="></A>
+<A NAME="DOC.30.5"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B><!1><A HREF="sblEdge.html">sblEdge</A>&amp; operator=(const <!1><A HREF="sblEdge.html">sblEdge</A>&amp; e)</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="setFrom"></A>
+<A NAME="DOC.30.6"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void setFrom(int f)</B></TT>
+<DD>To set the start of the edge
+<DL><DT><DD></DL><P>
+<A NAME="setTo"></A>
+<A NAME="DOC.30.7"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void setTo(int <!1><A HREF="sblMilestone.html#DOC.32.23">t</A>)</B></TT>
+<DD>To set the end of the edge 
+<DL><DT><DD></DL><P>
+<A NAME="setDist"></A>
+<A NAME="DOC.30.8"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void setDist(double d)</B></TT>
+<DD>To set the edge length based on partition
+<DL><DT><DD></DL><P>
+<A NAME="markSafe"></A>
+<A NAME="DOC.30.9"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void markSafe()</B></TT>
+<DD>To mark that the edge is collision free 
+<DL><DT><DD></DL><P>
+<A NAME="markBad"></A>
+<A NAME="DOC.30.10"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void markBad()</B></TT>
+<DD>To mark that the edge is in collision 
+<DL><DT><DD></DL><P>
+<A NAME="setsblEdge"></A>
+<A NAME="DOC.30.11"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void setsblEdge(int f, int <!1><A HREF="sblMilestone.html#DOC.32.23">t</A>, double d=0)</B></TT>
+<DD>To set a edge as per given parameters
+<DL><DT><DD></DL><P>
+<A NAME="getFrom"></A>
+<A NAME="DOC.30.12"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int getFrom()</B></TT>
+<DD>To retrieve the start of edge 
+<DL><DT><DD></DL><P>
+<A NAME="getTo"></A>
+<A NAME="DOC.30.13"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int getTo()</B></TT>
+<DD>To retrieve the end of edge 
+<DL><DT><DD></DL><P>
+<A NAME="getDist"></A>
+<A NAME="DOC.30.14"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>double getDist()</B></TT>
+<DD>To retrieve the edge-length based on its partioning 
+<DL><DT><DD></DL><P>
+<A NAME="isSafe"></A>
+<A NAME="DOC.30.15"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>bool isSafe()</B></TT>
+<DD>To check if the segement is collision free or not 
+<DL><DT><DD></DL><P>
+<A NAME="print"></A>
+<A NAME="DOC.30.16"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void print()</B></TT>
+<DD>To print the edge parameters 
+<DL><DT><DD></DL><P>
+<A NAME="seg_checker"></A>
+<A NAME="DOC.30.17"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B><!1><A HREF="mpkAdaptSegmentChecker.html">mpkAdaptSegmentChecker</A>* seg_checker</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="from"></A>
+<A NAME="DOC.30.18"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int from</B></TT>
+<DD>Reference of the node where the link starts 
+<DL><DT><DD></DL><P>
+<A NAME="lambda"></A>
+<A NAME="DOC.30.19"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>double lambda</B></TT>
+<DD>distance between the two milestones 
+<DL><DT><DD></DL><P></DL>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DT><B>Friends:</B><DD>  class <!1><A HREF="sblPrioritizeEdges.html">sblPrioritizeEdges</A><BR><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

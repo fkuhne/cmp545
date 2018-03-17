@@ -1,0 +1,88 @@
+\section{Roadmap\+Planner Class Reference}
+\label{classRoadmapPlanner}\index{Roadmap\+Planner@{Roadmap\+Planner}}
+
+
+A base roadmap planner class.  
+
+
+
+
+{\ttfamily \#include $<$Motion\+Planner.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Graph\+::\+Undirected\+Graph$<$ Config, Smart\+Pointer$<$ {\bf Edge\+Planner} $>$ $>$ {\bfseries Roadmap}\label{classRoadmapPlanner_a94306f9fcef5ed328271f83a87cde58a}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Roadmap\+Planner} ({\bf C\+Space} $\ast$)\label{classRoadmapPlanner_a7b276703b4d691ee7fe0850f4a191b73}
+
+\item 
+virtual void {\bfseries Cleanup} ()\label{classRoadmapPlanner_a69517e7d31b79b69f7a994a421bf7888}
+
+\item 
+virtual void {\bfseries Generate\+Config} (Config \&x)\label{classRoadmapPlanner_a94389ad2dc2ca5df788e6d5e40142fa3}
+
+\item 
+virtual int {\bfseries Add\+Milestone} (const Config \&x)\label{classRoadmapPlanner_a63dfd4b47ca8a732ecdfb876f3fb0d1f}
+
+\item 
+virtual int {\bfseries Test\+And\+Add\+Milestone} (const Config \&x)\label{classRoadmapPlanner_a796a45620cc5ebefac828fadbc419108}
+
+\item 
+virtual void {\bfseries Connect\+Edge} (int i, int j, const Smart\+Pointer$<$ {\bf Edge\+Planner} $>$ \&e)\label{classRoadmapPlanner_a6dec2cb3e5b0c13c3218af35873bd6a0}
+
+\item 
+virtual Smart\+Pointer$<$ {\bf Edge\+Planner} $>$ {\bfseries Test\+And\+Connect\+Edge} (int i, int j)\label{classRoadmapPlanner_a0e75b9d7612d0a6e778c182dcf6943c8}
+
+\item 
+virtual bool {\bfseries Has\+Edge} (int i, int j)\label{classRoadmapPlanner_a6992c75b12c8037424b0f45542152742}
+
+\item 
+virtual Smart\+Pointer$<$ {\bf Edge\+Planner} $>$ {\bfseries Get\+Edge} (int i, int j)\label{classRoadmapPlanner_ab989251a26e9d6ba6535f9f5f6617746}
+
+\item 
+virtual bool {\bfseries Are\+Connected} (int i, int j)\label{classRoadmapPlanner_a0a9604e09d188c64dcf0f447b2e54a9c}
+
+\item 
+virtual bool {\bfseries Are\+Connected} (int i, int j) const \label{classRoadmapPlanner_a23c2a9cda5c6e5537779d38a0c3ab94a}
+
+\item 
+virtual void {\bfseries Connect\+To\+Neighbors} (int i, double connection\+Thresholdg)\label{classRoadmapPlanner_a96299fcbac0584e4da421549e4dc4aa4}
+
+\item 
+virtual void {\bfseries Connect\+To\+Nearest\+Neighbors} (int i, int k)\label{classRoadmapPlanner_ace3fbd8f20850b03b8b7e5651217629b}
+
+\item 
+virtual void {\bfseries Generate} (int num\+Samples, double connection\+Threshold)\label{classRoadmapPlanner_a608617e92aff4d74b31d3bec8a22761b}
+
+\item 
+virtual void {\bfseries Create\+Path} (int i, int j, {\bf Milestone\+Path} \&path)\label{classRoadmapPlanner_a5299f2e53017179997f39dd393ad6780}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf C\+Space} $\ast$ {\bfseries space}\label{classRoadmapPlanner_a7b1d048f6e756c564b6bd80e21fd7d9d}
+
+\item 
+Roadmap {\bfseries roadmap}\label{classRoadmapPlanner_a4f4b54c0386df7f078bd7a217a86cd20}
+
+\item 
+Graph\+::\+Connected\+Components {\bfseries ccs}\label{classRoadmapPlanner_ae5b220a4f083b3faae9a2e365dc4e0bc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A base roadmap planner class. 
+
+This class is used essentially as a data structure and helper for more sophisticated roadmap planning algorithms. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Motion\+Planner.\+h\item 
+Motion\+Planner.\+cpp\end{DoxyCompactItemize}

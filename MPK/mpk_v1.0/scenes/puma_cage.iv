@@ -1,0 +1,12 @@
+#Inventor V2.0 ascii
+
+DEF robot mpkRobot {
+  fileName "puma500_torch.rob"
+  scaleFactor 2.2
+  translation 0 -0.01 0
+  rotation 0 -1 0 1.6
+}
+
+DEF cage mpkIncludeFile {
+  name "Cage/cage.iv"
+}

@@ -1,0 +1,377 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002 (1.62) JA patch-1.4
+patched version by:  Kenshi Muto, Debian Project.
+LaTeX2HTML 2002 (1.62),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Robot definition files (.rob)</TITLE>
+<META NAME="description" CONTENT="Robot definition files (.rob)">
+<META NAME="keywords" CONTENT="mpk_new">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="mpk_new.css">
+
+<LINK REL="next" HREF="node5.html">
+<LINK REL="previous" HREF="node3.html">
+<LINK REL="up" HREF="node3.html">
+<LINK REL="next" HREF="node5.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html50"
+  HREF="node5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html48"
+  HREF="node3.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html42"
+  HREF="node3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html51"
+  HREF="node5.html">Hard-coded robots</A>
+<B> Up:</B> <A NAME="tex2html49"
+  HREF="node3.html">Robot definition</A>
+<B> Previous:</B> <A NAME="tex2html43"
+  HREF="node3.html">Robot definition</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00031000000000000000"></A>
+<A NAME="sec:rob_file"></A>
+<BR>
+Robot definition files (.rob)
+</H2>
+
+<P>
+A robot definition file ('.rob' file in the 'robots/'-subdirectory)
+defines the kinematics of a particular robot type, that is, the
+structure of the kinematic tree of a single robot of this type.  (See,
+e.g., 'robots/puma500.rob'.) The first line in the file must be of the
+form
+<PRE>
+  #MPK v&lt;num&gt; robot
+</PRE>
+where &lt;num&gt; is the current MPK version number, e.g., 1.0.  The rest of
+the file consists of a collection of nodes of types <B>joint</B>, <B>  selfcoll</B> and <B>param</B>.
+
+<P>
+Although these node structures in the robot definition files are
+syntactically similar to OpenInventor nodes, the two should not be
+confused.  Unlike MPK nodes in the scene definition files (see
+<A HREF="node2.html#sec:scenes"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="file:/usr/share/latex2html/icons/crossref.png"></A>), nodes in a robot definition file are not derived
+from OpenInventor nodes.  Instead, a simple specialized parser is used
+to read '.rob'-files (see file 'basic/mpkBaseRobot.cpp').
+
+<P>
+A robot definition file typically contains several 'joint' nodes but
+at most one 'param' and 'selfcoll' node each.  (Although an arbitrary
+number of 'param' or 'selfcoll' nodes is allowed, in most cases, it
+makes sense to define at most one of each.)
+
+<P>
+The following list describes the details of each node type in the
+robot definition file.
+
+<P>
+<DL>
+<DT><STRONG>joint</STRONG></DT>
+<DD>A 'joint' structure defines a node in the kinematic tree
+  of the robot.
+
+<P>
+<B>Syntax:</B>
+<PRE>
+joint &lt;name&gt; {
+  &lt;field-type1&gt; &lt;field-params1&gt;
+  &lt;field-type2&gt; &lt;field-params2&gt;
+  ...
+}
+</PRE>
+
+<P>
+where &lt;name&gt; is a user-defined name for the joint, &lt;field-type&gt; is
+  one of the types listed below, and &lt;field-params&gt; is a correct set of
+  parameters as described for each of the types below.
+
+<P>
+A 'joint' node can optionally include the following fields
+  (of the form &lt;field-type&gt; &lt;field-params&gt;):
+
+<P>
+<DL>
+<DT><STRONG>parent &lt;parent-name&gt;</STRONG></DT>
+<DD>Attach the surrounding 'joint' node as a
+  child to the 'joint' node with name &lt;parent-name&gt;.  If this field is
+  omitted, then the 'joint' node defines the root of a new kinematic
+  tree that is fixed in the scene coordinate system.  Note that more
+  than one such tree is possible within a '.rob'-file.  The transform
+  of a 'joint' node is then the chain of transforms of all nodes on
+  the path back to the (unique) root of the tree.
+
+<P>
+</DD>
+<DT><STRONG>ConstTransl &lt;x&gt; &lt;y&gt; &lt;z&gt;</STRONG></DT>
+<DD>Add a constant (local) translation to
+  the node by the vector (&lt;x&gt;, &lt;y&gt;, &lt;z&gt;).
+
+<P>
+</DD>
+<DT><STRONG>ConstRot &lt;ax-x&gt; &lt;ax-y&gt; &lt;ax-z&gt; &lt;ang&gt;</STRONG></DT>
+<DD>Add a constant (local)
+  rotation to the node by the angle &lt;ang&gt; (in radians) around the axis
+  (&lt;ax-x&gt;, &lt;ax-y&gt;, &lt;ax-z&gt;).  The axis is assumed to go through the
+  origin of the (local) coordinate system.
+
+<P>
+</DD>
+<DT><STRONG>Transl1 &lt;x&gt; &lt;y&gt; &lt;z&gt; &lt;min&gt; &lt;max&gt;</STRONG></DT>
+<DD>Add a (local) parameterized
+  translation to the node along the vector (t*(&lt;max&gt; - &lt;min&gt;) + &lt;min&gt;)
+  * (&lt;x&gt;, &lt;y&gt;, &lt;z&gt;) where t is the parameter value in [0,1].  The
+  field 'param' (see below) must be added to specify the index of the
+  parameter (default 0).
+
+<P>
+</DD>
+<DT><STRONG>Rot1 &lt;ax-x&gt; &lt;ax-y&gt; &lt;ax-z&gt; &lt;min&gt; &lt;max&gt;</STRONG></DT>
+<DD>Add a (local)
+  parameterized rotation to the node by the angle t*(&lt;max&gt; - &lt;min&gt;) +
+  &lt;min&gt; (in radians) around the axis (&lt;ax-x&gt;, &lt;ax-y&gt;, &lt;ax-z&gt;) where t
+  is a normalized parameter in [0,1].  The axis is assumed to go
+  through the origin of the (local) coordinate system.  The field
+  'param' (see below) must be added to specify the index of the
+  parameter (default 0).
+
+<P>
+</DD>
+<DT><STRONG>ConstTransl_Rot1 &lt;x&gt; &lt;y&gt; &lt;z&gt; &lt;ax-x&gt; &lt;ax-y&gt; &lt;ax-z&gt; &lt;min&gt; &lt;max&gt;</STRONG></DT>
+<DD>Add a (local) concatenation of a parameterized rotation by the angle
+  t*(&lt;max&gt; - &lt;min&gt;) + &lt;min&gt; (in radians) around the axis (&lt;ax-x&gt;,
+  &lt;ax-y&gt;, &lt;ax-z&gt;), followed by a constant translation by (&lt;x&gt;, &lt;y&gt;,
+  &lt;z&gt;) to the node.  The parameter t is normalized in the interval
+  [0,1].  The axis of rotation is assumed to go through the origin of
+  the (local) coordinate system.  The field 'param' (see below) must
+  be added to specify the index of the parameter (default 0).
+
+<P>
+</DD>
+<DT><STRONG>param &lt;num&gt;</STRONG></DT>
+<DD>Specifies the index (in the configuration vector of
+  the robot) of the parameter that influences a transform of type
+  'Transl1', 'Rot1' or 'ConstTransl_Rot1' (see above).  Note that at
+  most one such transform can be given per 'joint' node.
+
+<P>
+</DD>
+<DT><STRONG>model0 &lt;iv-fname&gt;</STRONG></DT>
+<DD>Read a collision model from the file
+  &lt;iv-fname&gt; (in OpenInventor format).  This field is not obligatory.
+  If no collision model is given, the 'joint' node is considered for
+  kinematics computations only but not for collision checking (see,
+  e.g., file 'robots/freeflyingL.rob').
+
+<P>
+</DD>
+<DT><STRONG>model1 &lt;iv-fname&gt;</STRONG></DT>
+<DD>Read a second collision model.  Some
+  collision checking functions of the MPK library allow specifying
+  which collision model to use.  The second model could be a model of
+  smaller complexity that includes the first model 'model0'.  While
+  'model0' is always used for visualization, using another (simpler)
+  model for collision checking may result in a faster collision check.
+  Using a second collision model may be helpful for other purposes as
+  well.
+
+<P>
+</DD>
+<DT><STRONG>coll [TRUE | FALSE]</STRONG></DT>
+<DD>Default: TRUE (equals omitting the 'coll'
+  field altogether).  If this field is given and set to FALSE, then
+  the collision models are used for visualization only but not checked
+  for any collisions.
+
+<P>
+</DD>
+<DT><STRONG>tracePoint</STRONG></DT>
+<DD>If specified, a 'trace point' is added to the
+  'joint' node.  A trace point follows a (static) curve segment (which
+  is, in general, non-linear) in space when the robot moves from one
+  configuration to another.  The GUI of MPK can display such curves of
+  selected trace points to illustrate a robot's path.  The trace point
+  is by default at the origin of the local coordinate system.  To
+  realize another location, define an extra 'joint' node for the trace
+  point that does not contain a collision model.
+
+<P>
+</DD>
+</DL>
+
+<P>
+Note that multiple lines with constant transforms can be given within
+a single 'joint' node.  In this case, all of them will be concatenated
+in the given order into a single constant transform.  However, only a
+single parameterized transform can be given.  To realize a chain of
+parameterized transforms that affects a single collision model, use a
+chain of 'joint' nodes, each with a single parameterized transform and
+without 'model0' or 'model1' entries, except the last one.
+
+<P>
+<B>Example 1:</B> The following example (taken from
+'robots/puma500.rob') defines a 'joint' node with name 'Wrist3' that
+is attached to the 'joint' node named 'Wrist2'.  It can rotate around
+the (local) axis (0, -1, 0) driven by parameter 5 within the angular
+bounds (-2.61, 2.61).  A single geometric model is read from file
+'Puma500/puma_6.iv' and used for both visualization and collision
+checking.
+<PRE>
+joint Wrist3 {
+  parent Wrist2
+  Rot1 0 -1 0 -2.61 2.61
+  param 5
+  model0 "Puma500/puma_6.iv"
+}
+</PRE>
+
+<P>
+<B>Example 2:</B> This example defines a 'trace point' that moves
+together with the frame of 'joint' node 'Wrist3' but is translated by
+a (constant) vector (0, 0.09, 0).
+<PRE>
+joint TracePoint {
+  parent Wrist3
+  ConstTransl 0 0.09 0
+  tracePoint
+}
+</PRE>
+
+<P>
+</DD>
+<DT><STRONG>selfcoll</STRONG></DT>
+<DD>A 'selfcoll' structure lists all pairs of joints whose
+  link models should be checked for 'self-'collisions, that is,
+  collisions of links of the same robot.  If this structure is not
+  given, then no self-collisions are checked for the robot.
+
+<P>
+<B>Syntax:</B>
+<PRE>
+selfcoll {
+  &lt;name1-a&gt; &lt;name1-b&gt; 
+  &lt;name2-a&gt; &lt;name2-b&gt; 
+  ...
+}
+</PRE>
+where, in each row, &lt;name-a&gt; and &lt;name-b&gt; are the names of two
+different 'joint' structures (see above) of the same robot.  Note that
+both of these referenced 'joint' nodes should have a collision model
+defined.
+
+<P>
+</DD>
+<DT><STRONG>param</STRONG></DT>
+<DD>The 'param' structure contains information about the
+  individual parameters of the robot.  Since a parameter can affect
+  more than one joint, it would not make sense to store this
+  information within each individual 'joint' structure.
+
+<P>
+<B>Syntax:</B>
+<PRE>
+param {
+  &lt;param1-idx&gt; { &lt;opt1-a&gt; &lt;opt1-b&gt; ... }
+  &lt;param2-idx&gt; { &lt;opt2-a&gt; &lt;opt2-b&gt; ... }
+  ...
+}
+</PRE>
+  where &lt;param-idx&gt; is the index of a parameter in the robots
+  configuration vector (note that these indices start with 0), and
+  &lt;opt-a&gt; &lt;opt-b&gt; ... are options that will affect the indexed
+  parameter.  The following options are available:
+
+<P>
+<DL>
+<DT><STRONG>cyclic</STRONG></DT>
+<DD>Indicates that the corresponding parameter is cyclic,
+  i.e., it should 'wrap around' when it reaches a boundary of the
+  normalized interval [0,1].  Default: off
+
+<P>
+</DD>
+<DT><STRONG>passive</STRONG></DT>
+<DD>Indicates that the corresponding parameter should not
+  be modified during planning.  This can be used, e.g., for gripper
+  DOFs to prevent the planner from creating a path on which the
+  gripper randomly opens and closes.  However, the animation does
+  interpolate the corresponding parameter such that the gripper can
+  open and close during a motion sequence that consists of several key
+  configurations (see 'doc/fmstudio/index.html' for a definition of
+  'key configurations').
+
+<P>
+</DD>
+<DT><STRONG>weight &lt;val&gt;</STRONG></DT>
+<DD>Assigns the weight &lt;val&gt; to the parameter.
+  Weighted parameters can be useful in certain circumstances, e.g.,
+  for defining weighted norms on configurations.
+
+<P>
+</DD>
+<DT><STRONG>default &lt;val&gt;</STRONG></DT>
+<DD>Assigns the default value &lt;val&gt; (must be in
+  [0,1]) to the parameter.  Unless this option is specified, the
+  default value for all parameters is 0.5.
+
+<P>
+</DD>
+</DL>
+
+<P>
+</DD>
+</DL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html50"
+  HREF="node5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html48"
+  HREF="node3.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html42"
+  HREF="node3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html51"
+  HREF="node5.html">Hard-coded robots</A>
+<B> Up:</B> <A NAME="tex2html49"
+  HREF="node3.html">Robot definition</A>
+<B> Previous:</B> <A NAME="tex2html43"
+  HREF="node3.html">Robot definition</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Mitul Saha
+2003-03-10
+</ADDRESS>
+</BODY>
+</HTML>

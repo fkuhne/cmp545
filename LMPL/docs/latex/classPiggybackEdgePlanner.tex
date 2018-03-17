@@ -1,0 +1,75 @@
+\section{Piggyback\+Edge\+Planner Class Reference}
+\label{classPiggybackEdgePlanner}\index{Piggyback\+Edge\+Planner@{Piggyback\+Edge\+Planner}}
+
+
+{\ttfamily \#include $<$Edge\+Planner.\+h$>$}
+
+Inheritance diagram for Piggyback\+Edge\+Planner\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classPiggybackEdgePlanner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Piggyback\+Edge\+Planner} ({\bf C\+Space} $\ast$space, const Config \&a, const Config \&b, const Smart\+Pointer$<$ {\bf Edge\+Planner} $>$ \&e)\label{classPiggybackEdgePlanner_a8a7a0e442d566f471261f38f6c0b0ca7}
+
+\item 
+virtual bool {\bfseries Is\+Visible} ()\label{classPiggybackEdgePlanner_a29531b1409f23b9395f56ed7b3975deb}
+
+\item 
+virtual void {\bfseries Eval} (double u, Config \&x) const \label{classPiggybackEdgePlanner_a1b58547f0f4d4120f5a7b10ab65343c3}
+
+\item 
+virtual const Config \& {\bfseries Start} () const \label{classPiggybackEdgePlanner_a6f8e2b0637ee39fc46c25f2155628a21}
+
+\item 
+virtual const Config \& {\bfseries Goal} () const \label{classPiggybackEdgePlanner_abaf504e2b9aea8436edce876f169e358}
+
+\item 
+virtual {\bf C\+Space} $\ast$ {\bfseries Space} () const \label{classPiggybackEdgePlanner_a78922318d9668757c3fc31a75fe4793f}
+
+\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bfseries Copy} () const \label{classPiggybackEdgePlanner_afa82124bc879db5bf5fb9313ce987b6c}
+
+\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bfseries Reverse\+Copy} () const \label{classPiggybackEdgePlanner_a50453ad3d6b4ce6f2ac641f6ed5c20cd}
+
+\item 
+virtual double {\bfseries Priority} () const \label{classPiggybackEdgePlanner_a5b30aead46b654cd64080f288d96abc1}
+
+\item 
+virtual bool {\bfseries Plan} ()\label{classPiggybackEdgePlanner_a6b60eb41d119a0944401369be2c148f1}
+
+\item 
+virtual bool {\bfseries Done} () const \label{classPiggybackEdgePlanner_a550a9d05d08979531cbbc42cf43c6fd4}
+
+\item 
+virtual bool {\bfseries Failed} () const \label{classPiggybackEdgePlanner_ab16faca26566c9d4038cf586089ec6a7}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Config {\bfseries a}\label{classPiggybackEdgePlanner_a4c28f1ae75632a7a769c366ce9bd8594}
+
+\item 
+Config {\bfseries b}\label{classPiggybackEdgePlanner_a57d6166f6d0d62234940d83fe4c30553}
+
+\item 
+{\bf C\+Space} $\ast$ {\bfseries space}\label{classPiggybackEdgePlanner_a17ee36c4677e097582a8a826441eb434}
+
+\item 
+Smart\+Pointer$<$ {\bf Edge\+Planner} $>$ {\bfseries e}\label{classPiggybackEdgePlanner_a2626f6df43e3f41636ff1b861c989d56}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Edge planner that copies its truth value from another planner, but not the space nor the endpoints 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Edge\+Planner.\+h\item 
+Edge\+Planner.\+cpp\end{DoxyCompactItemize}

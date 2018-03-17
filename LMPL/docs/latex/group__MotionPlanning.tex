@@ -1,0 +1,55 @@
+\section{Motion\+Planning}
+\label{group__MotionPlanning}\index{Motion\+Planning@{Motion\+Planning}}
+
+
+Classes to assist in motion planning.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf Motion\+Planner\+Interface}
+\begin{DoxyCompactList}\small\item\em A base class for a generic motion planner, which can be used to compare multiple planning algorithms under a common interface. \end{DoxyCompactList}\item 
+class {\bf Motion\+Planner\+Factory}
+\begin{DoxyCompactList}\small\item\em A factory that assists with comparing the motion planners implemented in L\+M\+PL. \end{DoxyCompactList}\item 
+class {\bf C\+Space}
+\begin{DoxyCompactList}\small\item\em Motion planning configuration space base class. \end{DoxyCompactList}\item 
+class {\bf Edge\+Planner}
+\begin{DoxyCompactList}\small\item\em Abstract base class for an edge planner. \end{DoxyCompactList}\item 
+class {\bf Straight\+Line\+Epsilon\+Planner}
+\begin{DoxyCompactList}\small\item\em Straight-\/line edge planner that divides the segment until epsilon is reached. \end{DoxyCompactList}\item 
+class {\bf Straight\+Line\+Obstacle\+Distance\+Planner}
+\begin{DoxyCompactList}\small\item\em Straight-\/line edge planner that divides the segment until the segment distance is below \doxyref{C\+Space.\+Obstacle\+Distance()}{p.}{classCSpace_a364b5b0ebcc258c39a263914ad3a0a89} \end{DoxyCompactList}\item 
+class {\bf Bisection\+Epsilon\+Edge\+Planner}
+\item 
+class {\bf Explicit\+C\+Space}
+\begin{DoxyCompactList}\small\item\em Configuration space that exposes N obstacle checks. This functionality can be used in a motion planner to speed up planning by delaying certain expensive obstacle checks, or to provide reasons for infeasibility. \end{DoxyCompactList}\item 
+class {\bf Milestone\+Path}
+\begin{DoxyCompactList}\small\item\em A sequence of locally planned paths between milestones. \end{DoxyCompactList}\item 
+class {\bf Roadmap\+Planner}
+\begin{DoxyCompactList}\small\item\em A base roadmap planner class. \end{DoxyCompactList}\item 
+class {\bf Tree\+Roadmap\+Planner}
+\begin{DoxyCompactList}\small\item\em A base class to be used for tree-\/based roadmap planners. \end{DoxyCompactList}\item 
+class {\bf Perturbation\+Tree\+Planner}
+\begin{DoxyCompactList}\small\item\em A tree-\/based randomized planner that extends the roadmap by sampling the neighborhood of existing samples. \end{DoxyCompactList}\item 
+class {\bf R\+R\+T\+Planner}
+\begin{DoxyCompactList}\small\item\em A basic R\+RT (Rapidly-\/\+Exploring Random Tree) planner. \end{DoxyCompactList}\item 
+class {\bf Bidirectional\+R\+R\+T\+Planner}
+\begin{DoxyCompactList}\small\item\em A single-\/query R\+RT (Rapidly-\/\+Exploring Random Tree) planner. \end{DoxyCompactList}\item 
+class {\bf Multi\+Modal\+C\+Space$<$ Mode $>$}
+\begin{DoxyCompactList}\small\item\em Multi-\/modal configuration space base class. \end{DoxyCompactList}\item 
+class {\bf S\+B\+L\+Planner}
+\begin{DoxyCompactList}\small\item\em The S\+BL motion planner. \end{DoxyCompactList}\item 
+class {\bf S\+B\+L\+Tree}
+\begin{DoxyCompactList}\small\item\em A tree of configurations to be used in the S\+BL motion planner. \end{DoxyCompactList}\item 
+class {\bf S\+B\+L\+Tree\+With\+Index}
+\begin{DoxyCompactList}\small\item\em An \doxyref{S\+B\+L\+Tree}{p.}{classSBLTree} with a node index. \end{DoxyCompactList}\item 
+class {\bf S\+B\+L\+Subdivision}
+\begin{DoxyCompactList}\small\item\em A grid-\/based subdivision to be used for S\+BL. \end{DoxyCompactList}\item 
+class {\bf S\+B\+L\+Tree\+With\+Grid}
+\begin{DoxyCompactList}\small\item\em An S\+BL motion planner that uses a \doxyref{S\+B\+L\+Subdivision}{p.}{classSBLSubdivision} to pick the next node to expand, and nodes to connect. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classes to assist in motion planning. 
+

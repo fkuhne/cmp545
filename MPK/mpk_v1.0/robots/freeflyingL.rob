@@ -1,0 +1,39 @@
+#MPK v1.0 robot
+
+param {
+  3 { cyclic }
+  4 { cyclic }
+  5 { cyclic }
+}
+
+joint x_transl {
+  Transl1 1 0 0  -10  10
+  param 0
+}
+joint y_transl {
+  parent x_transl
+  Transl1 0 1 0  -10  10
+  param 1
+}
+joint z_transl {
+  parent y_transl
+  Transl1 0 0 1  -10  10
+  param 2
+}
+joint x_rot {
+  parent z_transl
+  Rot1 1 0 0  -3.142  3.142
+  param 3
+}
+joint y_rot {
+  parent x_rot
+  Rot1 0 1 0  -3.142  3.142
+  param 4 
+}
+joint z_rot {
+  parent y_rot
+  Rot1 0 0 1  -3.142  3.142
+  param 5 
+  model0 "FreeFlyingObject/L.iv"
+  tracePoint
+}

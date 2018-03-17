@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  mpkTransformCache</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">mpkTransformCache</A></H2></TD></H2></TD></TR></TABLE>
+<BLOCKQUOTE>Class for caching spatial transforms.  This class is used by <!1><A HREF="mpkAdaptSegmentChecker.html">mpkAdaptSegmentChecker</A> to avoid redundant computations of transforms while checking a segment for collisions.  Each segment checker maintains its own cache.   </BLOCKQUOTE>
+<HR>
+
+<DL>
+<P><TABLE>
+<DT><H3>Public Methods</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.21.1"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>mpkTransformCache</B> (int initsz=1)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.21.2"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>~mpkTransformCache</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.21.3"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>clear</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.21.4"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>bool </TD><TD><B>insert</B> (const <!1><A HREF="mpkTransform.html">mpkTransform</A>&amp; <!1><A HREF="mpkTransform.html#DOC.22.19">T</A>, unsigned <!1><A HREF="sblMilestone.html#DOC.32.21">i</A>, unsigned j, unsigned k)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.21.5"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>bool </TD><TD><B>load</B> (<!1><A HREF="mpkTransform.html">mpkTransform</A>&amp; <!1><A HREF="mpkTransform.html#DOC.22.19">T</A>, unsigned <!1><A HREF="sblMilestone.html#DOC.32.21">i</A>, unsigned j, unsigned k)<BR>
+<I></I>
+</TD></TR></TABLE></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>Each cached transform is indexed by a triple of values: the
+robot reference (i), the joint reference (j) and the position on
+the segment for which the transform is stored (k).  For the latter,
+this means that the segment is discretized.  In practice,
+discretization by a variable of type unsigned should be sufficient.</BLOCKQUOTE>
+<DL>
+
+<A NAME="mpkTransformCache"></A>
+<A NAME="DOC.21.1"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> mpkTransformCache(int initsz=1)</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="~mpkTransformCache"></A>
+<A NAME="DOC.21.2"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> ~mpkTransformCache()</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="clear"></A>
+<A NAME="DOC.21.3"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void clear()</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="insert"></A>
+<A NAME="DOC.21.4"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>bool insert(const <!1><A HREF="mpkTransform.html">mpkTransform</A>&amp; <!1><A HREF="mpkTransform.html#DOC.22.19">T</A>, unsigned <!1><A HREF="sblMilestone.html#DOC.32.21">i</A>, unsigned j, unsigned k)</B></TT>
+<DD>Inserts a new transform into the cache.  See above for a
+description of the index triple (i,j,k).
+<DL><DT><DD></DL><P>
+<A NAME="load"></A>
+<A NAME="DOC.21.5"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>bool load(<!1><A HREF="mpkTransform.html">mpkTransform</A>&amp; <!1><A HREF="mpkTransform.html#DOC.22.19">T</A>, unsigned <!1><A HREF="sblMilestone.html#DOC.32.21">i</A>, unsigned j, unsigned k)</B></TT>
+<DD>Tries to retrieve a transform from the cache.  See above for
+a description of the index triple (i,j,k).  Returns false if the
+transform is not in the cache, and true otherwise.
+<DL><DT><DD></DL><P></DL>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

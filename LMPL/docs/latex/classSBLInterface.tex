@@ -1,0 +1,70 @@
+\section{S\+B\+L\+Interface Class Reference}
+\label{classSBLInterface}\index{S\+B\+L\+Interface@{S\+B\+L\+Interface}}
+Inheritance diagram for S\+B\+L\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSBLInterface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries S\+B\+L\+Interface} ({\bf C\+Space} $\ast$space)\label{classSBLInterface_af696f2eb075ad3ac99477d4caa5b7ea3}
+
+\item 
+{\bfseries S\+B\+L\+Interface} ({\bf C\+Space} $\ast$space, bool grid, double grid\+Divs, int randomize\+Frequency)\label{classSBLInterface_afc33df95aaa9aa28c7795be70f4d460e}
+
+\item 
+void {\bfseries Init} (const Config \&q\+Start, const Config \&q\+Goal)\label{classSBLInterface_a41902b9740721fef100544f8bbf046b1}
+
+\item 
+virtual bool {\bfseries Can\+Add\+Milestone} () const \label{classSBLInterface_a0a41d52400a9bbb441f75c7f9798e561}
+
+\item 
+virtual int {\bfseries Add\+Milestone} (const Config \&q)\label{classSBLInterface_a5b0968f86076c51885d0e778047a49b2}
+
+\item 
+virtual void {\bfseries Get\+Milestone} (int i, Config \&q)\label{classSBLInterface_a8c8cc665a71b443806639a5259e549a6}
+
+\item 
+virtual int {\bfseries Plan\+More} ()\label{classSBLInterface_a676a4fc409b7387c76e30c0cd465ccda}
+
+\item 
+virtual int {\bfseries Num\+Iterations} () const \label{classSBLInterface_af41870c581eafdfbc48fd8f2e7601e59}
+
+\item 
+virtual int {\bfseries Num\+Milestones} () const \label{classSBLInterface_a0f23b1b83a783410af5112f4e5a57423}
+
+\item 
+virtual int {\bfseries Num\+Components} () const \label{classSBLInterface_adf31abc8d6efd1e130412d0d31f14bbb}
+
+\item 
+virtual bool {\bfseries Is\+Connected} (int ma, int mb) const \label{classSBLInterface_a8ddaea8dbe39145f7f77fc5799b4e996}
+
+\item 
+virtual void {\bfseries Get\+Path} (int ma, int mb, {\bf Milestone\+Path} \&path)\label{classSBLInterface_ab740abb21e614cc412b691c80a5b3eb0}
+
+\item 
+void {\bfseries Enumerate} (S\+B\+L\+Tree\+::\+Node $\ast$node, int index, {\bf Roadmap\+Planner} \&roadmap)\label{classSBLInterface_a3d4fa8f081896655c562793c78e347ac}
+
+\item 
+virtual void {\bfseries Get\+Roadmap} ({\bf Roadmap\+Planner} \&roadmap)\label{classSBLInterface_ac2d66ca5d75a7fa6a55db142360e564a}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Smart\+Pointer$<$ {\bf S\+B\+L\+Planner} $>$ {\bfseries sbl}\label{classSBLInterface_a78bfe02e938e062c74c2c7b889495572}
+
+\item 
+Config {\bfseries q\+Start}\label{classSBLInterface_a4e1e581845aedcf21175c4b5c4d46645}
+
+\item 
+Config {\bfseries q\+Goal}\label{classSBLInterface_ae303831c29066d157859d56cdee6ea19}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Any\+Motion\+Planner.\+cpp\end{DoxyCompactItemize}

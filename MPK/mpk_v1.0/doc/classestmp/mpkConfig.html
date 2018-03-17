@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  mpkConfig</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">mpkConfig</A></H2></TD></H2></TD></TR></TABLE>
+<BLOCKQUOTE>Contains the parameters of a normalized configuration (a point in the c-space <IMG BORDER=0 SRC=g000001.gif>).<BR> The operators <B>==,+,-,*,/</B> are defined for this class.</BLOCKQUOTE>
+<HR>
+
+<H2>Inheritance:</H2>
+<APPLET CODE="ClassGraph.class" WIDTH=600 HEIGHT=65>
+<param name=classes value="Mvector,M,CmpkConfig,MmpkConfig.html">
+<param name=before value="M,M">
+<param name=after value="Md_,M">
+<param name=indent value="0,1">
+<param name=arrowdir value="up">
+</APPLET>
+<HR>
+
+<DL>
+<P><TABLE>
+<DT><H3>Public Methods</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.8.1"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>mpkConfig</B> (int dim = 0)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="norm2"></A>
+<A NAME="DOC.8.2"></A>
+<IMG ALT="o" SRC=icon2.gif>double </TD><TD><B>norm2</B> () const <BR>
+<I>Euclidean norm squared.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="norm"></A>
+<A NAME="DOC.8.3"></A>
+<IMG ALT="o" SRC=icon2.gif>double </TD><TD><B>norm</B> () const <BR>
+<I>Euclidean norm.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="dist2"></A>
+<A NAME="DOC.8.4"></A>
+<IMG ALT="o" SRC=icon2.gif>double </TD><TD><B>dist2</B> (const <!1><A HREF="mpkConfig.html">mpkConfig</A>&amp; y) const <BR>
+<I>Euclidean distance squared.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="dist"></A>
+<A NAME="DOC.8.5"></A>
+<IMG ALT="o" SRC=icon2.gif>double </TD><TD><B>dist</B> (const <!1><A HREF="mpkConfig.html">mpkConfig</A>&amp; y) const <BR>
+<I>Euclidean distance.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="Linf"></A>
+<A NAME="DOC.8.6"></A>
+<IMG ALT="o" SRC=icon2.gif>double </TD><TD><B>Linf</B> () const <BR>
+<I>Linf norm.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="Linf_dist"></A>
+<A NAME="DOC.8.7"></A>
+<IMG ALT="o" SRC=icon2.gif>double </TD><TD><B>Linf_dist</B> (const <!1><A HREF="mpkConfig.html">mpkConfig</A>&amp; y) const <BR>
+<I>Linf distance.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="Linf_dist"></A>
+<A NAME="DOC.8.8"></A>
+<IMG ALT="o" SRC=icon2.gif>double </TD><TD><B>Linf_dist</B> (const <!1><A HREF="mpkConfig.html">mpkConfig</A>&amp; y, const vector&lt;double&gt;&amp; weights) const <BR>
+<I>weighted Linf distance.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="lin_interpol"></A>
+<A NAME="DOC.8.9"></A>
+<IMG ALT="o" SRC=icon2.gif>void </TD><TD><B>lin_interpol</B> (double <!1><A HREF="sblMilestone.html#DOC.32.23">t</A>, const <!1><A HREF="mpkConfig.html">mpkConfig</A>&amp; q0, const <!1><A HREF="mpkConfig.html">mpkConfig</A>&amp; q1)<BR>
+<I>Set to <B>t*q0 + (1-t)*q1</B>.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="print"></A>
+<A NAME="DOC.8.10"></A>
+<IMG ALT="o" SRC=icon2.gif>void </TD><TD><B>print</B> (ostream&amp; out = cout) const <BR>
+<I>Print to output stream.</I>
+</TD></TR></TABLE></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>Contains the parameters of a normalized configuration (a point in the c-space <IMG BORDER=0 SRC=g000001.gif>).<BR> The operators <B>==,+,-,*,/</B> are defined for this class.</BLOCKQUOTE>
+<DL>
+
+<A NAME="mpkConfig"></A>
+<A NAME="DOC.8.1"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> mpkConfig(int dim = 0)</B></TT>
+<DL><DT><DT><B>Parameters:</B><DD><B>dim</B> -  number of parameters (dimension of c-space).<BR><DD></DL><P></DL>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

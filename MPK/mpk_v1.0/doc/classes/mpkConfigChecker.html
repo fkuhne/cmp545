@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  mpkConfigChecker</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">mpkConfigChecker</A></H2></TD></H2></TD></TR></TABLE>
+<HR>
+
+<DL>
+<P><TABLE>
+<DT><H3>Public Methods</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.7.1"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>mpkConfigChecker</B> (const vector&lt;<!1><A HREF="mpkCollPair.html">mpkCollPair</A>&gt;* <!1><A HREF="mpkCollPairSet.html#DOC.6.3">test_pairs</A>, <!1><A HREF="mpkRobotCollection.html">mpkRobotCollection</A>* <!1><A HREF="mpkTraceVis.html#DOC.20.10">robots</A>)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.7.2"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>bool </TD><TD><B>collision</B> (const <!1><A HREF="mpkConfig.html">mpkConfig</A>* <!1><A HREF="sblMilestone.html#DOC.32.22">q</A>, mpk_idx model_id=0)<BR>
+<I>tells if the configuration q is colliding</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="clearance"></A>
+<A NAME="DOC.7.3"></A>
+<IMG ALT="o" SRC=icon2.gif>double </TD><TD><B>clearance</B> (const <!1><A HREF="mpkConfig.html">mpkConfig</A>* <!1><A HREF="sblMilestone.html#DOC.32.22">q</A>, mpk_idx model_id=0, bool store_dist=true)<BR>
+<I>returns lower bound on clearance (0 if colliding or separation &lt; delta for some pair) </I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.7.4"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>mpk_idx </TD><TD><B>collpair_idx</B> ()<BR>
+<I>the index (in test_pairs) of the colliding (or too close) pair (undef if no collision).</I>
+</TD></TR></TABLE></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<DL>
+
+<A NAME="mpkConfigChecker"></A>
+<A NAME="DOC.7.1"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> mpkConfigChecker(const vector&lt;<!1><A HREF="mpkCollPair.html">mpkCollPair</A>&gt;* <!1><A HREF="mpkCollPairSet.html#DOC.6.3">test_pairs</A>, <!1><A HREF="mpkRobotCollection.html">mpkRobotCollection</A>* <!1><A HREF="mpkTraceVis.html#DOC.20.10">robots</A>)</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="collision"></A>
+<A NAME="DOC.7.2"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>bool collision(const <!1><A HREF="mpkConfig.html">mpkConfig</A>* <!1><A HREF="sblMilestone.html#DOC.32.22">q</A>, mpk_idx model_id=0)</B></TT>
+<DD>tells if the configuration q is colliding
+<DL><DT><DD></DL><P>
+<A NAME="collpair_idx"></A>
+<A NAME="DOC.7.4"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>mpk_idx collpair_idx()</B></TT>
+<DD>the index (in test_pairs) of the colliding (or too
+close) pair (undef if no collision). 
+<DL><DT><DD></DL><P></DL>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DT><B>Friends:</B><DD>  class <!1><A HREF="mpkSimpleSegmentChecker.html">mpkSimpleSegmentChecker</A><BR>  class mpkDiscrSegmentChecker<BR>  class <!1><A HREF="mpkAdaptSegmentChecker.html">mpkAdaptSegmentChecker</A><BR><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

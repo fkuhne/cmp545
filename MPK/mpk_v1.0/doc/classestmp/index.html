@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>Table of Contents</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<H1>Table of Contents</H1>
+<H2>Classes</H2>
+<UL>
+<LI><A HREF="mpkAdaptSegmentChecker.html">mpkAdaptSegmentChecker</A> <I>Adaptive collision checker for straight line segments in c-space. </I>
+<LI><A HREF="mpkBVControl.html">mpkBVControl</A> <I>Functions for visualization of bounding volumes (BVs) and related functions.</I>
+<LI><A HREF="mpkBaseRobot.html">mpkBaseRobot</A> <I>The base class for all robots.  It can represent arbitrary kinematic trees, free-flying objects and objects moving along complex constrained trajectories. </I>
+<LI><A HREF="mpkCollDistAlgo.html">mpkCollDistAlgo</A> <I>Collision and distance computation algorithms.</I>
+<LI><A HREF="mpkCollPair.html">mpkCollPair</A> <I>Represents a candidate pair of rigid objects to be tested for collisions or for which a minimum workspace clearance is desired. A list or vector of all pairs that could potentially collide defines the necessary collision checks for the entire scenario (see mpkCollPairSet). </I>
+<LI><A HREF="mpkCollPairSet.html">mpkCollPairSet</A> <I>Represents a collection of candidate rigid body pairs (robot link, obstacle) and (robot link, robot link) that can be passed to a collision checker class.  In particular, the public member <B>test_pairs</B> can be passed to <A HREF=SimplePointChecker.html>SimplePointChecker</A>, <A HREF=AdaptPointChecker.html>SimplePointChecker</A> or <A HREF=mpkSimpleSegmentChecker.html>SimplePointChecker</A>.  mpkRobot links that do not move, because they have no parameter dependencies, are not paired with any (static) obstacles. </I>
+<LI><A HREF="mpkConfig.html">mpkConfig</A> <I>Contains the parameters of a normalized configuration (a point in the c-space <IMG BORDER=0 SRC=g000001.gif>).<BR> The operators <B>==,+,-,*,/</B> are defined for this class.</I>
+<LI><A HREF="mpkConfigChecker.html">mpkConfigChecker</A>
+<LI><A HREF="mpkConstRot.html">mpkConstRot</A>
+<LI><A HREF="mpkConstTransl.html">mpkConstTransl</A>
+<LI><A HREF="mpkConstTransl_Rot1.html">mpkConstTransl_Rot1</A>
+<LI><A HREF="mpkDemoRobot.html">mpkDemoRobot</A>
+<LI><A HREF="mpkFreeFlyingObject.html">mpkFreeFlyingObject</A>
+<LI><A HREF="mpkFuncTransf.html">mpkFuncTransf</A>
+<LI><A HREF="mpkGUI.html">mpkGUI</A> <I>Functions for reading scene files and for realizing a simple but powerful GUI.</I>
+<LI><A HREF="mpkIncludeFile.html">mpkIncludeFile</A> <I>Extension of SoSeparator to include environments in scene files.  Required only for reading scene files. </I>
+<LI><A HREF="mpkMouseControl.html">mpkMouseControl</A> <I>Functions for realizing mouse interaction (picking links, controlling the configuration with a cartesian interface, etc.)</I>
+<LI><A HREF="mpkObstacle.html">mpkObstacle</A> <I>Extended Inventor node type (derived from SoSeparator) to define obstacle nodes in the scene file. </I>
+<LI><A HREF="mpkObstacleCollection.html">mpkObstacleCollection</A> <I>Extracts all obstacles (nodes of type <!1><A HREF="mpkObstacle.html">mpkObstacle</A>) from an Inventor scene graph and builds PQP collision models for them. </I>
+<LI><A HREF="mpkPathSmoother.html">mpkPathSmoother</A> <I>Simple path smoother that iteratively picks a random pair of points on the path and then tries to shortcut the section between the two points by a straight line segment.  If compiled with <B>ADAPT_COLLCHECKER</B> defined, it uses <!1><A HREF="mpkAdaptSegmentChecker.html">mpkAdaptSegmentChecker</A> and otherwise it uses <!1><A HREF="mpkSimpleSegmentChecker.html">mpkSimpleSegmentChecker</A>.</I>
+<LI><A HREF="mpkRobot.html">mpkRobot</A> <I>Extended Inventor node type (derived from SoSeparator) to define robot nodes in the scene file.   </I>
+<LI><A HREF="mpkRobotCollection.html">mpkRobotCollection</A> <I>Extracts all robots (nodes of type <!1><A HREF="mpkRobot.html">mpkRobot</A>) from an Inventor scene graph and builds PQP collision models for them. </I>
+<LI><A HREF="mpkRot1.html">mpkRot1</A>
+<LI><A HREF="mpkSimpleSegmentChecker.html">mpkSimpleSegmentChecker</A> <I>Simple lazy segment checker that discretizes a segment up to a certain resolution <IMG BORDER=0 SRC=g000002.gif> in c-space and checks the generated intermediate configurations for collisions using the <!1><A HREF="mpkConfigChecker.html">mpkConfigChecker</A> class. </I>
+<LI><A HREF="mpkTraceVis.html">mpkTraceVis</A> <I>Class for representing and visualizing the curve traced by a tracePoint on a robot link.</I>
+<LI><A HREF="mpkTransform.html">mpkTransform</A> <I>The base class for representing spatial transforms. </I>
+<LI><A HREF="mpkTransformCache.html">mpkTransformCache</A> <I>Class for caching spatial transforms.  This class is used by <!1><A HREF="mpkAdaptSegmentChecker.html">mpkAdaptSegmentChecker</A> to avoid redundant computations of transforms while checking a segment for collisions.  Each segment checker maintains its own cache.   </I>
+<LI><A HREF="mpkTransl1.html">mpkTransl1</A>
+<LI><A HREF="sblBin.html">sblBin</A> <I>Class sblBin is used to keep record on the distribution of the nodes on C-space.  Each bin containts an identifier, given by i, a counter where the number of nodes in the bin is kept (count), and a space to store a certain number of nodes per bin. There are also some auxiliary functions.</I>
+<LI><A HREF="sblEdge.html">sblEdge</A> <I>Defines and implements the connection between two milestones on the tree. It is composed by information on both nodes (their indexes), the distance between them and the status on collision checking for the straight-line segment that joins both milestones on the C-space.  </I>
+<LI><A HREF="sblMilestone.html">sblMilestone</A> <I>A sblMilestone represents the data structure for storing a free sample. The SBL sblPlanner grows two trees (one from the start and one form the goal) consisting of these collision-free 'sblMilestones' as nodes. Each sblMilestone stores in itself links to its parent node and children nodes.</I>
+<LI><A HREF="sblPlanner.html">sblPlanner</A> <I>This contains the implementation of the basic sblPlanner. The current planner uses a simple segment checker (class <!1><A HREF="mpkSimpleSegmentChecker.html">mpkSimpleSegmentChecker</A>) for the collision tests. </I>
+<LI><A HREF="sblPrioritizeEdges.html">sblPrioritizeEdges</A> <I>Friend class of <!1><A HREF="sblEdge.html">sblEdge</A> with operator for comparison of Objects. This class is used to compare two edges by their lengths.</I>
+<LI><A HREF="sblRandVal.html">sblRandVal</A> <I>Generates uniform random numbers in [0, 1).</I>
+<LI><A HREF="sblRn.html">sblRn</A> <I>Used by the sblPlanner class to obtain random samples in configuration space.</I>
+<LI><A HREF="sblTree.html">sblTree</A> <I>Defines the tree structure for the sblPlanner roadmaps.  This class is responsible of maintain the record of all nodes added so far as well as to keep a representation of the sampled C-space in order to choose a node to expand according to the density of nodes.</I>
+</UL>
+<P><I><A HREF="HIER.html">Hierarchy of classes</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

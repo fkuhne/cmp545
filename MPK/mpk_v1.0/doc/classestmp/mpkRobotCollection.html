@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  mpkRobotCollection</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">mpkRobotCollection</A></H2></TD></H2></TD></TR></TABLE>
+<BLOCKQUOTE>Extracts all robots (nodes of type <!1><A HREF="mpkRobot.html">mpkRobot</A>) from an Inventor scene graph and builds PQP collision models for them. </BLOCKQUOTE>
+<HR>
+
+<DL>
+<P><TABLE>
+<DT><H3>Public Fields</H3><DD><TR>
+<TD VALIGN=TOP>
+<A NAME="rob"></A>
+<A NAME="DOC.17.10"></A>
+<IMG ALT="o" SRC=icon2.gif>vector&lt;<!1><A HREF="mpkBaseRobot.html">mpkBaseRobot</A>*&gt;  </TD><TD><B>rob</B> <BR>
+<I>Pointers to the robots in the collection.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="param_weights"></A>
+<A NAME="DOC.17.11"></A>
+<IMG ALT="o" SRC=icon2.gif>vector&lt;double&gt;  </TD><TD><B>param_weights</B> <BR>
+<I>weights for parameters (useful for animation discretization etc.).</I>
+</TD></TR></TABLE></P>
+
+<P><TABLE>
+<DT><H3>Public Methods</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.17.1"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>mpkRobotCollection</B> (SoGroup* scenegraph)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.17.2"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A><!1><A HREF="mpkBaseRobot.html">mpkBaseRobot</A>* </TD><TD><B>operator[]</B> (int <!1><A HREF="sblMilestone.html#DOC.32.21">i</A>)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.17.3"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>num_robots</B> () const <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.17.4"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>num_params</B> () const <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.17.5"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>first_param_idx</B> (int robidx) const <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.17.6"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>set_config</B> (const vector&lt;double&gt;&amp; conf)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.17.7"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>get_config</B> (vector&lt;double&gt;&amp; conf) const <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.17.8"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>compute_forward_kinematics</B> (int rob_idx=-1)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.17.9"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>update_iv_transf</B> (int rob_idx=-1)<BR>
+<I></I>
+</TD></TR></TABLE></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>Extracts all robots (nodes of type <!1><A HREF="mpkRobot.html">mpkRobot</A>) from an Inventor scene graph and builds PQP collision models for them. </BLOCKQUOTE>
+<DL>
+
+<A NAME="mpkRobotCollection"></A>
+<A NAME="DOC.17.1"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> mpkRobotCollection(SoGroup* scenegraph)</B></TT>
+<DD><B>scenegraph</B> is the inventor scene graph which will be
+parsed for mpkRobot nodes.
+<DL><DT><DD></DL><P>
+<A NAME="operator[]"></A>
+<A NAME="DOC.17.2"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B><!1><A HREF="mpkBaseRobot.html">mpkBaseRobot</A>* operator[](int <!1><A HREF="sblMilestone.html#DOC.32.21">i</A>)</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="num_robots"></A>
+<A NAME="DOC.17.3"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int num_robots() const </B></TT>
+<DD>Returns the number of robots in the collection.
+<DL><DT><DD></DL><P>
+<A NAME="num_params"></A>
+<A NAME="DOC.17.4"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int num_params() const </B></TT>
+<DD>Returns the total number of parameters (DOFs) of all robots
+together (the dimension of the cross-product c-space of all
+robots).
+<DL><DT><DD></DL><P>
+<A NAME="first_param_idx"></A>
+<A NAME="DOC.17.5"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int first_param_idx(int robidx) const </B></TT>
+<DD>Returns for robot with index <B>robidx</B> where its
+parameters start in the joint configuration of all robots in the
+collection.  For <B>robidx</B> this value is always 0 and for
+subsequent robots it equals the sum of the numbers of parameters
+of all robots with smaller indices.
+<DL><DT><DD></DL><P>
+<A NAME="set_config"></A>
+<A NAME="DOC.17.6"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void set_config(const vector&lt;double&gt;&amp; conf)</B></TT>
+<DD>Sets the joint configuration of the robots to <B>conf</B>.
+Note: subsequent explicit calls to
+<!1><A HREF="mpkRobotCollection.html#DOC.17.8">compute_forward_kinematics</A>
+and
+<!1><A HREF="mpkRobotCollection.html#DOC.17.9">update_iv_transf</A>
+necessary to update the collision model and Inventor scene graph
+transforms of the robots.
+<DL><DT><DD></DL><P>
+<A NAME="get_config"></A>
+<A NAME="DOC.17.7"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void get_config(vector&lt;double&gt;&amp; conf) const </B></TT>
+<DD>Copies the joint configuration of the robots to <B>conf</B>.
+<DL><DT><DD></DL><P>
+<A NAME="compute_forward_kinematics"></A>
+<A NAME="DOC.17.8"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void compute_forward_kinematics(int rob_idx=-1)</B></TT>
+<DD>Computes the forward kinematics for robot with index <B>
+rob_idx</B> or all robots (if <B>rob_idx==-1</B>).     
+<DL><DT><DD></DL><P>
+<A NAME="update_iv_transf"></A>
+<A NAME="DOC.17.9"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void update_iv_transf(int rob_idx=-1)</B></TT>
+<DD>Updates the Inventor scene graph transfors for robot with
+index <B>rob_idx</B> or all robots (if <B>rob_idx==-1</B>).
+Note: 
+<!1><A HREF="mpkRobotCollection.html#DOC.17.8">compute_forward_kinematics</A>
+must have been called before to update the kinematics of the robot.
+<DL><DT><DD></DL><P></DL>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DT><B>See Also:</B><DD><!1><A HREF="mpkObstacle.html">mpkObstacle</A><BR><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

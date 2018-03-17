@@ -1,0 +1,93 @@
+\section{S\+B\+L\+Planner Class Reference}
+\label{classSBLPlanner}\index{S\+B\+L\+Planner@{S\+B\+L\+Planner}}
+
+
+The S\+BL motion planner.  
+
+
+
+
+{\ttfamily \#include $<$S\+B\+L.\+h$>$}
+
+Inheritance diagram for S\+B\+L\+Planner\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSBLPlanner}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef S\+B\+L\+Tree\+::\+Node {\bfseries Node}\label{classSBLPlanner_a169f36f0433ca8891996f18efd99c2c5}
+
+\item 
+typedef {\bf S\+B\+L\+Tree\+::\+Edge\+Info} {\bfseries Edge\+Info}\label{classSBLPlanner_a017acd60bfdb134c65c3892a9b3de842}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries S\+B\+L\+Planner} ({\bf C\+Space} $\ast$)\label{classSBLPlanner_aba6b0ad96b263b92f5614a50faf51657}
+
+\item 
+virtual void {\bfseries Cleanup} ()\label{classSBLPlanner_a9c9151f0f8d42922446ce9f3e262a8bd}
+
+\item 
+virtual void {\bfseries Init} (const Config \&q\+Start, const Config \&q\+Goal)\label{classSBLPlanner_a6792ee71a70539e7ed11724e3d04343b}
+
+\item 
+virtual bool {\bfseries Extend} ()\label{classSBLPlanner_a3452dcaba7bd47077db65b34b44a7896}
+
+\item 
+virtual Node $\ast$ {\bfseries Pick\+Connection} ({\bf S\+B\+L\+Tree} $\ast$t, const Config \&x)\label{classSBLPlanner_ac025a72b7e61fc770bd68d5e5e9abc3d}
+
+\item 
+bool {\bfseries Is\+Done} () const \label{classSBLPlanner_a4fb16b752eb517eedea2d1f07c78f4de}
+
+\item 
+void {\bfseries Create\+Path} ({\bf Milestone\+Path} \&path) const \label{classSBLPlanner_ae7db86e45375469860f9e25c4bb1a1ee}
+
+\item 
+bool {\bfseries Check\+Path} (Node $\ast$n\+Start, Node $\ast$n\+Goal)\label{classSBLPlanner_aecba9031d2cdc33bd4377fce2c80bf96}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf C\+Space} $\ast$ {\bfseries space}\label{classSBLPlanner_ae967b2aec44781dfc10390fc4271c4c9}
+
+\item 
+double {\bfseries max\+Extend\+Distance}\label{classSBLPlanner_a5f708507dc2086c6021fc71b521b89be}
+
+\item 
+int {\bfseries max\+Extend\+Iters}\label{classSBLPlanner_a654954ceca455738212fec15ec5b65c2}
+
+\item 
+double {\bfseries edge\+Connection\+Threshold}\label{classSBLPlanner_ae89e7029457ab560ef036aa6815b6420}
+
+\item 
+int {\bfseries num\+Iters}\label{classSBLPlanner_a04d8e3976fd27a1e13afacedcf54c57e}
+
+\item 
+{\bf S\+B\+L\+Tree} $\ast$ {\bfseries t\+Start}\label{classSBLPlanner_a62122ad392d5c41577b7007f43e352aa}
+
+\item 
+{\bf S\+B\+L\+Tree} $\ast$ {\bfseries t\+Goal}\label{classSBLPlanner_a868c99b7fdb9304260634336b56e70e4}
+
+\item 
+std\+::list$<$ {\bf Edge\+Info} $>$ {\bfseries output\+Path}\label{classSBLPlanner_aee8ab7d492e1e868b918714a233d931a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The S\+BL motion planner. 
+
+Call Init() with the start and goal configuration. While Is\+Done() returns false, call Extend() . Retrieve the path with Create\+Path().
+
+Parameters are max\+Extend\+Distance, max\+Extend\+Iters, edge\+Connection\+Threshold. max\+Extend\+Distance is the radius of the neighborhood sampling. max\+Extend\+Iters is the number of iters of shrinking the neighborhood sampling radius until we quit. edge\+Connection\+Threshold is the minimum distance required for a connection between the two trees. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+B\+L.\+h\item 
+S\+B\+L.\+cpp\end{DoxyCompactItemize}

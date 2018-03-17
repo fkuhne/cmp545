@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002 (1.62) JA patch-1.4
+patched version by:  Kenshi Muto, Debian Project.
+LaTeX2HTML 2002 (1.62),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Command line options</TITLE>
+<META NAME="description" CONTENT="Command line options">
+<META NAME="keywords" CONTENT="fmstudio">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="fmstudio.css">
+
+<LINK REL="next" HREF="node4.html">
+<LINK REL="previous" HREF="node2.html">
+<LINK REL="up" HREF="fmstudio.html">
+<LINK REL="next" HREF="node4.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html42"
+  HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html40"
+  HREF="fmstudio.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html34"
+  HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html43"
+  HREF="node4.html">Keyboard commands and mouse</A>
+<B> Up:</B> <A NAME="tex2html41"
+  HREF="fmstudio.html">FMSTUDIO User Manual</A>
+<B> Previous:</B> <A NAME="tex2html35"
+  HREF="node2.html">Example session</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00030000000000000000"></A>
+<A NAME="sec:command_line_options"></A>
+<BR>
+Command line options
+</H1>
+
+<P>
+The general command line syntax is (when starting from within the mpk
+home directory, e.g., mpk_v1.0):
+
+<P>
+<PRE>
+  prog/fmstudio &lt;scenefile&gt; [-b &lt;level&gt;] [-db &lt;filename&gt;] [&lt;idx1&gt; &lt;idx2&gt; ...]
+</PRE>
+
+<P>
+Fmstudio requires at least one command line parameter: the name of the
+scene file (e.g., scenes/demo1.iv).
+
+<P>
+The '-b' option, followed by an integer number, can be used to specify
+a different level of bounding volumes for visualization (bounding
+volume visualization can be switched on/off by pressing the 'B' key,
+see <A HREF="node5.html#sec:general_commands"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="file:/usr/share/latex2html/icons/crossref.png"></A>).  By default, the top-level BVs of
+each object are shown.  Only one level of BVs can be shown (too
+cluttered otherwise).
+
+<P>
+The '-db' option, followed by a file name, can be used to specify the
+name of the configuration database explicitly.  By default, fmstudio
+reads the configuration database ('Database config', see
+<A HREF="node6.html#sec:database_commands"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="file:/usr/share/latex2html/icons/crossref.png"></A>) from a file with the same base as the
+scene file but with '.conf' extension - provided that this file
+exists.  With this option, an arbitrary file name can be given.
+
+<P>
+An optional sequence [&lt;idx1&gt; &lt;idx2&gt; ...] of integer indices (of
+arbitrary length) can be given to define an initial task.  That is,
+the configurations with the given indices (from the 'Database config'
+list) will be inserted into the 'Plan config' list.  Note that indices
+start with 1.  If no indices are given, the task needs to setup
+manually (see <A HREF="node6.html#sec:database_commands"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="file:/usr/share/latex2html/icons/crossref.png"></A>).
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html42"
+  HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html40"
+  HREF="fmstudio.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html34"
+  HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html43"
+  HREF="node4.html">Keyboard commands and mouse</A>
+<B> Up:</B> <A NAME="tex2html41"
+  HREF="fmstudio.html">FMSTUDIO User Manual</A>
+<B> Previous:</B> <A NAME="tex2html35"
+  HREF="node2.html">Example session</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Mitul Saha
+2003-03-10
+</ADDRESS>
+</BODY>
+</HTML>

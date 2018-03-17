@@ -1,0 +1,458 @@
+\documentclass[letter,12pt]{article}
+
+\begin{document}
+
+\title{Creating new scenes and robot types in MPK}
+\maketitle
+%\tableofcontents
+
+
+\section{Introduction}
+
+This document describes how to create new planning scenarios (scene
+files) and how to extend MPK with new robot types.  
+
+In principle, both can be done without re-compiling any source-code.
+However, if a new robot type requires an unusual parameterization, some
+re-compiling may be necessary (see hard-coded robots).
+
+
+\section{Scene definition}
+\label{sec:scenes}
+
+The MPK scene file format is a simple extension of the Open Inventor
+scene file format.  (For details on the Inventor file format, see an
+Open Inventor manual or tutorial.)  Scene files have an '.iv'
+extension and are typically in the scenes/ subdirectory.  MPK extends
+the Inventor file format by three node types: {\bf mpkObstacle}, {\bf
+  mpkRobot} and {\bf mpkIncludeFile} (for details, see below).  These
+are derived from the Inventor node type SoSeparator and can thus have
+the same attributes as a SoSeparator, in addition to their own
+specific attributes that are described below.
+
+Before creating a new scene file, it can be helpful to examine one of
+the existing scene files.  E.g., take a look at 'scenes/demo1.iv'.
+One can add an arbitrary number of robots (nodes of type 'mpkRobot')
+to the scene file, each with its own 'scaleFactor' and 'translation'
+attributes, in the same way as the one robot that is included in the
+'demo1.iv' file.  See \ref{sec:robots} on which robots are available
+and how to define new robots.
+
+Besides robots, one can include one or more files (nodes of type
+'mpkIncludeFile') containing obstacles, like the wall file 'wall.iv'
+in 'demo1.iv'.  Obstacles can also be defined directly using nodes of
+type 'mpkObstacle' (e.g., see file 'scenes/mov\_puma\_vwbody.iv').
+
+The following descriptions summarize the available MPK node types:
+
+\begin{description}
+  
+\item[mpkObstacle] Adds a static obstacle to the scene.
+  
+  {\bf Example:} The following example defines an obstacle named 'box'
+  that is a cube of side lengths (1, 2, 3).  Note that Cube is an
+  Inventor node type. 
+\begin{verbatim}
+DEF box mpkObstacle {
+  DEF __triangulate__ Cube {
+    width 1
+    height 2
+    depth 3
+  }
+}
+\end{verbatim}
+  
+  The 'DEF \_\_triangulate\_\_' tag is required to tell MPK that the
+  triangles of the Cube node are part of the collision model.
+  Similarly, one could add other Inventor models inside the same
+  mpkObstacle node.  Without the 'DEF \_\_triangulate\_\_' tag, the
+  models would be displayed but not be checked for collisions.  Note
+  that all tagged models within the same mpkObstacle node are merged
+  into a single PQP hierarchy for collision checking.
+  
+  In the example, the 'DEF box' definition can be omitted.  However,
+  it is recommended to give names to obstacles to identify which
+  obstacles are involved in collisions.
+
+\item[mpkRobot]  Adds a robot to the scene.
+  
+  {\bf Example 1:} In the following example, a robot named 'puma1' is
+  inserted into the scene.  Its kinematics definition is read from the
+  'puma500\_torch.rob' robot definition file in the 'robots/'
+  subdirectory.  The robot is scaled, translated and rotated before it
+  is inserted into the scene.
+\begin{verbatim}
+DEF puma1 mpkRobot {
+  fileName "puma500_torch.rob"
+  scaleFactor 2.2
+  translation 0 -0.01 0
+  rotation 0 -1 0 1.6
+}
+\end{verbatim}
+  The rows with scaleFactor, translation and rotation can be omitted.
+  The rotation parameters are x,y and z of the rotation axis followed
+  by the rotation angle (in radians).
+  
+  List the '.rob'-files in the 'robots/' subdirectory to see which
+  robot types are currently available.
+  
+  {\bf Example 2:} In this example, a hard-coded robot of type
+  DEMOROBOT is inserted.  Hard-coded robots have the advantage that
+  they can realize arbitrary parameterizations (see files
+  'robots/mpkDemoRobot.H' and 'robots/mpkDemoRobot.cpp').
+\begin{verbatim}
+DEF robot mpkRobot {
+  robotType DEMOROBOT
+  scaleFactor 1.5
+  translation 0 1 0
+  rotation 0 1 0 3.2
+}
+\end{verbatim}
+  
+  Check the file 'basic/mpk\_robot\_type.h' and the '.cpp'-files in the
+  'robots/'-subdirectory to see which hard-coded robot types are
+  currently available.
+  
+  For information on how to create your own types of robots, see
+  \ref{sec:robots}.
+
+
+\item[mpkIncludeFile] Includes a file with a complete scene
+  definition.
+
+{\bf Syntax:}
+\begin{verbatim}
+DEF <identifier> mpkIncludeFile {
+  name "<filename>"
+}
+\end{verbatim}
+
+The part 'DEF <identifier>' can be omitted.  However, this may result
+in ambiguous object identifiers if the same file is included several
+times.  To avoid ambiguities, define a different name for each
+mpkIncludeFile node that loads the same file.
+
+\end{description}
+
+
+\section{Robot definition}
+\label{sec:robots}
+
+In MPK, robots are defined as kinematic trees.  A node in such a
+kinematic tree is a 'joint' structure, which typically defines a
+rotation around an axis or a translation along a vector.  The
+transform can be parameterized but need not.  A 'joint' node can
+optionally have an associated link model.  For example, a kinematic
+chain of three translational and three rotational joints can be used
+to define a rigid free-flying object.  In this case, only the last
+joint would have a 'link' model, in this case the free-flying object
+(for visualization and collision checking).
+
+MPK offers two possibilities to define the kinematic tree of a robot:
+
+\begin{description}
+  
+\item[Robot files (.rob)] This is the recommended approach for
+  defining robot kinematics.  Robots can be added and removed without
+  recompiling any code.  However, joints types are limited to
+  prismatic and revolute.  For more details, see \ref{sec:rob_file}.
+  
+\item[Hard-coded robots (.H, .cpp)] This approach consists of defining
+  the kinematics description in source code files.  The advantage is
+  that arbitrary kinematics and parameterizations can be defined.  The
+  disadvantage is that the some code needs to be recompiled whenever a
+  new robot type is added.  For more details, see
+  \ref{sec:rob_hardcoded}.
+
+\end{description}
+
+\subsection{Robot definition files (.rob)}
+\label{sec:rob_file}
+
+A robot definition file ('.rob' file in the 'robots/'-subdirectory)
+defines the kinematics of a particular robot type, that is, the
+structure of the kinematic tree of a single robot of this type.  (See,
+e.g., 'robots/puma500.rob'.) The first line in the file must be of the
+form
+\begin{verbatim}
+  #MPK v<num> robot
+\end{verbatim}
+where <num> is the current MPK version number, e.g., 1.0.  The rest of
+the file consists of a collection of nodes of types {\bf joint}, {\bf
+  selfcoll} and {\bf param}.
+
+Although these node structures in the robot definition files are
+syntactically similar to OpenInventor nodes, the two should not be
+confused.  Unlike MPK nodes in the scene definition files (see
+\ref{sec:scenes}), nodes in a robot definition file are not derived
+from OpenInventor nodes.  Instead, a simple specialized parser is used
+to read '.rob'-files (see file 'basic/mpkBaseRobot.cpp').
+
+A robot definition file typically contains several 'joint' nodes but
+at most one 'param' and 'selfcoll' node each.  (Although an arbitrary
+number of 'param' or 'selfcoll' nodes is allowed, in most cases, it
+makes sense to define at most one of each.)
+
+The following list describes the details of each node type in the
+robot definition file.
+
+\begin{description}
+  
+\item[joint] A 'joint' structure defines a node in the kinematic tree
+  of the robot.
+
+{\bf Syntax:}
+\begin{verbatim}
+joint <name> {
+  <field-type1> <field-params1>
+  <field-type2> <field-params2>
+  ...
+}
+\end{verbatim}
+  
+  where <name> is a user-defined name for the joint, <field-type> is
+  one of the types listed below, and <field-params> is a correct set of
+  parameters as described for each of the types below.
+  
+  A 'joint' node can optionally include the following fields
+  (of the form <field-type> <field-params>):
+
+\begin{description}
+  
+\item[parent <parent-name>] Attach the surrounding 'joint' node as a
+  child to the 'joint' node with name <parent-name>.  If this field is
+  omitted, then the 'joint' node defines the root of a new kinematic
+  tree that is fixed in the scene coordinate system.  Note that more
+  than one such tree is possible within a '.rob'-file.  The transform
+  of a 'joint' node is then the chain of transforms of all nodes on
+  the path back to the (unique) root of the tree.
+  
+\item[ConstTransl <x> <y> <z>] Add a constant (local) translation to
+  the node by the vector (<x>, <y>, <z>).
+  
+\item[ConstRot <ax-x> <ax-y> <ax-z> <ang>] Add a constant (local)
+  rotation to the node by the angle <ang> (in radians) around the axis
+  (<ax-x>, <ax-y>, <ax-z>).  The axis is assumed to go through the
+  origin of the (local) coordinate system.
+  
+\item[Transl1 <x> <y> <z> <min> <max>] Add a (local) parameterized
+  translation to the node along the vector (t*(<max> - <min>) + <min>)
+  * (<x>, <y>, <z>) where t is the parameter value in [0,1].  The
+  field 'param' (see below) must be added to specify the index of the
+  parameter (default 0).
+  
+\item[Rot1 <ax-x> <ax-y> <ax-z> <min> <max>] Add a (local)
+  parameterized rotation to the node by the angle t*(<max> - <min>) +
+  <min> (in radians) around the axis (<ax-x>, <ax-y>, <ax-z>) where t
+  is a normalized parameter in [0,1].  The axis is assumed to go
+  through the origin of the (local) coordinate system.  The field
+  'param' (see below) must be added to specify the index of the
+  parameter (default 0).
+  
+\item[ConstTransl\_Rot1 <x> <y> <z> <ax-x> <ax-y> <ax-z> <min> <max>]
+  Add a (local) concatenation of a parameterized rotation by the angle
+  t*(<max> - <min>) + <min> (in radians) around the axis (<ax-x>,
+  <ax-y>, <ax-z>), followed by a constant translation by (<x>, <y>,
+  <z>) to the node.  The parameter t is normalized in the interval
+  [0,1].  The axis of rotation is assumed to go through the origin of
+  the (local) coordinate system.  The field 'param' (see below) must
+  be added to specify the index of the parameter (default 0).
+  
+\item[param <num>] Specifies the index (in the configuration vector of
+  the robot) of the parameter that influences a transform of type
+  'Transl1', 'Rot1' or 'ConstTransl\_Rot1' (see above).  Note that at
+  most one such transform can be given per 'joint' node.
+  
+\item[model0 <iv-fname>] Read a collision model from the file
+  <iv-fname> (in OpenInventor format).  This field is not obligatory.
+  If no collision model is given, the 'joint' node is considered for
+  kinematics computations only but not for collision checking (see,
+  e.g., file 'robots/freeflyingL.rob').
+  
+\item[model1 <iv-fname>] Read a second collision model.  Some
+  collision checking functions of the MPK library allow specifying
+  which collision model to use.  The second model could be a model of
+  smaller complexity that includes the first model 'model0'.  While
+  'model0' is always used for visualization, using another (simpler)
+  model for collision checking may result in a faster collision check.
+  Using a second collision model may be helpful for other purposes as
+  well.
+  
+\item[coll [TRUE | FALSE]] Default: TRUE (equals omitting the 'coll'
+  field altogether).  If this field is given and set to FALSE, then
+  the collision models are used for visualization only but not checked
+  for any collisions.
+  
+\item[tracePoint] If specified, a 'trace point' is added to the
+  'joint' node.  A trace point follows a (static) curve segment (which
+  is, in general, non-linear) in space when the robot moves from one
+  configuration to another.  The GUI of MPK can display such curves of
+  selected trace points to illustrate a robot's path.  The trace point
+  is by default at the origin of the local coordinate system.  To
+  realize another location, define an extra 'joint' node for the trace
+  point that does not contain a collision model.
+
+\end{description}
+
+Note that multiple lines with constant transforms can be given within
+a single 'joint' node.  In this case, all of them will be concatenated
+in the given order into a single constant transform.  However, only a
+single parameterized transform can be given.  To realize a chain of
+parameterized transforms that affects a single collision model, use a
+chain of 'joint' nodes, each with a single parameterized transform and
+without 'model0' or 'model1' entries, except the last one.
+
+{\bf Example 1:} The following example (taken from
+'robots/puma500.rob') defines a 'joint' node with name 'Wrist3' that
+is attached to the 'joint' node named 'Wrist2'.  It can rotate around
+the (local) axis (0, -1, 0) driven by parameter 5 within the angular
+bounds (-2.61, 2.61).  A single geometric model is read from file
+'Puma500/puma_6.iv' and used for both visualization and collision
+checking.
+\begin{verbatim}
+joint Wrist3 {
+  parent Wrist2
+  Rot1 0 -1 0 -2.61 2.61
+  param 5
+  model0 "Puma500/puma_6.iv"
+}
+\end{verbatim}
+
+{\bf Example 2:} This example defines a 'trace point' that moves
+together with the frame of 'joint' node 'Wrist3' but is translated by
+a (constant) vector (0, 0.09, 0).
+\begin{verbatim}
+joint TracePoint {
+  parent Wrist3
+  ConstTransl 0 0.09 0
+  tracePoint
+}
+\end{verbatim}
+
+
+\item[selfcoll] A 'selfcoll' structure lists all pairs of joints whose
+  link models should be checked for 'self-'collisions, that is,
+  collisions of links of the same robot.  If this structure is not
+  given, then no self-collisions are checked for the robot.
+
+{\bf Syntax:}
+\begin{verbatim}
+selfcoll {
+  <name1-a> <name1-b> 
+  <name2-a> <name2-b> 
+  ...
+}
+\end{verbatim}
+where, in each row, <name-a> and <name-b> are the names of two
+different 'joint' structures (see above) of the same robot.  Note that
+both of these referenced 'joint' nodes should have a collision model
+defined.
+
+
+\item[param] The 'param' structure contains information about the
+  individual parameters of the robot.  Since a parameter can affect
+  more than one joint, it would not make sense to store this
+  information within each individual 'joint' structure.
+
+  {\bf Syntax:}
+\begin{verbatim}
+param {
+  <param1-idx> { <opt1-a> <opt1-b> ... }
+  <param2-idx> { <opt2-a> <opt2-b> ... }
+  ...
+}
+\end{verbatim}
+  where <param-idx> is the index of a parameter in the robots
+  configuration vector (note that these indices start with 0), and
+  <opt-a> <opt-b> ... are options that will affect the indexed
+  parameter.  The following options are available:
+
+\begin{description}
+  
+\item[cyclic] Indicates that the corresponding parameter is cyclic,
+  i.e., it should 'wrap around' when it reaches a boundary of the
+  normalized interval [0,1].  Default: off
+  
+\item[passive] Indicates that the corresponding parameter should not
+  be modified during planning.  This can be used, e.g., for gripper
+  DOFs to prevent the planner from creating a path on which the
+  gripper randomly opens and closes.  However, the animation does
+  interpolate the corresponding parameter such that the gripper can
+  open and close during a motion sequence that consists of several key
+  configurations (see 'doc/fmstudio/index.html' for a definition of
+  'key configurations').
+ 
+\item[weight <val>] Assigns the weight <val> to the parameter.
+  Weighted parameters can be useful in certain circumstances, e.g.,
+  for defining weighted norms on configurations.
+  
+\item[default <val>] Assigns the default value <val> (must be in
+  [0,1]) to the parameter.  Unless this option is specified, the
+  default value for all parameters is 0.5.
+
+\end{description}
+
+
+\end{description}
+
+
+
+\subsection{Hard-coded robots}
+\label{sec:rob_hardcoded}
+
+Hard-coded robots offer the possibility to define arbitrary
+parameterizations, but adding a new hard-coded robot requires
+recompiling the MPK library and all programs that use it.  By default,
+only two hard-coded robots are defined: The type DEMOROBOT (see
+mpkDemoRobot.cpp,.H) demonstrates how arbitrary parameterizations can
+be realized.  The other type, FREEFLYINGOBJECT (also see
+mpkFreeFlyingObject.cpp,.H), is to make definition of free-flying
+objects more comfortable: compare the two alternatives shown in the
+file 'scenes/demo1.iv'.  Using the hard-coded type FREEFLYINGOBJECT, it
+is only necessary to specify the file name of the collision model
+('FreeFlyingObjects/rod.iv' in the example).  With the other
+alternative, the '.rob' file must include both the kinematics
+description and the name of the collision model (see
+'robots/freeflyingL.rob').
+
+To add a new hard-coded robot type 'mpkNewRob' to the MPK library,
+perform the following steps (replace 'NewRob' by the name you would
+like to give the robot):
+
+\begin{enumerate}
+  
+\item Create a subdirectory ivmodels/NewRob and copy all inventor link
+  models of the new robot into this directory.
+ 
+\item Create files robots/mpkNewRob.cpp and robots/mpkNewRob.H (cf
+  mpkDemoRobot.cpp and mpkDemoRobot.H).  In the robot definition, make
+  sure that you refer to the link models that you copied into the
+  'ivmodels/NewRob' directory just before.
+
+\item Edit the file basic/mpk\_robot\_type.h and add:
+  \begin{itemize}
+  \item \#include "mpkNewRob.H"
+  \item MPKNEWROB to 'mpk\_robot\_type'
+  \end{itemize}
+ 
+\item Edit file basic/Robot.cpp and add:
+\begin{itemize}
+\item SO\_NODE\_DEFINE\_ENUM\_VALUE(mpk\_robot\_type, MPKNEWROB) to
+  the mpkRobot constructor
+\item a 'case MPKNEWROB' for the new robot type to the switch
+  statement in Robot::init()
+\end{itemize}
+ 
+\item Unix: In the 'robots/Makefile', add mpkNewRob.cpp to the SRC
+  list and then call 'make' from the MPK home directory.  Windows: Add
+  mpkNewRob.cpp to the current visual studio project and rebuild it.
+  
+\end{enumerate}
+
+\end{document}
+
+
+
+
+
+

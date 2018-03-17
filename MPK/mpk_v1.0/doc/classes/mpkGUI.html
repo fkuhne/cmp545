@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  mpkGUI</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">mpkGUI</A></H2></TD></H2></TD></TR></TABLE>
+<BLOCKQUOTE>Functions for reading scene files and for realizing a simple but powerful GUI.</BLOCKQUOTE>
+<HR>
+
+<DL>
+<P><TABLE>
+<DT><H3>Public Fields</H3><DD><TR>
+<TD VALIGN=TOP>
+<A NAME="myViewer"></A>
+<A NAME="DOC.11.7"></A>
+<IMG ALT="o" SRC=icon2.gif>static   SoWinExaminerViewer* </TD><TD><B>myViewer</B> <BR>
+<I>Windows version only</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="myWindow"></A>
+<A NAME="DOC.11.8"></A>
+<IMG ALT="o" SRC=icon2.gif>static   HWND </TD><TD><B>myWindow</B> <BR>
+<I>Windows version only</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="myViewer"></A>
+<A NAME="DOC.11.9"></A>
+<IMG ALT="o" SRC=icon2.gif>static   SoXtExaminerViewer* </TD><TD><B>myViewer</B> <BR>
+<I>Unix version only</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="myWindow"></A>
+<A NAME="DOC.11.10"></A>
+<IMG ALT="o" SRC=icon2.gif>static   Widget </TD><TD><B>myWindow</B> <BR>
+<I>Unix version only</I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.11.11"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   SoPerspectiveCamera* </TD><TD><B>myCamera</B> <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.11.12"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   SoSeparator* </TD><TD><B>root</B> <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.11.13"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   SoSeparator* </TD><TD><B>scene</B> <BR>
+<I></I>
+</TD></TR></TABLE></P>
+
+<P><TABLE>
+<DT><H3>Public Methods</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.11.1"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   void </TD><TD><B>init</B> (char* argv[], void (*myKeyPressCB)(void* , SoEventCallback* )=0, void (*<!1><A HREF="mpkMouseControl.html#DOC.13.2">myMouseButtonCB</A>)(void* , SoEventCallback* )=0)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.11.2"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   void </TD><TD><B>read_scene</B> (const char* scene_fname)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.11.3"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   <!1><A HREF="mpkRobotCollection.html">mpkRobotCollection</A>* </TD><TD><B>get_robots</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.11.4"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   <!1><A HREF="mpkObstacleCollection.html">mpkObstacleCollection</A>* </TD><TD><B>get_obstacles</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.11.5"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   void </TD><TD><B>start</B> (const char* win_title = "MPK")<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.11.6"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   void </TD><TD><B>save_snapshot</B> (const char* image_fname)<BR>
+<I></I>
+</TD></TR></TABLE></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>Functions for reading scene files and for realizing a simple but powerful GUI.</BLOCKQUOTE>
+<DL>
+
+<A NAME="init"></A>
+<A NAME="DOC.11.1"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   void init(char* argv[], void (*myKeyPressCB)(void* , SoEventCallback* )=0, void (*<!1><A HREF="mpkMouseControl.html#DOC.13.2">myMouseButtonCB</A>)(void* , SoEventCallback* )=0)</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="read_scene"></A>
+<A NAME="DOC.11.2"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   void read_scene(const char* scene_fname)</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="get_robots"></A>
+<A NAME="DOC.11.3"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   <!1><A HREF="mpkRobotCollection.html">mpkRobotCollection</A>* get_robots()</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="get_obstacles"></A>
+<A NAME="DOC.11.4"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   <!1><A HREF="mpkObstacleCollection.html">mpkObstacleCollection</A>* get_obstacles()</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="start"></A>
+<A NAME="DOC.11.5"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   void start(const char* win_title = "MPK")</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="save_snapshot"></A>
+<A NAME="DOC.11.6"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   void save_snapshot(const char* image_fname)</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="myCamera"></A>
+<A NAME="DOC.11.11"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   SoPerspectiveCamera* myCamera</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="root"></A>
+<A NAME="DOC.11.12"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   SoSeparator* root</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="scene"></A>
+<A NAME="DOC.11.13"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   SoSeparator* scene</B></TT>
+<DL><DT><DD></DL><P></DL>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

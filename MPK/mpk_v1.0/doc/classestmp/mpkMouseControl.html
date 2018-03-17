@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  mpkMouseControl</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">mpkMouseControl</A></H2></TD></H2></TD></TR></TABLE>
+<BLOCKQUOTE>Functions for realizing mouse interaction (picking links, controlling the configuration with a cartesian interface, etc.)</BLOCKQUOTE>
+<HR>
+
+<DL>
+<P><TABLE>
+<DT><H3>Public Fields</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.13.11"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   PQP_Model* </TD><TD><B>mouseptr</B> <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.13.12"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   double </TD><TD><B>scene_size</B> <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.13.13"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   bool </TD><TD><B>link_attached_to_cursor</B> <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.13.14"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   bool </TD><TD><B>move_to_target_mode</B> <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.13.15"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   <!1><A HREF="mpkBaseRobot.html">mpkBaseRobot</A>* </TD><TD><B>picked_rob</B> <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.13.16"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   int </TD><TD><B>picked_rob_idx</B> <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.13.17"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   int </TD><TD><B>picked_dof</B> <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.13.18"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   <!1><A HREF="mpkBaseRobot.html#DOC.2.2">mpkBaseRobot::Joint</A>* </TD><TD><B>picked_joint</B> <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.13.19"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   int </TD><TD><B>picked_joint_idx</B> <BR>
+<I></I>
+</TD></TR></TABLE></P>
+
+<P><TABLE>
+<DT><H3>Public Methods</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.13.1"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   void </TD><TD><B>init</B> (SoGroup* scene_root, <!1><A HREF="mpkRobotCollection.html">mpkRobotCollection</A>* <!1><A HREF="mpkMouseControl.html#DOC.13.20">robots</A>, <!1><A HREF="mpkObstacleCollection.html">mpkObstacleCollection</A>* <!1><A HREF="mpkMouseControl.html#DOC.13.21">obstacles</A>, void (*status_callback)()=0)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.13.2"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   void </TD><TD><B>myMouseButtonCB</B> (void* userData, SoEventCallback* eventCB)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.13.3"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   SoSeparator* </TD><TD><B>ivroot</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.13.4"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   bool </TD><TD><B>get_show_cross_cursor</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.13.5"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   void </TD><TD><B>set_show_cross_cursor</B> (bool on)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.13.6"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   void </TD><TD><B>move_cross_cursor_1d</B> (int ax, double incr)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.13.7"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   void </TD><TD><B>get_cross_cursor_pos</B> (double&amp; <!1><A HREF="mpkTraceVis.html#DOC.20.6.1">x</A>, double&amp; y, double&amp; z)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.13.8"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   void </TD><TD><B>set_cross_cursor_pos</B> (double <!1><A HREF="mpkTraceVis.html#DOC.20.6.1">x</A>, double y, double z)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.13.9"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   void </TD><TD><B>update_rubber_line</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.13.10"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   void </TD><TD><B>move_robot_point_to</B> (const double pgoal[3])<BR>
+<I></I>
+</TD></TR></TABLE></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>Functions for realizing mouse interaction (picking links, controlling the configuration with a cartesian interface, etc.)</BLOCKQUOTE>
+<DL>
+
+<A NAME="init"></A>
+<A NAME="DOC.13.1"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   void init(SoGroup* scene_root, <!1><A HREF="mpkRobotCollection.html">mpkRobotCollection</A>* <!1><A HREF="mpkMouseControl.html#DOC.13.20">robots</A>, <!1><A HREF="mpkObstacleCollection.html">mpkObstacleCollection</A>* <!1><A HREF="mpkMouseControl.html#DOC.13.21">obstacles</A>, void (*status_callback)()=0)</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="myMouseButtonCB"></A>
+<A NAME="DOC.13.2"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   void myMouseButtonCB(void* userData, SoEventCallback* eventCB)</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="ivroot"></A>
+<A NAME="DOC.13.3"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   SoSeparator* ivroot()</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="get_show_cross_cursor"></A>
+<A NAME="DOC.13.4"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   bool get_show_cross_cursor()</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="set_show_cross_cursor"></A>
+<A NAME="DOC.13.5"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   void set_show_cross_cursor(bool on)</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="move_cross_cursor_1d"></A>
+<A NAME="DOC.13.6"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   void move_cross_cursor_1d(int ax, double incr)</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="get_cross_cursor_pos"></A>
+<A NAME="DOC.13.7"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   void get_cross_cursor_pos(double&amp; <!1><A HREF="mpkTraceVis.html#DOC.20.6.1">x</A>, double&amp; y, double&amp; z)</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="set_cross_cursor_pos"></A>
+<A NAME="DOC.13.8"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   void set_cross_cursor_pos(double <!1><A HREF="mpkTraceVis.html#DOC.20.6.1">x</A>, double y, double z)</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="update_rubber_line"></A>
+<A NAME="DOC.13.9"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   void update_rubber_line()</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="move_robot_point_to"></A>
+<A NAME="DOC.13.10"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   void move_robot_point_to(const double pgoal[3])</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="mouseptr"></A>
+<A NAME="DOC.13.11"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   PQP_Model* mouseptr</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="scene_size"></A>
+<A NAME="DOC.13.12"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   double scene_size</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="link_attached_to_cursor"></A>
+<A NAME="DOC.13.13"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   bool link_attached_to_cursor</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="move_to_target_mode"></A>
+<A NAME="DOC.13.14"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   bool move_to_target_mode</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="picked_rob"></A>
+<A NAME="DOC.13.15"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   <!1><A HREF="mpkBaseRobot.html">mpkBaseRobot</A>* picked_rob</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="picked_rob_idx"></A>
+<A NAME="DOC.13.16"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   int picked_rob_idx</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="picked_dof"></A>
+<A NAME="DOC.13.17"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   int picked_dof</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="picked_joint"></A>
+<A NAME="DOC.13.18"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   <!1><A HREF="mpkBaseRobot.html#DOC.2.2">mpkBaseRobot::Joint</A>* picked_joint</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="picked_joint_idx"></A>
+<A NAME="DOC.13.19"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   int picked_joint_idx</B></TT>
+<DL><DT><DD></DL><P></DL>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

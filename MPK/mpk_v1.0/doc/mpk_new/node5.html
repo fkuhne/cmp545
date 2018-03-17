@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002 (1.62) JA patch-1.4
+patched version by:  Kenshi Muto, Debian Project.
+LaTeX2HTML 2002 (1.62),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Hard-coded robots</TITLE>
+<META NAME="description" CONTENT="Hard-coded robots">
+<META NAME="keywords" CONTENT="mpk_new">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="mpk_new.css">
+
+<LINK REL="previous" HREF="node4.html">
+<LINK REL="up" HREF="node3.html">
+<LINK REL="next" HREF="node6.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html58"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html56"
+  HREF="node3.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html52"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html59"
+  HREF="node6.html">About this document ...</A>
+<B> Up:</B> <A NAME="tex2html57"
+  HREF="node3.html">Robot definition</A>
+<B> Previous:</B> <A NAME="tex2html53"
+  HREF="node4.html">Robot definition files (.rob)</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00032000000000000000"></A>
+<A NAME="sec:rob_hardcoded"></A>
+<BR>
+Hard-coded robots
+</H2>
+
+<P>
+Hard-coded robots offer the possibility to define arbitrary
+parameterizations, but adding a new hard-coded robot requires
+recompiling the MPK library and all programs that use it.  By default,
+only two hard-coded robots are defined: The type DEMOROBOT (see
+mpkDemoRobot.cpp,.H) demonstrates how arbitrary parameterizations can
+be realized.  The other type, FREEFLYINGOBJECT (also see
+mpkFreeFlyingObject.cpp,.H), is to make definition of free-flying
+objects more comfortable: compare the two alternatives shown in the
+file 'scenes/demo1.iv'.  Using the hard-coded type FREEFLYINGOBJECT, it
+is only necessary to specify the file name of the collision model
+('FreeFlyingObjects/rod.iv' in the example).  With the other
+alternative, the '.rob' file must include both the kinematics
+description and the name of the collision model (see
+'robots/freeflyingL.rob').
+
+<P>
+To add a new hard-coded robot type 'mpkNewRob' to the MPK library,
+perform the following steps (replace 'NewRob' by the name you would
+like to give the robot):
+
+<P>
+
+<OL>
+<LI>Create a subdirectory ivmodels/NewRob and copy all inventor link
+  models of the new robot into this directory.
+
+<P>
+</LI>
+<LI>Create files robots/mpkNewRob.cpp and robots/mpkNewRob.H (cf
+  mpkDemoRobot.cpp and mpkDemoRobot.H).  In the robot definition, make
+  sure that you refer to the link models that you copied into the
+  'ivmodels/NewRob' directory just before.
+
+<P>
+</LI>
+<LI>Edit the file basic/mpk_robot_type.h and add:
+  
+<UL>
+<LI>#include "mpkNewRob.H"
+</LI>
+<LI>MPKNEWROB to 'mpk_robot_type'
+  
+</LI>
+</UL>
+
+<P>
+</LI>
+<LI>Edit file basic/Robot.cpp and add:
+
+<UL>
+<LI>SO_NODE_DEFINE_ENUM_VALUE(mpk_robot_type, MPKNEWROB) to
+  the mpkRobot constructor
+</LI>
+<LI>a 'case MPKNEWROB' for the new robot type to the switch
+  statement in Robot::init()
+</LI>
+</UL>
+
+<P>
+</LI>
+<LI>Unix: In the 'robots/Makefile', add mpkNewRob.cpp to the SRC
+  list and then call 'make' from the MPK home directory.  Windows: Add
+  mpkNewRob.cpp to the current visual studio project and rebuild it.
+
+<P>
+</LI>
+</OL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html58"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html56"
+  HREF="node3.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html52"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html59"
+  HREF="node6.html">About this document ...</A>
+<B> Up:</B> <A NAME="tex2html57"
+  HREF="node3.html">Robot definition</A>
+<B> Previous:</B> <A NAME="tex2html53"
+  HREF="node4.html">Robot definition files (.rob)</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Mitul Saha
+2003-03-10
+</ADDRESS>
+</BODY>
+</HTML>

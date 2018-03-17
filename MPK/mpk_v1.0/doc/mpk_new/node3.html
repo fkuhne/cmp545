@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002 (1.62) JA patch-1.4
+patched version by:  Kenshi Muto, Debian Project.
+LaTeX2HTML 2002 (1.62),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Robot definition</TITLE>
+<META NAME="description" CONTENT="Robot definition">
+<META NAME="keywords" CONTENT="mpk_new">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="mpk_new.css">
+
+<LINK REL="next" HREF="node6.html">
+<LINK REL="previous" HREF="node2.html">
+<LINK REL="up" HREF="mpk_new.html">
+<LINK REL="next" HREF="node4.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html38"
+  HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html36"
+  HREF="mpk_new.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html30"
+  HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html39"
+  HREF="node4.html">Robot definition files (.rob)</A>
+<B> Up:</B> <A NAME="tex2html37"
+  HREF="mpk_new.html">Creating new scenes and</A>
+<B> Previous:</B> <A NAME="tex2html31"
+  HREF="node2.html">Scene definition</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00030000000000000000"></A>
+<A NAME="sec:robots"></A>
+<BR>
+Robot definition
+</H1>
+
+<P>
+In MPK, robots are defined as kinematic trees.  A node in such a
+kinematic tree is a 'joint' structure, which typically defines a
+rotation around an axis or a translation along a vector.  The
+transform can be parameterized but need not.  A 'joint' node can
+optionally have an associated link model.  For example, a kinematic
+chain of three translational and three rotational joints can be used
+to define a rigid free-flying object.  In this case, only the last
+joint would have a 'link' model, in this case the free-flying object
+(for visualization and collision checking).
+
+<P>
+MPK offers two possibilities to define the kinematic tree of a robot:
+
+<P>
+<DL>
+<DT><STRONG>Robot files (.rob)</STRONG></DT>
+<DD>This is the recommended approach for
+  defining robot kinematics.  Robots can be added and removed without
+  recompiling any code.  However, joints types are limited to
+  prismatic and revolute.  For more details, see <A HREF="node4.html#sec:rob_file"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="file:/usr/share/latex2html/icons/crossref.png"></A>.
+
+<P>
+</DD>
+<DT><STRONG>Hard-coded robots (.H, .cpp)</STRONG></DT>
+<DD>This approach consists of defining
+  the kinematics description in source code files.  The advantage is
+  that arbitrary kinematics and parameterizations can be defined.  The
+  disadvantage is that the some code needs to be recompiled whenever a
+  new robot type is added.  For more details, see
+  <A HREF="node5.html#sec:rob_hardcoded"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="file:/usr/share/latex2html/icons/crossref.png"></A>.
+
+<P>
+</DD>
+</DL>
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html40"
+  HREF="node4.html">Robot definition files (.rob)</A>
+<LI><A NAME="tex2html41"
+  HREF="node5.html">Hard-coded robots</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html38"
+  HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html36"
+  HREF="mpk_new.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html30"
+  HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html39"
+  HREF="node4.html">Robot definition files (.rob)</A>
+<B> Up:</B> <A NAME="tex2html37"
+  HREF="mpk_new.html">Creating new scenes and</A>
+<B> Previous:</B> <A NAME="tex2html31"
+  HREF="node2.html">Scene definition</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Mitul Saha
+2003-03-10
+</ADDRESS>
+</BODY>
+</HTML>

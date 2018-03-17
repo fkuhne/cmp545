@@ -1,0 +1,101 @@
+\section{Explicit\+Edge\+Planner Class Reference}
+\label{classExplicitEdgePlanner}\index{Explicit\+Edge\+Planner@{Explicit\+Edge\+Planner}}
+
+
+Default edge planner\+: checks each constraint sequentially using the space\textquotesingle{}s Local\+Planner(a,b,i) method.  
+
+
+
+
+{\ttfamily \#include $<$Explicit\+C\+Space.\+h$>$}
+
+Inheritance diagram for Explicit\+Edge\+Planner\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classExplicitEdgePlanner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Explicit\+Edge\+Planner} ({\bf Explicit\+C\+Space} $\ast$space, const Config \&a, const Config \&b, bool init=true)\label{classExplicitEdgePlanner_a7fc6a9c3fbc0e4f207da6064c9c4df72}
+
+\item 
+virtual bool {\bfseries Is\+Visible} ()\label{classExplicitEdgePlanner_a7873eb9ad5597113338c5734a3dd03c2}
+
+\item 
+virtual bool {\bfseries Is\+Visible} (int i)\label{classExplicitEdgePlanner_a9fc5016e083f7865a52c3fa63b42a191}
+
+\item 
+virtual void {\bfseries Check\+Visible} (std\+::vector$<$ bool $>$ \&visible)\label{classExplicitEdgePlanner_a2c90b7e4529a189c13d89df0539e700a}
+
+\item 
+virtual void {\bfseries Eval} (double u, Config \&x) const \label{classExplicitEdgePlanner_a91a17a13a7a3d2495ac3b00412d04cdb}
+
+\item 
+virtual const Config \& {\bfseries Start} () const \label{classExplicitEdgePlanner_ade0d4aaf20fde1c03e3737b71d2ac032}
+
+\item 
+virtual const Config \& {\bfseries Goal} () const \label{classExplicitEdgePlanner_a4a60813bd0d83e9ca0b387aac5834a62}
+
+\item 
+virtual {\bf C\+Space} $\ast$ {\bfseries Space} () const \label{classExplicitEdgePlanner_a3fa395c82f553d4fdfc730ad271aa90e}
+
+\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bfseries Copy} () const \label{classExplicitEdgePlanner_af761565d7a676e321e06f4464b67a7a4}
+
+\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bfseries Reverse\+Copy} () const \label{classExplicitEdgePlanner_a4073c6d786fa30e4997e6e3819b197f2}
+
+\item 
+bool {\bfseries Plan\+All} ()\label{classExplicitEdgePlanner_aff439370c5ce1270049b623a4817dfaf}
+
+\item 
+virtual double {\bfseries Priority} () const \label{classExplicitEdgePlanner_a03b16719f5f7cbc4bfe539bcf13ea68b}
+
+\item 
+virtual bool {\bfseries Plan} ()\label{classExplicitEdgePlanner_a7fe703e011dc50baee57d0f95c35b7d1}
+
+\item 
+virtual bool {\bfseries Done} () const \label{classExplicitEdgePlanner_ace8478b1ded61da2c1d0c3ed794c947d}
+
+\item 
+virtual bool {\bfseries Failed} () const \label{classExplicitEdgePlanner_ab834b2daedd5cdadc8421afd16728687}
+
+\item 
+virtual double {\bfseries Priority} (int i) const \label{classExplicitEdgePlanner_aeb6d901af7c78818322a46e2fc5d0560}
+
+\item 
+virtual bool {\bfseries Plan} (int i)\label{classExplicitEdgePlanner_ac22ea5a960d67825c600cd39ee1fedde}
+
+\item 
+virtual bool {\bfseries Done} (int i) const \label{classExplicitEdgePlanner_a1a0177b2d848f17e35af5f96dd60ddbd}
+
+\item 
+virtual bool {\bfseries Failed} (int i) const \label{classExplicitEdgePlanner_a4d17d69a236fc28b246c2b7e70a69b96}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Explicit\+C\+Space} $\ast$ {\bfseries space}\label{classExplicitEdgePlanner_a6b64d3482bef964eb8d881b27ded090b}
+
+\item 
+Config {\bfseries a}\label{classExplicitEdgePlanner_a15567c94d026915d6c08a2cd2fdfbcf9}
+
+\item 
+Config {\bfseries b}\label{classExplicitEdgePlanner_affb7484d4453684ea2551e44bed17af4}
+
+\item 
+std\+::vector$<$ Smart\+Pointer$<$ {\bf Edge\+Planner} $>$ $>$ {\bfseries obs\+Planners}\label{classExplicitEdgePlanner_a353c820da7545a37eb7756892240be31}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Default edge planner\+: checks each constraint sequentially using the space\textquotesingle{}s Local\+Planner(a,b,i) method. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Explicit\+C\+Space.\+h\item 
+Explicit\+C\+Space.\+cpp\end{DoxyCompactItemize}

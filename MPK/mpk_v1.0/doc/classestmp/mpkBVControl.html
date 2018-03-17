@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  mpkBVControl</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">mpkBVControl</A></H2></TD></H2></TD></TR></TABLE>
+<BLOCKQUOTE>Functions for visualization of bounding volumes (BVs) and related functions.</BLOCKQUOTE>
+<HR>
+
+<DL>
+<P><TABLE>
+<DT><H3>Public Methods</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.3.2"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   void </TD><TD><B>init</B> (<!1><A HREF="mpkRobotCollection.html">mpkRobotCollection</A>* <!1><A HREF="mpkBVControl.html#DOC.3.9">robots</A>, <!1><A HREF="mpkObstacleCollection.html">mpkObstacleCollection</A>* <!1><A HREF="mpkMouseControl.html#DOC.13.21">obstacles</A>, int bv_level=0)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.3.3"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   SoSwitch* </TD><TD><B>ivroot</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.3.4"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   void </TD><TD><B>set_shown_bv</B> (<!1><A HREF="mpkBVControl.html#DOC.3.1">bv_type</A> new_bv_type)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.3.5"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   <!1><A HREF="mpkBVControl.html#DOC.3.1">bv_type</A> </TD><TD><B>get_shown_bv</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.3.6"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   void </TD><TD><B>update_iv_transf</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.3.7"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   void </TD><TD><B>add_wire_cube</B> (SoSeparator* <!1><A HREF="mpkBVControl.html#DOC.3.12">root</A>, double min[3], double max[3], double r=1, double g=1, double b=1)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="sample_on_RSS"></A>
+<A NAME="DOC.3.8"></A>
+<IMG ALT="o" SRC=icon2.gif>static   void </TD><TD><B>sample_on_RSS</B> (double p[3], const BV&amp; bv)<BR>
+<I>Samples a point uniformly at random from RSS bv and stores the result in p.</I>
+</TD></TR></TABLE></P>
+
+<P><TABLE>
+<DT><H3>Public Members</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.3.1"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>enum  </TD><TD><B>bv_type</B> <BR>
+<I></I>
+</TD></TR></TABLE></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>Functions for visualization of bounding volumes (BVs) and related functions.</BLOCKQUOTE>
+<DL>
+
+<A NAME="bv_type"></A>
+<A NAME="DOC.3.1"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>enum  bv_type</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="init"></A>
+<A NAME="DOC.3.2"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   void init(<!1><A HREF="mpkRobotCollection.html">mpkRobotCollection</A>* <!1><A HREF="mpkBVControl.html#DOC.3.9">robots</A>, <!1><A HREF="mpkObstacleCollection.html">mpkObstacleCollection</A>* <!1><A HREF="mpkMouseControl.html#DOC.13.21">obstacles</A>, int bv_level=0)</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="ivroot"></A>
+<A NAME="DOC.3.3"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   SoSwitch* ivroot()</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="set_shown_bv"></A>
+<A NAME="DOC.3.4"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   void set_shown_bv(<!1><A HREF="mpkBVControl.html#DOC.3.1">bv_type</A> new_bv_type)</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="get_shown_bv"></A>
+<A NAME="DOC.3.5"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   <!1><A HREF="mpkBVControl.html#DOC.3.1">bv_type</A> get_shown_bv()</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="update_iv_transf"></A>
+<A NAME="DOC.3.6"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   void update_iv_transf()</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="add_wire_cube"></A>
+<A NAME="DOC.3.7"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   void add_wire_cube(SoSeparator* <!1><A HREF="mpkBVControl.html#DOC.3.12">root</A>, double min[3], double max[3], double r=1, double g=1, double b=1)</B></TT>
+<DL><DT><DD></DL><P></DL>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

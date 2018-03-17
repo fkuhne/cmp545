@@ -1,0 +1,55 @@
+\section{Greedy\+Subset\+A\+Star Struct Reference}
+\label{structGreedySubsetAStar}\index{Greedy\+Subset\+A\+Star@{Greedy\+Subset\+A\+Star}}
+Inheritance diagram for Greedy\+Subset\+A\+Star\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structGreedySubsetAStar}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Generalized\+A\+Star$<$ int, {\bf Subset\+Cost} $>$\+::Node {\bfseries Node}\label{structGreedySubsetAStar_aa96ac65adfcc7e041d5a7d9b49d2a08a}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Greedy\+Subset\+A\+Star} ({\bf Error\+Explaining\+Planner} $\ast$\+\_\+planner, int \+\_\+start, int \+\_\+target)\label{structGreedySubsetAStar_aa1dc8a9972761c588685ab024bc2dee3}
+
+\item 
+virtual bool {\bfseries Is\+Goal} (const int \&s)\label{structGreedySubsetAStar_a2f45fea4ebce83ed921571ff4e542073}
+
+\item 
+virtual void {\bfseries Successors} (const int \&s, vector$<$ int $>$ \&successors, vector$<$ {\bf Subset\+Cost} $>$ \&cost)\label{structGreedySubsetAStar_a5d9d5edc72e649d2aa0069b748ed11d5}
+
+\item 
+virtual void {\bfseries Clear\+Visited} ()\label{structGreedySubsetAStar_a42096bab60e1f61a164c6c56f315f36a}
+
+\item 
+virtual void {\bfseries Visit} (const int \&s, Node $\ast$n)\label{structGreedySubsetAStar_a3248d8712532af4f0161e9db5118bd3c}
+
+\item 
+virtual Node $\ast$ {\bfseries Visited\+State\+Node} (const int \&s)\label{structGreedySubsetAStar_a04fa5416bf5ca260ca00f1930f632079}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Error\+Explaining\+Planner} $\ast$ {\bfseries planner}\label{structGreedySubsetAStar_a91e00bacccd22a3cbd3a2ad67dc2876b}
+
+\item 
+int {\bfseries start\+Node}\label{structGreedySubsetAStar_ab5623e2391b2f65e1a187b4ed5c3387e}
+
+\item 
+int {\bfseries target\+Node}\label{structGreedySubsetAStar_aa99f320a6c6ff15a5a1d3186de415638}
+
+\item 
+vector$<$ Node $\ast$ $>$ {\bfseries visited}\label{structGreedySubsetAStar_a79b5f2b372b305acfdf38236b2d580b0}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Explaining\+Planner.\+cpp\end{DoxyCompactItemize}

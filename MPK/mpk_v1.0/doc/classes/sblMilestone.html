@@ -1,0 +1,222 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  sblMilestone</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">sblMilestone</A></H2></TD></H2></TD></TR></TABLE>
+<BLOCKQUOTE>A sblMilestone represents the data structure for storing a free sample. The SBL sblPlanner grows two trees (one from the start and one form the goal) consisting of these collision-free 'sblMilestones' as nodes. Each sblMilestone stores in itself links to its parent node and children nodes.</BLOCKQUOTE>
+<HR>
+
+<DL>
+<P><TABLE>
+<DT><H3>Public Fields</H3><DD><TR>
+<TD VALIGN=TOP>
+<A NAME="edgeFromFather"></A>
+<A NAME="DOC.32.20"></A>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="sblEdge.html">sblEdge</A> </TD><TD><B>edgeFromFather</B> <BR>
+<I>link to the father of the node </I>
+</TD></TR></TABLE></P>
+
+<P><TABLE>
+<DT><H3>Public Methods</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.32.1"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>sblMilestone</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.32.2"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>sblMilestone</B> (int inx, const <!1><A HREF="mpkConfig.html">mpkConfig</A>&amp; qq, double tim=0)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.32.3"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>setIndex</B> (const int&amp; index)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.32.4"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>setConfig</B> (<!1><A HREF="mpkConfig.html">mpkConfig</A>&amp; q_n)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.32.5"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>isFatherOf</B> (<!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; child)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.32.6"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>setFather</B> (int <!1><A HREF="sblEdge.html#DOC.30.18">from</A>, int to)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.32.7"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>addChild</B> (const <!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; m)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.32.8"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A><!1><A HREF="mpkConfig.html">mpkConfig</A>&amp; </TD><TD><B>getConfig</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.32.9"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>getIndex</B> () const <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.32.10"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>getFather</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.32.11"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A><!1><A HREF="sblEdge.html">sblEdge</A>&amp; </TD><TD><B>getsblEdge</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.32.12"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>getNrSons</B> () const <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.32.13"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>getChild</B> (int k)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.32.14"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>markSafe</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.32.15"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>bool </TD><TD><B>isEqual</B> (const <!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; m)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.32.16"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>print</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.32.17"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>printChilds</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.32.18"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>double </TD><TD><B>distance</B> (const <!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; m) const <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.32.19"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>double </TD><TD><B>L_inf</B> (const <!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; m) const <BR>
+<I></I>
+</TD></TR></TABLE></P>
+
+<P><TABLE>
+<DT><H3>Protected Fields</H3><DD><TR>
+<TD VALIGN=TOP>
+<A NAME="i"></A>
+<A NAME="DOC.32.21"></A>
+<IMG ALT="o" SRC=icon2.gif>int </TD><TD><B>i</B> <BR>
+<I>an index to identify the nodes </I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="q"></A>
+<A NAME="DOC.32.22"></A>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="mpkConfig.html">mpkConfig</A>* </TD><TD><B>q</B> <BR>
+<I>Configuration </I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="t"></A>
+<A NAME="DOC.32.23"></A>
+<IMG ALT="o" SRC=icon2.gif>double </TD><TD><B>t</B> <BR>
+<I>time associated to the configuration </I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="children"></A>
+<A NAME="DOC.32.24"></A>
+<IMG ALT="o" SRC=icon2.gif>vector&lt;int&gt;  </TD><TD><B>children</B> <BR>
+<I>to store who are the children of the node </I>
+</TD></TR></TABLE></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>A sblMilestone represents the data structure for storing a free sample. The SBL sblPlanner grows two trees (one from the start and one form the goal) consisting of these collision-free 'sblMilestones' as nodes. Each sblMilestone stores in itself links to its parent node and children nodes.</BLOCKQUOTE>
+<DL>
+
+<A NAME="sblMilestone"></A>
+<A NAME="DOC.32.1"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> sblMilestone()</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="sblMilestone"></A>
+<A NAME="DOC.32.2"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> sblMilestone(int inx, const <!1><A HREF="mpkConfig.html">mpkConfig</A>&amp; qq, double tim=0)</B></TT>
+<DD>Function setRoot on the planner is the one that uses this 
+<DL><DT><DD></DL><P>
+<A NAME="setIndex"></A>
+<A NAME="DOC.32.3"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void setIndex(const int&amp; index)</B></TT>
+<DD>To set the serial number of this sblMilestone 
+<DL><DT><DD></DL><P>
+<A NAME="setConfig"></A>
+<A NAME="DOC.32.4"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void setConfig(<!1><A HREF="mpkConfig.html">mpkConfig</A>&amp; q_n)</B></TT>
+<DD>To set the Configuration of the sblMilestone 
+<DL><DT><DD></DL><P>
+<A NAME="isFatherOf"></A>
+<A NAME="DOC.32.5"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void isFatherOf(<!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; child)</B></TT>
+<DD>This function is used to set that the current milestone is the
+father of the milestone child. 
+<DL><DT><DD></DL><P>
+<A NAME="setFather"></A>
+<A NAME="DOC.32.6"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void setFather(int <!1><A HREF="sblEdge.html#DOC.30.18">from</A>, int to)</B></TT>
+<DD>Links to the parent node in the tree 
+<DL><DT><DD></DL><P>
+<A NAME="addChild"></A>
+<A NAME="DOC.32.7"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void addChild(const <!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; m)</B></TT>
+<DD>To store the index of the Children Nodes 
+<DL><DT><DD></DL><P>
+<A NAME="getConfig"></A>
+<A NAME="DOC.32.8"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B><!1><A HREF="mpkConfig.html">mpkConfig</A>&amp; getConfig()</B></TT>
+<DD>Returns the Configuration of the sblMilestone 
+<DL><DT><DD></DL><P>
+<A NAME="getIndex"></A>
+<A NAME="DOC.32.9"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int getIndex() const </B></TT>
+<DD>To set the serial number of this sblMilestone 
+<DL><DT><DD></DL><P>
+<A NAME="getFather"></A>
+<A NAME="DOC.32.10"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int getFather()</B></TT>
+<DD>Returns the Father of this node in the tree 
+<DL><DT><DD></DL><P>
+<A NAME="getsblEdge"></A>
+<A NAME="DOC.32.11"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B><!1><A HREF="sblEdge.html">sblEdge</A>&amp; getsblEdge()</B></TT>
+<DD>Returns the edge from its father 
+<DL><DT><DD></DL><P>
+<A NAME="getNrSons"></A>
+<A NAME="DOC.32.12"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int getNrSons() const </B></TT>
+<DD>Returns the number of its children in the Tree 
+<DL><DT><DD></DL><P>
+<A NAME="getChild"></A>
+<A NAME="DOC.32.13"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int getChild(int k)</B></TT>
+<DD>Returns the 'kth' children 
+<DL><DT><DD></DL><P>
+<A NAME="markSafe"></A>
+<A NAME="DOC.32.14"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void markSafe()</B></TT>
+<DD>Marks that the edge to its father is collision free 
+<DL><DT><DD></DL><P>
+<A NAME="isEqual"></A>
+<A NAME="DOC.32.15"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>bool isEqual(const <!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; m)</B></TT>
+<DD>To check if the two sblMilestones are equal or not 
+<DL><DT><DD></DL><P>
+<A NAME="print"></A>
+<A NAME="DOC.32.16"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void print()</B></TT>
+<DD>Prints the Configuration and the parent information 
+<DL><DT><DD></DL><P>
+<A NAME="printChilds"></A>
+<A NAME="DOC.32.17"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void printChilds()</B></TT>
+<DD>Prints the list of Children 
+<DL><DT><DD></DL><P>
+<A NAME="distance"></A>
+<A NAME="DOC.32.18"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>double distance(const <!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; m) const </B></TT>
+<DD>Returns Euclidean Distance 
+<DL><DT><DD></DL><P>
+<A NAME="L_inf"></A>
+<A NAME="DOC.32.19"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>double L_inf(const <!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; m) const </B></TT>
+<DD>Returns L-infinity distance 
+<DL><DT><DD></DL><P></DL>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

@@ -1,0 +1,226 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002 (1.62) JA patch-1.4
+patched version by:  Kenshi Muto, Debian Project.
+LaTeX2HTML 2002 (1.62),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Scene definition</TITLE>
+<META NAME="description" CONTENT="Scene definition">
+<META NAME="keywords" CONTENT="mpk_new">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="mpk_new.css">
+
+<LINK REL="next" HREF="node3.html">
+<LINK REL="previous" HREF="node1.html">
+<LINK REL="up" HREF="mpk_new.html">
+<LINK REL="next" HREF="node3.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html28"
+  HREF="node3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html26"
+  HREF="mpk_new.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html20"
+  HREF="node1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html29"
+  HREF="node3.html">Robot definition</A>
+<B> Up:</B> <A NAME="tex2html27"
+  HREF="mpk_new.html">Creating new scenes and</A>
+<B> Previous:</B> <A NAME="tex2html21"
+  HREF="node1.html">Introduction</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00020000000000000000"></A>
+<A NAME="sec:scenes"></A>
+<BR>
+Scene definition
+</H1>
+
+<P>
+The MPK scene file format is a simple extension of the Open Inventor
+scene file format.  (For details on the Inventor file format, see an
+Open Inventor manual or tutorial.)  Scene files have an '.iv'
+extension and are typically in the scenes/ subdirectory.  MPK extends
+the Inventor file format by three node types: <B>mpkObstacle</B>, <B>  mpkRobot</B> and <B>mpkIncludeFile</B> (for details, see below).  These
+are derived from the Inventor node type SoSeparator and can thus have
+the same attributes as a SoSeparator, in addition to their own
+specific attributes that are described below.
+
+<P>
+Before creating a new scene file, it can be helpful to examine one of
+the existing scene files.  E.g., take a look at 'scenes/demo1.iv'.
+One can add an arbitrary number of robots (nodes of type 'mpkRobot')
+to the scene file, each with its own 'scaleFactor' and 'translation'
+attributes, in the same way as the one robot that is included in the
+'demo1.iv' file.  See <A HREF="node3.html#sec:robots"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="file:/usr/share/latex2html/icons/crossref.png"></A> on which robots are available
+and how to define new robots.
+
+<P>
+Besides robots, one can include one or more files (nodes of type
+'mpkIncludeFile') containing obstacles, like the wall file 'wall.iv'
+in 'demo1.iv'.  Obstacles can also be defined directly using nodes of
+type 'mpkObstacle' (e.g., see file 'scenes/mov_puma_vwbody.iv').
+
+<P>
+The following descriptions summarize the available MPK node types:
+
+<P>
+<DL>
+<DT><STRONG>mpkObstacle</STRONG></DT>
+<DD>Adds a static obstacle to the scene.
+
+<P>
+<B>Example:</B> The following example defines an obstacle named 'box'
+  that is a cube of side lengths (1, 2, 3).  Note that Cube is an
+  Inventor node type. 
+<PRE>
+DEF box mpkObstacle {
+  DEF __triangulate__ Cube {
+    width 1
+    height 2
+    depth 3
+  }
+}
+</PRE>
+
+<P>
+The 'DEF __triangulate__' tag is required to tell MPK that the
+  triangles of the Cube node are part of the collision model.
+  Similarly, one could add other Inventor models inside the same
+  mpkObstacle node.  Without the 'DEF __triangulate__' tag, the
+  models would be displayed but not be checked for collisions.  Note
+  that all tagged models within the same mpkObstacle node are merged
+  into a single PQP hierarchy for collision checking.
+
+<P>
+In the example, the 'DEF box' definition can be omitted.  However,
+  it is recommended to give names to obstacles to identify which
+  obstacles are involved in collisions.
+
+<P>
+</DD>
+<DT><STRONG>mpkRobot</STRONG></DT>
+<DD>Adds a robot to the scene.
+
+<P>
+<B>Example 1:</B> In the following example, a robot named 'puma1' is
+  inserted into the scene.  Its kinematics definition is read from the
+  'puma500_torch.rob' robot definition file in the 'robots/'
+  subdirectory.  The robot is scaled, translated and rotated before it
+  is inserted into the scene.
+<PRE>
+DEF puma1 mpkRobot {
+  fileName "puma500_torch.rob"
+  scaleFactor 2.2
+  translation 0 -0.01 0
+  rotation 0 -1 0 1.6
+}
+</PRE>
+  The rows with scaleFactor, translation and rotation can be omitted.
+  The rotation parameters are x,y and z of the rotation axis followed
+  by the rotation angle (in radians).
+
+<P>
+List the '.rob'-files in the 'robots/' subdirectory to see which
+  robot types are currently available.
+
+<P>
+<B>Example 2:</B> In this example, a hard-coded robot of type
+  DEMOROBOT is inserted.  Hard-coded robots have the advantage that
+  they can realize arbitrary parameterizations (see files
+  'robots/mpkDemoRobot.H' and 'robots/mpkDemoRobot.cpp').
+<PRE>
+DEF robot mpkRobot {
+  robotType DEMOROBOT
+  scaleFactor 1.5
+  translation 0 1 0
+  rotation 0 1 0 3.2
+}
+</PRE>
+
+<P>
+Check the file 'basic/mpk_robot_type.h' and the '.cpp'-files in the
+  'robots/'-subdirectory to see which hard-coded robot types are
+  currently available.
+
+<P>
+For information on how to create your own types of robots, see
+  <A HREF="node3.html#sec:robots"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="file:/usr/share/latex2html/icons/crossref.png"></A>.
+
+<P>
+</DD>
+<DT><STRONG>mpkIncludeFile</STRONG></DT>
+<DD>Includes a file with a complete scene
+  definition.
+
+<P>
+<B>Syntax:</B>
+<PRE>
+DEF &lt;identifier&gt; mpkIncludeFile {
+  name "&lt;filename&gt;"
+}
+</PRE>
+
+<P>
+The part 'DEF &lt;identifier&gt;' can be omitted.  However, this may result
+in ambiguous object identifiers if the same file is included several
+times.  To avoid ambiguities, define a different name for each
+mpkIncludeFile node that loads the same file.
+
+<P>
+</DD>
+</DL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html28"
+  HREF="node3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html26"
+  HREF="mpk_new.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html20"
+  HREF="node1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html29"
+  HREF="node3.html">Robot definition</A>
+<B> Up:</B> <A NAME="tex2html27"
+  HREF="mpk_new.html">Creating new scenes and</A>
+<B> Previous:</B> <A NAME="tex2html21"
+  HREF="node1.html">Introduction</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Mitul Saha
+2003-03-10
+</ADDRESS>
+</BODY>
+</HTML>

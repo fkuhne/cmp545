@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  mpkObstacle</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">mpkObstacle</A></H2></TD></H2></TD></TR></TABLE>
+<BLOCKQUOTE>Extended Inventor node type (derived from SoSeparator) to define obstacle nodes in the scene file. </BLOCKQUOTE>
+<HR>
+
+<H2>Inheritance:</H2>
+<APPLET CODE="ClassGraph.class" WIDTH=600 HEIGHT=65>
+<param name=classes value="MSoSeparator,M,CmpkObstacle,MmpkObstacle.html">
+<param name=before value="M,M">
+<param name=after value="Md_,M">
+<param name=indent value="0,1">
+<param name=arrowdir value="up">
+</APPLET>
+<HR>
+
+<DL>
+<P><TABLE>
+<DT><H3>Public Methods</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.15.1"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>mpkObstacle</B> ()<BR>
+<I></I>
+</TD></TR></TABLE></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>mpkObstacles are found in the scene graph using an Inventor
+search action that looks for nodes of type mpkObstacle (see
+<!1><A HREF="mpkObstacleCollection.html">mpkObstacleCollection</A>).  For each obstacle,
+an individual name can be given.  The following example shows how
+obstacles are defined in a scene file:<BR> <BR>
+
+<P><TT>DEF testObst mpkObstacle {<BR>
+DEF __triangulate__ File { name "obj1.iv" }<BR>
+mpkTransform { translation 1 0 0 }<BR>
+DEF __triangulate__ File { name "obj2.iv" }<BR>
+}</TT><BR> <BR>
+
+<P>This defines an obstacle named "testObst" whose triangles are read
+from the files "obj1.iv" and "obj2.iv".  Since mpkObstacle is derived
+from SoSeparator, its internal structure in the file (its children
+in the scene graph) is quite flexible.  Children of an mpkObstacle
+node whose triangles should be added to the collision model have to
+be named with a <TT>__triangulate__</TT> tag.
+
+<P></BLOCKQUOTE>
+<DL>
+
+<A NAME="mpkObstacle"></A>
+<A NAME="DOC.15.1"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> mpkObstacle()</B></TT>
+<DL><DT><DD></DL><P></DL>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DT><B>See Also:</B><DD><!1><A HREF="mpkObstacleCollection.html">mpkObstacleCollection</A><BR><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002 (1.62) JA patch-1.4
+patched version by:  Kenshi Muto, Debian Project.
+LaTeX2HTML 2002 (1.62),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Mouse interface</TITLE>
+<META NAME="description" CONTENT="Mouse interface">
+<META NAME="keywords" CONTENT="fmstudio">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="fmstudio.css">
+
+<LINK REL="previous" HREF="node6.html">
+<LINK REL="up" HREF="node4.html">
+<LINK REL="next" HREF="node8.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html83"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html81"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html77"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html84"
+  HREF="node8.html">Collision sets</A>
+<B> Up:</B> <A NAME="tex2html82"
+  HREF="node4.html">Keyboard commands and mouse</A>
+<B> Previous:</B> <A NAME="tex2html78"
+  HREF="node6.html">Configuration database and task</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00043000000000000000"></A>
+<A NAME="sec:mouse"></A>
+<BR>
+Mouse interface
+</H2>
+
+<P>
+When the graphics window is in examination mode (see
+<A HREF="node4.html#sec:commands"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="file:/usr/share/latex2html/icons/crossref.png"></A>), the mouse can be used to rotate/move the entire
+scene.  This is handled by Open Inventor.
+
+<P>
+When in input/selection mode, the mouse can be used to select robots
+and individual robot links (use the left mouse button).  The status
+output in the shell window shows which robot and joint/link is
+currently selected:
+
+<P>
+<PRE>
+  Picked joint &amp; link: &lt;picked-joint&gt;
+  Picked robot: &lt;picked-rob&gt;
+</PRE>
+
+<P>
+Once a robot link has been selected by clicking on it, the
+configuration can be modified by changing individual DOFs (parameter
+mode), by dragging links with a 'rubber' band (Cartesian mode) or by
+clicking on target points for a robot's end-effector (target mode):
+
+<P>
+<DL>
+<DT><STRONG>Parameter mode</STRONG></DT>
+<DD>In parameter mode (default), the user can click
+  on a robot link and then use the cursor keys to increase/decrease
+  the corresponding DOF parameter (in steps), typically a joint angle.
+  If more than one DOF affect the picked link (e.g., a free-flying
+  robot), then press SHIFT and use the right mouse button to switch
+  through these DOFs (observe how the status output next to 'Picked
+  joint &amp; link' in the shell window changes).  To change the step
+  size, use the SPACE (or NUM5) command <A HREF="node5.html#sec:general_commands"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="file:/usr/share/latex2html/icons/crossref.png"></A>.
+
+<P>
+</DD>
+<DT><STRONG>Cartesian mode</STRONG></DT>
+<DD>In Cartesian mode, a cross cursor appears in the
+  graphics window that can be moved in space with the cursor keys
+  (plus PGUP/PGDN).  See SPACE (or NUM5) command
+  <A HREF="node5.html#sec:general_commands"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="file:/usr/share/latex2html/icons/crossref.png"></A> to change the step size.  The user can
+  then click on a robot link to attach a rubber band between the
+  selected point on the robot and the center of the cross cursor.  The
+  robot then follows the cross cursor.  This allows to move the
+  end-effector in Cartesian space, e.g., along a line in workspace.
+  Note that the Cartesian mode works only if the function
+  mpk_optimize() in file mpk_opt.cpp is implemented (we cannot include
+  this function in our package, for copyright reasons, since the
+  implementation that we use is taken from the book 'Numerical Recipes
+  in C').
+
+<P>
+</DD>
+<DT><STRONG>Target mode</STRONG></DT>
+<DD>In target mode, the user first chooses a robot by
+  clicking on an arbitrary link.  Once a robot is selected, clicking
+  on an obstacle moves the robot so that its trace point comes closer
+  to the selected point on the obstacle.  The 'trace point' is usually
+  a point at the end-effector (see documentation in file
+  doc/mpk_new/index.html on how to define new robots).  Since this is
+  an inverse-kinematics problem, the solution may not be unique or not
+  exist at all.  Fmstudio uses an incremental distance minimization
+  approach, so several clicks on the obstacle may be necessary to move
+  the robot to its final location.  Like the Cartesian mode, the
+  target mode works only if the mpk_optimize() function in the file
+  mpk_opt.cpp is implemented (which it is not by default).
+
+<P>
+</DD>
+</DL>
+
+<P>
+To switch through these modes, press F1 (see
+<A HREF="node5.html#sec:general_commands"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="file:/usr/share/latex2html/icons/crossref.png"></A>).  Note that for Cartesian/target modes,
+the function mpk_optimize() must be implemented (we use code from the
+book 'Numerical Recipes in C' which we cannot include for copyright
+reasons).
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html83"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html81"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html77"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html84"
+  HREF="node8.html">Collision sets</A>
+<B> Up:</B> <A NAME="tex2html82"
+  HREF="node4.html">Keyboard commands and mouse</A>
+<B> Previous:</B> <A NAME="tex2html78"
+  HREF="node6.html">Configuration database and task</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Mitul Saha
+2003-03-10
+</ADDRESS>
+</BODY>
+</HTML>

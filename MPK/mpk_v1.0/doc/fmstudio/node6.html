@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with jLaTeX2HTML 2002 (1.62) JA patch-1.4
+patched version by:  Kenshi Muto, Debian Project.
+LaTeX2HTML 2002 (1.62),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Configuration database and task commands</TITLE>
+<META NAME="description" CONTENT="Configuration database and task commands">
+<META NAME="keywords" CONTENT="fmstudio">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="fmstudio.css">
+
+<LINK REL="next" HREF="node7.html">
+<LINK REL="previous" HREF="node5.html">
+<LINK REL="up" HREF="node4.html">
+<LINK REL="next" HREF="node7.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html75"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html73"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html67"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html76"
+  HREF="node7.html">Mouse interface</A>
+<B> Up:</B> <A NAME="tex2html74"
+  HREF="node4.html">Keyboard commands and mouse</A>
+<B> Previous:</B> <A NAME="tex2html68"
+  HREF="node5.html">General keyboard commands</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00042000000000000000"></A>
+<A NAME="sec:database_commands"></A>
+<BR>
+Configuration database and task commands
+</H2>
+
+<P>
+Two lists of configurations are maintained by fmstudio: the 'Plan
+config' list and the 'Database config' list.
+
+<P>
+The latter list (<B>'Database config'</B>) is meant as a repository of
+useful configurations.  It is typically stored in a file with the same
+name base as the scene file but ending in '.conf' instead of '.iv'.
+It is read right after starting the fmstudio and written back to the
+same file when the program exits normally.  (Use the '-db' option, see
+<A HREF="node3.html#sec:command_line_options"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="file:/usr/share/latex2html/icons/crossref.png"></A>, to specify a different file name.)
+
+<P>
+In contrast, <B>'Plan config'</B> contains a task, and possibly further
+configurations that define an entire plan (that is, a solved task).
+(Use a sequence of indices at the command line, see
+<A HREF="node3.html#sec:command_line_options"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="file:/usr/share/latex2html/icons/crossref.png"></A>, to fill this list at start-up of
+fmstudio.)  A 'task' is defined as an arbitrary sequence of
+collision-free, so-called <B>'key-configurations'</B>.  A 'plan'
+contains additional (non-key) configurations such that connecting two
+successive configurations by straight line segments yields a
+collision-free path.  The planner tries to insert proper non-key
+configurations into a task to turn it into a plan.
+
+<P>
+Thus, 'Database config' is a conglomeration, most likely without
+significant order of the configurations, and is automatically saved at
+proper exit of fmstudio.  In contrast, the order of the configurations
+in 'Plan config' does matter.  'Plan config' can be seen as something
+like the 'working memory' of fmstudio and needs to be saved explicitly
+if desired (see below).  Both lists can be edited by the user.  To
+this end, each list has a pointer associated with it that indicates
+the current position, similarly to a cursor position, in its list.
+The status output in the shell window shows the sizes ('plan-total'
+and 'db-total') of both lists and the respective current 'cursor'
+positions 'plan-curr' and 'db-curr':
+
+<P>
+<PRE>
+  Plan config     : &lt;plan-curr&gt;/&lt;plan-total&gt; * - not planned yet
+  Database config : &lt;db-curr&gt;/&lt;db-total&gt; (database file: &lt;filename&gt;)
+</PRE>
+
+<P>
+An asterisk '*' in the 'Plan config' line shows if the configuration
+at the 'plan-curr' position in 'Plan config' is a key configuration
+(only key-configurations are considered when the planner is run; this
+allows re-starting the planner several times in a row on the same
+task).  The key status flag can be changed by the user (see below).
+Furthermore, the 'Plan config' line indicates the planner status.
+
+<P>
+Similarly, the 'Database config' line shows the current position in
+the 'Database config' list and the total number of stored
+configurations.  It also shows the name of the file from which the
+database was read at program start and to which it will be written
+back when the program exits normally.
+
+<P>
+The following keyboard commands can be used to edit and perform other
+operations on these two lists:
+
+<P>
+<DL>
+<DT><STRONG>INS(+)</STRONG></DT>
+<DD>Insert the current configuration (the one shown in the
+  graphics window) as a key configuration at the current position in
+  the 'Plan config' list.  The current position remains fixed, the
+  number of configs is increased by one.
+
+<P>
+</DD>
+<DT><STRONG>DEL(+)</STRONG></DT>
+<DD>Delete configuration from 'Plan config' list at current
+  position in 'Plan config'.
+
+<P>
+</DD>
+<DT><STRONG>ENTER(+)</STRONG></DT>
+<DD>Append current configuration (the one shown in the
+  graphics window) at the end of the 'Plan config' list.
+
+<P>
+</DD>
+<DT><STRONG>HOME(+)</STRONG></DT>
+<DD>Step to the previous configuration in the 'Plan config'
+  list and display this configuration in the graphics window.
+
+<P>
+</DD>
+<DT><STRONG>END(+)</STRONG></DT>
+<DD>Step to the next configuration in the 'Plan config' list
+  and display this configuration in the graphics window.
+
+<P>
+</DD>
+<DT><STRONG>+SHIFT</STRONG></DT>
+<DD>Pressing SHIFT together with the commands marked with
+  '(+)' applies these commands to the 'Database config' list instead of
+  the 'Plan config' list.
+
+<P>
+</DD>
+<DT><STRONG>CTRL+SHIFT+DEL</STRONG></DT>
+<DD>Clear the entire 'Plan config' list.
+
+<P>
+</DD>
+<DT><STRONG>(K)ey/unkey current configuration in plan</STRONG></DT>
+<DD>Toggle the key status
+  flag of the current configuration in the 'Plan config' list. (See
+  top of section for definition of the key status flag.
+
+<P>
+</DD>
+<DT><STRONG>(G)oto database config #...</STRONG></DT>
+<DD>Sets the current position in the
+  'Database config' list to a user-specified number.  After pressing
+  'G', move the mouse pointer to the shell window and enter the
+  desired index (note that indices start with 1).  The chosen
+  configuration is then shown in the graphics window and the current
+  position in the 'Database config' list is updated correspondingly in
+  the shell window.
+
+<P>
+</DD>
+<DT><STRONG>(L)oad task/path...</STRONG></DT>
+<DD>Load 'Plan config' list from file (the
+  current list in memory will be overwritten).  After pressing 'L',
+  move the mouse pointer to the shell window and enter the name of a
+  valid task/path file (e.g., one saved previously using the 'S' command
+  below).
+
+<P>
+</DD>
+<DT><STRONG>(S)ave task/path...</STRONG></DT>
+<DD>Save 'Plan config' list to file.  After
+  pressing 'S', move the mouse pointer to the shell window and enter a
+  file name.  Note: an existing file with the same name will be
+  overwritten without any warnings!
+
+<P>
+</DD>
+</DL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html75"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html73"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html67"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html76"
+  HREF="node7.html">Mouse interface</A>
+<B> Up:</B> <A NAME="tex2html74"
+  HREF="node4.html">Keyboard commands and mouse</A>
+<B> Previous:</B> <A NAME="tex2html68"
+  HREF="node5.html">General keyboard commands</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Mitul Saha
+2003-03-10
+</ADDRESS>
+</BODY>
+</HTML>

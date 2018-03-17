@@ -1,0 +1,229 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  mpkTransform</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">mpkTransform</A></H2></TD></H2></TD></TR></TABLE>
+<BLOCKQUOTE>The base class for representing spatial transforms. </BLOCKQUOTE>
+<HR>
+
+<H2>Inheritance:</H2>
+<APPLET CODE="ClassGraph.class" WIDTH=600 HEIGHT=215>
+<param name=classes value="CmpkTransform,MmpkTransform.html,CmpkTransl1,MmpkTransl1.html,CmpkRot1,MmpkRot1.html,CmpkFuncTransf,MmpkFuncTransf.html,CmpkConstTransl_Rot1,MmpkConstTransl_Rot1.html,CmpkConstTransl,MmpkConstTransl.html,CmpkConstRot,MmpkConstRot.html">
+<param name=before value="M,M|_,MR_,MR_,MR_,MR_,Mr_">
+<param name=after value="M,M,M,M,M,M,M">
+<param name=indent value="0,0,0,0,0,0,0">
+<param name=arrowdir value="up">
+</APPLET>
+<HR>
+
+<DL>
+<P><TABLE>
+<DT><H3>Public Fields</H3><DD><TR>
+<TD VALIGN=TOP>
+<A NAME="R"></A>
+<A NAME="DOC.22.18"></A>
+<IMG ALT="o" SRC=icon2.gif>double </TD><TD><B>R</B> [3][3]<BR>
+<I>Orientation matrix</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="T"></A>
+<A NAME="DOC.22.19"></A>
+<IMG ALT="o" SRC=icon2.gif>double </TD><TD><B>T</B> [3]<BR>
+<I>Translation vector</I>
+</TD></TR></TABLE></P>
+
+<P><TABLE>
+<DT><H3>Public Methods</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.22.2"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>mpkTransform</B> (const SoTransform* X=0)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.22.3"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>bind</B> (const double* param_ptr)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.22.4"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>rescale</B> (double scalef)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.22.5"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>double </TD><TD><B>get_scale</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.22.6"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A><!1><A HREF="mpkTransform.html#DOC.22.1">TYPE</A> </TD><TD><B>get_type</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.22.7"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>const double* </TD><TD><B>get_axis</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.22.8"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>bool </TD><TD><B>update</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.22.9"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>set_product</B> (const <!1><A HREF="mpkTransform.html">mpkTransform</A>&amp; X, const <!1><A HREF="mpkTransform.html">mpkTransform</A>&amp; Y)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.22.10"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>append</B> (const <!1><A HREF="mpkTransform.html">mpkTransform</A>&amp; X)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.22.11"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A><!1><A HREF="mpkTransform.html">mpkTransform</A>&amp; </TD><TD><B>operator*</B> (const <!1><A HREF="mpkTransform.html">mpkTransform</A>&amp; X)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.22.12"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>set_identity</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.22.13"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>bool </TD><TD><B>is_identity</B> () const <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.22.14"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>apply</B> (double out[3], const double in[3]) const <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.22.15"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>static   void </TD><TD><B>apply</B> (double out[3], const double <!1><A HREF="mpkTransform.html#DOC.22.18">R</A>[3][3], const double <!1><A HREF="mpkTransform.html#DOC.22.19">T</A>[3], const double in[3])<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.22.16"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>apply_inv</B> (double out[3], const double in[3]) const <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.22.17"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>print</B> (ostream&amp; f=cout) const <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.22.20"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>operator SbMatrix</B> () const <BR>
+<I></I>
+</TD></TR></TABLE></P>
+
+<P><TABLE>
+<DT><H3>Public Members</H3><DD><TR>
+<TD VALIGN=TOP>
+<A NAME="TYPE"></A>
+<A NAME="DOC.22.1"></A>
+<IMG ALT="o" SRC=icon2.gif>enum  </TD><TD><B>TYPE</B> <BR>
+<I><UL> <LI> <B>constant</B>: constant transform <LI> <B>rot1</B>: rotation around axis <LI> <B>transl_rot1</B>: rotation around axis, then constant transl <LI> <B>transl1</B>: translation along axis <LI> <B>func</B>: general functional dependency </UL></I>
+</TD></TR></TABLE></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>For efficiency reasons, there is not an abstract base class
+plus several derived classes, one for each transform type.
+Instead, this single mpkTransform class includes a type flag and
+implements all possible transforms.  The fields <B>(R,T)</B> store
+the current values of the transform.  Further private fields store
+information required to update certain transform types, such as
+<B>axis</B> for a rotation.
+
+<P>Since multiple transforms can depend on the same parameter(s), each
+parameterized transform must be bound to a set of (normalized)
+parameters (each in [0,1]) using <B>bind()</B>.  Once this has been
+done, the function <B>update()</B> can read the current values of the
+assigned parameters to recompute <B>R</B> and <B>T</B>.
+
+<P>For further details see <A HREF=../../basic/mpkTransform.H>mpkTransform.H</A>.</BLOCKQUOTE>
+<DL>
+
+<A NAME="mpkTransform"></A>
+<A NAME="DOC.22.2"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> mpkTransform(const SoTransform* X=0)</B></TT>
+<DD>construct from constant transform given by X
+<DL><DT><DD></DL><P>
+<A NAME="bind"></A>
+<A NAME="DOC.22.3"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void bind(const double* param_ptr)</B></TT>
+<DD>For binding a parameterized transform to one or more
+normalized parameters.  <B>param_ptr</B> must point to the first
+parameter.
+<DL><DT><DD></DL><P>
+<A NAME="rescale"></A>
+<A NAME="DOC.22.4"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void rescale(double scalef)</B></TT>
+<DD>Sets the scale factor.
+<DL><DT><DD></DL><P>
+<A NAME="get_scale"></A>
+<A NAME="DOC.22.5"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>double get_scale()</B></TT>
+<DD>Returns the scale factor.
+<DL><DT><DD></DL><P>
+<A NAME="get_type"></A>
+<A NAME="DOC.22.6"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B><!1><A HREF="mpkTransform.html#DOC.22.1">TYPE</A> get_type()</B></TT>
+<DD>Returns the type.
+<DL><DT><DD></DL><P>
+<A NAME="get_axis"></A>
+<A NAME="DOC.22.7"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>const double* get_axis()</B></TT>
+<DD>Returns the axis (only meaningful for some transforms).
+<DL><DT><DD></DL><P>
+<A NAME="update"></A>
+<A NAME="DOC.22.8"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>bool update()</B></TT>
+<DD>Updates the transform (after at least one parameter has been
+changed).  Returns true for parameterized transform, false for
+constant transform.
+<DL><DT><DD></DL><P>
+<A NAME="set_product"></A>
+<A NAME="DOC.22.9"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void set_product(const <!1><A HREF="mpkTransform.html">mpkTransform</A>&amp; X, const <!1><A HREF="mpkTransform.html">mpkTransform</A>&amp; Y)</B></TT>
+<DD>set transform to X*Y
+<DL><DT><DD></DL><P>
+<A NAME="append"></A>
+<A NAME="DOC.22.10"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void append(const <!1><A HREF="mpkTransform.html">mpkTransform</A>&amp; X)</B></TT>
+<DD>concatenate X to the right to the transform
+<DL><DT><DD></DL><P>
+<A NAME="operator*"></A>
+<A NAME="DOC.22.11"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B><!1><A HREF="mpkTransform.html">mpkTransform</A>&amp; operator*(const <!1><A HREF="mpkTransform.html">mpkTransform</A>&amp; X)</B></TT>
+<DD>operator * has the same effect as append()
+<DL><DT><DD></DL><P>
+<A NAME="set_identity"></A>
+<A NAME="DOC.22.12"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void set_identity()</B></TT>
+<DD>sets (R,T) to identity transform but does not modify the type flag
+<DL><DT><DD></DL><P>
+<A NAME="is_identity"></A>
+<A NAME="DOC.22.13"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>bool is_identity() const </B></TT>
+<DD>returns true if (R,T) is identity transform
+<DL><DT><DD></DL><P>
+<A NAME="apply"></A>
+<A NAME="DOC.22.14"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void apply(double out[3], const double in[3]) const </B></TT>
+<DD>apply transform to in and store result in out
+<DL><DT><DD></DL><P>
+<A NAME="apply"></A>
+<A NAME="DOC.22.15"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>static   void apply(double out[3], const double <!1><A HREF="mpkTransform.html#DOC.22.18">R</A>[3][3], const double <!1><A HREF="mpkTransform.html#DOC.22.19">T</A>[3], const double in[3])</B></TT>
+<DD>apply transform (R,T) to in and store result in out
+<DL><DT><DD></DL><P>
+<A NAME="apply_inv"></A>
+<A NAME="DOC.22.16"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void apply_inv(double out[3], const double in[3]) const </B></TT>
+<DD>apply the inverse of the transform to in and store result in out
+<DL><DT><DD></DL><P>
+<A NAME="print"></A>
+<A NAME="DOC.22.17"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void print(ostream&amp; f=cout) const </B></TT>
+<DD>print to f
+<DL><DT><DD></DL><P>
+<A NAME="operator SbMatrix"></A>
+<A NAME="DOC.22.20"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> operator SbMatrix() const </B></TT>
+<DD>convert to SbMatrix
+<DL><DT><DD></DL><P></DL>
+<HR>
+<DL><DT><B>Direct child classes:
+</B><DD><A HREF="mpkTransl1.html">mpkTransl1</A><BR>
+<A HREF="mpkRot1.html">mpkRot1</A><BR>
+<A HREF="mpkFuncTransf.html">mpkFuncTransf</A><BR>
+<A HREF="mpkConstTransl_Rot1.html">mpkConstTransl_Rot1</A><BR>
+<A HREF="mpkConstTransl.html">mpkConstTransl</A><BR>
+<A HREF="mpkConstRot.html">mpkConstRot</A><BR>
+</DL>
+
+<DL><DT><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

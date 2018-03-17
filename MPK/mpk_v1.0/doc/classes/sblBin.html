@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  sblBin</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">sblBin</A></H2></TD></H2></TD></TR></TABLE>
+<BLOCKQUOTE>Class sblBin is used to keep record on the distribution of the nodes on C-space.  Each bin containts an identifier, given by i, a counter where the number of nodes in the bin is kept (count), and a space to store a certain number of nodes per bin. There are also some auxiliary functions.</BLOCKQUOTE>
+<HR>
+
+<DL>
+<P><TABLE>
+<DT><H3>Public Fields</H3><DD><TR>
+<TD VALIGN=TOP>
+<A NAME="data"></A>
+<A NAME="DOC.29.8"></A>
+<IMG ALT="o" SRC=icon2.gif>vector&lt;int&gt;  </TD><TD><B>data</B> <BR>
+<I>To store the indexes of the nodes on the bin</I>
+</TD></TR></TABLE></P>
+
+<P><TABLE>
+<DT><H3>Public Methods</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.29.1"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>sblBin</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.29.2"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>sblBin</B> (const <!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; m)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.29.3"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>add_node</B> (const <!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; node)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.29.4"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>del_node</B> (const <!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; node)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.29.5"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>getSize</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.29.6"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>getData</B> (int <!1><A HREF="sblMilestone.html#DOC.32.21">i</A>)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.29.7"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>void </TD><TD><B>print</B> ()<BR>
+<I></I>
+</TD></TR></TABLE></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>Class sblBin is used to keep record on the distribution of the nodes on C-space.  Each bin containts an identifier, given by i, a counter where the number of nodes in the bin is kept (count), and a space to store a certain number of nodes per bin. There are also some auxiliary functions.</BLOCKQUOTE>
+<DL>
+
+<A NAME="sblBin"></A>
+<A NAME="DOC.29.1"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> sblBin()</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="sblBin"></A>
+<A NAME="DOC.29.2"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> sblBin(const <!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; m)</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="add_node"></A>
+<A NAME="DOC.29.3"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void add_node(const <!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; node)</B></TT>
+<DD>For adding a milestone in the bin 
+<DL><DT><DD></DL><P>
+<A NAME="del_node"></A>
+<A NAME="DOC.29.4"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void del_node(const <!1><A HREF="sblMilestone.html">sblMilestone</A>&amp; node)</B></TT>
+<DD>For deleting a node from the bin 
+<DL><DT><DD></DL><P>
+<A NAME="getSize"></A>
+<A NAME="DOC.29.5"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int getSize()</B></TT>
+<DD>Returns the size of the bin 
+<DL><DT><DD></DL><P>
+<A NAME="getData"></A>
+<A NAME="DOC.29.6"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int getData(int <!1><A HREF="sblMilestone.html#DOC.32.21">i</A>)</B></TT>
+<DD>Retrieves an entry 
+<DL><DT><DD></DL><P>
+<A NAME="print"></A>
+<A NAME="DOC.29.7"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void print()</B></TT>
+<DD>Prints the bin list 
+<DL><DT><DD></DL><P></DL>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

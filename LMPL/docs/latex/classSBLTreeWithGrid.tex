@@ -1,0 +1,73 @@
+\section{S\+B\+L\+Tree\+With\+Grid Class Reference}
+\label{classSBLTreeWithGrid}\index{S\+B\+L\+Tree\+With\+Grid@{S\+B\+L\+Tree\+With\+Grid}}
+
+
+An S\+BL motion planner that uses a \doxyref{S\+B\+L\+Subdivision}{p.}{classSBLSubdivision} to pick the next node to expand, and nodes to connect.  
+
+
+
+
+{\ttfamily \#include $<$S\+B\+L\+Tree.\+h$>$}
+
+Inheritance diagram for S\+B\+L\+Tree\+With\+Grid\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSBLTreeWithGrid}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries S\+B\+L\+Tree\+With\+Grid} ({\bf C\+Space} $\ast$)\label{classSBLTreeWithGrid_ac106c04d4f71656f7acc37a8e14cee5c}
+
+\item 
+virtual void {\bfseries Init} (const Config \&q\+Start)\label{classSBLTreeWithGrid_ace63cb47c374eefcf72bd45d0473588f}
+
+\item 
+virtual void {\bfseries Cleanup} ()\label{classSBLTreeWithGrid_a651e8f6b2a93f0da4ad80f21e3ab5127}
+
+\item 
+void {\bf Init\+Default\+Grid} (int num\+Dims, double h)
+\item 
+void {\bf Randomize\+Subset} ()\label{classSBLTreeWithGrid_a92883bf5d7b2644b11ce4284c6686613}
+
+\begin{DoxyCompactList}\small\item\em Randomizes the dimensions of the grid divisions Astart,Agoal. \end{DoxyCompactList}\item 
+virtual void {\bfseries Add\+Milestone} (Node $\ast$n)\label{classSBLTreeWithGrid_a84d78bd772bff47ab62c2ab6116fed29}
+
+\item 
+virtual void {\bfseries Remove\+Milestone} (Node $\ast$n)\label{classSBLTreeWithGrid_a6268cb8a715fc91213bef8cd37583aec}
+
+\item 
+virtual Node $\ast$ {\bfseries Pick\+Expand} ()\label{classSBLTreeWithGrid_a41436200ed3b8ed356253eaafb93d2e2}
+
+\item 
+Node $\ast$ {\bfseries Find\+Nearby} (const Config \&x)\label{classSBLTreeWithGrid_a497fc9e0f9aaedce8b39ccd76ade2169}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf S\+B\+L\+Subdivision} {\bfseries A}\label{classSBLTreeWithGrid_ac20b45e8b9a9c21750e596346ca6aeef}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+An S\+BL motion planner that uses a \doxyref{S\+B\+L\+Subdivision}{p.}{classSBLSubdivision} to pick the next node to expand, and nodes to connect. 
+
+\subsection{Member Function Documentation}
+\index{S\+B\+L\+Tree\+With\+Grid@{S\+B\+L\+Tree\+With\+Grid}!Init\+Default\+Grid@{Init\+Default\+Grid}}
+\index{Init\+Default\+Grid@{Init\+Default\+Grid}!S\+B\+L\+Tree\+With\+Grid@{S\+B\+L\+Tree\+With\+Grid}}
+\subsubsection[{Init\+Default\+Grid(int num\+Dims, double h)}]{\setlength{\rightskip}{0pt plus 5cm}void S\+B\+L\+Tree\+With\+Grid\+::\+Init\+Default\+Grid (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Dims, }
+\item[{double}]{h}
+\end{DoxyParamCaption}
+)}\label{classSBLTreeWithGrid_a650330cfd33c0e2010a894321c918ee1}
+Initializes the grids Astart,Agoal to a configuration space of num\+Dims dimensions, uniform cell width of h 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+B\+L\+Tree.\+h\item 
+S\+B\+L\+Tree.\+cpp\end{DoxyCompactItemize}

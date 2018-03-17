@@ -1,0 +1,100 @@
+\section{Bisection\+Epsilon\+Edge\+Planner Class Reference}
+\label{classBisectionEpsilonEdgePlanner}\index{Bisection\+Epsilon\+Edge\+Planner@{Bisection\+Epsilon\+Edge\+Planner}}
+
+
+{\ttfamily \#include $<$Edge\+Planner.\+h$>$}
+
+Inheritance diagram for Bisection\+Epsilon\+Edge\+Planner\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBisectionEpsilonEdgePlanner}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf Segment}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Bisection\+Epsilon\+Edge\+Planner} (const Config \&a, const Config \&b, {\bf C\+Space} $\ast$space, double epsilon)\label{classBisectionEpsilonEdgePlanner_a43111ac77687201b449e3492749f12f1}
+
+\item 
+virtual bool {\bfseries Is\+Visible} ()\label{classBisectionEpsilonEdgePlanner_a4a79397d3e7dc828f5886f26ba5f40a2}
+
+\item 
+virtual void {\bfseries Eval} (double u, Config \&x) const \label{classBisectionEpsilonEdgePlanner_a72281f1fd4674b17b12116e89ff3c004}
+
+\item 
+virtual const Config \& {\bfseries Start} () const \label{classBisectionEpsilonEdgePlanner_ac67a8a18de843c12810545093c6c7b61}
+
+\item 
+virtual const Config \& {\bfseries Goal} () const \label{classBisectionEpsilonEdgePlanner_a8cfc460995f4f59d712f87d6bdf0003e}
+
+\item 
+virtual {\bf C\+Space} $\ast$ {\bfseries Space} () const \label{classBisectionEpsilonEdgePlanner_aeed5f126ce4befa9b2e068e780df1167}
+
+\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bfseries Copy} () const \label{classBisectionEpsilonEdgePlanner_ada406b23e33b944966622432b9eb8bd2}
+
+\item 
+virtual {\bf Edge\+Planner} $\ast$ {\bfseries Reverse\+Copy} () const \label{classBisectionEpsilonEdgePlanner_a83b4c90216c06c9701d2b26fe42f5a81}
+
+\item 
+virtual double {\bfseries Priority} () const \label{classBisectionEpsilonEdgePlanner_a9122009f2502ed573c43044d316ba8dc}
+
+\item 
+virtual bool {\bfseries Plan} ()\label{classBisectionEpsilonEdgePlanner_adeb5fb373547ca70f2563a9366ac4c01}
+
+\item 
+virtual bool {\bfseries Done} () const \label{classBisectionEpsilonEdgePlanner_a1acb9bdea6be6f786fe01dffe2959864}
+
+\item 
+virtual bool {\bfseries Failed} () const \label{classBisectionEpsilonEdgePlanner_ac6c2917e36c8f26bb6812e156422a501}
+
+\item 
+bool {\bfseries Plan} (Config $\ast$\&pre, Config $\ast$\&post)\label{classBisectionEpsilonEdgePlanner_a770bf13d9ca644de26caa054ac5dbf62}
+
+\item 
+const std\+::list$<$ Config $>$ \& {\bfseries Get\+Path} () const \label{classBisectionEpsilonEdgePlanner_a5a8690860fbb69edf76ecec85a9017de}
+
+\item 
+const Config \& {\bfseries Infeasible\+Config} () const \label{classBisectionEpsilonEdgePlanner_ad8c6b634b64db70c855ae9f35bed9acf}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Bisection\+Epsilon\+Edge\+Planner} ({\bf C\+Space} $\ast$space, double epsilon)\label{classBisectionEpsilonEdgePlanner_abe7adeb27fdabf51095561816be6b5ec}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::list$<$ Config $>$ {\bfseries path}\label{classBisectionEpsilonEdgePlanner_aee6809e8a6f1fc5a68404d0cb7b08592}
+
+\item 
+{\bf C\+Space} $\ast$ {\bfseries space}\label{classBisectionEpsilonEdgePlanner_a730d7ea663f52421ddbc92976e757ddd}
+
+\item 
+double {\bfseries epsilon}\label{classBisectionEpsilonEdgePlanner_a2ab619ed54e73b450ffef7e82defa4b4}
+
+\item 
+std\+::priority\+\_\+queue$<$ {\bf Segment}, std\+::vector$<$ {\bf Segment} $>$ $>$ {\bfseries q}\label{classBisectionEpsilonEdgePlanner_a6c81be6c959284703a300fb5c3fdb44c}
+
+\item 
+Config {\bfseries x}\label{classBisectionEpsilonEdgePlanner_a54d1bd746c9d0da165c1ba09f1f876df}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The same as \doxyref{Straight\+Line\+Epsilon\+Planner}{p.}{classStraightLineEpsilonPlanner}, but keeps the bisected configs, and recalculates distances for every subdivision.
+
+Used in constrained configuration spaces where C\+Space.\+Midpoint() doesn\textquotesingle{}t necessarily return a configuration whose distance is half of the endpoints. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Edge\+Planner.\+h\item 
+Edge\+Planner.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  mpkAdaptSegmentChecker</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">mpkAdaptSegmentChecker</A></H2></TD></H2></TD></TR></TABLE>
+<BLOCKQUOTE>Adaptive collision checker for straight line segments in c-space. </BLOCKQUOTE>
+<HR>
+
+<DL>
+<P><TABLE>
+<DT><H3>Public Fields</H3><DD><TR>
+<TD VALIGN=TOP>
+<A NAME="num_bv_tests"></A>
+<A NAME="DOC.1.7"></A>
+<IMG ALT="o" SRC=icon2.gif>int </TD><TD><B>num_bv_tests</B> <BR>
+<I>number of BV pairs tested so far.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="num_tri_tests"></A>
+<A NAME="DOC.1.8"></A>
+<IMG ALT="o" SRC=icon2.gif>int </TD><TD><B>num_tri_tests</B> <BR>
+<I>number of triangle pairs tested so far.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="num_pairs_dist_comp"></A>
+<A NAME="DOC.1.9"></A>
+<IMG ALT="o" SRC=icon2.gif>int </TD><TD><B>num_pairs_dist_comp</B> <BR>
+<I>number of distance computations for object pairs so far.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="coll_t"></A>
+<A NAME="DOC.1.10"></A>
+<IMG ALT="o" SRC=icon2.gif>double </TD><TD><B>coll_t</B> <BR>
+<I>if a collision was found, this value parameterizes (in [0,1]) the collision point on the segment.</I>
+</TD></TR></TABLE></P>
+
+<P><TABLE>
+<DT><H3>Public Methods</H3><DD><TR>
+<TD VALIGN=TOP>
+<A NAME="mpkAdaptSegmentChecker"></A>
+<A NAME="DOC.1.1"></A>
+<IMG ALT="o" SRC=icon2.gif> </TD><TD><B>mpkAdaptSegmentChecker</B> (const <!1><A HREF="mpkConfigChecker.html">mpkConfigChecker</A>* ccheck0, const <!1><A HREF="mpkConfigChecker.html">mpkConfigChecker</A>* ccheck1, bool use_transf_cache=true)<BR>
+<I>The recommended constructor.  It takes pointers to two configuration checkers that certify that refer to the endpoints of the segment and certify that these are free (be sure to call clearance() on both configuration checkers before passing them to this contructor).  The segment checker accesses the configurations by following the pointers to the configuration checkers.  Thus the configuration checkers cannot be used for testing different configurations while the segment checker is active.  Instead, create a new configuration checker for each configuration.  Transform caching should be disabled only if memory consumption is too high otherwise.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="mpkAdaptSegmentChecker"></A>
+<A NAME="DOC.1.2"></A>
+<IMG ALT="o" SRC=icon2.gif> </TD><TD><B>mpkAdaptSegmentChecker</B> (const <!1><A HREF="mpkConfigChecker.html">mpkConfigChecker</A>* ccheck, const <!1><A HREF="mpkConfig.html">mpkConfig</A>* q0, const <!1><A HREF="mpkConfig.html">mpkConfig</A>* q1, bool use_transf_cache=true)<BR>
+<I>This constructor accepts two configurations directly. However, it is not as efficient as the other constructor and therefore not recommended if speed is an issue.  Transform caching should be disabled only if memory consumption is too high otherwise.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="queue_size"></A>
+<A NAME="DOC.1.3"></A>
+<IMG ALT="o" SRC=icon2.gif>int </TD><TD><B>queue_size</B> ()<BR>
+<I>Returns the size of the internal priority queue.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="prio"></A>
+<A NAME="DOC.1.4"></A>
+<IMG ALT="o" SRC=icon2.gif>double </TD><TD><B>prio</B> ()<BR>
+<I>Returns the priority of the first subsegment test in the internal priority queue.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="iteration_step"></A>
+<A NAME="DOC.1.5"></A>
+<IMG ALT="o" SRC=icon2.gif>bool </TD><TD><B>iteration_step</B> ()<BR>
+<I>Performs one iteration step of (lazy) segment checking and returns false if the status of the segment has been determined (no more steps necessary) or true if more iteration steps are necessary.  This function may increase or decrease the size of the internal priority queue.</I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="collision"></A>
+<A NAME="DOC.1.6"></A>
+<IMG ALT="o" SRC=icon2.gif>bool </TD><TD><B>collision</B> ()<BR>
+<I>Returns true as long as it is not clear whether the segment is free (more calls of iteration_step() necessary) and false if it the segment has been found to be free </I>
+</TD></TR></TABLE></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>This checker is guaranteed not to miss collisions.  It relates
+workspace distance to bounds on the motions of objects and uses a
+collision-free predicate to adapt the local resolution at which the
+segment is checked.
+
+<P>The checker is 'lazy' in the sense that it does not finish the
+segment checking in one step.  Instead, it has a function
+iteration_step() that performs the next scheduled step each time it
+is called.  This is useful for so-called 'lazy' collision checking
+PRM planners such as SBL.  If lazy collision checking is not
+desired, simply call iteration_step() in a loop until it returns
+false and then query the result using collision().  Note that in
+general, the return value of collision() is not meaningful until
+iteration_step() has returned false.
+
+<P>Using the transform cache is generally recommended.  Disable it
+only if you encounter storage problems.  In a lazy collision
+checking planner, many adaptive segment checkers might be active at
+the same time and thus the memory consumption by the internal
+priority queues might be very high.  If this creates problems, the
+size of the internal priority queues can be limited by calling
+iteration_step() multiple times until queue_size() returns a value
+below a desired limit.</BLOCKQUOTE>
+<DL>
+</DL>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DT><B>Friends:</B><DD>  struct testpair_subseg<BR><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

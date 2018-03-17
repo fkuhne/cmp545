@@ -1,0 +1,71 @@
+\section{S\+B\+L\+Subdivision Class Reference}
+\label{classSBLSubdivision}\index{S\+B\+L\+Subdivision@{S\+B\+L\+Subdivision}}
+
+
+A grid-\/based subdivision to be used for S\+BL.  
+
+
+
+
+{\ttfamily \#include $<$S\+B\+L\+Tree.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef S\+B\+L\+Tree\+::\+Node {\bfseries Node}\label{classSBLSubdivision_a7324b5c74750880cec033afb37038a2c}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries S\+B\+L\+Subdivision} (int mapped\+Dims)\label{classSBLSubdivision_afa9f36ebe972bfaaaca77d1227c01c60}
+
+\item 
+void {\bfseries Clear} ()\label{classSBLSubdivision_a72951c73404d234b283b3dc9e3edb3fa}
+
+\item 
+void {\bfseries Randomize\+Subset} ()\label{classSBLSubdivision_aff7fca9f5d9636197218d868c3437b83}
+
+\item 
+void {\bfseries Add\+Point} (Node $\ast$)\label{classSBLSubdivision_af03a3de4a38b9f8265b0ecce9a3baffa}
+
+\item 
+void {\bfseries Remove\+Point} (Node $\ast$)\label{classSBLSubdivision_a04517be59b8fae13417516e44c247db8}
+
+\item 
+Node $\ast$ {\bfseries Pick\+Point} (const Config \&x)\label{classSBLSubdivision_a2803f47f6dd4191dba26b7852e4d9ba3}
+
+\item 
+Node $\ast$ {\bfseries Pick\+Random} ()\label{classSBLSubdivision_a503125a633d392f8785983750e229a80}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector {\bfseries h}\label{classSBLSubdivision_ad4726b6334a853199e72461c8428fabc}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries subset}\label{classSBLSubdivision_ac6a572c6a25fc396240e63f4b41ee610}
+
+\item 
+Geometry\+::\+Grid\+Subdivision {\bfseries subdiv}\label{classSBLSubdivision_a0f7871c89cf476680167e93a19d92f65}
+
+\item 
+Vector {\bfseries temp}\label{classSBLSubdivision_a3a39403d855f390b6120a27028c46fbe}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A grid-\/based subdivision to be used for S\+BL. 
+
+The grid operates on certain dimensions of the configuration. Specifically, it picks mapped\+Dims dimensions at random from the full configuration space, and divides the space in those dimensions into cells of width h. If the mapped dimension is that of index k.
+
+N\+O\+TE\+: h must be initialized to the \# of dims in the configuration space, and containing some cell width value, say 0.\+1. \begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]Do a defualt initialization of h. \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+S\+B\+L\+Tree.\+h\item 
+S\+B\+L\+Tree.\+cpp\end{DoxyCompactItemize}

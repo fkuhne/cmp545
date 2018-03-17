@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  mpkRobot</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">mpkRobot</A></H2></TD></H2></TD></TR></TABLE>
+<BLOCKQUOTE>Extended Inventor node type (derived from SoSeparator) to define robot nodes in the scene file.   </BLOCKQUOTE>
+<HR>
+
+<H2>Inheritance:</H2>
+<APPLET CODE="ClassGraph.class" WIDTH=600 HEIGHT=65>
+<param name=classes value="MSoSeparator,M,CmpkRobot,MmpkRobot.html">
+<param name=before value="M,M">
+<param name=after value="Md_,M">
+<param name=indent value="0,1">
+<param name=arrowdir value="up">
+</APPLET>
+<HR>
+
+<DL>
+<P><TABLE>
+<DT><H3>Public Fields</H3><DD><TR>
+<TD VALIGN=TOP>
+<A NAME="robotType"></A>
+<A NAME="DOC.18.1"></A>
+<IMG ALT="o" SRC=icon2.gif>SoSFEnum </TD><TD><B>robotType</B> <BR>
+<I>see <A HREF=../../basic/mpk_robot_type.h>mpk_robot_type.h</A></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.18.2"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>SoSFVec3f </TD><TD><B>translation</B> <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.18.3"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>SoSFVec4f </TD><TD><B>rotation</B> <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.18.4"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>SoSFFloat </TD><TD><B>scaleFactor</B> <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.18.5"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>SoSFString </TD><TD><B>fileName</B> <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.18.6"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>SoSFString </TD><TD><B>fileName2</B> <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="robot"></A>
+<A NAME="DOC.18.9"></A>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="mpkBaseRobot.html">mpkBaseRobot</A>* </TD><TD><B>robot</B> <BR>
+<I>Pointer to robot instantiated by <B>init()</B>.</I>
+</TD></TR></TABLE></P>
+
+<P><TABLE>
+<DT><H3>Public Methods</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.18.7"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>mpkRobot</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP>
+<A NAME="init"></A>
+<A NAME="DOC.18.8"></A>
+<IMG ALT="o" SRC=icon2.gif>void </TD><TD><B>init</B> ()<BR>
+<I>Reads the link models and builds the kinematic structure of the robot according to the value in <B>robotType</B>.  After calling <B>init()</B>, the pointer <B>robot</B> points to the instantiated robot.)</I>
+</TD></TR></TABLE></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>mpkRobots are found in the scene graph using an Inventor search
+action that looks for nodes of type mpkRobot (see
+<!1><A HREF="mpkRobotCollection.html">mpkRobotCollection</A>).  Each robot can be given
+an individual name.  The following shows how to defined a robot in
+a scene file:<BR> <BR>
+
+<P><TT>DEF &lt;name&gt; mpkRobot {<BR>
+robotType &lt;type&gt;<BR>
+translation &lt;x&gt; &lt;y&gt; &lt;z&gt;<BR>
+rotation &lt;ax_x&gt; &lt;ax_y&gt; &lt;ax_z&gt; &lt;angle&gt;<BR>
+scaleFactor &lt;fact&gt;<BR>
+}</TT><BR> <BR>
+
+<P>where &lt;type&gt; is one of the constants defined in file
+<A HREF=../../basic/mpk_robot_type.h>mpk_robot_type.h</A></BLOCKQUOTE>
+<DL>
+
+<A NAME="translation"></A>
+<A NAME="DOC.18.2"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>SoSFVec3f translation</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="rotation"></A>
+<A NAME="DOC.18.3"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>SoSFVec4f rotation</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="scaleFactor"></A>
+<A NAME="DOC.18.4"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>SoSFFloat scaleFactor</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="fileName"></A>
+<A NAME="DOC.18.5"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>SoSFString fileName</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="fileName2"></A>
+<A NAME="DOC.18.6"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>SoSFString fileName2</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="mpkRobot"></A>
+<A NAME="DOC.18.7"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> mpkRobot()</B></TT>
+<DL><DT><DD></DL><P></DL>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

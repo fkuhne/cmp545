@@ -1,0 +1,151 @@
+\section{Milestone\+Path Class Reference}
+\label{classMilestonePath}\index{Milestone\+Path@{Milestone\+Path}}
+
+
+A sequence of locally planned paths between milestones.  
+
+
+
+
+{\ttfamily \#include $<$Milestone\+Path.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const Config \& {\bfseries Get\+Milestone} (int milestone) const \label{classMilestonePath_ad6f6f1d1724721b51dd6e4f0e7536215}
+
+\item 
+void {\bfseries Set\+Milestone} (int milestone, const Config \&x)\label{classMilestonePath_ab645aac112a001ff7c6f7b331904d6db}
+
+\item 
+const Config \& {\bfseries Start} () const \label{classMilestonePath_ad0fcff61f4a50813435349f71a3ccd70}
+
+\item 
+const Config \& {\bfseries End} () const \label{classMilestonePath_a0eb4b13b193b60cebe628b113f337173}
+
+\item 
+bool {\bf Check\+Set\+Milestone} (int milestone, const Config \&x)
+\item 
+{\bf C\+Space} $\ast$ {\bfseries Space} (int i=0) const \label{classMilestonePath_aba8f02fd1d95da6cc748523d874680fe}
+
+\item 
+int {\bfseries Num\+Milestones} () const \label{classMilestonePath_a4733a8904b3f991d7a84d6a27396a7c7}
+
+\item 
+int {\bfseries Num\+Edges} () const \label{classMilestonePath_abe9af85c5270ab5191d7a1019fcf45c1}
+
+\item 
+bool {\bfseries Is\+Valid} ()\label{classMilestonePath_ae5b436d6ce379bad4ad930c8e41eef1c}
+
+\item 
+double {\bf Length} () const \label{classMilestonePath_a469bcb59f6ea1ad6c5c722120d4f03fa}
+
+\begin{DoxyCompactList}\small\item\em Returns the sum of the distances between milestones. \end{DoxyCompactList}\item 
+void {\bf Concat} (const {\bf Milestone\+Path} \&path)\label{classMilestonePath_aa435533ef62a6cec973489a64e338b4c}
+
+\begin{DoxyCompactList}\small\item\em Adds the path onto the end of this one. \end{DoxyCompactList}\item 
+void {\bf Create\+Edges\+From\+Milestones} ({\bf C\+Space} $\ast$space, const vector$<$ Config $>$ \&milestones)\label{classMilestonePath_a81b465171be6e10c9c97031e92915593}
+
+\begin{DoxyCompactList}\small\item\em Create the path that connects the milestones in the given workspace. \end{DoxyCompactList}\item 
+bool {\bf Initialize\+Edge\+Plans} ()\label{classMilestonePath_a1f3189d474fa330a99a7f3d4a616c04d}
+
+\begin{DoxyCompactList}\small\item\em Checks the feasibility of all edges, returns true if they all succeed. \end{DoxyCompactList}\item 
+bool {\bf Is\+Feasible} ()\label{classMilestonePath_a5c05a9bcc0ded11cbefc52f6da31cd05}
+
+\begin{DoxyCompactList}\small\item\em Checks the feasibility of all milestones and edges, returns true if so. \end{DoxyCompactList}\item 
+int {\bf Eval} (double t, Config \&c) const 
+\item 
+int {\bf Shortcut} ()
+\item 
+int {\bf Reduce} (int num\+Iters)
+\item 
+void {\bf Splice} (int start, int goal, const {\bf Milestone\+Path} \&path)
+\item 
+void {\bf Discretize} (double h)
+\item 
+int {\bf Discretize\+Edge} (int e, double h)\label{classMilestonePath_aaa257fd37945a9d2d51c82453137ae6e}
+
+\begin{DoxyCompactList}\small\item\em Discretizes only the given edge. Returns the number of new segments. \end{DoxyCompactList}\item 
+void {\bf Discretize\+Edge} (int e, const vector$<$ double $>$ \&u)\label{classMilestonePath_a4b06ba022f6f48d8b418d0318f3c8282}
+
+\begin{DoxyCompactList}\small\item\em Discretizes the given edge with the specified interpolation. \end{DoxyCompactList}\item 
+bool {\bf Load} (istream \&in, {\bf C\+Space} $\ast$space)\label{classMilestonePath_a1b9c83a24c2ca6454e16c97ae62016de}
+
+\begin{DoxyCompactList}\small\item\em Loads the intermediate milestones, and creates the edges from the given space. \end{DoxyCompactList}\item 
+bool {\bf Save} (ostream \&out)\label{classMilestonePath_ac65606d8d23d4be900f26cf7e9d7023e}
+
+\begin{DoxyCompactList}\small\item\em Saves the intermediate milestones. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ Smart\+Pointer$<$ {\bf Edge\+Planner} $>$ $>$ {\bfseries edges}\label{classMilestonePath_a3940f3bbac7cb31447ad45f0d42cbd3c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A sequence of locally planned paths between milestones. 
+
+If n is the number of edges, the milestones are indexed M0...Mn+1, such that edge k goes from Mk to Mk+1. 
+
+\subsection{Member Function Documentation}
+\index{Milestone\+Path@{Milestone\+Path}!Check\+Set\+Milestone@{Check\+Set\+Milestone}}
+\index{Check\+Set\+Milestone@{Check\+Set\+Milestone}!Milestone\+Path@{Milestone\+Path}}
+\subsubsection[{Check\+Set\+Milestone(int milestone, const Config \&x)}]{\setlength{\rightskip}{0pt plus 5cm}bool Milestone\+Path\+::\+Check\+Set\+Milestone (
+\begin{DoxyParamCaption}
+\item[{int}]{milestone, }
+\item[{const Config \&}]{x}
+\end{DoxyParamCaption}
+)}\label{classMilestonePath_a958207b9f98d6264a918d26470d9ee7c}
+Sets the milestone to x only if x and the paths to adjoining milestones are feasible \index{Milestone\+Path@{Milestone\+Path}!Discretize@{Discretize}}
+\index{Discretize@{Discretize}!Milestone\+Path@{Milestone\+Path}}
+\subsubsection[{Discretize(double h)}]{\setlength{\rightskip}{0pt plus 5cm}void Milestone\+Path\+::\+Discretize (
+\begin{DoxyParamCaption}
+\item[{double}]{h}
+\end{DoxyParamCaption}
+)}\label{classMilestonePath_a41823ef8cbc7abaf9272f591ec1c959c}
+Discretizes the path such that each edge is no longer than h. Assumes straight-\/line path segments. 
+
+References Discretize\+Edge().
+
+\index{Milestone\+Path@{Milestone\+Path}!Eval@{Eval}}
+\index{Eval@{Eval}!Milestone\+Path@{Milestone\+Path}}
+\subsubsection[{Eval(double t, Config \&c) const }]{\setlength{\rightskip}{0pt plus 5cm}int Milestone\+Path\+::\+Eval (
+\begin{DoxyParamCaption}
+\item[{double}]{t, }
+\item[{Config \&}]{c}
+\end{DoxyParamCaption}
+) const}\label{classMilestonePath_ab0ad404882d4ba13a773f1c57e25c953}
+Supposing all milestones have equal time spacings, evaluates the point on the path at time t in [0,1]. Returns the edge of time t. \index{Milestone\+Path@{Milestone\+Path}!Reduce@{Reduce}}
+\index{Reduce@{Reduce}!Milestone\+Path@{Milestone\+Path}}
+\subsubsection[{Reduce(int num\+Iters)}]{\setlength{\rightskip}{0pt plus 5cm}int Milestone\+Path\+::\+Reduce (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Iters}
+\end{DoxyParamCaption}
+)}\label{classMilestonePath_a4894ebfe3f9a6242f08e149dd0dbbcd9}
+Tries to shorten the path by connecting random points with a shortcut, for num\+Iters iterations. Returns \# of shortcuts \index{Milestone\+Path@{Milestone\+Path}!Shortcut@{Shortcut}}
+\index{Shortcut@{Shortcut}!Milestone\+Path@{Milestone\+Path}}
+\subsubsection[{Shortcut()}]{\setlength{\rightskip}{0pt plus 5cm}int Milestone\+Path\+::\+Shortcut (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classMilestonePath_abdf192c22970e91d33e8e25459062aba}
+Tries to shorten the path by connecting subsequent milestones. Returns \# of shortcuts made. \index{Milestone\+Path@{Milestone\+Path}!Splice@{Splice}}
+\index{Splice@{Splice}!Milestone\+Path@{Milestone\+Path}}
+\subsubsection[{Splice(int start, int goal, const Milestone\+Path \&path)}]{\setlength{\rightskip}{0pt plus 5cm}void Milestone\+Path\+::\+Splice (
+\begin{DoxyParamCaption}
+\item[{int}]{start, }
+\item[{int}]{goal, }
+\item[{const {\bf Milestone\+Path} \&}]{path}
+\end{DoxyParamCaption}
+)}\label{classMilestonePath_aee525a5c149c3fae7a749565a0f2ff74}
+Replaces the section of the path between milestones start and goal with a new path. If the index is negative, erases the corresponding start/goal milestones too. 
+
+Referenced by Discretize\+Edge().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Milestone\+Path.\+h\item 
+Milestone\+Path.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+\section{Multi\+Modal\+C\+Space$<$ Mode $>$ Class Template Reference}
+\label{classMultiModalCSpace}\index{Multi\+Modal\+C\+Space$<$ Mode $>$@{Multi\+Modal\+C\+Space$<$ Mode $>$}}
+
+
+Multi-\/modal configuration space base class.  
+
+
+
+
+{\ttfamily \#include $<$Multi\+Modal\+C\+Space.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool {\bfseries Is\+Valid} (const Mode \&m)\label{classMultiModalCSpace_a3561c41946430ee91d083b1c05981070}
+
+\item 
+virtual {\bf C\+Space} $\ast$ {\bfseries Get\+Mode\+C\+Space} (const Mode \&m)\label{classMultiModalCSpace_a72dda3a8af9efc6e1142610eaf1581bc}
+
+\item 
+virtual {\bf C\+Space} $\ast$ {\bfseries Get\+Transition\+C\+Space} (const Mode \&m1, const Mode \&m2)\label{classMultiModalCSpace_ab9beb6a054b6ede81f1179ffc72b655f}
+
+\item 
+virtual bool {\bfseries Can\+Enum} () const \label{classMultiModalCSpace_abe7479b346e4a8b06cfcb6e107ce508b}
+
+\item 
+virtual bool {\bfseries Can\+Sample} () const \label{classMultiModalCSpace_a25329535062243e2baa18679358488a7}
+
+\item 
+virtual void {\bfseries Enum} (std\+::vector$<$ Mode $>$ \&modes)\label{classMultiModalCSpace_a99d2ed75fef865d8bc20a9962be84419}
+
+\item 
+virtual void {\bfseries Sample} (std\+::vector$<$ Mode $>$ \&modes)\label{classMultiModalCSpace_a500d0af7b023c6f12b2f338fb76feccf}
+
+\item 
+virtual bool {\bfseries Can\+Enum\+Adjacent} () const \label{classMultiModalCSpace_af12f75f40a87e2f6fe3db59ce04af304}
+
+\item 
+virtual bool {\bfseries Can\+Sample\+Adjacent} () const \label{classMultiModalCSpace_a8ed6f4db485f742d74ce5c94b86dcba1}
+
+\item 
+virtual bool {\bfseries Can\+Test\+Adjacent} () const \label{classMultiModalCSpace_a6976171354328312163b25a5d70d195c}
+
+\item 
+virtual void {\bfseries Enum\+Adjacent} (const Mode \&m, std\+::vector$<$ Mode $>$ \&modes)\label{classMultiModalCSpace_a7120c6e89f0da1460bd2fb0d77b0e906}
+
+\item 
+virtual void {\bfseries Sample\+Adjacent} (const Mode \&m, std\+::vector$<$ Mode $>$ \&adj)\label{classMultiModalCSpace_a074e27ededced39760d32df0595a2ba6}
+
+\item 
+virtual bool {\bfseries Test\+Adjacent} (const Mode \&m1, const Mode \&m2)\label{classMultiModalCSpace_a91a5f6af00329a5b57b44a19692b4404}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Mode$>$\\*
+class Multi\+Modal\+C\+Space$<$ Mode $>$}
+
+Multi-\/modal configuration space base class. 
+
+The class must define the mapping from Modes to C\+Spaces, as well as the C\+Spaces defining the transition region for each pair of adjacent modes. They also describe methods that will allow planners to traverse the mode graph.
+
+There are three types of mode graphs that can be implemented\+: 1) discrete and small, 2) discrete and large, or 3) continuous. The implementations of these types takes on different forms. (Note that representations 2 and 3 are not yet exploited by any planner implemented in L\+M\+PL, but we plan to include support shortly)
+
+For discrete and small mode graphs, the easiest implementation is to explicitly represent the mode graph using the \doxyref{Explicit\+M\+M\+C\+Space}{p.}{classExplicitMMCSpace} class. In this class, you simply fill out the mode\+Graph structure with the correct \doxyref{C\+Space}{p.}{classCSpace}\textquotesingle{}s along its nodes and edges, and all the rest is done.
+
+For discrete and large mode graphs, the graph will be represented implicitly in a search-\/like framework. Subclasses should overload the Can\+Enum\+Adjacent method such that it returns true. They should also implement the Enum\+Adjacent method to return all modes adjacent to the given mode m.
+
+For continuous mode graphs, the graph will be represented by sampling. Subclasses should overload the Can\+Sample\+Adjacent method such that it returns true. They should also implement the Sample\+Adjacent method to sample a set of modes that are adjacent to the given mode m.
+
+The Enum and Sample routines are here for possible future implementations of multi modal planners. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Multi\+Modal\+C\+Space.\+h\end{DoxyCompactItemize}

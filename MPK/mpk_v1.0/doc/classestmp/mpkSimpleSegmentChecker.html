@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  mpkSimpleSegmentChecker</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<TABLE BORDER=0><TR>
+<TD VALIGN=TOP><H2>class  <A HREF="#DOC.DOCU">mpkSimpleSegmentChecker</A></H2></TD></H2></TD></TR></TABLE>
+<BLOCKQUOTE>Simple lazy segment checker that discretizes a segment up to a certain resolution <IMG BORDER=0 SRC=g000002.gif> in c-space and checks the generated intermediate configurations for collisions using the <!1><A HREF="mpkConfigChecker.html">mpkConfigChecker</A> class. </BLOCKQUOTE>
+<HR>
+
+<DL>
+<P><TABLE>
+<DT><H3>Public Fields</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.19.5"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>num_bv_tests</B> <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.19.6"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>num_tri_tests</B> <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.19.7"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>int </TD><TD><B>num_points_tested</B> <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.19.8"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>double </TD><TD><B>min_interval_sz</B> <BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.19.9"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>double </TD><TD><B>coll_t</B> <BR>
+<I></I>
+</TD></TR></TABLE></P>
+
+<P><TABLE>
+<DT><H3>Public Methods</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.19.1"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A> </TD><TD><B>mpkSimpleSegmentChecker</B> (<!1><A HREF="mpkConfigChecker.html">mpkConfigChecker</A>* ccheck, const <!1><A HREF="mpkConfig.html">mpkConfig</A>* q0, const <!1><A HREF="mpkConfig.html">mpkConfig</A>* q1, double epsilon, cspace_metric metric=EUCLID)<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.19.2"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>double </TD><TD><B>prio</B> ()<BR>
+<I></I>
+</TD></TR><TR>
+<TD VALIGN=TOP><A HREF="#DOC.19.4"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>bool </TD><TD><B>collision</B> ()<BR>
+<I></I>
+</TD></TR></TABLE></P>
+
+<P><TABLE>
+<DT><H3>Public Members</H3><DD><TR>
+<TD VALIGN=TOP><A HREF="#DOC.19.3"><IMG ALT="[more]" BORDER=0 SRC=icon1.gif></A>enum  </TD><TD><B>collcheck_mode</B> <BR>
+<I></I>
+</TD></TR></TABLE></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>The checker can be embedded with other checkers in a priority
+queue for testing entire paths (sequences of segments).  To this
+end, the checker offers performing single iteration steps and a
+function that returns, after each iteration, the priority of
+further examining the segment.
+
+<P>Each iteration step of the checker examines a number of
+2^curr_bisection_depth equally spaced points on the segment.  The
+points are chosen such that they fall between all the points that
+were checked before at previous iteration steps with smaller
+bisection depths.  The point for depth 0 is thus located at t=0.5,
+for depth 1 the points are located at t=0.25 and t=0.75, for depth
+2 at t=0.125, t=0.375, t=0.625 and t=0.875 and so on.  The time
+required by this function thus increases exponentially with each
+call.
+
+<P>The priority of examining the segment is proportional to the
+(c-space) length of the untested subsegments between the
+intermediate tested points.
+
+<P></BLOCKQUOTE>
+<DL>
+
+<A NAME="mpkSimpleSegmentChecker"></A>
+<A NAME="DOC.19.1"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> mpkSimpleSegmentChecker(<!1><A HREF="mpkConfigChecker.html">mpkConfigChecker</A>* ccheck, const <!1><A HREF="mpkConfig.html">mpkConfig</A>* q0, const <!1><A HREF="mpkConfig.html">mpkConfig</A>* q1, double epsilon, cspace_metric metric=EUCLID)</B></TT>
+<DL><DT><DT><B>Parameters:</B><DD><B>ccheck</B> -  simple point checker for testing intermediate points.
+<BR><B>q0</B> -  one endpoint of segment
+<BR><B>q1</B> -  the other endpoint (neither endpoint is tested
+explicitly by the segment checker)
+<BR><B>epsilon</B> -  c-space resolution up to which the segment is
+bisected by additional intermediate points.  When the (c-space)
+<!1><A HREF="sblMilestone.html#DOC.32.18">distance</A> between sampled intermediate points has fallen below
+<B>epsilon</B>, the segment is considered <!1><A HREF="mpkSimpleSegmentChecker.html#DOC.19.4">collision</A>-free.
+<BR><B>metric</B> -  c-space metric for determining the <!1><A HREF="mpkPathSmoother.html#DOC.16.4">length</A> of the
+(sub-)segment(s); either <B>EUCLID</B> or <B>L_INFINITY</B> (max-<!1><A HREF="mpkConfig.html#DOC.8.3">norm</A>).<BR><DD></DL><P>
+<A NAME="prio"></A>
+<A NAME="DOC.19.2"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>double prio()</B></TT>
+<DD>Returns the current priority of the segment which is
+proportional to the lengths of the untested subsegments between
+the points that have been sampled and tested so far.
+<DL><DT><DD></DL><P>
+<A NAME="collcheck_mode"></A>
+<A NAME="DOC.19.3"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>enum  collcheck_mode</B></TT>
+<DD>Performs a single iteration step of the checker. 
+
+<P>
+<DL><DT><DT><B>Returns:</B><DD>  <B>true</B> if the status of the segment has not yet been
+determined.  Further calls are required to determine the status.
+In this case, calls to <B>collision()</B> will return <B>false</B>
+which means that no collision has been found yet and thus (so
+far) the segment is assumed to be free.
+<BR>  <B>false</B> when the status of the segment has been
+determined: resolution reached or collision found.  Further calls
+are not necessary.  The status can then be queried using the <B>
+collision()</B> method.<BR><DD></DL><P>
+<A NAME="collision"></A>
+<A NAME="DOC.19.4"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>bool collision()</B></TT>
+<DD>Returns <B>true</B> if it the segment has been found to be
+colliding and <B>false</B> if the segment is assumed to be free.
+In the latter case, there is no guarantee that the segment is
+actually collision-free but the probability of a correct answer
+increases with decreasing resolution <IMG BORDER=0 SRC=g000002.gif>.
+<DL><DT><DD></DL><P>
+<A NAME="num_bv_tests"></A>
+<A NAME="DOC.19.5"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int num_bv_tests</B></TT>
+<DD>Number of BV pair tests performed so far.
+<DL><DT><DD></DL><P>
+<A NAME="num_tri_tests"></A>
+<A NAME="DOC.19.6"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int num_tri_tests</B></TT>
+<DD>Number of triangle pair tests performed so far.
+<DL><DT><DD></DL><P>
+<A NAME="num_points_tested"></A>
+<A NAME="DOC.19.7"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int num_points_tested</B></TT>
+<DD>Number of points on segments
+<DL><DT><DD></DL><P>
+<A NAME="min_interval_sz"></A>
+<A NAME="DOC.19.8"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>double min_interval_sz</B></TT>
+<DD>Normalized resolution up to which segment has been checked
+(initially 1 and then halved by each call to <B>
+iteration_step()</B>.
+<DL><DT><DD></DL><P>
+<A NAME="coll_t"></A>
+<A NAME="DOC.19.9"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>double coll_t</B></TT>
+<DD>Normalized parameter corresponding to collision point on
+segment (between 0 and 1).  Meaningless unless collision indicated
+by <B>collision()</B>.
+<DL><DT><DD></DL><P></DL>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DT><B>See Also:</B><DD><!1><A HREF="mpkConfigChecker.html">mpkConfigChecker</A><BR><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>
